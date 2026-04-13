@@ -1,12 +1,10 @@
 ---
-aliases:
-  - Cálculo del DNI
-  - Documento Nacional de Identidad
+aliases: [Cálculo del DNI, Documento Nacional de Identidad]
 author: Mindusting
 corrected: true
-tags:
-  - DNI
+headerFile: false
 rating: 1
+tags: [DNI]
 ---
 
 # DOCUMENTO NACIONAL DE IDENTIDAD
@@ -39,6 +37,7 @@ def valid_dni(dni: str) -> bool:
     # La letra debe coincidir con la resultante.
     return dni_letter(int(dni[:8])) == dni[8].upper()
 ```
+
 ^dni-funcs
 
 ## REGEX DNI
