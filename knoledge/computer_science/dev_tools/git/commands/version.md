@@ -2,6 +2,8 @@
 aliases: [Comando version en Git]
 author: Mindusting
 corrected: false
+description: |-
+    Permite ver la versión de Git que tenemos instalada, además de algunos datos enxtra.
 headerFile: false
 rating: 
 tags: [Git]
