@@ -1,0 +1,24 @@
+summaries:
+  Unique: values.unique().length
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.folder == "todos"
+    order:
+      - title
+      - file.name
+      - description
+      - done
+      - tags
+    sort:
+      - property: done
+        direction: ASC
+      - property: title
+        direction: ASC
+    columnSize:
+      note.title: 289
+      file.name: 156
+      note.description: 383
+      note.tags: 968

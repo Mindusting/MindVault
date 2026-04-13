@@ -1,0 +1,22 @@
+filters:
+  and:
+    - file.path.startsWith("programs/obsidian")
+    - headerFile == false
+views:
+  - type: table
+    name: Table
+    order:
+      - title
+      - file.name
+      - description
+    sort:
+      - property: description
+        direction: ASC
+      - property: title
+        direction: ASC
+    columnSize:
+      note.title: 159
+      file.name: 139
+      note.description: 348
+  - type: cards
+    name: Cards

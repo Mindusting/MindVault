@@ -1,0 +1,15 @@
+properties:
+  note.title:
+    displayName: title
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.containsAll("Linux", "Bash", "Command")
+    order:
+      - title
+      - file.name
+    sort: []
+    columnSize:
+      note.title: 225

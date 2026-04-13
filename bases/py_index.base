@@ -1,0 +1,15 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.contains("Python") || file.tags.contains("Programming/Python")
+        - '!file.tags.contains("excalidraw")'
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - title
+      - file.name
+    columnSize:
+      note.title: 246

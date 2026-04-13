@@ -1,0 +1,12 @@
+.obsidian/*
+!.obsidian/snippets/*
+!.obsidian/app.json
+!.obsidian/apparance.json
+!.obsidian/bookmarks.json
+!.obsidian/core-plugins.json
+!.obsidian/global-search.json
+!.obsidian/graph.json
+!.obsidian/switcher.json
+!.obsidian/types.json
+
+.trash/*

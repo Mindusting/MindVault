@@ -1,0 +1,30 @@
+formulas:
+  Alias: link(file, if(aliases.length, aliases[0], if(title, title, file.name)))
+properties:
+  note.rating:
+    displayName: Puntuación
+  note.corrected:
+    displayName: Corregido
+  formula.Alias:
+    displayName: Título
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.ext == "md"
+        - '!file.tags.contains("excalidraw")'
+    order:
+      - formula.Alias
+      - rating
+      - corrected
+    sort:
+      - property: rating
+        direction: DESC
+      - property: corrected
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      formula.Alias: 276
+      note.rating: 128

@@ -1,0 +1,10 @@
+filters:
+  or:
+    - file.ext == "png"
+    - file.ext == "jpg"
+    - file.ext == "jpeg"
+views:
+  - type: cards
+    name: Table
+    order: []
+    image: file.file

@@ -1,0 +1,182 @@
+{
+  "items": [
+    {
+      "type": "graph",
+      "ctime": 1775549779581,
+      "title": "Git",
+      "options": {
+        "collapse-filter": false,
+        "search": "tag:#Git",
+        "showTags": false,
+        "showAttachments": false,
+        "hideUnresolved": false,
+        "showOrphans": true,
+        "collapse-color-groups": true,
+        "colorGroups": [
+          {
+            "query": "tag:#Obsidian",
+            "color": {
+              "a": 1,
+              "rgb": 9067765
+            }
+          },
+          {
+            "query": "tag:#Python",
+            "color": {
+              "a": 1,
+              "rgb": 515872
+            }
+          },
+          {
+            "query": "tag:#Java",
+            "color": {
+              "a": 1,
+              "rgb": 16752640
+            }
+          },
+          {
+            "query": "tag:#Markdown",
+            "color": {
+              "a": 1,
+              "rgb": 8355711
+            }
+          },
+          {
+            "query": "tag:#Mermaid",
+            "color": {
+              "a": 1,
+              "rgb": 16711808
+            }
+          },
+          {
+            "query": "tag:#DataBase",
+            "color": {
+              "a": 1,
+              "rgb": 5862033
+            }
+          },
+          {
+            "query": "tag:#C",
+            "color": {
+              "a": 1,
+              "rgb": 8355711
+            }
+          },
+          {
+            "query": "tag:#CPP",
+            "color": {
+              "a": 1,
+              "rgb": 25855
+            }
+          },
+          {
+            "query": "tag:#HTML",
+            "color": {
+              "a": 1,
+              "rgb": 16734720
+            }
+          },
+          {
+            "query": "tag:#CSS",
+            "color": {
+              "a": 1,
+              "rgb": 255
+            }
+          },
+          {
+            "query": "tag:#JavaScript",
+            "color": {
+              "a": 1,
+              "rgb": 16776960
+            }
+          },
+          {
+            "query": "tag:#TypeScript",
+            "color": {
+              "a": 1,
+              "rgb": 3904497
+            }
+          },
+          {
+            "query": "tag:#CS",
+            "color": {
+              "a": 1,
+              "rgb": 8323327
+            }
+          },
+          {
+            "query": "tag:#Git",
+            "color": {
+              "a": 1,
+              "rgb": 14634039
+            }
+          },
+          {
+            "query": "tag:#DE",
+            "color": {
+              "a": 1,
+              "rgb": 9690744
+            }
+          },
+          {
+            "query": "tag:#PHP",
+            "color": {
+              "a": 1,
+              "rgb": 8158446
+            }
+          },
+          {
+            "query": "tag:#Rust",
+            "color": {
+              "a": 1,
+              "rgb": 16733457
+            }
+          }
+        ],
+        "collapse-display": true,
+        "showArrow": true,
+        "textFadeMultiplier": 0,
+        "nodeSizeMultiplier": 1,
+        "lineSizeMultiplier": 1,
+        "collapse-forces": true,
+        "centerStrength": 0.5,
+        "repelStrength": 10,
+        "linkStrength": 1,
+        "linkDistance": 250,
+        "scale": 0.6153207732681376,
+        "close": false
+      }
+    },
+    {
+      "type": "group",
+      "ctime": 1775029620507,
+      "items": [
+        {
+          "type": "search",
+          "ctime": 1727047059083,
+          "query": "/\\[.+\\]\\(\\)/",
+          "title": "Enlaces sin dirección"
+        },
+        {
+          "type": "search",
+          "ctime": 1739196475276,
+          "query": "tag:#TODO",
+          "title": "#TODO"
+        },
+        {
+          "type": "search",
+          "ctime": 1775575589342,
+          "query": "tag:#excalidraw -path:/.*excalidraw.md/ ",
+          "title": "Badly named excalidraw"
+        },
+        {
+          "type": "search",
+          "ctime": 1775575688430,
+          "query": "-tag:TODO [\"corrected\": false",
+          "title": "Ready to correct"
+        }
+      ],
+      "title": "Mindusting"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+filters:
+  and:
+    - corrected == true
+    - rating == 1
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - title
+      - description
+    sort:
+      - property: description
+        direction: ASC
+    columnSize:
+      file.name:
+      note.title:
+      note.description:
+    rowHeight: tall
+  - type: cards
+    name: View
+    order:
+      - title
+      - description
+    image: note.logo
+    cardSize: 240

@@ -1,0 +1,25 @@
+filters:
+  and:
+    - headerFile == true
+formulas:
+  Título: link(file, if(aliases.length, aliases[0], if(title, title, file)))
+  Untitled: 'if(file.properties.rating, "Puntuación: " +  file.properties.rating, "")'
+  Description: 'if(file.hasProperty("description"), "Descripcción: " +  file.properties.description, "")'
+  Title: if(aliases.length, aliases[0], if(title, title, file))
+properties:
+  formula.Untitled:
+    displayName: Rating
+views:
+  - type: list
+    name: List
+    order:
+      - formula.Título
+      - formula.Description
+      - formula.Untitled
+    indentProperties: true
+  - type: cards
+    name: Cards
+    order:
+      - formula.Title
+    cardSize: 150
+    image: note.logo

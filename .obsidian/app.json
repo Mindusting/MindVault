@@ -1,0 +1,28 @@
+{
+  "livePreview": false,
+  "showLineNumber": true,
+  "showIndentGuide": true,
+  "alwaysUpdateLinks": true,
+  "pdfExportSettings": {
+    "includeName": false,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 90
+  },
+  "strictLineBreaks": false,
+  "readableLineLength": true,
+  "defaultViewMode": "preview",
+  "useTab": false,
+  "vimMode": true,
+  "trashOption": "local",
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "showUnsupportedFiles": true,
+  "focusNewTab": false,
+  "showInlineTitle": true,
+  "attachmentFolderPath": "dump",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "dump",
+  "propertiesInDocument": "visible"
+}
