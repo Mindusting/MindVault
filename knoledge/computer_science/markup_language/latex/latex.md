@@ -59,3 +59,10 @@ tags:
 |  $\bigvee$   | \bigvee    |
 | $\bigwedge$  | \bigwedge  |
 | $\bigsqcup$  | \bigsqcup  |
+
+---
+
+```latex
+0.\overline{9}
+0.\widehat{9}
+```
