@@ -1,4 +1,5 @@
 ---
+aliases: [SQLite3 🛢]
 author: Mindusting
 corrected: false
 headerFile: true
@@ -7,7 +8,6 @@ tags:
   - DataBase
   - SQL
   - SQLite3
-title: SQLite3 🛢
 ---
 
 <h1 style="text-align:center;">SQLite3</h1>
