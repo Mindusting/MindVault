@@ -3,7 +3,7 @@ aliases: [SQLite3 🛢]
 author: Mindusting
 corrected: false
 headerFile: true
-logo: ../../../../imgs/db.png
+logo: imgs/db.png
 tags:
   - DataBase
   - SQL
