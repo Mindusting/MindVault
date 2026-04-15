@@ -51,6 +51,7 @@ tags: [Git]
 - [Instalación](theory/installation.md)
 - [Estados de los archivos](theory/file_states.md)
 - [Commits](theory/commits.md)
+- [Etiquetas (Tags)](theory/tags.md)
 - [Ramas](theory/branches.md)
 - [Merges](theory/merges.md)
 - [Stash (Alijo)](theory/stash.md)
