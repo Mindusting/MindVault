@@ -2,6 +2,8 @@
 aliases: [Comando tag en Git]
 author: Mindusting
 corrected: false
+description: |-
+    Permite administrar las etiquetas del repositorio.
 headerFile: false
 rating: 
 tags: [Git]
