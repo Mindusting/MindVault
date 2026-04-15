@@ -4,7 +4,7 @@ aliases:
 author: Mindusting
 corrected: false
 headerFile: true
-logo: ../../imgs/rust_logo.png
+logo: imgs/rust_logo.png
 tags:
   - Programming
   - Rust
@@ -12,7 +12,7 @@ tags:
 
 <h1 align="center" style="color:#f51;">RUST</h1>
 
-![#logo](../../imgs/rust_logo.png)
+![#logo](imgs/rust_logo.png)
 
 ---
 
