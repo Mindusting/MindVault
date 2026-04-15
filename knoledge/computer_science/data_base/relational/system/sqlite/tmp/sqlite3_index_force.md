@@ -1,7 +1,8 @@
 ---
 tags:
   - Programming
-  - SQL/SQLite
+  - SQL
+  - SQLite3
 ---
 
 # Force Index in SQLite
