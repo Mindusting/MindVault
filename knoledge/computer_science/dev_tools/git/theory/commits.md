@@ -46,10 +46,10 @@ tags: [Git]
 > - `nuevas funciones`
 > - `corrección`
 
-
-
 ### DESCRIPCIÓN EXTENDIDA (MÚLTI LÍNEA)
 
 > [!syntax] SINTAXIS
 > ***\[type\]***: ***\[description\]***
 > ***\[extendedDescription\]***
+
+## HASH DEL COMMIT
