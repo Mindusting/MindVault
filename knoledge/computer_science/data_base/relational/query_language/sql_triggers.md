@@ -4,7 +4,7 @@ corrected: false
 tags:
   - DataBase
   - SQL
-  - SQLite
+  - SQLite3
 title: Triggers en SQL
 ---
 
