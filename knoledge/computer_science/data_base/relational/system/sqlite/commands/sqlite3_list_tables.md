@@ -3,6 +3,8 @@ author: Mindusting
 corrected: false
 tags:
   - Programming
+  - SQL
+  - SQLite3
 title: Listar tablas en SQLite3
 ---
 
