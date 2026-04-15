@@ -12,7 +12,7 @@ tags: [SQLite3, DataBase, SQL]
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
 > > - [x] Explicar como generar el rango exclusivo.
-> > - [ ] Explicar como generar el rango inclusivo.
+> > - [x] Explicar como generar el rango inclusivo.
 > > - [ ] Explicar como como funciona la generación del rango.
 
 Para generar número aleatorios decimales en **SQLite3** no hay una función concreata (*por lo menos en el momento en el que estoy escribiendo esto*), solo tenemos una para generar números enteros (*`RANDOM`, la cual genera un número entero con signo de 64 bits*), por lo que si queremos un número decimal, tenemos que buscarnos la vida.
@@ -45,6 +45,7 @@ Ahora vemos como sí se tiene que hacer:
 
 > [!success] Este método es seguro
 > ```sql
+> --                                               2 ^ 53
 > SELECT (RANDOM() & 9007199254740991) / 9007199254740992.0 AS RNG
 > ```
 > 
@@ -57,6 +58,7 @@ Ahora vemos como sí se tiene que hacer:
 Si pones este método a prueba puede ser que pienses que pienses que no es exclusivo ya que si sustituimos la función `RANDOM` y la **máscara**, por el número más grande que nos puede salir (*siendo este el mismo número que la máscara*):
 
 ```SQL
+--         valor máximo             2 ^ 53
 SELECT 9007199254740991 / 9007199254740992.0 AS RNG
 -- SALIDA:
 -- 1.0
@@ -65,59 +67,55 @@ SELECT 9007199254740991 / 9007199254740992.0 AS RNG
 Obtendremos el número $1.0$, por tanto es inclusivo, no exclusivo; esto por raro que suene, no es así, en realidad lo que está pasando es que se está redondeando el valor a la hora de mostrarlo por pantalla, eso es por que el resultado que nos da realmente es **cero coma nueve periódico** ($0.\overline{9}$), que al ser redondeado da como resultado $1.0$; si no me crees, puedes probarlo tú mismo usando la función `FLOOR`, para descartar la parte decimal; si realmente es un $1.0$ el resultado no cambiaría, sin embargo al usar esta función obtenemos $0.0$, demostrando así que el valor real que obtuvimos es menor a $1.0$:
 
 ```SQL
+--               valor máximo             2 ^ 53
 SELECT FLOOR(9007199254740991 / 9007199254740992.0) AS RNG
 -- SALIDA:
 -- 0.0
 ```
+^exclusive-proof
 
 ## RANGO INCLUSIVO
 
-#TODO: Explicar cual es el rango inclusivo.
+Hay a veces que lo que necesitamos no es un [número decimal exclusivo](#RANGO%20EXCLUSIVO), si no que hay a veces que necesitamos que sea inclusivo, es decir, que se encuentre en el rango [**\[0.0, 1.0\]**](../../../../../mathematic/math_range_notation.md); para esa clase de casos podremos usar el siguiente método:
 
 ```sql
+--                                         (2 ^ 53) - 1
 SELECT (RANDOM() & 9007199254740991) / 9007199254740991.0 AS RNG
 ```
 
-La diferencia que hay entre este y el [ejemplo exclusivo](#^exclusive-example).
+Podrías pensar que es idéntico al método para consegir un [número decimal exclusivo](#RANGO%20EXCLUSIVO), pero no, fíjate bien; el divisor en este caso es una unidad menor, permitiendo así que el número aleatorio más alto que se puede calcular sea $1.0$.
 
-```sql
---                     (2 ^ 53) - 1              2 ^ 53
-SELECT (RANDOM() & 9007199254740991) / 9007199254740992.0 AS RNG
--- Exclusivo                                          ^
---                                     Aquí está la fiferencia
--- Inclusivo                                          v
-SELECT (RANDOM() & 9007199254740991) / 9007199254740991.0 AS RNG
---                     (2 ^ 53) - 1        (2 ^ 53) - 1
+Para ponerlo a prueba y comprobar así que en este caso sí que es inclusivo, podemos usar el [mísmo método que aplicamos sobre el método exclusivo](#^exclusive-proof):
+
+```SQL
+--         valor máximo       (2 ^ 53) - 1
+SELECT 9007199254740991 / 9007199254740991.0 AS RNG
+-- SALIDA:
+-- 1.0
 ```
 
-```sql
-SELECT
-    (9007199254740991 & 9007199254740991)
-    / 9007199254740992.0 AS RNG_EXCLUSIVE,
+Aplicamos la función `FLOOT`:
 
-    (9007199254740991 & 9007199254740991)
-    / 9007199254740991.0 AS RNG_INCLUSIVE;
+```SQL
+--               valor máximo       (2 ^ 53) - 1
+SELECT FLOOR(9007199254740991 / 9007199254740991.0) AS RNG
+-- SALIDA:
+-- 1.0
 ```
 
-| RNG_EXCLUSIVE | RNG_INCLUSIVE |
-| -------------:| -------------:|
-|           1.0 |           1.0 |
-
-$$
-0.\overline{9}
-$$
-
-```sql
-SELECT
-    floor((9007199254740991 & 9007199254740991)
-    / 9007199254740992.0) AS RNG_EXCLUSIVE,
-
-    floor((9007199254740991 & 9007199254740991)
-    / 9007199254740991.0) AS RNG_INCLUSIVE;
-```
-
-| RNG_EXCLUSIVE | RNG_INCLUSIVE |
-| -------------:| -------------:|
-|           0.0 |           1.0 |
+Y el resultado como se puede ver es el mismo ($1.0$), demostrando así que en este caso ese $1.0$ no es fruto de un redondeo a la hora de mostrar el valor, sino que realmente es el valor que hemos obtenido como resultado.
 
 ## EXPLICACIÓN DE LA GENERACIÓN DE RANGO
+
+```python
+def randIntToFloat(
+        number: int,
+        precission: int = 53,
+        inclusive: bool = False
+    ) -> float:
+    divisor: int = 2 ** precission
+    mask:    int = divisor - 1
+    if inclusive:
+        divisor = mask
+    return (number & mask) / float(divisor)
+```
