@@ -37,7 +37,7 @@ Primero me gustaría explicar lo que **NO** devemos hacer y es lo que suelen sug
 > Esta forma de generar número aleatorios no es fiable:
 > 
 > 1. **El número 0:**
->     Tiene la mitad de provavilidades de salir que el resto, por tanto la proporción de resultados no es correcta; esto ocurre por la función `ABS` que "*pliaga*" el rango de número posibles por la mitad, y como el 0 no tiene una versión negativa este es el único número (*excepto por una excepción*) que no tiene una "*pareja*", de ahí que este tenga menos provavilidades de que salga.
+>     Tiene la mitad de provavilidades de salir que el resto, por tanto la proporción de resultados no es correcta; esto ocurre por la función `ABS` que "*pliega*" el rango de número posibles por la mitad, y como el 0 no tiene una versión negativa este es el único número (*excepto por una excepción*) que no tiene una "*pareja*", de ahí que este tenga menos provavilidades de que salga.
 > 2. **La excepción:**
 >     Existe la pequeña posivilidada de que el número que salga sea `-9223372036854775808` ($-2^{63}$), este no tiene una versión positiva en un número con signo de 64 bits, por lo que nos dará un error de "*overflow*" (*o ignorará la query dependiendo del interpete desde donde la estemos ejecutando*); lo dicho, esta posibilidad es microscópicamente probable, tendría que coincidir en binario un 1 seguido de 63 ceros; pero por muy improbable que sea, podría ser el causante de algún problema real en el caso de que nuestro programa no esté preparado para esa casuistica.
 
