@@ -1,12 +1,10 @@
 ---
+aliases: [JsonArray en GSON]
 author: Mindusting
 corrected: true
 headerFile: false
-tags:
-  - Programming
-  - Java
-  - JSON
-title: JsonArray en GSON
+rating: 
+tags: [Java, JSON, Programming]
 ---
 
 # JSONARRAY EN GSON
@@ -183,7 +181,7 @@ Para eliminar elementos de un `JsonArray` se pueden usar dos *métodos*, mediant
 
 ### ELIMINAR POR ÍNDICE
 
-Para eliminar un elemento por *índice* se usa el [método](../../java_method.md) `remove`, éste recibe un **número entero** como argumento, devolviendo el elemento eliminado ; si el *índice* del elemento no existe se lanzará la excepción [`IndexOutOfBoundsException`](../../packages/java/lang/java_lang_indexoutofboundsexception.md).
+Para eliminar un elemento por *índice* se usa el [método](../../java_method.md) `remove`, éste recibe un **número entero** como argumento, devolviendo el elemento eliminado; si el *índice* del elemento no existe se lanzará la excepción [`IndexOutOfBoundsException`](../../packages/java/lang/java_lang_indexoutofboundsexception.md).
 
 > [!abstract] SINTAXIS
 > ***\[jsonArray\]***.remove(***\[index\]***);
