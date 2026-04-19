@@ -1,12 +1,11 @@
 ---
+aliases: [SQL 🛢]
 author: Mindusting
 corrected: false
 headerFile: true
 logo: imgs/db.png
-tags:
-  - DataBase
-  - SQL
-title: SQL 🛢
+rating: 
+tags: [DataBase, SQL]
 ---
 
 <h1 align="center">SQL</h1>
@@ -18,6 +17,7 @@ title: SQL 🛢
 # SQL
 
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Explicar que es SQL.
 
