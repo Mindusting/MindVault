@@ -92,6 +92,7 @@ views:
 - [`reset`](commands/reset.md)
 - [`rm`](commands/rm.md)
 - [`shortlog`](commands/shortlog.md)
+- [`status`](commands/stash.md)
 - [`status`](commands/status.md)
 - [`switch`](commands/switch.md)
 - [`tag`](commands/tag.md)
