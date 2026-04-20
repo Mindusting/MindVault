@@ -13,6 +13,9 @@ tags: [Git]
 > 
 > > [!todo] #TODO
 
+> [!internal-link] REFERENCIAS INTERNAS
+> - Para enteder bien esta documentación te recomiendo que tengas a mano la documentación a cerca de las [ramas en **Git**](../theory/branches.md), ya que contiene la parte teórica a cerca de las ramas.
+
 ## CREAR RAMA
 
 Para crear una nueva rama se usa el comando `git branch` seguido del nombre.
