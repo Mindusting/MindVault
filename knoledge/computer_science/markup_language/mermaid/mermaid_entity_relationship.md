@@ -1,14 +1,16 @@
 ---
+aliases: [Diagrama de entidad relación en Mermaid]
 author: Mindusting
 corrected: false
-tags:
-  - Mermaid
-title: Diagrama de entidad relación en Mermaid
+headerFile: false
+rating: 
+tags: [Mermaid]
 ---
 
 # DIAGRAMA DE ENTIDAD RELACIÓN EN MERMAID
 
-> [!fail]- ESTE APATADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APATADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
 > [!help]- REFERENCIAS WEB
@@ -36,5 +38,5 @@ erDiagram
 
 | CONEXSIÓN | FORMA       |
 |:---------:|:----------- |
-|    --     | Contínua    |
-|    ..     | Discontínua |
+|   `--`    | Contínua    |
+|   `..`    | Discontínua |
