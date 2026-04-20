@@ -54,7 +54,7 @@ tags: [Git]
 - [Etiquetas (Tags)](theory/tags.md)
 - [Ramas](theory/branches.md)
 - [Merges](theory/merges.md)
-- [Stash (Alijo)](theory/stash.md)
+- [Stash (Alijo)](theory/stashes.md)
 
 ## COMANDOS
 
