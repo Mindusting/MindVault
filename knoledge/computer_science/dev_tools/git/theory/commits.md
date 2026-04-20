@@ -29,7 +29,7 @@ tags: [Git]
 - `docs`: Documentación de código.
 - `style`: Formato del código: espacios, sangría, camelCase, snake_case.
 - `test`: Tests de código.
-- `WIP` (*Work In Progress*): Indica que el *commit* contiene cambios que no están terminados, por lo que se está usando el *commit* como punto de guardado del avance (*==se debe evitar==; usa el [stash](stash.md)*).
+- `WIP` (*Work In Progress*): Indica que el *commit* contiene cambios que no están terminados, por lo que se está usando el *commit* como punto de guardado del avance (*==se debe evitar==; usa el [stashes](stashes.md)*).
 
 > [!like] EJEMPLOS BUENOS
 > - `feat: calculo de pitagoras con Vector 2D`
