@@ -88,7 +88,7 @@ Si quieres más información o documentación más antigua hecha en google docum
         - [DataTable 🍫](knoledge/computer_science/programming/language/javascript/lib/datetable/datatable.md)
     - [TypeScript](knoledge/computer_science/programming/language/typescript/ts.md)
     - [JSON](knoledge/computer_science/programming/data_format/json.md)
-    - [PHP 🐘](temp/php/php.md)
+    - [PHP 🐘](knoledge/computer_science/programming/language/php/php.md)
     - [Angular](knoledge/computer_science/sofware_development/framework/angular/angular.md)
 - BASES DE DATOS
     - [Bases de datos](knoledge/computer_science/data_base/relational/theory/db.md)
