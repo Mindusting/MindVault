@@ -12,12 +12,21 @@ title: Array en JS
 
 # ARRAYS EN JS
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
 > > - [ ] Documentar como crear un array.
 > > - [ ] Documentar las funciones del array.
+> > - [ ] En el apartado **Indice del array**:
+> >     - [ ] Explicar como se puede leer.
+> >     - [ ] Explicar como se puede escribir.
+> >     - [ ] Explicar como se puede sobrescribir.
+> >     - [ ] Explicar los índices fuera de los límites.
+> >         - [ ] Explicar que los índices negativos se interpretan como una nueva propiedad.
+> >         - [ ] Explicar que los índices positibos reservan espacios extra.
+> > - [ ] En el apartado **extremos del array**:
+> >     - [ ] Explicar que es más eficiente usar `push` y `pop` en vez de `unshift` y `shift`.
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [W3 Schools](https://www.w3schools.com/js/js_arrays.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
@@ -55,7 +64,87 @@ console.log(arr);
 // [3, 2, 5]
 ```
 
+## ÍNDICE DEL ARRAY
+
+## LONGITUD DEL ARRAY
+
+Para obtener la longitud del **array** (*el número de elemntos que contiene*), se hace mediante la propiedad `length`; este contiene un número entero indicando el número de leementos.
+
+```js
+let frutis = ["Manzana", "Naranja", "Lomón", "Pera"];
+
+console.log(fruits.length);
+// SALIDA:
+// 4
+```
+
+Esto se puede usar por ejemplo en conjunto a los [bucles `for`](js_flow_control.md#BUCLE%20FOR):
+
+```js
+let frutis = ["Manzana", "Naranja", "Lomón", "Pera"];
+
+for (let i = 0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+// SALIDA:
+// Manzana
+// Naranja
+// Lomón
+// Pera
+```
+
+---
+
+En vez de leer la longitud del **array**, también podemos establecerla; esto permite que descartemos una porción o que añadamos una serie de espacios vacíos que podremos usar después, dependiendo de lo que estemos haciendo, esta característica nos puede venir bien.
+
+```js
+let frutis = ["Manzana", "Naranja", "Lomón", "Pera"];
+
+console.log(frutis);
+// SALIDA:
+// [ 'Manzana', 'Naranja', 'Lomón', 'Pera' ]
+
+// Se establece el número de elementos a 2.
+fruits.length = 2;
+console.log(frutis);
+// SALIDA:
+// [ 'Manzana', 'Naranja' ]
+
+// Se establece el número de elementos a 4.
+fruits.length = 4;
+console.log(frutis);
+// SALIDA:
+// [ 'Manzana', 'Naranja', <2 empty items> ]
+```
+
+Si especificamos un tamaño menor al que tiene el **array**, el número de elemntos sobrantes se descartarán al final de este.
+
+Si especificamos un tamaño mayor al que tiene el **array**, se añadirán **elementos vacíos** (*los elementos vacíos son `undefined`*) al final de este.
+
+## EXTREMOS DEL ARRAY
+
 ```txt
 unsift -> [arr] <- push
   sift <- [arr] -> pop
+```
+
+## COPIA DE UN ARRAY
+
+> [!internal-link] REFERENCIAS INTERNAS
+> Para entender bien esta parte de la documentación recomiendo tener a mano la [documentación a cerca del *deepcopy*](../../../../../temp/pc/pc_deepcopy.md), ya que es este apartado se explica en detalle las diferencias entre los distintos tipos de copia.
+
+### COPIA SIMPLE
+
+```js
+[...arr];
+arr.slice();
+Array.from(arr);
+[].concat(arr);
+```
+
+### COPIA PROFUNDA
+
+```js
+structuredClone(arr);
+JSON.parse(JSON.stringify(arr));
 ```
