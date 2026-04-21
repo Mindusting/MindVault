@@ -54,7 +54,6 @@ tags: [JavaScript, Programming, Web]
 - MÉTODOS DE ALMACENAMIENTO DE DATOS
     - [ALMACÉN LOCAL](js_localstorage.md)
     - [COOKIES](js_cookies.md)
-- [MODIFICADORES DE ACCESO](js_access_modifier.md)
 - [ASYNC](js_async.md)
 
 ## LIBRERÍAS
