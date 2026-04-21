@@ -1,18 +1,16 @@
 ---
+aliases: [Array en JavaScript]
 author: Mindusting
 corrected: false
 headerFile: false
-tags:
-  - Programming
-  - JavaScript
-  - Web
-  - Array
-title: Array en JS
+rating:
+tags: [JavaScript, Programming]
 ---
 
 # ARRAYS EN JS
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Documentar como crear un array.
 > > - [ ] Documentar las funciones del array.
@@ -35,7 +33,7 @@ title: Array en JS
 Un **array** en **JS** se guarda dentro de una [variable](js_variables.md), este se expresa con unos *corchetes* (`[]`), entre estos pondremos los diferentes elementos que queramos que tenga en el momento de la declaración.
 
 > [!abstract] SINTAXIS
-> let ***\[arr_name]*** = \[***\[element]***, ...];
+> let ***\[arr_name]*** = \[***\[element]***,...];
 
 ```js
 // Declaramos el array con valores establecidos.
