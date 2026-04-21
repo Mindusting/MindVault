@@ -1,25 +1,24 @@
 ---
+aliases: [Comando UNZIP en Linux]
 author: Mindusting
 corrected: false
-tags:
-  - OS
-  - Linux
-  - Bash
-  - Command
-title: Comando UNZIP en Linux
+headerFile: false
+rating: 
+tags: [Command, Linux]
 ---
 
 # COMANDO UNZIP EN LINUX
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > unzip ***\[archivoComprimido\]***
 
 ## OBTENER INFORMACIÓN DEL CONTENIDO
 
 Si indicamos como primer parámetro un `-Z` en vez de descomprimir el archivo se nos mostrará información de este, como su contenido y el tamaño, de la información comprimida y descomprimida.
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > unzip -Z ***\[archivoComprimido\]***
