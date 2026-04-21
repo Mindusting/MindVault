@@ -5,7 +5,7 @@ corrected: false
 headerFile: true
 logo: ../../imgs/js_logo.png
 rating: 
-tags: [JavaScript, Programming, Web]
+tags: [JavaScript, Programming]
 ---
 
 <h1 style="text-align:center;color:#ff4;">JavaScript</h1>
