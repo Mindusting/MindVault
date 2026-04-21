@@ -1,20 +1,19 @@
 ---
+aliases: [Comando ZIP en Linux]
 author: Mindusting
 corrected: false
-tags:
-  - OS
-  - Linux
-  - Bash
-  - Command
-title: Comando ZIP en Linux
+headerFile: false
+rating: 
+tags: [Command, Linux]
 ---
 
 # COMANDO ZIP EN LINUX
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > zip -r ***\[rutaDestino\] \[rutaOrigen\]***
 
 El parámetro `-r` indica *recursividad*, para que si la ruta que indicamos es un directorio, agrupe todo el directorio y sub elementos.
