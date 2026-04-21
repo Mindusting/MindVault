@@ -15,7 +15,7 @@ tags: [Git]
 
 Para comprobar en qué estado se encuentran los archivos consulta el comando [`status`](../commands/status.md).
 
-> ![#fillall](assets/git_file_life_cicle_state.excalidraw.md)
+> ![#fillall](../assets/git_file_life_cicle_state.excalidraw.md)
 > Figura 8 del PDF [**Pro Git (*en*)**](https://git-scm.com/book/en/v2) (*pag. 28*).
 
 - **Untraked**: 
