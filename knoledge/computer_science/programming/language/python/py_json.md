@@ -1,22 +1,20 @@
 ---
+aliases: [Módulo JSON en Python]
 author: Mindusting
 corrected: false
-tags:
-  - Programming
-  - Python
-  - Module
-  - JSON
-title: Módulo JSON en Python
+headerFile: false
 rating: 0.5
+tags: [JSON, Module, Programming, Python]
 ---
 
 # JSON EN PYTHON
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Rehacer toda la documentación (*No me gusta como ha quedado, he vuelto a leerla porque no me acordaba como se hacía una cosa y no me ha gustado como se ve, es poco clara*).
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > YouTube:
 > - [Tech With Tim](https://youtu.be/-51jxlQaxyA) #WWW/YT/TechWithTim
 
@@ -35,7 +33,7 @@ Funciones
 
 ## GUARDAR EN ARCHIVO
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > dump(***\[data\]***, ***\[file\]***)
 
 ```txt
@@ -97,7 +95,7 @@ the ``cls`` kwarg; otherwise ``JSONEncoder`` is used.
 
 ## COMBERTIR A TEXTO
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > dumps(***\[data\]***) -> str
 
 ```txt
@@ -157,7 +155,7 @@ the ``cls`` kwarg; otherwise ``JSONEncoder`` is used.
 
 ## CARGAR DESDE ARCHIVO
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > load(***\[file\]***) -> *data*
 
 ```txt
@@ -192,7 +190,7 @@ kwarg; otherwise ``JSONDecoder`` is used.
 
 ## COMBERTIR DESDE TEXTO
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > loads(***\[str\]***) -> *data*
 
 ```txt
@@ -241,9 +239,13 @@ kwarg; otherwise ``JSONDecoder`` is used.
 ```
 
 ---
+
 ---
+
 ---
+
 ---
+
 ---
 
 # LEER Y ESCRIBIR ARCHIVOS
