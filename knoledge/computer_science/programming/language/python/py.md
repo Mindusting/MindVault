@@ -54,6 +54,7 @@ tags: [Programming, Python]
 > [!external-link]- REFERENCIAS WEB
 > - [Python](https://docs.python.org/es/3/) #WWW/Python
 > - [TpointTech](https://www.tpointtech.com/python-tutorial) #WWW/TpointTeach
+> - [Linuxize](https://linuxize.com/tags/python) #WWW/Linuxize
 
 > [!seealso] Ver también
 > - [Comando `make`:](../../../../../temp/os/linux/command/linux_cmd_make.md)
