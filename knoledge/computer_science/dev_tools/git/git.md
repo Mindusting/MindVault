@@ -36,6 +36,7 @@ tags: [Git]
 > - [Git (Doc)](https://git-scm.com/docs) #WWW/Git
 > - [Git (PDF)](https://git-scm.com/book/en/v2) #WWW/Git
 > - [W3 Schools](https://www.w3schools.com/git/default.asp?remote=github) #WWW/W3Schools
+> - [Linuxize](https://linuxize.com/tags/git) #WWW/Linuxize
 > 
 > YouTube:
 > - [LearnThatStack](https://youtu.be/Ala6PHlYjmw) #WWW/YT/LearnThatStack
