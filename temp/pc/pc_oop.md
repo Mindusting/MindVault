@@ -43,6 +43,13 @@ Objetivos de la OOP:
 - Herencia
 - Polimorfismo
 
+%%
+- Atributo: guarda datos en clase.
+- Propiedad: controla en acceso a un atributo.
+- Parámetro: variables que recive una función.
+- Argumento: valor de las varibles que recive una función.
+%%
+
 ## CLASES
 
 ## OBJETOS
