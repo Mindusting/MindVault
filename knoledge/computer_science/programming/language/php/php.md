@@ -1,19 +1,26 @@
 ---
+aliases: [PHP 🐘]
 author: Mindusting
 corrected: false
 headerFile: true
-tags:
-  - Programming
-  - PHP
-title: PHP 🐘
+logo: imgs/php_logo.png
+rating: 
+tags: [PHP, Programming]
+---
+
+<h1 style="text-align:center;">PHP</h1>
+
+![#logo](imgs/php_logo.png)
+
 ---
 
 # PHP
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > YouTube:
 > - [MoureDev by Brais Moure](https://youtu.be/nPCJAx5c1uE) #WWW/YT/MoureDevByBraisMoure
 > - [PHP (docs)](https://www.php.net/docs.php) #WWW/PHP
