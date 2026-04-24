@@ -24,7 +24,7 @@ title: PHP 🐘
 - [ARRAY](php_array.md)
 - [BUCLES](php_loop.md)
 - [FUNCIONES](php_func.md)
-- [CLASES](php_class.md)
+- [CLASES](php_oop.md)
 - [FECHAS](php_date.md)
 - [RNG](php_rng.md)
 
