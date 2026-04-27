@@ -1,16 +1,16 @@
 ---
-aliases:
-  - Flowchart in Mermaid
+aliases: [Diagrama de flujo en Mermaid, Flowchart in Mermaid]
 author: Mindusting
 corrected: false
-tags:
-  - Mermaid
-title: Diagrama de flujo en Mermaid
+headerFile: false
+rating: 
+tags: [Mermaid]
 ---
 
 # DIAGRAMA DE FLUJO EN MERMAID
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Documentar nodos.
 > >     - [ ] Documentar los niveles de los nodos.
@@ -20,7 +20,7 @@ title: Diagrama de flujo en Mermaid
 > >     - [ ] Documentar como meter texto en una conexión.
 > > - [ ] Documentar subgrafos.
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [Mermaid](https://mermaid.js.org/syntax/flowchart.html) #WWW/Mermaid
 
 > [!faq]- FAQ
