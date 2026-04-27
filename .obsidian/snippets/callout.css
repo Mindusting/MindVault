@@ -1,0 +1,95 @@
+.callout {
+    --callout-border-width: 2px;
+    padding-right: 24px;
+
+    padding: 0px;
+}
+
+.callout-title {
+    padding: var(--callout-padding);
+    /*padding-bottom: 0px;*/
+}
+
+.callout-content {
+    padding: var(--size-4-4) var(--size-4-4) var(--size-4-1) var(--size-4-4);
+    padding-top: 0px;
+}
+
+.theme-dark .callout-content {
+    background-color: #0002;
+}
+
+.theme-light .callout-content {
+    background-color: #fff6;
+}
+
+.callout[data-callout="unfinished-file"] {
+    --callout-color: var(--color-red-rgb);
+    --callout-icon: file-exclamation-point;
+}
+
+.callout[data-callout="syntax"] {
+    --callout-color: var(--color-cyan-rgb);
+    --callout-icon: code-2;
+}
+
+.callout[data-callout="external-link"] {
+    --callout-color: var(--color-orange-rgb);
+    --callout-icon: globe;
+    --callout-icon: external-link;
+}
+
+.callout[data-callout="internal-link"] {
+    --callout-color: var(--color-orange-rgb);
+    --callout-icon: link;
+}
+
+.callout[data-callout="idea"] {
+    --callout-color: var(--color-yellow-rgb);
+    --callout-icon: lightbulb;
+}
+
+.callout[data-callout="thanks"] {
+    --callout-color: var(--color-pink-rgb);
+    --callout-icon: heart;
+}
+
+.callout[data-callout="cog"] {
+    --callout-color: var(--color-orange-rgb);
+    --callout-icon: cog;
+}
+
+.callout[data-callout="seealso"] {
+    --callout-color: var(--color-blue-rgb);
+    --callout-icon: eye;
+}
+
+.callout[data-callout="deprecated"] {
+    --callout-color: var(--color-orange-rgb);
+    --callout-icon: square-x;
+}
+
+.callout[data-callout="like"] {
+    --callout-color: var(--color-green-rgb);
+    --callout-icon: thumbs-up;
+}
+
+.callout[data-callout="dislike"] {
+    --callout-color: var(--color-red-rgb);
+    --callout-icon: thumbs-down;
+}
+
+.callout[data-callout="perfect"] {
+    --callout-color: var(--color-yellow-rgb);
+    --callout-icon: star;
+}
+
+.callout[data-callout="exercise"] {
+    --callout-color: var(--callout-quote);
+    --callout-icon: biceps-flexed;
+}
+
+.callout[data-callout="brain"] {
+    --callout-color: var(--color-pink-rgb);
+    --callout-icon: brain;
+}

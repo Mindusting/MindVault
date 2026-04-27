@@ -1,0 +1,51 @@
+:root {	
+    --text-size: 16px;
+    --new-text-size: 15.2px;
+    
+    --grey: #888;
+    
+    --comment-color:   #7a4;
+    --variable-color:  #9cf;
+    --const-color:     #4cf;
+    --number-color:    #ad8;
+    --string-color:    #fa6;
+    --flow-word-color: #d8d;
+    --key-word-color:  #59f;
+    --function-color:  #ff7;
+    --class-color:     #4c9;
+
+    --ph1-color: #fbb;
+    --ph2-color: #feb;
+    --ph3-color: #bfb;
+    --ph4-color: #bef;
+    --ph5-color: #bbf;
+    --ph6-color: #ebf;
+
+    --ph1-color: #f88;
+    --ph2-color: #fc8;
+    --ph3-color: #8f8;
+    --ph4-color: #8cf;
+    --ph5-color: #88f;
+    --ph6-color: #c8f;
+	
+	
+	
+	/*--callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);*/
+	--new-callout-padding: var(--size-4-3) var(--size-4-6) var(--size-4-3) var(--size-4-6);
+}
+
+.comment-color   {color: var(--comment-color);}
+.variable-color  {color: var(--variable-color);}
+.const-color     {color: var(--const-color);}
+.number-color    {color: var(--number-color);}
+.string-color    {color: var(--string-color);}
+.flow-word-color {color: var(--flow-word-color);}
+.key-word-color  {color: var(--key-word-color);}
+.function-color  {color: var(--function-color);}
+.class-color     {color: var(--class-color);}
+
+.italic {font-style:italic;}
+.bold {font-weight:bold;}
+.transparency {opacity: 0.2;}
+.invisible {opacity: 0;}
+.grey {color: var(--grey);}
