@@ -2,6 +2,7 @@
 aliases: [Diagrama de flujo en Mermaid, Flowchart in Mermaid]
 author: Mindusting
 corrected: false
+cssclasses: [center-mermaid]
 headerFile: false
 rating: 
 tags: [Mermaid]
