@@ -4,7 +4,7 @@ aliases:
   - Archivos Makefile 🔨
 author: Mindusting
 corrected: false
-headerFile: true
+headerFile: false
 tags:
   - Makefile
 ---
