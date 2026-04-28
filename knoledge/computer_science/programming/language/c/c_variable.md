@@ -1,15 +1,17 @@
 ---
+aliases: [Variables en C]
 author: Mindusting
 corrected: false
-tags:
-  - Programming
-  - C
-title: Variables en C
+cssclasses: [center-table]
+headerFile: false
+rating: 
+tags: [C, Programming]
 ---
 
 # VARIABLES EN C
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
 > [!help]- REFERENCIAS WEB
@@ -21,16 +23,16 @@ title: Variables en C
 
 **C** es un lenguaje de tipado fuerte, esto quiere decir que cuando declaramos una **variable**, debemos indicar el tipo de valor que va a almacenar y este no se podrá cambiar en el transcurso del programa, los tipos son los siguientes:
 
-| NAME        | TYPE    | SIZE IN BYTES |
-|:----------- |:------- |:------------- |
-| char        | Integer | 1             |
-| short       | Integer | 2             |
-| int         | Integer | 2 or 4        |
-| long        | Integer | 4 or 8        |
-| long long   | Integer | 8             |
-| float       | Decimal | 4             |
-| double      | Decimal | 8             |
-| long double | Decimal | 16            |
+| NAME          | TYPE    | SIZE IN BYTES |
+|:------------- |:------- |:------------- |
+| `char`        | Integer | 1             |
+| `short`       | Integer | 2             |
+| `int`         | Integer | 2 or 4        |
+| `long`        | Integer | 4 or 8        |
+| `long long`   | Integer | 8             |
+| `float`       | Decimal | 4             |
+| `double`      | Decimal | 8             |
+| `long double` | Decimal | 16            |
 
 %%
 SINTAXIS
@@ -39,6 +41,7 @@ SINTAXIS
 [variable_type] [variable_name];
 [variable_type] [variable_name] = [value];
 ```
+
 %%
 
 > [!abstract] SINTAXIS
