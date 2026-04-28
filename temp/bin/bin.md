@@ -1,11 +1,11 @@
 ---
-alias: Binario en la informática
+aliases: [Binario, Binary]
 author: Mindusting
 corrected: false
+cssclasses: [center-table]
 headerFile: true
-tags:
-  - Binary
-title: Binary
+rating: 
+tags: [Binary]
 ---
 
 <h1 style="text-align:center;">BINARY</h1>
@@ -17,6 +17,7 @@ title: Binary
 # BINARIO
 
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
 > [!help]- REFERENCIAS WEB
@@ -34,7 +35,7 @@ title: Binary
 En la informática existen muchas unidades de medida además de tener nombre parecidos, esto suele probocar que la gente las confunda.
 
 > [!nota] NOTA
-> Si eres usuario de Windows lo más probable es que pienses que  *1 MegaByte* son *1024 kiloBytes*, cosa que no es cierta, y es que Windows todabía (*estoy escribiendo esto en 2026-03-18*) no se ha adaptado al estandar que estableció la **Comisión Electrotécnica Internacional** (*IEC*) en **1998**; por lo qué, supongo que de ahí la gente sigue confundiendolos.
+> Si eres usuario de Windows lo más probable es que pienses que *1 MegaByte* son *1024 kiloBytes*, cosa que no es cierta, y es que Windows todabía (*estoy escribiendo esto en 2026-03-18*) no se ha adaptado al estandar que estableció la **Comisión Electrotécnica Internacional** (*IEC*) en **1998**; por lo qué, supongo que de ahí es que la gente sigue confundiendolos.
 
 | Nombre    | Sím. | Nombre   | Sím. | Nombre   | Sím. | Nombre  | Sím. |
 |:--------- |:----:|:-------- |:----:|:-------- |:----:|:------- |:----:|
