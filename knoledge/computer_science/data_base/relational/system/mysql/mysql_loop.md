@@ -1,16 +1,17 @@
 ---
+aliases: [Bucles en MySQL]
 author: Mindusting
 corrected: false
-tags:
-  - DataBase
-  - SQL
-  - MySQL
-title: Bucles en MySQL
+cssclasses: [center-mermaid]
+headerFile: false
+rating: 
+tags: [DataBase, MySQL, SQL]
 ---
 
 # BUCLES EN MYSQL
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Bucle `while`.
 > >     - [x] Explicar el bucle `while`.
