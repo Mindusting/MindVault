@@ -55,7 +55,7 @@ Si quieres más información o documentación más antigua hecha en google docum
 - INFORMÁTICA
     - [Markdown ⬇️](knoledge/computer_science/markup_language/markdown/md.md)
     - [Mermaid 🧜‍♀️](knoledge/computer_science/markup_language/mermaid/mermaid.md)
-    - [LaTeX](knoledge/computer_science/markup_language/latex/latex.md)
+    - [LaTeX 🧮](knoledge/computer_science/markup_language/latex/latex.md)
     - [NVIM](programs/nvim/nvim.md)
     - [Algoritmos](temp/pc/algorithms/pc_alg.md)
 - PROGRAMACIÓN
