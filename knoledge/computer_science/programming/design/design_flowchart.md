@@ -1,15 +1,16 @@
 ---
+aliases: [Diagrama de flujo]
 alias: Flow chart
 author: Mindusting
 corrected: false
 tags:
   - SoftwareDesign
-title: Diagrama de flujo
+cssclasses: [center-mermaid]
 ---
 
 # DIAGRAMA DE FLUJO
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
 > > - [ ] Documentar terminales.
 > > - [ ] Documentar instrucciones.

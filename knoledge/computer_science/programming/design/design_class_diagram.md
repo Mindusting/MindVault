@@ -1,16 +1,16 @@
 ---
-alias: Environment development
+aliases: [Diagrama de clases]
 author: Mindusting
-corrected: true
-tags:
-  - SoftwareDesign
-title: Diagrama de clases
+corrected: false
+cssclasses: [center-mermaid]
+headerFile: false
 rating: 0.75
+tags: [SoftwareDesign]
 ---
 
 # DIAGRAMA DE CLASES
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [geeksforgeeks](https://www.geeksforgeeks.org/unified-modeling-language-uml-class-diagrams) #WWW/geeksforgeeks
 > 
 > YouTube:
@@ -34,6 +34,7 @@ classDiagram
 ```
 
 %%
+
 ```mermaid
 classDiagram
     class className {
@@ -41,6 +42,7 @@ classDiagram
         accessModifier methodName(argName: argType, ...) retType
     }
 ```
+
 %%
 
 ### ATRIBUTOS
