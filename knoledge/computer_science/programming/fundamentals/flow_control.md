@@ -2,6 +2,7 @@
 aliases: [Control de flujo en programación]
 author: Mindusting
 corrected: false
+cssclasses: [center-mermaid]
 headerFile: false
 rating: 
 tags: []
@@ -10,6 +11,7 @@ tags: []
 # CONTROL DE FLUJO EN PROGRAMACIÓN
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Explicar que la condición tanto para los condicionales como para los bucles no tiene por qué ser una expresión comparatiba.
 > > - [ ] Explicar que los valores booleanos se pueden usar como valor literal en el condicional, no hace falta compararlo con algo.
