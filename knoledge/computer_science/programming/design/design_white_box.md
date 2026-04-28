@@ -1,11 +1,11 @@
 ---
-aliases:
-  - White box
+aliases: [Caja blanca, White box]
 author: Mindusting
 corrected: false
-tags:
-  - SoftwareDesign
-title: Caja blanca
+cssclasses: [center-mermaid]
+headerFile: false
+rating: 
+tags: [SoftwareDesign]
 ---
 
 # CAJA BLANCA
@@ -33,7 +33,6 @@ Para determinar esto, primero se debe realizar un **grafo de flujo**.
 ### GRAFO DE FLUJO
 
 Un **grafo de flujo** es en esencia un [diagrama de flujo](design_flowchart.md) muy simplificado.
-
 
 ```mermaid
 flowchart TB
@@ -160,7 +159,11 @@ La **complejidad ciclomática** se puede calcular de varias formas:
 
 1. Contando el número de *regiones* del [**grafo**](#GRAFO%20DE%20FLUJO), cada *region* está delimitada por las aristas y nodos del [**grafo**](#GRAFO%20DE%20FLUJO).
 2. Calculandola con la siguiente fórmula, en donde $A$ es el número de *aristas* y $N$ es el número de *nodos*:
-    $$V(G) = A - N + 2$$
+
+$$
+V(G) = A - N + 2
+$$
+
 3. Contar todos los nodos de los que salgan dos aristas y sumarle uno.
 
 ## PRUEBA DE ESTRUCTURA DE CONTROL
