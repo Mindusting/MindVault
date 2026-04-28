@@ -1,20 +1,24 @@
 ---
+aliases: [Diagrama de quadrantes en Mermaid]
 author: Mindusting
 corrected: false
-tags:
-  - Mermaid
-title: Diagrama de quadrantes en Mermaid
+cssclasses: [center-mermaid]
+headerFile: false
+rating: 
+tags: [Mermaid]
 ---
 
 # DIAGRAMA CIRCULAR EN MERMAID
 
-> [!fail]- ESTE APATADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APATADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [Mermaid](https://mermaid.js.org/syntax/quadrantChart.html) #WWW/Mermaid
 
 Cuadrantes:
+
 1. Arriba a la derecha.
 2. Arriba a la izquierda.
 3. Abajo a la izquierda.
