@@ -4,7 +4,7 @@ aliases:
 author: Mindusting
 corrected: false
 headerFile: true
-logo: ../../imgs/ts_logo.png
+logo: imgs/ts_logo.png
 tags:
   - Programming
   - TypeScript
@@ -13,7 +13,7 @@ tags:
 
 <h1 style="text-align:center;">TypeScript</h1>
 
-![#logo](../../imgs/ts_logo.png)
+![#logo](imgs/ts_logo.png)
 
 # TYPESCRIPT
 

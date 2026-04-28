@@ -1,11 +1,13 @@
 ---
-aliases: [SSH 🔐]
+aliases:
+  - SSH 🔐
 author: Mindusting
 corrected: false
 headerFile: true
-logo: ../../imgs/file_encripted.png
-rating: 
-tags: [SSH]
+logo: imgs/file_encripted.png
+rating:
+tags:
+  - SSH
 ---
 
 <h1 align="center">SSH</h1>

@@ -1,11 +1,14 @@
 ---
-aliases: [Lenguaje JavaScript]
+aliases:
+  - Lenguaje JavaScript
 author: Mindusting
 corrected: false
 headerFile: true
-logo: ../../imgs/js_logo.png
-rating: 
-tags: [JavaScript, Programming]
+logo: imgs/js_logo.png
+rating:
+tags:
+  - JavaScript
+  - Programming
 ---
 
 <h1 style="text-align:center;color:#ff4;">JavaScript</h1>

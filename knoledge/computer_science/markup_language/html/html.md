@@ -4,7 +4,7 @@ aliases:
 author: Mindusting
 corrected: false
 headerFile: true
-logo: ../../imgs/html_logo.png
+logo: imgs/html_logo.png
 tags:
   - Programming
   - HTML
