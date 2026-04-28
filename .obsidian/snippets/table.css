@@ -5,3 +5,8 @@
 tbody tr:nth-child(odd) {
     background-color: #88888816 !important;
 }
+
+.center-table .el-table {
+	display: flex;
+	justify-content: center;
+}
