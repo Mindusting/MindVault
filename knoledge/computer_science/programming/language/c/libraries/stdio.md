@@ -17,7 +17,47 @@ title: Librería stdio en C
 
 La librería `stdio` contiene [funciones](c_func.md) que facilitan el uso de la entrada y salida de datos en nuestro programa, como puede ser a través de la consola o archivos.
 
-## PRINTF
+## FUNCIONES
+
+### FCLOSE
+
+### FEOF
+
+### FERROR
+
+### FGETC
+
+> [!syntax] SINTAXIS
+> fgetc(FILE \****\[file\]***)
+
+### FGETS
+
+> [!syntax] SINTAXIS
+> fgets(char \****\[buffer\]***, int ***\[size\]***, FILE \****\[file\]***)
+
+### FOPEN
+
+### FPRINTF
+
+### FPUTC
+
+### FPUTS
+
+### FREAD
+
+### FSCANF
+
+### FSEEK
+
+### FTELL
+
+### FWRITE
+
+### GETC
+
+### GETCHAR
+
+### PRINTF
 
 La función `printf` permite imprimir en consola texto el cual podemos formatear, incrustando valores.
 
@@ -37,12 +77,20 @@ int main()
 }
 ```
 
-## FGETC
+### PUTC
 
-> [!syntax] SINTAXIS
-> fgetc(FILE \****\[file\]***)
+### PUTCHAT
 
-## FGETS
+### PUTS
 
-> [!syntax] SINTAXIS
-> fgets(char \****\[buffer\]***, int ***\[size\]***, FILE \****\[file\]***)
+### REMOVE
+
+### RENAME
+
+### REWIND
+
+### SCANF
+
+### SNPRINTF
+
+### SSCANF
