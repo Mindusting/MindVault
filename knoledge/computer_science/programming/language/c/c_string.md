@@ -30,16 +30,20 @@ La [función](c_func.md) `memchr` se usa para obtener un [puntero](c_pointer.md)
 
 ## MEMCPY
 
-la [función](c_func.md) `memcpy` se usar para copiar una región de memoria en otra; hay que tener cuidado con esta [función](c_func.md), ya que no es segura con la memoria, esto se debe a que podemos copiar una porción de memoria (*la fuenente \[`src`\]*) en otra más pequeña (*el destino \[`dst`\]*), esto modificaría memoria que no corresponde, pudiendo probocar un "*undefined behavior*", es decir que no podemos saber con certeza el comportamiento que tendrá.
+La [función](c_func.md) `memcpy` se usar para copiar una región de memoria en otra; hay que tener cuidado con esta [función](c_func.md), ya que no es segura con la memoria, esto se debe a que podemos copiar una porción de memoria (*la fuenente \[`src`\]*) en otra más pequeña (*el destino \[`dst`\]*), esto modificaría memoria que no corresponde, pudiendo probocar un "*undefined behavior*", es decir que no podemos saber con certeza el comportamiento que tendrá.
 
 > [!syntax] SINTAXIS
 > memcpy(void \*dst, const void \*src, size\_t size)
 
-```c
-#include <stdio.h>
-
-```
-
 ## MEMMOVE
 
 ## MEMSET
+
+La [función](c_func.md) `memset` permite establecer un mismo valor acada *byte* de una región de memoria especificada mediante un [puntero](c_pointer.md) y tamaño en *bytes* de la región de memoria.
+
+> [!syntax] SINTAXIS
+> memset(void \*ptr, int value, size\_t size)
+
+- `void *ptr`: indica la direcció de memoria en donde comienza la porción a la que queremos establecerle un valor.
+- `int value`: indica el valor que queremos escribir en los distintos *bytes* de la memoria.
+- `size_t size`: indica el tamaño en *bytes* de la región de la memoria a la que queremos establecer los valores.
