@@ -50,13 +50,13 @@ tags: [C, Programming]
 
 ## LIBRERÍAS
 
-- [ctype](c_ctype.md)
-- [math](c_math.md)
-- [stdint](c_stdint.md)
-- [stdio](c_stdio.md)
-- [stdlib](c_stdlib.md)
-- [string](c_string.md)
-- [time](c_time.md)
+- [ctype](libraries/ctype.md)
+- [c_math](libraries/c_math.md)
+- [stdint](libraries/stdint.md)
+- [stdio](libraries/stdio.md)
+- [stdlib](libraries/stdlib.md)
+- [string](libraries/string.md)
+- [time](libraries/time.md)
 
 ## USO DE VARIBLES Y FORMATERO DE STRING
 
