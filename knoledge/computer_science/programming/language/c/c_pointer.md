@@ -15,6 +15,7 @@ tags:
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
 > > - [ ] Explicar que los puteros a `void` se usan como genéricos.
+> > - [ ] Explicar que un puntero a una bloque de memoria indica generalmente en que dirección de memoria comienza el bloque.
 
 > [!external-link]- REFERENCIAS WEB
 > YouTube:
