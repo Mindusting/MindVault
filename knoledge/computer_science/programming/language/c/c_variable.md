@@ -14,7 +14,7 @@ tags: [C, Programming]
 > 
 > > [!todo] #TODO
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > YouTube:
 > - [Bro Code](https://youtu.be/aIQk1O08zpg) #WWW/YT/BroCode
 
@@ -22,6 +22,8 @@ tags: [C, Programming]
 > - [¿Qué son las variables en programación?](../../../../../temp/pc/pc_variable.md)
 
 **C** es un lenguaje de tipado fuerte, esto quiere decir que cuando declaramos una **variable**, debemos indicar el tipo de valor que va a almacenar y este no se podrá cambiar en el transcurso del programa, los tipos son los siguientes:
+
+%%
 
 | NAME          | TYPE    | SIZE IN BYTES |
 |:------------- |:------- |:------------- |
@@ -33,6 +35,8 @@ tags: [C, Programming]
 | `float`       | Decimal | 4             |
 | `double`      | Decimal | 8             |
 | `long double` | Decimal | 16            |
+
+%%
 
 %%
 SINTAXIS
