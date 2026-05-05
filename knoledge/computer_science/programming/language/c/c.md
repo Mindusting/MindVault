@@ -51,7 +51,7 @@ tags: [C, Programming]
 ## LIBRERÍAS
 
 - [ctype](libraries/ctype.md)
-- [c_math](libraries/c_math.md)
+- [math](libraries/math.md)
 - [stdint](libraries/stdint.md)
 - [stdio](libraries/stdio.md)
 - [stdlib](libraries/stdlib.md)
