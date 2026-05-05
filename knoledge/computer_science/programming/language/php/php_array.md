@@ -1,16 +1,16 @@
 ---
+aliases: [Arrays en PHP]
 author: Mindusting
 corrected: false
 headerFile: false
 tags:
   - Programming
   - PHP
-title: Arrays en PHP
 ---
 
 # ARRAYS EN PHP
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
 
@@ -102,3 +102,36 @@ foreach ($user as $key => $value) {
 ```
 
 %%
+
+## ORDENAR ARRAY
+
+- [`sort`](#SORT): ordena el array por valor reindexandolo numéricamente, descartando las claves.
+- [`rsort`](#RSORT): lo mismo que `sort` pero ordenado de forma inversa.
+- [`asort`](#ASORT): ordena el array por valor manteniendo las claves.
+- [`arsort`](#ARSORT): lo mismo que `asort` pero ordenado de forma inversa.
+- [`ksort`](#KSORT): ordena el array por la clave manteniendo las relaciones de clave, valor.
+- [`krsort`](#KRSORT): lo mismo que `ksort` pero ordenado de forma inversa.
+- [`usort`](#USORT): ordena el array por valor con una función definida por el usuario, se puede usar para ordenar un array de objetos.
+- [`uksort`](#UKSORT): lo mismo que `usort` pero ordenandolo por clave en vez de valor.
+- [`natsort`](#NATSORT): ordena un array de strings de forma natural, manteniendo las claves.
+- [`natcasesort`](#NATCASESORT): lo mismo que `natsort` pero sin tener en cuenta mayúsculas y minúsculas.
+
+### SORT
+
+### RSORT
+
+### ASORT
+
+### ARSORT
+
+### KSORT
+
+### KRSORT
+
+### USORT
+
+### UKSORT
+
+### NATSORT
+
+### NATCASESORT
