@@ -1,13 +1,11 @@
 ---
+aliases: [MySQL 🛢]
 author: Mindusting
 corrected: false
 headerFile: true
 logo: imgs/db.png
-tags:
-  - DataBase
-  - SQL
-  - MySQL
-title: MySQL 🛢
+rating: 
+tags: [DataBase, MySQL, SQL]
 ---
 
 <h1 align="center">MySQL</h1>
@@ -18,10 +16,12 @@ title: MySQL 🛢
 
 # MYSQL
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
+> > - [ ] Explicar el `DELETE... JOIN`.
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [MySQL](https://dev.mysql.com/doc) #WWW/MySQL
 > 
 > YouTube:
