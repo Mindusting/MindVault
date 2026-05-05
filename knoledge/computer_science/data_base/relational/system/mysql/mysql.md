@@ -23,6 +23,7 @@ tags: [DataBase, MySQL, SQL]
 
 > [!external-link]- REFERENCIAS WEB
 > - [MySQL](https://dev.mysql.com/doc) #WWW/MySQL
+> - [MySQLTUTORIAL](https://mysqltutorial.org) #WWW/MySQLTUTORIAL
 > 
 > YouTube:
 > - [Bro Code](https://youtu.be/5OdVJbNCSso) #WWW/YT/BroCode
