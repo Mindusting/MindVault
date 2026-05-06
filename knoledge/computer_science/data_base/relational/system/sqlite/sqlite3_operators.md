@@ -10,8 +10,9 @@ title: Operadores en SQLite
 
 # OPERADORES EN SQLITE
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
+> > - [ ] Explicar que el operador `LIKE` se aprobeche de los índices, el patrón tiene que no empezar por `%` y se debe activar el *case_sesitive_like* (`PRAGMA case_sensitive_like = ON/OFF;`).
 
 Los operadores realizan una operación entre dos valores que da como resultado un valor [booleano](../../../../../../temp/pc/pc_boolean.md) indicado si la comparación correspondiente se cumple.
 
