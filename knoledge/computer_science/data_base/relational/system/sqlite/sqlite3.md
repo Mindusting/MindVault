@@ -27,6 +27,9 @@ tags:
 > > - [ ] Documentar la sentencia `ANY`.
 > > - [ ] Documentar la sentencia `STRICT`.
 > > - [ ] Checkout what's `WAL`.
+> > - [ ] Explicar el operador `UNION`.
+> > - [ ] Explicar el operador `EXCEPT`.
+> > - [ ] Explicar el operador `INTERSECT`.
 
 > [!help]- REFERENCIAS WEB
 > - [SQLite](https://sqlite.org) #WWW/SQLite
