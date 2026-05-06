@@ -17,7 +17,7 @@ title: Selección en SQL
 > > - [ ] Hacer apartado combinaciones.
 > >     - [ ] Hacer apartado combinación de columnas.
 > >     - [ ] Hacer apartado combinación de tuplas.
-> > - [ ] Hacer 
+> > - [ ] Explicar en el `ORDER BY` el `NULLS LAST`.
 
 | KEY WORD                  | ACCIÓN                       |
 |:------------------------- |:---------------------------- |
