@@ -379,4 +379,74 @@ Si queremos establecer un desfase al límite de tupas, podemos hacer de dos form
 > | ---:|:--------- | ------:|
 > |   5 | Eric      |   3594 |
 
+---
+
+En cietos casos el `OFFSET` se puede simular de una forma más eficiente de la siguiente manera:
+
+```sql
+SELECT *
+FROM [tableName]
+ORDER BY id ASC
+LIMIT 10;
+
+SELECT *
+FROM [tableName]
+WHERE id > [lastId]
+ORDER BY id ASC
+LIMIT 10;
+```
+
+```sql
+SELECT *
+FROM [tableName]
+ORDER BY id DESC -- Aquí está la diferencia.
+LIMIT 10;
+
+SELECT *
+FROM [tableName]
+WHERE id < [lastId] -- Aquí también.
+ORDER BY id DESC
+LIMIT 10;
+```
+
+---
+
+```sql
+SELECT *
+FROM [tableName]
+ORDER BY
+    data ASC,
+    id ASC
+LIMIT 10;
+
+SELECT *
+FROM [tableName]
+WHERE
+    (data > [lastData])
+    OR (data = [lastData] AND id > [lastId])
+ORDER BY
+    data ASC,
+    id ASC
+LIMIT 10;
+```
+
+```sql
+SELECT *
+FROM [tableName]
+ORDER BY
+    data DESC,
+    id DESC
+LIMIT 10;
+
+SELECT *
+FROM [tableName]
+WHERE
+    (data < [lastData])
+    OR (data = [lastData] AND id < [lastId])
+ORDER BY
+    data DESC,
+    id DESC
+LIMIT 10;
+```
+
 ## CONSULTAS ANIDADAS
