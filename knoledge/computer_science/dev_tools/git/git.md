@@ -51,6 +51,7 @@ tags: [Git]
 ## TEORÍA
 
 - [Instalación](theory/installation.md)
+- [Repositorios](theory/repositories.md)
 - [Estados de los archivos](theory/file_states.md)
 - [Commits](theory/commits.md)
 - [Etiquetas (Tags)](theory/tags.md)
