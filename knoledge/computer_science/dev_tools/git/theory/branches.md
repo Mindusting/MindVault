@@ -20,6 +20,15 @@ Cuando creamos un [repositorio](repositories.md) de **Git** este contiene una **
 
 ## TRABAJAR SOBRE UNA RAMA
 
+%%
+```txt
+Esto es la rama main ->  [main]
+                           v
+(A)----------(B)----------(C)
+    Estos son los commits
+```
+%%
+
 ![#center](../assets/branch_main.md)
 
 ## TRABAJAR SOBRE VARIAS RAMAS
