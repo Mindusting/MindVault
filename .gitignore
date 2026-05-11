@@ -8,5 +8,6 @@
 !.obsidian/graph.json
 !.obsidian/switcher.json
 !.obsidian/types.json
+!.obsidian/plugins/obsidian-linter/data.json
 
 .trash/*
