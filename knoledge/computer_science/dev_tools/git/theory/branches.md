@@ -20,4 +20,6 @@ Cuando creamos un [repositorio](repositories.md) de **Git** este contiene una **
 
 ## TRABAJAR SOBRE UNA RAMA
 
+![#center](../assets/branch_main.md)
+
 ## TRABAJAR SOBRE VARIAS RAMAS
