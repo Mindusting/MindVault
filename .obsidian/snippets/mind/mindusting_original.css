@@ -1,0 +1,510 @@
+/********/
+/* ROOT */
+/********/
+
+:root {
+    --text-size: 16px;
+    --new-text-size: 15.2px;
+
+    --grey: #888;
+
+    --comment-color:   #7a4;
+    --variable-color:  #9cf;
+    --const-color:     #4cf;
+    --number-color:    #ad8;
+    --string-color:    #fa6;
+    --flow-word-color: #d8d;
+    --key-word-color:  #59f;
+    --function-color:  #ff7;
+    --class-color:     #4c9;
+
+
+    --ph1-color: #f88;
+    --ph2-color: #fc8;
+    --ph3-color: #8f8;
+    --ph4-color: #8cf;
+    --ph5-color: #88f;
+    --ph6-color: #c8f;
+
+	/*
+    --ph1-color: var(--color-red);
+    --ph2-color: var(--color-orange);
+    --ph3-color: var(--color-yellow);
+    --ph4-color: var(--color-green);
+    --ph5-color: var(--color-glue);
+    --ph6-color: var(--color-purple);
+	*/
+
+	/*--callout-padding: var(--size-4-3) var(--size-4-3) var(--size-4-3) var(--size-4-6);*/
+	--new-callout-padding: var(--size-4-3) var(--size-4-6) var(--size-4-3) var(--size-4-6);
+}
+
+.comment-color   {color: var(--comment-color);}
+.variable-color  {color: var(--variable-color);}
+.const-color     {color: var(--const-color);}
+.number-color    {color: var(--number-color);}
+.string-color    {color: var(--string-color);}
+.flow-word-color {color: var(--flow-word-color);}
+.key-word-color  {color: var(--key-word-color);}
+.function-color  {color: var(--function-color);}
+.class-color     {color: var(--class-color);}
+
+.italic {font-style:italic;}
+.bold {font-weight:bold;}
+.transparency {opacity: 0.2;}
+.invisible {opacity: 0;}
+.grey {color: var(--grey);}
+
+
+/************/
+/* CALLOUTS */
+/************/
+
+.callout {
+	--callout-border-width: 2px;
+	padding-right: 24px;
+
+	padding: 0px;
+}
+
+.callout-title {
+	padding: var(--callout-padding);
+	/*padding-bottom: 0px;*/
+}
+
+.callout-content {
+	padding: var(--size-4-4) var(--size-4-4) var(--size-4-1) var(--size-4-4);
+	padding-top: 0px;
+}
+
+.theme-dark .callout-content {
+	background-color: #0002;
+}
+
+.theme-light .callout-content {
+	background-color: #FFF6;
+}
+
+.callout[data-callout="exercise"] {
+	--callout-color: 127, 127, 127;
+	--callout-icon: '';
+}
+.callout[data-callout="exercise"] > div[class="callout-title"]::before {
+	content: '💪';
+}
+
+.callout[data-callout="idea"] {
+	--callout-color: 204, 204, 0;
+	--callout-color: var(--color-yellow-rgb);
+	--callout-icon: '';
+}
+
+.callout[data-callout="idea"] > div[class="callout-title"]::before {
+	content: '💡';
+}
+
+.callout[data-callout="seealso"] {
+	--callout-color: var(--color-yellow-rgb);
+	--callout-icon: '';
+}
+
+.callout[data-callout="seealso"] > div[class="callout-title"]::before {
+	content: '<0>';
+	content: '👁️';
+}
+
+.callout[data-callout="deprecated"] {
+	--callout-color: ;
+	--callout-icon: '';
+}
+
+.callout[data-callout="deprecated"] > div[class="callout-title"]::before {
+	content: '';
+}
+
+.callout[data-callout="like"] {
+	--callout-color: var(--color-green-rgb);
+	--callout-icon: '';
+}
+
+.callout[data-callout="like"] > div[class="callout-title"]::before {
+	content: '👍';
+}
+
+.callout[data-callout="dislike"] {
+	--callout-color: var(--color-red-rgb);
+	--callout-icon: '';
+}
+
+.callout[data-callout="dislike"] > div[class="callout-title"]::before {
+	content: '👎';
+}
+
+.callout[data-callout="heart"] {
+	--callout-color: var(--color-pink-rgb);
+	--callout-icon: '';
+}
+
+.callout[data-callout="heart"] > div[class="callout-title"]::before {
+	content: '🩷';
+}
+
+/********/
+/* CODE */
+/********/
+
+pre {
+	border: solid var(--color-base-30) 2px !important;
+}
+
+.cm-inline-code {
+    font-size: var(--new-text-size);
+}
+
+.cm-s-obsidian .HyperMD-codeblock {
+    font-size: var(--new-text-size);
+}
+
+.markdown-preview-view code {
+    /*font-size: var(--new-text-size);*/
+    font-size: var(--text-size);
+}
+
+.markdown-rendered pre code {
+    /*font-size: var(--new-text-size);*/
+    font-size: var(--text-size);
+}
+
+.markdown-preview-view code {
+    p {
+        text-align: justify;
+        text-justify: inter-word;
+    }
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.cm-s-obsidian .cm-inline-code.cm-formatting {
+    font-size: var(--new-text-size);
+    padding: 0px;
+    margin: 0px;
+}
+
+.cm-s-obsidian .cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting) {
+    font-size: var(--new-text-size);
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Bock code in edit mode */
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock:not(.HyperMD-list-line) {
+	padding-inline-start: 0px;
+}
+
+
+/***********************/
+/* FILE MANAGER EMOJIS */
+/***********************/
+
+.nav-folder .nav-folder-title-content:before {
+    content: "📂 ";
+}
+
+.nav-folder.is-collapsed .nav-folder-title-content:before {
+    content: "📁 ";
+}
+
+div[data-path$=".md"] > .nav-file-title-content::before {
+    content: "📝 ";
+}
+
+div[data-path$=".avif"] > .nav-file-title-content::before,
+div[data-path$=".bmp"]  > .nav-file-title-content::before,
+div[data-path$=".gif"]  > .nav-file-title-content::before,
+div[data-path$=".jpeg"] > .nav-file-title-content::before,
+div[data-path$=".jpg"]  > .nav-file-title-content::before,
+div[data-path$=".png"]  > .nav-file-title-content::before,
+div[data-path$=".svg"]  > .nav-file-title-content::before,
+div[data-path$=".webp"] > .nav-file-title-content::before {
+    content: "📷 ";
+}
+
+div[data-path$=".flac"] > .nav-file-title-content::before,
+div[data-path$=".m4a"]  > .nav-file-title-content::before,
+div[data-path$=".mp3"]  > .nav-file-title-content::before,
+div[data-path$=".ogg"]  > .nav-file-title-content::before,
+div[data-path$=".wav"]  > .nav-file-title-content::before,
+div[data-path$=".3gp"]  > .nav-file-title-content::before {
+    content: "🎧 ";
+}
+
+div[data-path$=".mkv"]  > .nav-file-title-content::before,
+div[data-path$=".mov"]  > .nav-file-title-content::before,
+div[data-path$=".mp4"]  > .nav-file-title-content::before,
+div[data-path$=".ogv"]  > .nav-file-title-content::before,
+div[data-path$=".webm"] > .nav-file-title-content::before {
+    content: "📼 ";
+}
+
+div[data-path$=".pdf"] > .nav-file-title-content::before {
+    content: "📕 ";
+}
+
+div[data-path$=".base"] > .nav-file-title-content::before,
+div[data-path$=".sql"]  > .nav-file-title-content::before,
+div[data-path$=".db"]   > .nav-file-title-content::before {
+    content: "🛢️ ";
+}
+
+div[data-path$=".py"] > .nav-file-title-content::before {
+    content: "🐍 ";
+}
+
+div[data-path$=".php"] > .nav-file-title-content::before {
+    content: "🐘 ";
+}
+
+div[data-path$=".odt"]  > .nav-file-title-content::before,
+div[data-path$=".docx"] > .nav-file-title-content::before {
+    content: "📘 ";
+}
+
+div[data-path$=".ods"]  > .nav-file-title-content::before,
+div[data-path$=".xlsx"] > .nav-file-title-content::before,
+div[data-path$=".csv"]  > .nav-file-title-content::before {
+    content: "📗 ";
+}
+
+div[data-path$=".odp"]   > .nav-file-title-content::before,
+div[data-path$=".pptx"]  > .nav-file-title-content::before {
+    content: "📙 ";
+}
+
+div[data-path$=".zip"] > .nav-file-title-content::before,
+div[data-path$=".7z"]  > .nav-file-title-content::before,
+div[data-path$=".rar"] > .nav-file-title-content::before {
+    content: "📦 ";
+}
+
+.nav-file-title-content::before {
+    content: "📄 ";
+}
+
+
+/***********/
+/* HEADERS */
+/***********/
+
+/*
+.cm-header-1 {color: var(--h1-color);}
+.cm-header-2 {color: var(--h2-color);}
+.cm-header-3 {color: var(--h3-color);}
+.cm-header-4 {color: var(--h4-color);}
+.cm-header-5 {color: var(--h5-color);}
+.cm-header-6 {color: var(--h6-color);}
+*/
+
+/*swap[class="cm-formatting-header-1"] {color: var(--h1-color);}*/
+
+/*
+.cm-formatting-header-1 {color: var(--ph1-color);}
+.cm-formatting-header-2 {color: var(--ph2-color);}
+.cm-formatting-header-3 {color: var(--ph3-color);}
+.cm-formatting-header-4 {color: var(--ph4-color);}
+.cm-formatting-header-5 {color: var(--ph5-color);}
+.cm-formatting-header-6 {color: var(--ph6-color);}
+*/
+
+.cm-formatting-header-1 {color: var(--color-red);}
+.cm-formatting-header-2 {color: var(--color-orange);}
+.cm-formatting-header-3 {color: var(--color-yellow);}
+.cm-formatting-header-4 {color: var(--color-green);}
+.cm-formatting-header-5 {color: var(--color-blue);}
+.cm-formatting-header-6 {color: var(--color-purple);}
+
+/*
+h1 {color: var(--h1-color);}
+h2 {color: var(--h2-color);}
+h3 {color: var(--h3-color);}
+h4 {color: var(--h4-color);}
+h5 {color: var(--h5-color);}
+h6 {color: var(--h6-color);}
+*/
+
+.cm-line {
+    font-size: var(--new-text-size) !important;
+}
+
+.cm-header {
+    font-size: var(--new-text-size) !important;
+}
+
+
+/**********/
+/* IMAGES */
+/**********/
+
+div[alt*="#logo"] {
+    display: block;
+}
+
+div[class*="#logo"] {
+    display: block;
+}
+
+img[alt*="#logo"] {
+    image-rendering: pixelated;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 16px;
+}
+
+img[class*="#logo"] {
+    image-rendering: pixelated;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 16px;
+}
+
+img[alt*="#center"] {
+    /*text-align: center !important;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img[class*="#center"] {
+    /*text-align: center !important;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img[class*="#left"] {
+    text-align: left;
+}
+
+img[alt*="#left"] {
+    text-align: left;
+}
+
+img[alt*="#right"] {
+    text-align: right;
+}
+
+img[class*="#right"] {
+    text-align: right;
+}
+
+img[alt*="#pixel-art"] {
+    image-rendering: pixelated;
+}
+
+img[class*="#pixel-art"] {
+    image-rendering: pixelated;
+}
+
+img[alt*="#fillall"] {
+    width: 100%;
+    max-width: 100% !important;
+}
+
+img[class*="#fillall"] {
+    width: 100%;
+    max-width: 100% !important;
+}
+
+div[class*="bases-cards-cover"] {
+	image-rendering: pixelated;
+}
+
+
+/*********/
+/* LATEX */
+/*********/
+
+.cm-math {
+    font-size: var(--new-text-size) !important;
+}
+
+
+/***********/
+/* MERMAID */
+/***********/
+
+/* Entity Relationship Diagrams */
+/*
+.attributeBoxOdd {
+    fill: none !important;
+}
+
+.attributeBoxEven {
+    fill: none !important;
+}
+*/
+
+/* Quadrant Chart*/
+/*
+.quadrant rect {
+    fill: none !important;
+}
+
+g[class="main"] g[class="border"] line {
+    stroke: rgb(128, 128, 128, 0.2) !important;
+}
+*/
+/* XY Chart */
+/*
+.main rect[class="background"] {
+    fill: none !important;
+}
+
+.main g[class="plot"] g[class="bar-plot-0"] rect {
+    fill: rgb(128, 128, 128, 0.2) !important;
+}
+*/
+
+
+
+/**********/
+/* TABLES */
+/**********/
+
+.HyperMD-table-2 {
+    font-size: var(--new-text-size) !important;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #88888816 !important;
+    color: #fff;
+}
+
+
+/********/
+/* TEXT */
+/********/
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+span[class~="cm-strong"] {
+	/*color: var(--ph4-color) !important;*/
+	color: var(--color-green) !important;
+}
+
+span[class~="cm-em"] {
+	/*color: var(--ph3-color) !important;*/
+	color: var(--color-blue) !important;
+}
+
+span[class~="cm-strong"][class~="cm-em"] {
+	/*color: var(--ph6-color) !important;*/
+	color: var(--color-purple) !important;
+}

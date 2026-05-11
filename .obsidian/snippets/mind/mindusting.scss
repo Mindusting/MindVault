@@ -1,0 +1,311 @@
+/********/
+/* ROOT */
+/********/
+
+:root {
+  --text-size: 16px;
+  --new-text-size: 15.2px;
+
+  --grey: #888;
+
+  $syntax-colors: (
+    comment: #7a4,
+    variable: #9cf,
+    const: #4cf,
+    number: #ad8,
+    string: #fa6,
+    flow-word: #d8d,
+    key-word: #59f,
+    function: #ff7,
+    class: #4c9
+  );
+
+  @each $name, $color in $syntax-colors {
+    --#{$name}-color: #{$color};
+  }
+
+  $ph-colors: (#f88, #fc8, #8f8, #8cf, #88f, #c8f);
+
+  @for $i from 1 through length($ph-colors) {
+    --ph#{$i}-color: #{nth($ph-colors, $i)};
+  }
+
+  --new-callout-padding: var(--size-4-3) var(--size-4-6);
+}
+
+/* helpers */
+
+$syntax-classes: comment, variable, const, number, string, flow-word, key-word, function, class;
+
+@each $name in $syntax-classes {
+  .#{$name}-color {
+    color: vr(--#{$name}-color);
+  }
+}
+
+.italic { font-style: italic; }
+.bold { font-weight: bold; }
+.transparency { opacity: 0.2; }
+.invisible { opacity: 0; }
+.grey { color: var(--grey); }
+
+/************/
+/* CALLOUTS */
+/************/
+
+.callout {
+  --callout-border-width: 2px;
+  padding: 0;
+
+  &-title {
+    padding: var(--callout-padding);
+  }
+
+  &-content {
+    padding: var(--size-4-4) var(--size-4-4) var(--size-4-1);
+    padding-top: 0;
+
+    .theme-dark & { background-color: #0002; }
+    .theme-light & { background-color: #fff6; }
+  }
+}
+
+/* callout variants */
+
+$callouts: (
+  exercise:   ("snippets/svg/exercise.svg", 127,127,127),
+  idea:       ("snippets/svg/idea.svg", var(--color-yellow-rgb)),
+  seealso:    ("snippets/svg/eye.svg", var(--color-blue-rgb)),
+  deprecated: ("snippets/svg/warning.svg", var(--color-orange-rgb)),
+  like:       ("snippets/svg/like.svg", var(--color-green-rgb)),
+  dislike:    ("snippets/svg/dislike.svg", var(--color-red-rgb)),
+  heart:      ("snippets/svg/heart.svg", var(--color-pink-rgb)),
+  brain:      ("svg/brain.svg", var(--color-pink-rgb)),
+);
+
+@each $name, $data in $callouts {
+  $icon: nth($data, 1);
+  $color: nth($data, 2);
+
+  .callout[data-callout="#{$name}"] {
+    --callout-color: #{$color};
+    --callout-icon: none;
+
+    .callout-icon {
+      background-color: rgb(var(--callout-color));
+
+      -webkit-mask-image: url("#{$icon}");
+      mask-image: url("#{$icon}");
+
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+
+      -webkit-mask-size: contain;
+      mask-size: contain;
+
+      -webkit-mask-position: center;
+      mask-position: center;
+    }
+  }
+}
+
+/********/
+/* CODE */
+/********/
+
+pre {
+  border: solid var(--color-base-30) 2px !important;
+}
+
+%code-size-new { font-size: var(--new-text-size); }
+%code-size-old { font-size: var(--text-size); }
+
+.cm-inline-code,
+.cm-s-obsidian .HyperMD-codeblock,
+.cm-s-obsidian .cm-inline-code.cm-formatting,
+.cm-s-obsidian .cm-inline-code.cm-formatting ~ .cm-inline-code:not(.cm-formatting) {
+  @extend %code-size-new;
+  padding: 0;
+  margin: 0;
+}
+
+.markdown-preview-view,
+.markdown-rendered {
+  code {
+    @extend %code-size-old;
+  }
+}
+
+.markdown-preview-view code {
+  padding-left: 0;
+  padding-right: 0;
+
+  p {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+}
+
+/* edit mode */
+
+.markdown-source-view.mod-cm6 {
+  .cm-line.HyperMD-codeblock:not(.HyperMD-list-line) {
+    padding-inline-start: 0;
+  }
+}
+
+/***********************/
+/* FILE MANAGER EMOJIS */
+/***********************/
+
+$files: (
+  "📷": avif bmp gif jpeg jpg png svg webp,
+  "🎧": flac m4a mp3 ogg wav 3gp,
+  "📼": mkv mov mp4 ogv webm,
+  "📕": pdf,
+  "🛢️": base sql db,
+  "🐍": py,
+  "🐘": php,
+  "📘": odt docx,
+  "📗": ods xlsx csv,
+  "📙": odp pptx,
+  "📦": zip 7z rar
+);
+
+@each $icon, $exts in $files {
+  @each $ext in $exts {
+    div[data-path$=".#{$ext}"] > .nav-file-title-content::before {
+      content: "#{$icon} ";
+    }
+  }
+}
+
+.nav-folder {
+  .nav-folder-title-content::before { content: "📂 "; }
+
+  &.is-collapsed .nav-folder-title-content::before {
+    content: "📁 ";
+  }
+}
+
+div[data-path$=".md"] > .nav-file-title-content::before {
+  content: "📝 ";
+}
+
+.nav-file-title-content::before {
+  content: "📄 ";
+}
+
+/***********/
+/* HEADERS */
+/***********/
+
+$headers: (
+  1: var(--color-red),
+  2: var(--color-orange),
+  3: var(--color-yellow),
+  4: var(--color-green),
+  5: var(--color-blue),
+  6: var(--color-purple)
+);
+
+@each $i, $color in $headers {
+  .cm-formatting-header-#{$i} {
+    color: $color;
+  }
+}
+
+.cm-line,
+.cm-header,
+.cm-math,
+.HyperMD-table-2 {
+  font-size: var(--new-text-size) !important;
+}
+
+/**********/
+/* IMAGES */
+/**********/
+
+%centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%logo {
+  @extend %centered;
+  image-rendering: pixelated;
+  width: 50%;
+  border-radius: 16px;
+}
+
+img {
+  &[alt*="#logo"],
+  &[class*="#logo"] {
+    @extend %logo;
+  }
+
+  &[alt*="#center"],
+  &[class*="#center"] {
+    @extend %centered;
+  }
+
+  &[alt*="#left"],
+  &[class*="#left"] {
+    text-align: left;
+  }
+
+  &[alt*="#right"],
+  &[class*="#right"] {
+    text-align: right;
+  }
+
+  &[alt*="#pixel-art"],
+  &[class*="#pixel-art"] {
+    image-rendering: pixelated;
+  }
+
+  &[alt*="#fillall"],
+  &[class*="#fillall"] {
+    width: 100%;
+    max-width: 100% !important;
+  }
+}
+
+div {
+  &[alt*="#logo"],
+  &[class*="#logo"] {
+    display: block;
+  }
+
+  &[class*="bases-cards-cover"] {
+    image-rendering: pixelated;
+  }
+}
+
+/**********/
+/* TABLES */
+/**********/
+
+tbody tr:nth-child(odd) {
+  background-color: #88888816 !important;
+  color: #fff;
+}
+
+/********/
+/* TEXT */
+/********/
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+span {
+  &[class~="cm-strong"] { color: var(--color-green) !important; }
+  &[class~="cm-em"] { color: var(--color-blue) !important; }
+
+  &[class~="cm-strong"][class~="cm-em"] {
+    color: var(--color-purple) !important;
+  }
+}
