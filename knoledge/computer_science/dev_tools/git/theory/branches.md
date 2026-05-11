@@ -16,4 +16,8 @@ Una **rama** se define como una **línea independiente de desarrollo** que permi
 
 Una explicación un poco más técnica sería que una **rama** es un puntero a un [*commit*](commits.md), permitiendo de esta forma identificaer un [*commit*](commits.md) mediante un nombre (*este nombre es la rama*).
 
-Cuando creamos un [repositorio](repositories.md) de **Git** este contiene una **rama** llamda `master` (*a la cual se le suele cambiar el nombre, por ejemplo `main`; aunque no es necesario*); esto ocurre de esta forma, ya que no puede haver un [repopsitorio](repositories.md) sin **ramas**, siempre debe haber por lo menos una.
+Cuando creamos un [repositorio](repositories.md) de **Git** este contiene una **rama** llamda `master` (*a la cual se le suele cambiar el nombre, por ejemplo `main`; aunque no es necesario*); esto ocurre de esta forma, ya que no puede haver un [repopsitorio](repositories.md) sin **ramas**, siempre debe haber por lo menos una; es decir un proyecto puede tener de $1$ a $N$ **ramas**.
+
+## TRABAJAR SOBRE UNA RAMA
+
+## TRABAJAR SOBRE VARIAS RAMAS
