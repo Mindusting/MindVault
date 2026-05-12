@@ -76,7 +76,7 @@ Los tipos de datos cambian dependiendo del tipo de **SQL** que estemos usando, p
 - **Número enteros**
 - **Número decimales**
 - **Texto**
-- **Fechas**
+- **Tiempo**
 - **Binario**
 
 ### RESTRUCCIONES
