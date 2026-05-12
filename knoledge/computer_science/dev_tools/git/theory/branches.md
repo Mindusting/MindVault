@@ -20,11 +20,15 @@ Cuando creamos un [repositorio](repositories.md) de **Git** este contiene una **
 
 ## TRABAJAR SOBRE UNA RAMA
 
+Cuando estamos empezando a usar **Git** lo normal es usar solo una **rama**, y a medida que vamos entendiendo como trabajar sobre una **rama**, nos animamos a trabajar sobre varias (*para empezar, con dos*) y es cuando descubrimos el verdadero potencial de **Git**.
+
+Para empezar, imaginemos que tenemos solo una **rama** a la que llamaremos `main`, dentro de esta se han hecho unos cambios y en total se han realizado tres [*commits*](commits.md) (*A, B, C*); cada uno de los [*commits*](commits.md) apunta a su padre y la **rama** `main` apunta al último de los [*commits*](commits.md)
+
 %%
 ```txt
 Esto es la rama main ->  [main]
                            v
-(A)----------(B)----------(C)
+(A)<---------(B)<---------(C)
     Estos son los commits
 ```
 %%
