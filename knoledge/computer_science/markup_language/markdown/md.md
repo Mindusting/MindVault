@@ -40,5 +40,4 @@ En Markdown existe al posibilidad de usar sintaxis de [HTML](../html/html.md).
 
 - [PROPIEDADES](md_properties.md)
 - [NOTAS DE PIE DE PÁGINA](md_footnote.md)
-- [DIAGRAMA](md_diagram.md)
 - [MATEMÁTICAS](md_math.md)
