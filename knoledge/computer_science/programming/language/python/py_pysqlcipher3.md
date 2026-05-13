@@ -1,7 +1,8 @@
 ---
+aliases: [SQLite encriptado en Python]
 author: Mindusting
 corrected: true
-logo: ../../imgs/file_encripted.png
+logo: imgs/file_encripted.png
 tags:
   - Programming
   - Python
@@ -9,13 +10,12 @@ tags:
   - DataBase
   - SQLite3
   - Cybersecurity
-title: SQLite encriptado en Python
 rating: 1
 ---
 
 # MÓDULO PYSQLCIPHER3 EN PYTHON
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [pysqlcipher3](https://github.com/rigglemania/pysqlcipher3) #WWW/GitHub
 > 
 > YouTube:
