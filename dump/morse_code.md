@@ -1,11 +1,14 @@
 ---
-aliases: [Código Morse]
+aliases:
+  - Código Morse
 author: Mindusting
 corrected: true
-cssclasses: [center-table]
+cssclasses:
+  - center-table
 headerFile: true
-rating: 
-tags: [MorseCode]
+rating: 1
+tags:
+  - MorseCode
 ---
 
 <h1 style="text-align:center;">CÓDIGO MORSE INTERNACIONAL</h1>
