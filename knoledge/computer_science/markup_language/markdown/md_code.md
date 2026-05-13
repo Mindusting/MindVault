@@ -1,18 +1,21 @@
 ---
-aliases: [Código en Markdown, Code in Markdown, Mermaid en Markdown, Mermaid in Markdown]
+aliases:
+  - Código en Markdown
+  - Code in Markdown
+  - Mermaid en Markdown
+  - Mermaid in Markdown
 author: Mindusting
 corrected: true
+cssclasses:
+  - center-mermaid
 headerFile: false
-rating: 0.8
-tags: [Markdown, Mermaid]
+rating: 1
+tags:
+  - Markdown
+  - Mermaid
 ---
 
 # CÓDIGO EN MARKDOWN
-
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
-> 
-> > [!todo] #TODO
-> > - [ ] Explicar en el apartado de bloque de código, que si el tipo de código es `mermaid` se pueden integrar diagramas.
 
 Hay aveces que queremos poder escribir código en un archivo de **Markdown**, para ello, tenemos dos formas de hacerlo: en formato de una **línea** o **block** (*multilínea*); teniendo cada uno su caso de uso.
 
@@ -176,7 +179,37 @@ Como puedes ver, lo único que se ha tendido que hacer es añadir al **bloque** 
 
 ### INTEGRACIÓN CON MERMAID
 
-Integrar aquí el contenido del archivo [md_diagram](md_diagram.md).
+Los bloques de código pueden adquirir nuevos comportamientos cuando especificamos un formato en concreto como por ejemplo [*Mermaid*](../mermaid/mermaid.md), de forma que si escribimos código válido dentro de este **bloque de código**, el interprete del documento puede incrustar el resultado de ese código en la propia nota:
+
+````md
+```mermaid
+graph
+    inicio(["INICIO"])
+    fin(["FIN"])
+    if{"IF"}
+    pasoA["A"]
+    pasoB["B"]
+
+    inicio --> if
+    if -- True  --> pasoA --> fin
+    if -- False --> pasoB --> fin
+```
+````
+
+```mermaid
+graph
+    inicio(["INICIO"])
+    fin(["FIN"])
+    if{"IF"}
+    pasoA["A"]
+    pasoB["B"]
+
+    inicio --> if
+    if -- True  --> pasoA --> fin
+    if -- False --> pasoB --> fin
+```
+
+Dependiendo del intérprete de **Markdown** que estés usando puede que no veas el diagrama y veas simplemente el código que representa este diagrama o incluso que te salga un error indicando que no sabe cómo interpretar ese código.
 
 %%
 
