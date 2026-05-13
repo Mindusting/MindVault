@@ -1,6 +1,6 @@
 {
-  "collapse-filter": true,
-  "search": "",
+  "collapse-filter": false,
+  "search": "tag:#Git",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -106,7 +106,7 @@
       }
     },
     {
-      "query": "tag:#SoftwareDesign",
+      "query": "tag:#DE",
       "color": {
         "a": 1,
         "rgb": 9690744
@@ -137,6 +137,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 0.14806539138535843,
+  "scale": 0.6153207732681376,
   "close": true
 }

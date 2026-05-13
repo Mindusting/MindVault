@@ -1,16 +1,16 @@
 ---
+aliases: [Selección en SQL, DQL, Data Query Language]
 author: Mindusting
 corrected: false
 headerFile: false
 tags:
   - DataBase
   - SQL
-title: Selección en SQL
 ---
 
 # SELECCIÓN EN SQL
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
 > > - [ ] Explicar que es y en qué consiste al selección de datos.
 > > - [ ] Explicar que el orden de estas instrucciones no se puede alterar.
@@ -234,7 +234,7 @@ Explicar el `ON`.
 
 #### INNER JOIN
 
-![#logo](assets/inner_join.excalidraw.md)
+![#center](assets/inner_join.excalidraw.md)
 
 |  id |     |     |
 | ---:|:---:|:---:|
@@ -242,7 +242,7 @@ Explicar el `ON`.
 
 #### LEFT JOIN
 
-![#logo](assets/left_join.excalidraw.md)
+![#center](assets/left_join.excalidraw.md)
 
 |  id |     |     |
 | ---:|:---:|:---:|
@@ -251,7 +251,7 @@ Explicar el `ON`.
 
 #### RIGHT JOIN
 
-![#logo](assets/right_join.excalidraw.md)
+![#center](assets/right_join.excalidraw.md)
 
 |  id |     |     |
 | ---:|:---:|:---:|
@@ -263,7 +263,7 @@ Explicar el `ON`.
 
 FULL OUTER JOIN
 
-![#logo](assets/full_join.excalidraw.md)
+![#center](assets/full_join.excalidraw.md)
 
 |  id |     |     |
 | ---:|:---:|:---:|
@@ -274,7 +274,7 @@ FULL OUTER JOIN
 
 #### CROSS JOIN
 
-![#logo](assets/cross_join.excalidraw.md)
+![#center](assets/cross_join.excalidraw.md)
 
 | id1 |     | id2 |     |
 | ---:|:---:| ---:|:---:|
