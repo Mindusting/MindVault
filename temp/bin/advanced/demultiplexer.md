@@ -1,26 +1,29 @@
 ---
+aliases: [Demultiplexor]
 author: Mindusting
 corrected: false
-tags:
-  - Binary
-title: Multiplexador
+headerFile: false
+rating: 
+tags: [Binary]
 ---
 
-<h1 style="text-align:center;">MULTIPLEXER</h1>
+<h1 style="text-align:center;">DEMULTIPLEXOR</h1>
 
 ---
 
 # CHIP
 
 ```txt
-   ╔═════╗
-A>─╣     ║
-B>─╣ MOX ╠─>Y
-S>─╣     ║
-   ╚═════╝
+   ╔═══════╗
+A>─╣       ║
+B>─╣ DEMUX ╠─>Y
+S>─╣       ║
+   ╚═══════╝
 ```
 
 # ESQUEMA
+
+%%
 
 ```txt
 A>────────────╦═════╗
@@ -32,3 +35,5 @@ B>─┼──────────╦═════╗ ┌─╩═══�
 S>─╩─╣ NOT ╠──╩═════╝
      ╚═════╝
 ```
+
+%%

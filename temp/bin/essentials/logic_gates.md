@@ -111,7 +111,7 @@ La puerta lógica **NOT** está compuesta por una entrada y una salida.
 
 # OTROS
 
-- [Multiplexer](bin_multiplexer.md)
-- [De-Multiplexer](bin_de-multiplexer.md)
+- [Multiplexer](../advanced/multiplexer.md)
+- [De-Multiplexer](../advanced/demultiplexer.md)
 
 %%
