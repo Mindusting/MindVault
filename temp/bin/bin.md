@@ -50,6 +50,8 @@ En la informática existen muchas unidades de medida además de tener nombre par
 
 ## PUERTAS LÓGICAS
 
+![#center](assets/conversion_schema.excalidraw.md)
+
 ### NOT
 
 ![#logo](../../imgs/logic_gate_not.png)
