@@ -26,6 +26,8 @@
     "file": "checkbox",
     "rating": "number",
     "done": "checkbox",
-    "hex": "datetime"
+    "hex": "datetime",
+    "excalidraw-export-internal-links": "checkbox",
+    "excalidraw-embed-md": "checkbox"
   }
 }
