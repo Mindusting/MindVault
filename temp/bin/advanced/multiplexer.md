@@ -1,5 +1,5 @@
 ---
-aliases: [Multiplexador]
+aliases: [Multiplexador y Demultiplexor, Multiplexador, Demultiplexador, Multiplexer, Demultiplexer, MUX, DEMUX]
 author: Mindusting
 corrected: false
 headerFile: false
@@ -7,11 +7,13 @@ rating:
 tags: [Binary]
 ---
 
-<h1 style="text-align:center;">MULTIPLEXOR</h1>
+# MULTIPLEXOR Y DEMULTIPLEXOR
 
----
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
+> > [!todo] #TODO
 
-# CHIP
+## MULTIPLEXADOR
 
 ```txt
    ╔═════╗
@@ -20,8 +22,6 @@ B>─╣ MUX ╠─>Y
 S>─╣     ║
    ╚═════╝
 ```
-
-# ESQUEMA
 
 ```txt
 A>────────────╦═════╗
@@ -32,4 +32,14 @@ B>─┼──────────╦═════╗ ┌─╩═══�
    │ ╔═════╗  ║ AND ╠─┘
 S>─╩─╣ NOT ╠──╩═════╝
      ╚═════╝
+```
+
+## DEMULTIPLEXADOR
+
+```txt
+   ╔═══════╗
+A>─╣       ╠─>Y
+   ║ DEMUX ║
+S>─╣       ╠─>X
+   ╚═══════╝
 ```
