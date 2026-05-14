@@ -102,7 +102,7 @@ La puerta lógica **NOT** está compuesta por una entrada y una salida.
 
 ## FORMAS DE INTERPRETAR EL BINARIO
 
-- [ENTERO](bin_int.md)
+- [ENTERO](integers.md)
 - [DECIMALES](bin_float.md)
 
 ## OPERAR EN BINARIO
