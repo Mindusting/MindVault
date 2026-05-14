@@ -59,7 +59,7 @@ Si quieres más información o documentación más antigua hecha en google docum
     - [NVIM](programs/nvim/nvim.md)
     - [Algoritmos](knoledge/computer_science/programming/fundamentals/temp-dump/algorithms/pc_alg.md)
 - PROGRAMACIÓN
-    - [Conceptos de la programación](knoledge/computer_science/programming/fundamentals/temp-dump/pc.md)
+    - [Fundamentos de la programación](knoledge/computer_science/programming/fundamentals/temp-dump/pc.md)
     - [Git](knoledge/computer_science/dev_tools/git/git.md)
     - [Binario](temp/bin/bin.md)
     - [Assembly](knoledge/computer_science/programming/language/asm/asm.md)
