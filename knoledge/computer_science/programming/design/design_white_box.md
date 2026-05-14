@@ -127,22 +127,23 @@ Un **camino independiente** es aquél que introduce como mínimo una nueva sente
 
 ```mermaid
 flowchart TB
-    camino1("Camino 1") -->
+    camino1("Camino 1") ~~~
     cm1a(("a")) -->
-    cm1b{"b"} -->
+    cm1b{"b"} -- T -->
     cm1c(("c1")) -->
     cm1d(("d"))
 
+    di("Diagrama") ~~~
     a(("a")) -->
-    b{"b"} -->
+    b{"b"} -- T -->
     c1(("c1")) -->
     d(("d"))
-    b -->
+    b -- F -->
     c2(("c2")) --> d
 
-    camino2("Camino 2") -->
+    camino2("Camino 2") ~~~
     cm2a(("a")) -->
-    cm2b{"b"} -->
+    cm2b{"b"} -- F -->
     cm2c(("c2")) -->
     cm2d(("d"))
 ```
