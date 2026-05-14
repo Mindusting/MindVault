@@ -30,7 +30,7 @@ Esta tabla contiene cinco campos:
     Contiene el nombre de una tabla o vista a la que está asociado el objeto. Para una tabla o vista, la columna `tbl_name` es una copia de la columna de nombre. Para un índice, `tbl_name` es el nombre de la tabla que está indexada. Para un trigger, la columna `tbl_name` almacena el nombre de la tabla o vista que hace que se active el trigger.
 <br>
 - `rootpage`:
-    Indica el número del registro en el [árbol binario](../../../../../../temp/pc/data_structures/pc_ds_btree.md) de la tabla `sqlite_master`.
+    Indica el número del registro en el [árbol binario](../../../../programming/fundamentals/temp-dump/data_structures/pc_ds_btree.md) de la tabla `sqlite_master`.
 <br>
 - `sql`
     Este campo contiene la sentencia SQL que ha creado el objeto al que hace referencia el registro.

@@ -19,7 +19,7 @@ tags: [JavaScript, Programming, Web]
 > - [W3 Schools](https://www.w3schools.com/js/js_variables.asp) #WWW/W3Schools
 
 > [!internal-link]- FAQ
-> - [¿Qué son las variables en programación?](../../../../../temp/pc/pc_variable.md)
+> - [¿Qué son las variables en programación?](../../fundamentals/temp-dump/pc_variable.md)
 
 ## DECLARAR VARIABLES
 

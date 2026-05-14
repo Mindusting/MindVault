@@ -16,7 +16,7 @@ rating: 1
 > - [W3 Schools](https://www.w3schools.com/python/python_comments.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué es un comentario en programación?](../../../../../temp/pc/pc_comment.md)
+> - [¿Qué es un comentario en programación?](../../fundamentals/temp-dump/pc_comment.md)
 
 Los comentarios sirven para dar una **descripción** de lo que hace una **parte del código** o dar **indicaciones**. Esto nos puede servir para en un futuro, cuando ya no nos acordemos de qué hace dicha parte del código, y así **no tener que interpretarlo**, sino que podemos ver la descripción que hayamos dejado, también **puede ayudar a otras personas** que estén trabajando con nosotros a entender como funciona lo que estamos haciendo.
 

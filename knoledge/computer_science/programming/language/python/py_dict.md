@@ -20,7 +20,7 @@ title: Diccionarios en Python
 > - [W3 Schools (dict methods)](https://www.w3schools.com/python/python_ref_dictionary.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué es un diccionario en programación?](../../../../../temp/pc/pc_dictionary.md)
+> - [¿Qué es un diccionario en programación?](../../fundamentals/temp-dump/pc_dictionary.md)
 
 Los **diccionarios** son similares a las [listas](py_list.md) con la diferencias que estos en vez de tener un *índice* asociado a cada *valor*, tiene una *valor* llamado `key` asociado a cada `value` y cada par de estos se llama `item`.
 

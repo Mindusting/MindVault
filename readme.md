@@ -57,9 +57,9 @@ Si quieres más información o documentación más antigua hecha en google docum
     - [Mermaid 🧜‍♀️](knoledge/computer_science/markup_language/mermaid/mermaid.md)
     - [LaTeX 🧮](knoledge/computer_science/markup_language/latex/latex.md)
     - [NVIM](programs/nvim/nvim.md)
-    - [Algoritmos](temp/pc/algorithms/pc_alg.md)
+    - [Algoritmos](knoledge/computer_science/programming/fundamentals/temp-dump/algorithms/pc_alg.md)
 - PROGRAMACIÓN
-    - [Conceptos de la programación](temp/pc/pc.md)
+    - [Conceptos de la programación](knoledge/computer_science/programming/fundamentals/temp-dump/pc.md)
     - [Git](knoledge/computer_science/dev_tools/git/git.md)
     - [Binario](temp/bin/bin.md)
     - [Assembly](knoledge/computer_science/programming/language/asm/asm.md)
@@ -127,7 +127,7 @@ Si quieres más información o documentación más antigua hecha en google docum
     - [XML](knoledge/computer_science/markup_language/xml/xml.md)
     - [YAML](knoledge/computer_science/programming/data_format/yaml.md)
     - [Expresiones regulares](knoledge/computer_science/text_processing/regex/regex.md)
-    - [Algoritmos para ordenar datos](temp/pc/pc_sorting_algorithm.md)
+    - [Algoritmos para ordenar datos](knoledge/computer_science/programming/fundamentals/temp-dump/pc_sorting_algorithm.md)
     - [Brainfuck](knoledge/computer_science/programming/language/brainfuck.md)
     - [Godot](temp/godot/godot.md)
 

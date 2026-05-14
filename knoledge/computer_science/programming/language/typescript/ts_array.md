@@ -17,7 +17,7 @@ tags:
 > > - [ ] Explicar que los Array en TypeScript son los que se se conocen como vectores en el resto de lenguajes.
 
 > [!faq]- FAQ
-> - [¿Qué son los vectores en programación?](../../../../../temp/pc/data_structures/pc_ds_list.md#VECTOR)
+> - [¿Qué son los vectores en programación?](../../fundamentals/temp-dump/data_structures/pc_ds_list.md#VECTOR)
 
 > [!abstract] SINTAXIS
 > let ***\[arrayName\]***: ***\[type\]***\[\] = ***\[value\]***;

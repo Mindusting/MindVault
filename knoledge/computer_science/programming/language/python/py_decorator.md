@@ -23,7 +23,7 @@ title: Decoradores en Python
 > - [Clear Code](https://youtu.be/nVdF7QT-Ggg) #WWW/YT/ClearCode
 
 > [!faq]- FAQ
-> - [¿Qué son los *singleton* en programación?](../../../../../temp/pc/design_patterns/pc_dp_singleton.md)
+> - [¿Qué son los *singleton* en programación?](../../fundamentals/temp-dump/design_patterns/pc_dp_singleton.md)
 
 ```python
 def decorator(func):

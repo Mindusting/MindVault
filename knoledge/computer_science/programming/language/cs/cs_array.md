@@ -13,7 +13,7 @@ title: Arrays en C#
 > > [!todo] #TODO
 
 > [!FAQ]- FAQ
-> - [¿Qué son los array en la programación?](../../../../../temp/pc/data_structures/pc_ds_array.md)
+> - [¿Qué son los array en la programación?](../../fundamentals/temp-dump/data_structures/pc_ds_array.md)
 
 Para declarar un **array** en *C\#* tenemos que seguir la siguiente sintaxis:
 

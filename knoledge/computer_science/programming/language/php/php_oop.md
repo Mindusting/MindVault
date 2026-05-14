@@ -14,7 +14,7 @@ tags: [OOP, PHP, Programming]
 > > [!todo] #TODO
 
 > [!internal-link] REFERENCIAS INTERNAS
-> Antes de empezar a leer esta documentación, recomiendo que tengas a mano la documentación a cerca de la [OOP (*Object Oriented Programmin*)](../../../../../temp/pc/pc_oop.md); ya que es la parte teórica y general de este apartado, en el que se va a ver la [OOP](../../../../../temp/pc/pc_oop.md) concretamente de [**PHP**](php.md).
+> Antes de empezar a leer esta documentación, recomiendo que tengas a mano la documentación a cerca de la [OOP (*Object Oriented Programmin*)](../../fundamentals/temp-dump/pc_oop.md); ya que es la parte teórica y general de este apartado, en el que se va a ver la [OOP](../../fundamentals/temp-dump/pc_oop.md) concretamente de [**PHP**](php.md).
 
 ## DECLARACIÓN DE CLASES
 

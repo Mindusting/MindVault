@@ -15,7 +15,7 @@ title: JsonObject en GSON
 > > [!todo] #TODO
 
 > [!faq]- FAQ
-> - [¿Qué es la **copia profunda** (*deepcopy*) en programación?](../../../../../../../temp/pc/pc_deepcopy.md)
+> - [¿Qué es la **copia profunda** (*deepcopy*) en programación?](../../../../fundamentals/temp-dump/pc_deepcopy.md)
 
 - `add`: añade el par de clave y [`JsonElement`](java_gson_jsonelement.md).
 - `addProperty`: añade el par de clave y valor.

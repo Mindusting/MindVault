@@ -16,7 +16,7 @@ title: Métodos en Java
 > - [W3 Schools](https://www.w3schools.com/java/java_methods.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué son las funciones (*métodos*) en programación?](../../../../../temp/pc/pc_function.md)
+> - [¿Qué son las funciones (*métodos*) en programación?](../../fundamentals/temp-dump/pc_function.md)
 
 En Java la creación de métodos es bastante puntilloso a comparación de otros lenguajes ya que ay que tener varias cosas en cuenta a la hora de crearlos, por lo que primero veremos la sintaxis al completo y luego lo iremos desgranando para ver que implica cada cosa:
 

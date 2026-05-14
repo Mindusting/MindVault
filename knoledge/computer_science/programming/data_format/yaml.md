@@ -23,9 +23,9 @@ tags:
 > - [TpointTech](https://tpointtech.com/yaml) #WWW/TpointTeach
 
 > [!internal-link]- REFERENCIAS INTERNAS
-> - [¿Qué son los comentarios en programación?](../../../../temp/pc/pc_comment.md)
-> - [¿Qué son los diccionarios en programación?](../../../../temp/pc/pc_dictionary.md)
-> - [¿Qué son las listas en programación?](../../../../temp/pc/data_structures/pc_ds_list.md)
+> - [¿Qué son los comentarios en programación?](../fundamentals/temp-dump/pc_comment.md)
+> - [¿Qué son los diccionarios en programación?](../fundamentals/temp-dump/pc_dictionary.md)
+> - [¿Qué son las listas en programación?](../fundamentals/temp-dump/data_structures/pc_ds_list.md)
 
 Para hacer un bloque de texto se puede usar:
 - El carácter *mayor qué* (`>`) para ignorar los saltos de línea.

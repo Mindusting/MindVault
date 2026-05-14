@@ -16,9 +16,9 @@ rating: 0.75
 > - [W3 Schools (set methods)](https://www.w3schools.com/python/python_sets_methods.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué es un set o B-Tree en programación?](../../../../../temp/pc/data_structures/pc_ds_btree.md)
+> - [¿Qué es un set o B-Tree en programación?](../../fundamentals/temp-dump/data_structures/pc_ds_btree.md)
 
-Para declarar un [**set**](../../../../../temp/pc/data_structures/pc_ds_btree.md) en Python se puede hacer de las siguientes formas:
+Para declarar un [**set**](../../fundamentals/temp-dump/data_structures/pc_ds_btree.md) en Python se puede hacer de las siguientes formas:
 
 ```python
 set1 = {}
@@ -428,7 +428,7 @@ print(my_frozenset)
 # frozenset({'Plátano', 'Naranja', 'Manzana'})
 ```
 
-Este tipo de set funcionará igual que un set normal, con la diferencia que si intentamos modificarlo ocurrirá un error, ya que está pensado para que no sea modificado, se podría decir que es la versión [`contant`](../../../../../temp/pc/pc_constant.md) del set.
+Este tipo de set funcionará igual que un set normal, con la diferencia que si intentamos modificarlo ocurrirá un error, ya que está pensado para que no sea modificado, se podría decir que es la versión [`contant`](../../fundamentals/temp-dump/pc_constant.md) del set.
 
 %%
 ## MÉTODOS

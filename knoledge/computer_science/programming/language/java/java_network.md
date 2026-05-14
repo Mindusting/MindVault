@@ -17,8 +17,8 @@ title: Networking en Java
 > > [!todo] #TODO
 
 > [!faq]- FAQ
-> - [¿Qué son los sockets en programación?](../../../../../temp/pc/pc_socket.md)
-> - [¿Qué son los hilos en programación?](../../../../../temp/pc/pc_thread.md)
+> - [¿Qué son los sockets en programación?](../../fundamentals/temp-dump/pc_socket.md)
+> - [¿Qué son los hilos en programación?](../../fundamentals/temp-dump/pc_thread.md)
 
 En este apartado se verá como trabajar a través de la red con **Java**, haciendo uso de los *sockets*; estos también permiten comunicar procesos dentro de una misma máquina.
 

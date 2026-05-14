@@ -14,7 +14,7 @@ title: Recursividad en programación
 > > [!todo] #TODO
 
 > [!faq]- FAQ
-> - [¿Qué es la recursividad?](../../dump/recursivity.md)
+> - [¿Qué es la recursividad?](../../../../../dump/recursivity.md)
 
 $$
 n! = n \cdot (n-1)!

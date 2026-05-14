@@ -19,7 +19,7 @@ tags: [C, Programming]
 > - [Bro Code](https://youtu.be/aIQk1O08zpg) #WWW/YT/BroCode
 
 > [!faq]- FAQ
-> - [¿Qué son las variables en programación?](../../../../../temp/pc/pc_variable.md)
+> - [¿Qué son las variables en programación?](../../fundamentals/temp-dump/pc_variable.md)
 
 **C** es un lenguaje de tipado fuerte, esto quiere decir que cuando declaramos una **variable**, debemos indicar el tipo de valor que va a almacenar y este no se podrá cambiar en el transcurso del programa, los tipos son los siguientes:
 

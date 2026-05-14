@@ -25,7 +25,7 @@ title: Generadores en Python
 > - [Tech With Tim](https://youtu.be/u3T7hmLthUU) #WWW/YT/TechWithTim
 
 > [!faq]- FAQ
-> - [¿Qué son los generadores en programación?](../../../../../temp/pc/pc_generator.md)
+> - [¿Qué son los generadores en programación?](../../fundamentals/temp-dump/pc_generator.md)
 
 ## USO DEL YIELD
 

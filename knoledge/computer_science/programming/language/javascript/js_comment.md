@@ -13,7 +13,7 @@ title: Comentarios en JS
 # COMENTARIOS EN JS
 
 > [!faq]- FAQ
-> - [¿Qué es un comentario?](../../../../../temp/pc/pc_comment.md)
+> - [¿Qué es un comentario?](../../fundamentals/temp-dump/pc_comment.md)
 
 Los comentarios en JS permiten hacer anotaciones y/o comentar un trozo del código, que consisten en hacer que una parte del código ya no se ejecute, ya que deja de considerarse parte del código.
 

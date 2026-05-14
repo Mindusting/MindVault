@@ -26,7 +26,7 @@ title: Variables en Python
 > - [Sreekanth](https://youtu.be/Bz3ir-vKqkk) #WWW/YT/Sreekanth
 
 > [!faq]- FAQ
-> - [¿Qué son las variables en programación?](../../../../../temp/pc/pc_variable.md)
+> - [¿Qué son las variables en programación?](../../fundamentals/temp-dump/pc_variable.md)
 
 Aquí podrás encontrar documentación sobre múltiples tipos de datos, pero hay cuatro que son los más usado, y por tanto lo que deberías saber usar (*El resto está bien que los sepas usar, pero no son tan usados*):
 

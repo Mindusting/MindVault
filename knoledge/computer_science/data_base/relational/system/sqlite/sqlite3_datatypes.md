@@ -30,7 +30,7 @@ El `NUMERIC` indica que se escoja el mejor tipo de dato entre `INTEGER` y `REAL`
 
 ## BOOLEANOS
 
-SQLite3 no tiene un tipo de dato concreto para guardar [booleanos](../../../../../../temp/pc/pc_boolean.md) como tal, se utiliza el tipo `INTEGER`; esta guardará un `0` con `FALSE` y un `1` con `TRUE`.
+SQLite3 no tiene un tipo de dato concreto para guardar [booleanos](../../../../programming/fundamentals/temp-dump/pc_boolean.md) como tal, se utiliza el tipo `INTEGER`; esta guardará un `0` con `FALSE` y un `1` con `TRUE`.
 
 ## FECHAS
 

@@ -56,7 +56,7 @@ title: Módulo psutil en Python
 
 - `boot_time`
 
-Devuelve medido en segundos la fecha en la que se encendió en ordenador respecto al [*epoch*](../../../../../temp/pc/pc_epoch.md).
+Devuelve medido en segundos la fecha en la que se encendió en ordenador respecto al [*epoch*](../../fundamentals/temp-dump/pc_epoch.md).
 
 ## CPU
 

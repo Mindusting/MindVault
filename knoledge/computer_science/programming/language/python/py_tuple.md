@@ -80,7 +80,7 @@ print(type(t))
 Si tenemos una **Tupla** y queremos obtener uno de sus elementos podemos hacerlo mediante su índice, esto es un [`int`](py_int.md) que identifica de forma única a cada elemento de la **Tupla**, empezando por el cero y subiendo consecutivamente hasta poder identificar todos los elementos; también existe la posibilidad de indicar un número negativo, pudiendo así ir contando desde el fin hacia el inicio de la **Tupla**:
 
 > [!note] NOTA
-> Si quieres saber cómo funciona el índice en las **Tuplas** te recomiendo que leas la documentación a cerca de los [Arrays en programación](../../../../../temp/pc/data_structures/pc_ds_array.md), concretamente el apartado [básico](../../../../../temp/pc/data_structures/pc_ds_array.md#BÁSICO); aunque un **Array** no es lo mismo que una **Tupla** el cómo funciona el índice es muy parecido por no decir igual.
+> Si quieres saber cómo funciona el índice en las **Tuplas** te recomiendo que leas la documentación a cerca de los [Arrays en programación](../../fundamentals/temp-dump/data_structures/pc_ds_array.md), concretamente el apartado [básico](../../fundamentals/temp-dump/data_structures/pc_ds_array.md#BÁSICO); aunque un **Array** no es lo mismo que una **Tupla** el cómo funciona el índice es muy parecido por no decir igual.
 
 > [!abstract] SINTAXIS
 > ***\[tupleName\]***\[***\[index\]***\]

@@ -24,7 +24,7 @@ tags:
 > - [Portfolio Courses](https://youtu.be/H5MlTh5cBOg) #WWW/YT/PortfoliCourses
 
 > [!faq]- FAQ
-> - [¿Qué son los punteros en la programación?](../../../../../temp/pc/pc_pointer.md)
+> - [¿Qué son los punteros en la programación?](../../fundamentals/temp-dump/pc_pointer.md)
 
 ```c
 // Puntero mutable que apunta a int constante.

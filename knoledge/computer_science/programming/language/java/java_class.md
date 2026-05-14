@@ -16,8 +16,8 @@ title: Clases en Java
 > > - [ ] Explicar qué son los `POJO`.
 
 > [!faq]- FAQ
-> - [¿Qué son los punteros en programación?](../../../../../temp/pc/pc_pointer.md)
-> - [¿Qué son la clases en programación?](../../../../../temp/pc/pc_oop.md)
+> - [¿Qué son los punteros en programación?](../../fundamentals/temp-dump/pc_pointer.md)
+> - [¿Qué son la clases en programación?](../../fundamentals/temp-dump/pc_oop.md)
 > - [¿Qué son los paquetes en Java?](java_package.md)
 
 Las **clases** en *Java* son extensas por lo que iremos viendo su contenido por partes, el uso correcto de ellas se verá al final del documento, ya que todos los ejemplos que iremos viendo de momento son didácticos para ir explicando paso a paso las posibilidades que ofrecen.

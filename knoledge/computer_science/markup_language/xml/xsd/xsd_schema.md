@@ -27,4 +27,4 @@ La estructura inicial de un [**XSD**](xsd.md) es la siguiente:
 </xs:schema>
 ```
 
-La letras `xs` es una especie de [variable](../../../../../temp/pc/pc_variable.md) en al que se guarda en este caso `http://www.w3.org/2001/XMLSchema`, ya que todo a lo que vamos a hacer referencia está en esa **URL**.
+La letras `xs` es una especie de [variable](../../../programming/fundamentals/temp-dump/pc_variable.md) en al que se guarda en este caso `http://www.w3.org/2001/XMLSchema`, ya que todo a lo que vamos a hacer referencia está en esa **URL**.

@@ -25,7 +25,7 @@ title: Excepciones en Java
 > - [Coding with John](https://youtu.be/1XAfapkBQjk) #WWW/YT/CodingWithJohn
 
 > [!faq]- FAQ
-> - [¿Qué son las excepciones en programación?](../../../../../temp/pc/pc_exception.md)
+> - [¿Qué son las excepciones en programación?](../../fundamentals/temp-dump/pc_exception.md)
 
 > [!example] EJEMPLO DE EXCEPCIÓN CON ARRAY
 > Cuando hacemos una división entre cero Java nos **lanza** una excepción para indicarnos que no puede hacer eso y así nosotros saber que ha habido algún problema.

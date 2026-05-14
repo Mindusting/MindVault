@@ -14,7 +14,7 @@ title: Operadores en SQLite
 > > [!todo] #TODO
 > > - [ ] Explicar que el operador `LIKE` se aprobeche de los índices, el patrón tiene que no empezar por `%` y se debe activar el *case_sesitive_like* (`PRAGMA case_sensitive_like = ON/OFF;`).
 
-Los operadores realizan una operación entre dos valores que da como resultado un valor [booleano](../../../../../../temp/pc/pc_boolean.md) indicado si la comparación correspondiente se cumple.
+Los operadores realizan una operación entre dos valores que da como resultado un valor [booleano](../../../../programming/fundamentals/temp-dump/pc_boolean.md) indicado si la comparación correspondiente se cumple.
 
 ## BOOLEANOS
 

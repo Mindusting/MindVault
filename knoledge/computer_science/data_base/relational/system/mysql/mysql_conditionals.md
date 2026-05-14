@@ -18,7 +18,7 @@ title: Condicionales en MySQL
 > > - [ ] Documentar el `CASE WHEN`.
 
 > [!faq]- FAQ
-> - [¿Qué son los condicionales en programación?](../../../../../../temp/pc/pc_conditional.md)
+> - [¿Qué son los condicionales en programación?](../../../../programming/fundamentals/temp-dump/pc_conditional.md)
 > - [¿Qué son los operadores de comparación en MySQL?](mysql_operators.md)
 
 ## CONDICIONES

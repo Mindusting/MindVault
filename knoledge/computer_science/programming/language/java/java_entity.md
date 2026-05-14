@@ -13,4 +13,4 @@ title: Entidades en Java
 > > [!todo] #TODO
 
 > [!faq]- FAQ
-> - [¿Qué son las entidades en programación?](../../../../../temp/pc/pc_entity.md)
+> - [¿Qué son las entidades en programación?](../../fundamentals/temp-dump/pc_entity.md)

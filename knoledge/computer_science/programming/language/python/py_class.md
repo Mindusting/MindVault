@@ -21,7 +21,7 @@ title: Clases y Ojetos en Python
 > - [Clear Code](https://youtu.be/_vr5faCXFo8) #WWW/YT/ClearCode
 
 > [!faq]- FAQ
-> - [¿Qué son las clases y objetos en programación?](../../../../../temp/pc/pc_oop.md)
+> - [¿Qué son las clases y objetos en programación?](../../fundamentals/temp-dump/pc_oop.md)
 
 Para crear una clase en Python se usa la palabra clave `class` siguiendo del nombre de la clase y dos puntos, a partir de ahí, todo el código que pongamos dentro de su ámbito formará parte de la clase.
 

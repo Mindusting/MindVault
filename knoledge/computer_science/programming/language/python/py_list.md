@@ -35,7 +35,7 @@ rating: 0.5
 > - [W3 Schools](https://www.w3schools.com/python/python_lists.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué es una lista en programación?](../../../../../temp/pc/data_structures/pc_ds_list.md)
+> - [¿Qué es una lista en programación?](../../fundamentals/temp-dump/data_structures/pc_ds_list.md)
 
 Para declarar una **lista** en Python se puede hacer de dos forma, de forma *literal* o a través de la [clase](py_class.md) `list`.
 

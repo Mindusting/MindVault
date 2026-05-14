@@ -15,7 +15,7 @@ title: Singleton en Python
 > > [!todo] #TODO
 
 > [!faq]- FAQ
-> - [¿Qué son los *singleton* en programación?](../../../../../temp/pc/design_patterns/pc_dp_singleton.md)
+> - [¿Qué son los *singleton* en programación?](../../fundamentals/temp-dump/design_patterns/pc_dp_singleton.md)
 
 Para crear una [clase](py_class.md) *singleton* en **Python** se puede hacer de varias forma, una de ellas es mediante los [**decoradores**](py_decorator.md):
 

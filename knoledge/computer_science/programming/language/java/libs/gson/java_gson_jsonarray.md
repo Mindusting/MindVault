@@ -10,7 +10,7 @@ tags: [Java, JSON, Programming]
 # JSONARRAY EN GSON
 
 > [!faq]- FAQ
-> - [¿Qué es la **copia profunda** (*deepcopy*) en programación?](../../../../../../../temp/pc/pc_deepcopy.md)
+> - [¿Qué es la **copia profunda** (*deepcopy*) en programación?](../../../../fundamentals/temp-dump/pc_deepcopy.md)
 
 > [!important] IMPORTANTE
 > Cabe resaltar que esta [clase](../../java_class.md) (`JsonArray`) hereda de la [clase](../../java_class.md) [`JsonElement`](java_gson_jsonelement.md), por lo que además de los [métodos](../../java_method.md) que se documentan en este apartado, también contienen los de [`JsonElement`](java_gson_jsonelement.md).
@@ -26,7 +26,7 @@ Aquí tienes un resumen de los [métodos](../../java_method.md) que contiene est
 - `get`: devuelve un [`JsonElement`](java_gson_jsonelement.md) por *índice*.
 - `addAll`: introduce todos los elementos de otro `JsonArray` en el actual.
 - `isEmpty`: devuelve un valor [booleano](../../data_types/java_boolean.md) indicando si está vacío o no el `JsonArray`.
-- `deepCopy`: hace una [copia profunda](../../../../../../../temp/pc/pc_deepcopy.md) del objeto.
+- `deepCopy`: hace una [copia profunda](../../../../fundamentals/temp-dump/pc_deepcopy.md) del objeto.
 - `contains`: devuelve un valor [booleano](../../data_types/java_boolean.md) indicando si contiene el valor indicado.
 
 ## DECLARACIÓN DE UN JSONARRAY
@@ -292,7 +292,7 @@ System.out.println(isIn);
 
 ## COPIA PROFUNDA
 
-Para poder hacer una [**copia profunda**](../../../../../../../temp/pc/pc_deepcopy.md) de un `JsonArray` se usa el [método](../../java_method.md) `deepCopy`; este no recibe ningún argumento y devuelve otro [objeto](../../java_class.md#OBJETOS) de tipo `JsonArray`.
+Para poder hacer una [**copia profunda**](../../../../fundamentals/temp-dump/pc_deepcopy.md) de un `JsonArray` se usa el [método](../../java_method.md) `deepCopy`; este no recibe ningún argumento y devuelve otro [objeto](../../java_class.md#OBJETOS) de tipo `JsonArray`.
 
 > [!abstract] SINTAXIS
 > ***\[jsonArray\]***.deepCopy()

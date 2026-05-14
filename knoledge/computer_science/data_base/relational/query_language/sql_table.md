@@ -72,7 +72,7 @@ La definición de una *columna* se compone de varias partes
 
 Los tipos de datos cambian dependiendo del tipo de **SQL** que estemos usando, pero hay ciertos tipos de datos que son "estandar" (*son comunes a nivel conceptual*); estos son los tipos de datos más básicos y simples que permitirán representar las **identidades**:
 
-- [**Booleano**](../../../../../temp/pc/pc_boolean.md)
+- [**Booleano**](../../../programming/fundamentals/temp-dump/pc_boolean.md)
 - **Número enteros**
 - **Número decimales**
 - **Texto**

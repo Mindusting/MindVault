@@ -15,7 +15,7 @@ title: TypeScript
 > > [!todo] #TODO
 
 > [!faq]- FAQ
-> - [¿Qué son las variables en programación?](../../../../../temp/pc/pc.md)
+> - [¿Qué son las variables en programación?](../../fundamentals/temp-dump/pc.md)
 
 > [!abstract] SINTAXIS
 > let ***\[var\_name\]***: [***\[data\_type\]***](#TIPOS%20DE%20DATOS) = ***\[value\]***;

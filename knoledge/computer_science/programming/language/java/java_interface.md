@@ -18,4 +18,4 @@ title: Interfaces en Java
 > - [W3 Schools](https://www.w3schools.com/java/java_interface.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué son las interfaces en programación?](../../../../../temp/pc/pc_interface.md)
+> - [¿Qué son las interfaces en programación?](../../fundamentals/temp-dump/pc_interface.md)

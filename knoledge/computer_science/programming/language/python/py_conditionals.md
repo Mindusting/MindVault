@@ -19,7 +19,7 @@ rating: 0.5
 > - [W3 Schools](https://www.w3schools.com/python/python_conditions.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué son los condicionales en programación?](../../../../../temp/pc/pc_conditional.md)
+> - [¿Qué son los condicionales en programación?](../../fundamentals/temp-dump/pc_conditional.md)
 
 Para crear una condición en Python se usa la palabra clave `if` seguido de la condición que se debe cumplir para ejecutar el código que indiquemos:
 

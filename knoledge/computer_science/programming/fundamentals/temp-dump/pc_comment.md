@@ -22,7 +22,7 @@ Un comentarios sirve para dejar anotaciones en el código fuente de nuestro prog
 
 1. **Comentarios obvios**: Hacer anotaciones acerca de una porción de código cercana para dar una explicación, esta clase de comentarios los hacen generalmente gente que está empezando a programar, además de que para la gente que sí conoce el lenguaje de programación en cuestión, esta clase de comentarios suelen sentirse como el siguiente meme:
     
-    ![#logo](../../imgs/cat_cat.jpg)
+    ![#logo](../../../../../imgs/cat_cat.jpg)
     
     Ya que es obvio que es un gato, no hace falta que le pongas una etiqueta indicando lo, igualmente, no pasa nada por poner comentarios de este tipo (*cuando estamos empezando*) ya que a medida que uno va mejorando, deja de poner esta clase de comentarios... *generalmente...*
     Se suele tender a evitar esta clase de comentarios ya que son redundantes, y por tanto se suele decir que "*manchan*" el código sin aportar información relevante.

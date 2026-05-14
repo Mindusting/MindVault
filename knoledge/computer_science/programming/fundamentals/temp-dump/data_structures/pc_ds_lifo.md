@@ -18,7 +18,7 @@ El termino **LIFO** viene del ingl√©s (*Last In, Firs Out*), que significa, el √
 
 ![#center](../drawing/lifo.excalidraw.md)
 
-Este tipo de estructuras las podemos encontrar por ejemplo en [Python](../../../knoledge/computer_science/programming/language/python/py.md):
+Este tipo de estructuras las podemos encontrar por ejemplo en [Python](../../../language/python/py.md):
 
 ```python
 numbers: list = list()

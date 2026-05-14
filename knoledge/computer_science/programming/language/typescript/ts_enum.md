@@ -21,7 +21,7 @@ title: Enumeradores en TypeScript
 > - [W3 Schools](https://www.w3schools.com/typescript/typescript_enums.php) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué son los enumeradores en programación?](../../../../../temp/pc/pc_enum.md)
+> - [¿Qué son los enumeradores en programación?](../../fundamentals/temp-dump/pc_enum.md)
 
 Para crear un **enumerador** en **TypeScript** se usa la *palabra clave* `enum` seguida del nombre que le daremos a el **enumerador** en cuestión y finalmente unas llaves (`{}`), entre las que pondremos los distintos valores que queremos que conformen la **enumeración** separados por comas.
 

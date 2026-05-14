@@ -12,7 +12,7 @@ title: String en Java
 
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
-> > - [ ] Explicar que la clase `String` en Java sigue el patrón de diseño [objeto de valor](../../../../../../../../temp/pc/design_patterns/pc_dp_value_object.md)
+> > - [ ] Explicar que la clase `String` en Java sigue el patrón de diseño [objeto de valor](../../../../../fundamentals/temp-dump/design_patterns/pc_dp_value_object.md)
 
 - [Format String](../../../java_format_string.md)
 

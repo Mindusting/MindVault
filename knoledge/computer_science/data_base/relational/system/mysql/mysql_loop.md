@@ -21,7 +21,7 @@ tags: [DataBase, MySQL, SQL]
 > >     - [ ] Poner un ejemplo del bucle `until`.
 
 > [!faq]- FAQ
-> - [¿Qué son lo bucles en programación?](../../../../../../temp/pc/pc_loop.md)
+> - [¿Qué son lo bucles en programación?](../../../../programming/fundamentals/temp-dump/pc_loop.md)
 
 ## BUCLE WHILE
 

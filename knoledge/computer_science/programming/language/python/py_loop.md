@@ -22,8 +22,8 @@ title: Bucles en Python
 > > - [ ] Rehacer la documentación de bucle infinito.
 
 > [!faq]- FAQ
-> - [¿Qué son lo bucles en programación?](../../../../../temp/pc/pc_loop.md)
->     - [¿Qué es un bucle WHILE en programación?](../../../../../temp/pc/pc_loop.md)
+> - [¿Qué son lo bucles en programación?](../../fundamentals/temp-dump/pc_loop.md)
+>     - [¿Qué es un bucle WHILE en programación?](../../fundamentals/temp-dump/pc_loop.md)
 
 ## WHILE
 

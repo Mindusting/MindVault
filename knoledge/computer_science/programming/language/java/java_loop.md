@@ -12,13 +12,13 @@ title: Bucles en Java
 
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
-> > - [ ] Explicar que es el [ámbito](../../../../../temp/pc/pc_scope.md) y referenciarlo.
+> > - [ ] Explicar que es el [ámbito](../../fundamentals/temp-dump/pc_scope.md) y referenciarlo.
 > > - [ ] Documentar el bucle for.
 > > - [ ] Documentar el bucle do-while.
 > > - [ ] Documentar el bucle for-each.
 
 > [!faq]- FAQ
-> - [¿Qué son lo bucles en la programación?](../../../../../temp/pc/pc_loop.md)
+> - [¿Qué son lo bucles en la programación?](../../fundamentals/temp-dump/pc_loop.md)
 
 ## WHILE
 

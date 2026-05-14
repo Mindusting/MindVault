@@ -22,7 +22,7 @@ Para generar número aleatorios decimales en **SQLite3** no hay una función con
 Un número decimal en el rango [**\[0.0, 1.0)**](../../../../../mathematic/math_range_notation.md) (*es decir, que esté entre 0 y 1, excluyendo el 1*) nos permite acceder a prácticamente cualquier rango de números si sabemos como hacerlo, ya que con multiplicaciones y sumas, podremos aumentar y desplazar el rango de número que podemos obtener.
 
 > [!seealso] Ver también
-> - [Número aleatorios en informática.](../../../../programming/fundamentals/rng.md)
+> - [Número aleatorios en informática.](../../../../programming/fundamentals/theory/rng.md)
 
 ---
 

@@ -21,7 +21,7 @@ tags:
 > > - [ ] Explicar los modificadores de acceso.
 
 > [!internal-link]- REFERENCIAS INTERNAS
-> - [¿Qué es la OOP en programación?](../../../../../temp/pc/pc_oop.md)
+> - [¿Qué es la OOP en programación?](../../fundamentals/temp-dump/pc_oop.md)
 
 ## CLASSES
 

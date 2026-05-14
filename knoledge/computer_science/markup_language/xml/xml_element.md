@@ -38,7 +38,7 @@ Existen a groso modo dos tipos de **elementos**:
 
 ### ATRIBUTOS
 
-Los *atributos* son conjuntos de pares **clave**, **valor**; siguiendo el comportamiento de un [diccionario](../../../../temp/pc/pc_dictionary.md); esto permite almacenar *valores* concretos en los [**elementos**](#ELEMENTOS).
+Los *atributos* son conjuntos de pares **clave**, **valor**; siguiendo el comportamiento de un [diccionario](../../programming/fundamentals/temp-dump/pc_dictionary.md); esto permite almacenar *valores* concretos en los [**elementos**](#ELEMENTOS).
 
 ```xml
 <user id="1" name="Adelio" age="20"></user>

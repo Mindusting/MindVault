@@ -14,7 +14,7 @@ title: Variables en Java
 > > - [ ] Explicar como son los nombres correctos de variables
 
 > [!faq]- FAQ
-> - [¿Qué son las variables en programación?](../../../../../temp/pc/pc_variable.md)
+> - [¿Qué son las variables en programación?](../../fundamentals/temp-dump/pc_variable.md)
 
 En Java existe principalmente dos grandes tipos de **variables**, las [*primitivas*](#PRIMITIVO) y [*referencia*](#REFERENCIA), dentro de estos dos grupos existen otras diferencias que veremos más en detalle a continuación, Es una buena practica empezar por las **variables** [*primitivas*](#PRIMITIVO) ya que son más simples.
 

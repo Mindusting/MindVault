@@ -21,7 +21,7 @@ Características de un **objeto** para cumplir con este parón:
 - **Igualdad por valor**: al compara dos objetos del mismo tipo, se comparará el valor que contienen, no la instancia de estos (*no se compararán las direcciones de memoria de los punteros*).
 - **Sin identidad signeficativa**: el objeto como tal prácticamente no tiene importancia, ya que lo verdaderamente importante es el valor que contiene.
 
-Por ejemplo, lo [`String`](../../../knoledge/computer_science/programming/language/java/packages/java/lang/java_lang_string.md) en [**Java**](../../../knoledge/computer_science/programming/language/java/java.md) siguen este patón, ya que encapsulan el **valor** real, son inmutables, al comparar dos [`String`](../../../knoledge/computer_science/programming/language/java/packages/java/lang/java_lang_string.md) se hace comprobado que su contenido sea el mismo y no se le da importancia al **objeto** que contiene el texto, sino al texto ensí.
+Por ejemplo, lo [`String`](../../../language/java/packages/java/lang/java_lang_string.md) en [**Java**](../../../language/java/java.md) siguen este patón, ya que encapsulan el **valor** real, son inmutables, al comparar dos [`String`](../../../language/java/packages/java/lang/java_lang_string.md) se hace comprobado que su contenido sea el mismo y no se le da importancia al **objeto** que contiene el texto, sino al texto ensí.
 
 > [!quote]- ANALOGÍA
 > Imaginemos que tenemos un almacén de hojas, estas hojas debe de estar sueltas, no nos sirve si son las hojas de un libro, tampoco nos sirve que nos dén las hojas sueltas ya que podrían perder el orden; por tanto tendremos que establecer unas reglas en las que se establece como se deben guardar las hojas.
@@ -45,7 +45,7 @@ Por ejemplo, lo [`String`](../../../knoledge/computer_science/programming/langua
 > 
 > Para evitar este problema podemos hacer una clase llamada `Precio` en la que su constructor, compruebe si el **valor** que queremos darle es un precio válido, de esta forma, la comprobación únicamente tendremos que implementarla una vez, haciendo que siempre se apliquen las mismar reglas en todos los sitios en donde se use esta clase (*además de poder corregir un posible error dentro de la propia clase, haciendo que esa corrección a la comprobación se aplique en todos los sitios en donde se use*).
 
-Ahora sí, veamos el caso de uso en [**Java**](../../../knoledge/computer_science/programming/language/java/java.md):
+Ahora sí, veamos el caso de uso en [**Java**](../../../language/java/java.md):
 
 ```java
 public class Price {

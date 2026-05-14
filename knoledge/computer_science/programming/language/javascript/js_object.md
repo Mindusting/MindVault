@@ -28,7 +28,7 @@ title: Objetos en JS
 >     - [W3 Schools (JS Objects Constructos)](https://www.w3schools.com/js/js_object_constructors.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué son los objetos en programación?](../../../../../temp/pc/pc_objects.md)
+> - [¿Qué son los objetos en programación?](../../fundamentals/temp-dump/pc_objects.md)
 
 Los **objetos** en [**JS**](js.md)
 

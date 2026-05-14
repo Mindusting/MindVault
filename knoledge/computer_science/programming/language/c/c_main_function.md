@@ -15,11 +15,11 @@ title: Función MAIN en C
 > > - [ ] Añadir enlace al apartado "int" en el tercer párrafo.
 
 > [!faq]- FAQ
-> - [¿Qué es una función en programación?](../../../../../temp/pc/pc_function.md)
+> - [¿Qué es una función en programación?](../../fundamentals/temp-dump/pc_function.md)
 
-La [función](../../../../../temp/pc/pc_function.md) main en es una especie de [función](../../../../../temp/pc/pc_function.md) comodín, ya que esta es la primera que empezara a funcionar cuando ejecutemos nuestro programa.
+La [función](../../fundamentals/temp-dump/pc_function.md) main en es una especie de [función](../../fundamentals/temp-dump/pc_function.md) comodín, ya que esta es la primera que empezara a funcionar cuando ejecutemos nuestro programa.
 
-Nuestra primera [función](../../../../../temp/pc/pc_function.md) main funcional se tiene que ver así:
+Nuestra primera [función](../../fundamentals/temp-dump/pc_function.md) main funcional se tiene que ver así:
 
 ```c
 int main()
@@ -28,7 +28,7 @@ int main()
 }
 ```
 
-Esta [función](../../../../../temp/pc/pc_function.md) como se puede ver en el ejemplo devuelve un `int`, esta es usada para indicar si ha ocurrido un problema en la ejecución, para indicar que no ha ocurrido ninguno se devuelve un `0`, de ahí que al final de esta nos encontremos con la instrucción `return 0;`, indicado así que si se llega a ese puto del programa, este ha terminado sin problemas.
+Esta [función](../../fundamentals/temp-dump/pc_function.md) como se puede ver en el ejemplo devuelve un `int`, esta es usada para indicar si ha ocurrido un problema en la ejecución, para indicar que no ha ocurrido ninguno se devuelve un `0`, de ahí que al final de esta nos encontremos con la instrucción `return 0;`, indicado así que si se llega a ese puto del programa, este ha terminado sin problemas.
 
 ---
 

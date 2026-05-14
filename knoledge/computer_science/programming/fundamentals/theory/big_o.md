@@ -1,19 +1,21 @@
 ---
+aliases: [Big O]
 author: Mindusting
 corrected: false
-tags:
-  - Programming/Concept/Big-O
-title: Big-O
+headerFile: false
+rating: 
+tags: [BigO]
 ---
 
-# BIG-O
+# BIG O
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [Big O](https://www.bigocheatsheet.com) #WWW/BigO
->
+> 
 > YouTube:
 > - [Bro Code](https://www.youtube.com/watch?v=XMUe3zFhM5c) #WWW/YT/BroCode
 
@@ -31,11 +33,13 @@ xychart-beta
     line [1, 1.83, 4, 9.88, 27, 80.2, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99]
 ```
 
-- `O(1)` = tiempo constante: 
-    - Acceso a un [array](data_structures/pc_ds_array.md).
-- `O(log n)` = tiempo logarítmico:
+- $O(1)$
+    - Acceso a un [array](../temp-dump/data_structures/pc_ds_array.md).
+- $O(\log_{2}n)$
     - Búsqueda binaria.
-- `O(n)` = tiempo lineal:
-- `O(n log n)` = tiempo quasilineal:
-- `O(n^2)` = tiempo quadrático:
-- `O(n!)` = tiempo factorial:
+- $O(\sqrt{n})$
+- $O(n)$
+- $O(n\log_{2}n)$
+- $O(n^2)$
+- $O(2^n)$
+- $O(n!)$

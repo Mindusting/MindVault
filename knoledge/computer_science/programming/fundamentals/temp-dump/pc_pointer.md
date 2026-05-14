@@ -27,7 +27,7 @@ Debido al objetivo que tiene este tipo de dato su tamaño es dependiente del nú
 
 Por lo general cuando se trabaja con **punteros** se suele decir que tiene una **dirección** y un **valor**:
 - **Dirección**: es el número almacenado en el **puntero**, representando este una dirección de memoria.
-- **Valor**: es el número del [`byte`](pc_byte.md) almacenado en la posición de memoria al que apunta la *dirección* del puntero, en el caso de que se quiera obtener un tipo más grande que el [`byte`](pc_byte.md), se entenderá como *valor* el conjunto de [`bytes`](pc_byte.md) seguidos al que está siendo apuntado, incluyendo este último (*un `long` en [C](../../knoledge/computer_science/programming/language/c/c.md) serían 8 [`bytes`](pc_byte.md)*).
+- **Valor**: es el número del [`byte`](pc_byte.md) almacenado en la posición de memoria al que apunta la *dirección* del puntero, en el caso de que se quiera obtener un tipo más grande que el [`byte`](pc_byte.md), se entenderá como *valor* el conjunto de [`bytes`](pc_byte.md) seguidos al que está siendo apuntado, incluyendo este último (*un `long` en [C](../../language/c/c.md) serían 8 [`bytes`](pc_byte.md)*).
 
 ## POINTER A NULL
 

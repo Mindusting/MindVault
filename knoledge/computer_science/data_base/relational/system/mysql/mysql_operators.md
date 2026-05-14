@@ -71,7 +71,7 @@ Los **operadores aritméticos** sirven para hacer operaciones más simples de la
 
 ## COMPARACIÓN
 
-Los **operadores de comparación** permiten (*como su nombre indica*) comparar dos operandos, dando siempre como resultado un [valor booleano](../../../../../../temp/pc/pc_boolean.md).
+Los **operadores de comparación** permiten (*como su nombre indica*) comparar dos operandos, dando siempre como resultado un [valor booleano](../../../../programming/fundamentals/temp-dump/pc_boolean.md).
 
 > [!abstract] SINTAXIS
 > ***\[operandoA\] \[operador\] \[operandoB\]***

@@ -34,7 +34,7 @@ title: Hilos en Java
 > - [Coding with John](https://youtu.be/r_MbozD32eo) #WWW/YT/CodingWithJohn
 
 > [!faq]- FAQ
-> - [¿Qué son los hilos en programación?](../../../../../temp/pc/pc_thread.md)
+> - [¿Qué son los hilos en programación?](../../fundamentals/temp-dump/pc_thread.md)
 
 ## CREACIÓN DE LA CLASE HILO
 

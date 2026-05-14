@@ -21,7 +21,7 @@ title: Procesos en Java
 > - [Clase `System`](packages/java/lang/java_lang_system.md)
 
 > [!faq]- FAQ
-> - [¿Qué es un proceso?](../../../../../temp/pc/pc_process.md)
+> - [¿Qué es un proceso?](../../fundamentals/temp-dump/pc_process.md)
 > - [¿Qué son las tuberías?]()
 
 
@@ -249,7 +249,7 @@ public class MainProcess {
 
 ## CREACIÓN DE TUBERÍAS
 
-Para crear unas [tuberías (*pipes*)](../../../../../temp/pc/pc_pipes.md) entre los **procesos** se pueden usar tres métodos:
+Para crear unas [tuberías (*pipes*)](../../fundamentals/temp-dump/pc_pipes.md) entre los **procesos** se pueden usar tres métodos:
 
 - `getInputStream`: devuelve un flujo por el que llegará la información del proceso hijo.
 - `getOutputStream`: devuelve un flujo por el que enviaremos información al proceso hijo.

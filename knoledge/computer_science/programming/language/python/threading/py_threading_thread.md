@@ -16,7 +16,7 @@ title: Hilos en Python
 > > [!todo] #TODO
 
 > [!faq]- FAQ
-> - [¿Qué son los hilos en programación?](../../../../../../temp/pc/pc_thread.md)
+> - [¿Qué son los hilos en programación?](../../../fundamentals/temp-dump/pc_thread.md)
 
 Para crear un **hilo** con la [clase](../py_class.md) `Thread` tendremos que darle algunos **argumentos**, de los cuales, el primero listado es el obligatorio:
 
