@@ -1,11 +1,15 @@
 ---
-aliases: [Caja blanca, White box]
+aliases:
+  - Caja blanca
+  - White box
 author: Mindusting
 corrected: false
-cssclasses: [center-mermaid]
+cssclasses:
+  - center-mermaid
 headerFile: false
-rating: 
-tags: [SoftwareDesign]
+rating: 0.8
+tags:
+  - SoftwareDesign
 ---
 
 # CAJA BLANCA
