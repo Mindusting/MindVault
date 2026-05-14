@@ -107,7 +107,7 @@ La puerta lógica **NOT** está compuesta por una entrada y una salida.
 
 ## OPERAR EN BINARIO
 
-- [SUMA](bin_add.md)
+- [SUMA](addition.md)
 
 # OTROS
 
