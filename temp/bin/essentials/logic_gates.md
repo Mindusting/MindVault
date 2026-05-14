@@ -18,17 +18,59 @@ tags: [Binary]
 
 ![#logo](../../../imgs/logic_gate_not.png)
 
+%%
+
+| A | S |
+|:-:|:-:|
+| 0 | 1 |
+| 1 | 0 |
+
+%%
+
 ## AND
 
 ![#logo](../../../imgs/logic_gate_and.png)
+
+%%
+
+| A | B | S |
+|:-:|:-:|:-:|
+| 0 | 0 | 0 |
+| 0 | 1 | 0 |
+| 1 | 0 | 0 |
+| 1 | 1 | 1 |
+
+%%
 
 ## OR
 
 ![#logo](../../../imgs/logic_gate_or.png)
 
+%%
+
+| A | B | S |
+|:-:|:-:|:-:|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
+
+%%
+
 ## XOR
 
 ![#logo](../../../imgs/logic_gate_xor.png)
+
+%%
+
+| A | B | S |
+|:-:|:-:|:-:|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 0 |
+
+%%
 
 ## NAND
 
@@ -41,77 +83,3 @@ tags: [Binary]
 ## XNOR
 
 ![#logo](../../../imgs/logic_gate_xnor.png)
-
-%%
-
-# BINARIO
-
-## PUERTAS LÓGICAS
-
-### NOT
-
-La puerta lógica **NOT** está compuesta por una entrada y una salida.
-
-| A | S |
-|:-:|:-:|
-| 0 | 1 |
-| 1 | 0 |
-
-### AND
-
-| A | B | S |
-|:-:|:-:|:-:|
-| 0 | 0 | 0 |
-| 0 | 1 | 0 |
-| 1 | 0 | 0 |
-| 1 | 1 | 1 |
-
-### OR
-
-![#logo](assets/or.excalidraw.md)
-
-| A | B | S |
-|:-:|:-:|:-:|
-| 0 | 0 | 0 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 1 |
-
-### XOR
-
-![#logo](../../imgs/logic_gate_xor.png)
-
-> [!note]
-> Si el número de inputs es par, las reglas son las siguientes:
-> 1. Si los inputs son todos iguales el resultado es False.
-> 2. Si el número de Falses es igual al número de Trues el resulado es False.
-> 3. Si el número de Falses es diferente del número de Trues, el resulado es True.
-> 
-> Si el número de inputs es inpar, las reglas son las siguientes:
-> 4. Si todos los inputs son Trues el resulado es True.
-> 5. Si todos los inputs son Falses el resulado es False.
-> 6. Si el número de Trues es mayor que Falses, el resultado es False.
-> 7. Si el número de Falses es mayor que Trues, el resultado es True.
-
-| A | B | S |
-|:-:|:-:|:-:|
-| 0 | 0 | 0 |
-| 0 | 1 | 1 |
-| 1 | 0 | 1 |
-| 1 | 1 | 0 |
-
-## FORMAS DE INTERPRETAR EL BINARIO
-
-- [ENTERO](integers.md)
-- [DECIMALES](bin_float.md)
-
-## OPERAR EN BINARIO
-
-- [SUMA](addition.md)
-
-# OTROS
-
-- [Multiplexer](../advanced/multiplexer.md)
-- [De-Multiplexer](../advanced/demultiplexer.md)
-
-%%
