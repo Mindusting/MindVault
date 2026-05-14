@@ -50,19 +50,34 @@ En la informática existen muchas unidades de medida además de tener nombre par
 
 ## PUERTAS LÓGICAS
 
+### NOT
+
+![#logo](../../imgs/logic_gate_not.png)
+
+
 ### AND
+
+![#logo](../../imgs/logic_gate_and.png)
 
 ### OR
 
+![#logo](../../imgs/logic_gate_or.png)
+
 ### XOR
 
-### NOT
+![#logo](../../imgs/logic_gate_xor.png)
 
 ### NAND
 
+![#logo](../../imgs/logic_gate_nand.png)
+
 ### NOR
 
+![#logo](../../imgs/logic_gate_nor.png)
+
 ### XNOR
+
+![#logo](../../imgs/logic_gate_xnor.png)
 
 %%
 
