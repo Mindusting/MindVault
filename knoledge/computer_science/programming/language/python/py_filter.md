@@ -1,13 +1,11 @@
 ---
+aliases: [Filtro en Python]
 author: Mindusting
 corrected: true
-headerFile: false
 description: En este apartado se documenta cómo filtrar datos en Python haciendo uso de la función filter.
-tags:
-  - Programming
-  - Python
-title: Filtro en Python
+headerFile: false
 rating: 1
+tags: [Programming, Python]
 ---
 
 # FILTRO EN PYTHON
