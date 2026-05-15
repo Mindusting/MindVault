@@ -23,23 +23,19 @@ title: Librería stdlib en C
 
 ## CALLOC
 
+> [!abstract] SINTAXIS
+> calloc(***\[numberOfItems\]***, ***\[sizeOfItem\]***)
+
 ## FREE
 
 ## MALLOC
 
-## RAND
-
-## REALLOC
-
 > [!abstract] SINTAXIS
 > malloc(***\[size\]***)
 
-```c
-#include 
+## RAND
 
-int main(void) {
-}
-```
+## REALLOC
 
 ## SRAND
 
