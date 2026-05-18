@@ -35,28 +35,28 @@ tags: [C, Programming]
 
 ## ÍNDICE
 
-- [ARCHIVOS DE C 📄](c_file.md)
-- [COMENTARIOS 💬](c_comment.md)
-- [ESTRUCTURA BÁSICA](c_basic_structure.md)
-- [VARIABLES 💾](c_variable.md)
-- [ARRAYS](c_array.md)
-- [PUNTEROS 👈](c_pointer.md)
-- [FUNCIONES](c_func.md)
-- [ESTRUCTURAS 📦](c_struct.md)
-- [UNIÓN](c_union.md)
-- [MANEJO DE ARCHIVOS 📝](c_file_management.md)
-- [HEADER FILES](c_header_files.md)
-- [INLINE](c_inline.md)
+- [ARCHIVOS DE C 📄](tools/c_file.md)
+- [COMENTARIOS 💬](essentials/basics/comments.md)
+- [ESTRUCTURA BÁSICA](essentials/basics/basic_structure.md)
+- [VARIABLES 💾](essentials/basics/variable.md)
+- [ARRAYS](essentials/memory/arrays.md)
+- [PUNTEROS 👈](essentials/memory/pointers.md)
+- [FUNCIONES](essentials/basics/functions.md)
+- [ESTRUCTURAS 📦](essentials/basics/struct.md)
+- [UNIÓN](essentials/basics/union.md)
+- [MANEJO DE ARCHIVOS 📝](essentials/basics/file_management.md)
+- [HEADER FILES](essentials/proyect_structure/header_files.md)
+- [INLINE](essentials/advanced/inline.md)
 
 ## LIBRERÍAS
 
-- [ctype](libraries/ctype.md)
-- [math](libraries/math.md)
-- [stdint](libraries/stdint.md)
-- [stdio](libraries/stdio.md)
-- [stdlib](libraries/stdlib.md)
-- [string](libraries/string.md)
-- [time](libraries/time.md)
+- [ctype](libs/standar/ctype.md)
+- [math](libs/standar/math.md)
+- [stdint](libs/standar/stdint.md)
+- [stdio](libs/standar/stdio.md)
+- [stdlib](libs/standar/stdlib.md)
+- [string](libs/standar/string.md)
+- [time](libs/standar/time.md)
 
 ## USO DE VARIBLES Y FORMATERO DE STRING
 
