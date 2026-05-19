@@ -46,6 +46,16 @@ La librería `stdio` contiene [funciones](../../essentials/basics/functions.md) 
 
 ### FREAD
 
+> [!syntax] SINTAXIS
+> size\_t fread(void \*ptr, size\_t size, size\_t nmemb, FILE \*stream)
+
+- `ptr`: la dirección de memmoria a la que se va a copiar el contenido.
+- `size`: el tamaño en bytes de cada uno de los elementos a leer.
+- `nmemb`: núemro de elementos a leer.
+- `stream` estructura `FILE` que representa el *stream* desde el que se debe leer.
+
+Devuelve el número de elemntos deidos.
+
 ### FSCANF
 
 ### FSEEK
