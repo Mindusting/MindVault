@@ -33,5 +33,5 @@ Este nos abrirá en el buscador de internet un archivo local; dentro de esta pá
 
 ## ÍNDICE
 
-- [VARIABLES](rust_variable.md)
-- [VECTOR](rust_vector.md)
+- [VARIABLES](essentials/variables.md)
+- [VECTOR](essentials/vectors.md)
