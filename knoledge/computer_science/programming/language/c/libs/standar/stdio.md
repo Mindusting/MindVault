@@ -54,7 +54,7 @@ La librería `stdio` contiene [funciones](../../essentials/basics/functions.md) 
 - `nmemb`: núemro de elementos a leer.
 - `stream` estructura `FILE` que representa el *stream* desde el que se debe leer.
 
-Devuelve el número de elemntos deidos.
+Devuelve el número de elemntos leidos es menor, puede haber ocurrido un erro o que se haya llegado al final de *stream*.
 
 ### FSCANF
 
@@ -63,6 +63,16 @@ Devuelve el número de elemntos deidos.
 ### FTELL
 
 ### FWRITE
+
+> [!syntax] SINTAXIS
+> size\_t fread(const void \*ptr, size\_t size, size\_t count, FILE \*stream)
+
+- `ptr`: la dirección de memmoria de la que se va a copiar el contenido.
+- `size`: el tamaño en bytes de cada uno de los elementos a escribir.
+- `count`: núemro de elementos a escribir.
+- `stream` estructura `FILE` que representa el *stream* en donde se va a escribir.
+
+Devuelve el número de elemntos escritos; si el valor es menor al número a `count`, ocurrió un error.
 
 ### GETC
 
