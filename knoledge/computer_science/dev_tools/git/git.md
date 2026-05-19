@@ -83,6 +83,7 @@ views:
 %%
 
 - [`add`](commands/add.md)
+- [`blame`](commands/blame.md)
 - [`branch`](commands/branch.md)
 - [`checkout`](commands/checkout.md)
 - [`commit`](commands/commit.md)
