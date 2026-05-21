@@ -76,3 +76,11 @@ Para borrar una rama se hace de la misma forma que crearlas pero con el argument
 ```bash
 git branch -d testing
 ```
+
+Si borrar la rama implicaría que se perdiese algún [*commit*](../theory/commits.md) devido a que ya no tendría referencia, [*Git*](../git.md) se negará a borrarlo y nos avisará con un mensaje indicando que debemos usar `-D` en vez ce `-d` para forzar el borrado; ==cuidado con lo que estás borrando, podría ser algo que no quieras perder==.
+
+En el caso en el que sepacom que sí queremos borrar esa rama junto con la perdida de datos que esto conlleva, tendremos que seguir la siguiente sintaxis (*que en esencia es lo mismo que el anterior pero usando `D` mayúscula en vez de minúscula*):
+
+> [!syntax] SINTAXIS
+> 
+> git branch -D ***\[newBranchName\]***
