@@ -13,6 +13,9 @@ tags: [Math, SetTheory]
 > 
 > > [!todo] #TODO
 
+> [!note] NOTA
+> La **cardinalidad** es el número de elementos que pertenecen a un conjunto.
+
 $\in$
 $\notin$
 $\subseteq$
