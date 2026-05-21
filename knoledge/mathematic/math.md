@@ -18,7 +18,7 @@ title: Matemáticas 🧮
 > - [Nic Barker](https://youtu.be/U-ve8Yh4Ro8) #WWW/YT/NicBraker
 
 - [Sistemas numéricos](number_system/math_ns.md)
-- [Teoría de conjuntos](sett/sett.md)
+- [Teoría de conjuntos](theory/sett/sett.md)
 - [Vectors](math_vector.md)
 - [Trigonometry](trigonometry/trigonometry.md)
 - [Matrix](matrix/matrix.md)
