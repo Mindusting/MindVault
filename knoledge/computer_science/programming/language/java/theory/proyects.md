@@ -23,7 +23,9 @@ tags: [Java, Programmin]
 
 ```makefile
 all:
+    rm -r bin/* && \
     javac -sourcepath src -d bin src/Main.java && \
+    clear && \
     java -cp bin Main.java
 
 compile:
@@ -31,4 +33,7 @@ compile:
 
 run:
     java -cp bin Main.java
+
+clear:
+    rm -r bin/*
 ```
