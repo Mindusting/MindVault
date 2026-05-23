@@ -18,6 +18,10 @@ tags:
 > > - [ ] Mover este archivo a donde corresponde.
 > > - [ ] Explicar para qué sirven el comando `make`.
 > > - [ ] Explicar para qué sirven los archivos `makefile`.
+> > - [ ] Explicar las variables.
+> >     - [ ] Explicar como establecer varibles desde la ejecución del comando `make`.
+> >     - [ ] Explicar las variables automáticas.
+> > - [ ] Explicar que una instrucción se divide en *objetivo*, *dependencias* y *comando*.
 
 El comando `make` junto a los archivos `makefile` son una erramienta muy buena para los programadores, ya que permite automatizar ciertas tareas durante el desarrollo, como por ejemplo la compilación de todos los archivos, ejecución del programa, lipieza de los archivos temporales, cubrir dependencias.
 
