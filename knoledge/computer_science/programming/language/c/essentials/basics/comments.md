@@ -16,7 +16,7 @@ tags:
 > > - [ ] Corregir faltas de ortografía.
 
 > [!faq]- FAQ
-> - [¿Qué es un comentario en programación?](../../fundamentals/temp-dump/pc_comment.md)
+> - [¿Qué es un comentario en programación?](../../../../fundamentals/temp-dump/pc_comment.md)
 
 ## COMENTARIOS DE UNA LÍNEA
 

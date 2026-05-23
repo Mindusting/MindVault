@@ -47,7 +47,7 @@ git branch
   testing
 ```
 
-El asterisco (`*`) indica que la cabeza (*head*) está situada en esa rama; si la cabeza está desconectada (*detached head*) debería de aparecer un primer elemento en la lista el cual tendrá el asterisco (`*`), este será un mensaje entre paréntesis indicando que la cabeza (*head*) está situada en un **commit** e indicará el *hash* del **commit**.
+El asterisco (`*`) indica que la cabeza (*head*) está situada en esa rama; si la cabeza está desconectada (*detached head*) debería de aparecer un primer elemento en la lista el cual tendrá el asterisco (`*`), este será un mensaje entre paréntesis indicando que la cabeza (*head*) está situada en un [*commit*](../theory/commits.md) e indicará el [identificador del *commit*](../theory/commits.md#IDENTIFICADOR%20DE%20LOS%20COMMITS).
 
 Sería algo parecido a esto:
 
@@ -76,3 +76,11 @@ Para borrar una rama se hace de la misma forma que crearlas pero con el argument
 ```bash
 git branch -d testing
 ```
+
+Si borrar la rama implicaría que se perdiese algún [*commit*](../theory/commits.md) devido a que ya no tendría referencia, [*Git*](../git.md) se negará a borrarlo y nos avisará con un mensaje indicando que debemos usar `-D` en vez ce `-d` para forzar el borrado; ==cuidado con lo que estás borrando, podría ser algo que no quieras perder==.
+
+En el caso en el que sepacom que sí queremos borrar esa rama junto con la perdida de datos que esto conlleva, tendremos que seguir la siguiente sintaxis (*que en esencia es lo mismo que el anterior pero usando `D` mayúscula en vez de minúscula*):
+
+> [!syntax] SINTAXIS
+> 
+> git branch -D ***\[newBranchName\]***

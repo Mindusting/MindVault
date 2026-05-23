@@ -10,13 +10,18 @@ tags: [Git]
 # COMMITS EN GIT
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Explicar que hay que tratar que cada **commit** contenga un único cambio lógico.
 
 > [!internal-link] REFERENCIAS INTERNAS
 > - Para enteder bien esta documentación te recomiendo que tengas a mano la documentación a cerca de los [estados de los archivos en **Git**](file_states.md), ya que está bastante relacionado con el contenido de este archivo.
 
-## DESCRIPCIÓN EN LOS COMMIT
+Los *commits* se suelen definir como una "instantánea" o "foto" del estado del [**repositorio**](repositories.md) en el que se hizo dicho *commit*; a mi no me gusta esta definición ya que puede dar a enteder que un *commit* contiene una copia del [**repositorio**](repositories.md); cuando realmente un *commit* representa un cambio de estado en el [**repositorio**](repositories.md).
+
+Un *commit* como tal, es un conjunto de datos: un [identificador](#IDENTIFICADOR%20DE%20LOS%20COMMITS) (_se hace con un **hash**, generalmente **SHA1** y en versiones modernas **SHA256**_), una [descripción](#DESCRIPCIÓN%20DE%20LOS%20COMMITS) y una lista de cambios realizados desde el anterior estado (*es decir $\Delta state$*).
+
+## DESCRIPCIÓN DE LOS COMMITS
 
 ### DESCRIPCIÓN BÁSICA (MONO LÍNEA)
 
@@ -52,4 +57,4 @@ tags: [Git]
 > ***\[type\]***: ***\[description\]***
 > ***\[extendedDescription\]***
 
-## HASH DEL COMMIT
+## IDENTIFICADOR DE LOS COMMITS

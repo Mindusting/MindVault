@@ -16,7 +16,7 @@ title: Librería stdio en C
 > - [W3 Schools](https://www.w3schools.com/c/c_ref_stdio.php) #WWW/W3Schools
 > - [Wikipedia](https://es.wikipedia.org/wiki/Stdio.h) #WWW/Wikipedia
 
-La librería `stdio` contiene [funciones](c_func.md) que facilitan el uso de la entrada y salida de datos en nuestro programa, como puede ser a través de la consola o archivos.
+La librería `stdio` contiene [funciones](../../essentials/basics/functions.md) que facilitan el uso de la entrada y salida de datos en nuestro programa, como puede ser a través de la consola o archivos.
 
 ## FUNCIONES
 
@@ -46,6 +46,16 @@ La librería `stdio` contiene [funciones](c_func.md) que facilitan el uso de la 
 
 ### FREAD
 
+> [!syntax] SINTAXIS
+> size\_t fread(void \*ptr, size\_t size, size\_t nmemb, FILE \*stream)
+
+- `ptr`: la dirección de memmoria a la que se va a copiar el contenido.
+- `size`: el tamaño en bytes de cada uno de los elementos a leer.
+- `nmemb`: núemro de elementos a leer.
+- `stream` estructura `FILE` que representa el *stream* desde el que se debe leer.
+
+Devuelve el número de elemntos leidos es menor, puede haber ocurrido un erro o que se haya llegado al final de *stream*.
+
 ### FSCANF
 
 ### FSEEK
@@ -53,6 +63,16 @@ La librería `stdio` contiene [funciones](c_func.md) que facilitan el uso de la 
 ### FTELL
 
 ### FWRITE
+
+> [!syntax] SINTAXIS
+> size\_t fread(const void \*ptr, size\_t size, size\_t count, FILE \*stream)
+
+- `ptr`: la dirección de memmoria de la que se va a copiar el contenido.
+- `size`: el tamaño en bytes de cada uno de los elementos a escribir.
+- `count`: núemro de elementos a escribir.
+- `stream` estructura `FILE` que representa el *stream* en donde se va a escribir.
+
+Devuelve el número de elemntos escritos; si el valor es menor al número a `count`, ocurrió un error.
 
 ### GETC
 

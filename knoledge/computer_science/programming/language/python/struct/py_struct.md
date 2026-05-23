@@ -24,7 +24,7 @@ title: Módulo Struct en Python
 > YouTube:
 > - [NeuralNine](https://youtu.be/gViM3ZuDQrw) #WWW/YT/NeuralNine
 
-El módulo **struct** es usado para transformar datos de [**Python**](../py.md) a una secuencia de [`bytes`](../py_bytes.md) y viceversa, imitando de esta forma las [*estructuras*](../../c/c_struct.md) de [**C**](../../c/c.md), esto permite que guardemos información de forma binaria bien en [archivos](../py_open.md) o para [mandar a través de la red](../socket/py_socket.md).
+El módulo **struct** es usado para transformar datos de [**Python**](../py.md) a una secuencia de [`bytes`](../py_bytes.md) y viceversa, imitando de esta forma las [*estructuras*](../../c/essentials/basics/struct.md) de [**C**](../../c/c.md), esto permite que guardemos información de forma binaria bien en [archivos](../py_open.md) o para [mandar a través de la red](../socket/py_socket.md).
 
 En esta documentación veremos a rasgos generales las cosas que se necesita saber para su uso y algunos ejemplos, pero si lo que quieres es unos casos más reales en los que se busca la eficiencia, a la hora de tratar los datos, consulta la documentación de la clase [`Struct`](py_struct_struct.md), para poder entender bien su uso, primero debes entender leer esta documentación.
 
