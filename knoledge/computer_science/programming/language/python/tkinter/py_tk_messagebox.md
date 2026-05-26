@@ -1,17 +1,15 @@
 ---
+aliases: [PopUps en TKinter]
 author: Mindusting
 corrected: true
-tags:
-  - Programming
-  - Python
-  - Module
-  - TKinter
-title: PopUps en TKinter
+headerFile: false
+rating: 
+tags: [Module, Programming, Python, TKinter]
 ---
 
 # POPUPS EN TKINTER
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [Python](https://docs.python.org/3/library/tkinter.messagebox.html) #WWW/Python
 > 
 > YouTube:
