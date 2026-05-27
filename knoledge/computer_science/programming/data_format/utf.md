@@ -15,9 +15,11 @@ rating:
 > > [!todo] #TODO
 > > - [ ] Explicar que **UTF-8** es (*Unicode Transformation Format - 8bit*).
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > YouTube:
-> - [Nic Barker](https://youtu.be/vpSkBV5vydg) #WWW/YT/NicBarker
+> - [Nic Barker (UTF-8)](https://youtu.be/vpSkBV5vydg) #WWW/YT/NicBarker
+
+
 
 ## UTF-8
 
