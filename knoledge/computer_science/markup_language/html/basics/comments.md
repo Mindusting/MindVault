@@ -1,18 +1,16 @@
 ---
+aliases: [Comentarios en HTML5]
 author: Mindusting
 corrected: false
-tags:
-  - Programming
-  - HTML
-  - web
-  - Comment
-title: Comentarios en HTML5
+headerFile: false
+rating: 
+tags: [Comment, HTML, Programming, web]
 ---
 
 # COMENTARIOS EN HTML
 
 > [!faq]- FAQ
-> - [¿Qué son los comentarios en la programación?](../../programming/fundamentals/temp-dump/pc_comment.md)
+> - [¿Qué son los comentarios en la programación?](../../../programming/fundamentals/temp-dump/pc_comment.md)
 
 Una vez hayamos abierto nuestro archivo `.html` con un IDE, podremos empezar a escribir nuestras primeras líneas de código, pero antes aprenderemos a escribir comentarios, los comentarios sirven para dar una descripción de lo que hace una parte del código o dar indicaciones. Esto nos puede servir para en un futuro, cuando ya no nos acordemos de qué hace dicha parte del código, y así no tener que interpretarlo, sino que podemos ver la descripción que hayamos dejado, también puede ayudar a otras personas que estén trabajando con nosotros a entender como funciona lo que estamos haciendo. Debido a que el texto que esté marcado como comentario no se ejecuta, nos puede servir para inhabilitar código sin necesidad de borrarlo, por si nos pudiera ser útil en un futuro.
 
@@ -22,10 +20,11 @@ SINTAXIS
 ```html
 <!--[comment]-->
 ```
+
 %%
 
->[!abstract] SINTAXIS
-><span class="comment-color">\<!\--</span><span class="italic bold comment-color">[comment]</span><span class="comment-color">--></span>
+> [!abstract] SINTAXIS
+> <span class="comment-color">\<!\--</span><span class="italic bold comment-color">[comment]</span><span class="comment-color">--></span>
 
 Aquí podemos ver un ejemplo de un comentario de una línea:
 
