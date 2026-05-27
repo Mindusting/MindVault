@@ -4,7 +4,7 @@ author: Mindusting
 corrected: false
 headerFile: false
 rating: 
-tags: [HTML, Programming, Web]
+tags: [HTML]
 ---
 
 # ETIQUETA DIV EN HTML

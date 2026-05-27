@@ -4,10 +4,11 @@ author: Mindusting
 corrected: false
 headerFile: false
 rating: 
-tags: []
+tags: [HTML]
 ---
 
 # ETIQUETA B EN HTML
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
