@@ -1,5 +1,5 @@
 ---
-aliases: [Etiqueta div]
+aliases: [Etiqueta DIV en HTML]
 author: Mindusting
 corrected: false
 headerFile: false
@@ -7,7 +7,7 @@ rating:
 tags: [HTML, Programming, Web]
 ---
 
-# ETIQUETA DIV
+# ETIQUETA DIV EN HTML
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
