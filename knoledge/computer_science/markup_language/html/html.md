@@ -68,7 +68,7 @@ SINTAXIS
 - [AGRADECIMIENTOS 🎉](html_thanks_to.md)
 - [PRÓLOGO 🧭](html_prologo.md)
 - [COMENTARIOS 💬](html_comment.md)
-- [ESTRUCTURA BÁSICA](html_basic_structure.md)
+- [ESTRUCTURA BÁSICA](basics/basic_structure.md)
 - [ENCABEZADOS](html_headers.md)
 - [META DATOS](html_meta.md)
 - [FORMATO DE TEXTO](html_text_format.md)

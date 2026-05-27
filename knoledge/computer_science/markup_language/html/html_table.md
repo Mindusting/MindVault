@@ -60,7 +60,7 @@ Para crear una tabla en **HTML** se usa la etiqueta `table`, dentro de esta usar
 > [!note]
 > La tabla, de por sí, no tiene bordes, por lo que no podremos ver la forma que tiene, si queremos darle bordes, lo tendremos que hacer mediante [CSS](../../style_language/css/css.md).
 > 
-> De momento, si no te quieres meter demasiado con el [CSS](../../style_language/css/css.md), puedes escribir lo siguiente en la [cabeza de la página](html_basic_structure.md#ETIQUETA%20HEAD):
+> De momento, si no te quieres meter demasiado con el [CSS](../../style_language/css/css.md), puedes escribir lo siguiente en la [cabeza de la página](basics/basic_structure.md#ETIQUETA%20HEAD):
 >```html
 ><style>
 >    table, th, td {

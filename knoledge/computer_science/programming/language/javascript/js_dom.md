@@ -92,7 +92,7 @@ let p1_p2  = document.querySelectorAll("body div p");
 
 ## NODOS
 
-Para obtener el elemento [`body`](../../../markup_language/html/html_basic_structure.md#ETIQUETA%20BODY) se usa la propiedad `body` de la [variable](js_variables.md) `document`.
+Para obtener el elemento [`body`](../../../markup_language/html/basics/basic_structure.md#ETIQUETA%20BODY) se usa la propiedad `body` de la [variable](js_variables.md) `document`.
 
 ### PROPIEDADES
 
