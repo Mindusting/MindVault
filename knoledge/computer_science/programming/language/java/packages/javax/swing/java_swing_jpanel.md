@@ -13,6 +13,6 @@ title: JPanel de Swing en Java
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
 
-Los paneles de swing en Java se usan como contenedores para agrupar los elementos gráficos (*para que me entiendas es el equivalente al [**div**](../../../../../../markup_language/html/html_div.md) de [**HTML**](../../../../../../markup_language/html/html.md)*).
+Los paneles de swing en Java se usan como contenedores para agrupar los elementos gráficos (*para que me entiendas es el equivalente al [**div**](../../../../../../markup_language/html/tags/div.md) de [**HTML**](../../../../../../markup_language/html/html.md)*).
 
 

@@ -75,7 +75,7 @@ SINTAXIS
 - [LISTAS 📃](html_list.md)
 - [TABLAS 🍫](html_table.md)
 - [LINKS 🔗](html_hyperlink.md)
-- [DIV (CONTENEDOR)](html_div.md)
+- [DIV (CONTENEDOR)](tags/div.md)
 - [IMÁGENES 📷](html_img.md)
     - [MAPAS 🗺️](html_map.md)
 - [VÍDEOS 📼](html_videos.md)
@@ -84,5 +84,5 @@ SINTAXIS
 
 ## ETIQUETA
 
-- [`div`](html_div.md)
+- [`div`](tags/div.md)
 - [`span`](html_span.md)
