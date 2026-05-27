@@ -12,4 +12,4 @@ tags: [HTML]
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
-> > - [ ] Explicar que este suele ir acompañado de la etiqueta DEL ya que esta es su contraparte, ya que se utiliza para indicar la **inserción** de una información nueva.
+> > - [ ] Explicar que este suele ir acompañado de la etiqueta DEL ya que esta es su contraparte, ya que se utiliza para indicar la **inserción** de una información nueva, además de subrallar el texto, por tanto esta etiqueta tiene un comportamiento distinto a U.
