@@ -189,7 +189,7 @@ except ValueError:
 
 ## MÉTODOS PROPIOS
 
-> [!info]- VE TAMBIÉN
+> [!seealso] VE TAMBIÉN
 > - [Contador de valores](py_dict.md#CONTADOR%20DE%20VALORES)
 
 ### ÍNDICES DE VALORES
