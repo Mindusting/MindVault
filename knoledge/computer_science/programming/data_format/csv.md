@@ -19,7 +19,7 @@ Sintaxis del **CSV** (*Comma-separated values*):
 - **Delimitación de campo**: generalmente una **coma** (`,`).
 - **Comillas anidadas**: generalmente suelen ser **comillas dobles** (`"`), si un campo contien unas **comillas** estas se tendrán que **duplicar** y poner el valor del campo entre **comillas**; si un campo contien un salto de línea, se debe entrecomillar, y no se debe sustituir por un `\n`, se deja talcuál.
 - **Campos vacíos**: deben mantener la posición entre los **delimitadores de campo** para mantener la integridad de los datos.
-- **Codificación**: los archivos deben estár codificados en [**UTF-8**](utf-8.md).
+- **Codificación**: los archivos deben estár codificados en [**UTF-8**](utf.md#UTF-8).
 - **Salto de línea**: cada registro debe terminar con un salto de línea `LN` o `CR` + `LN`.
 
 %%

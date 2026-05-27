@@ -1,15 +1,15 @@
 ---
 aliases:
-  - Codificación de texto UTF-8
+  - Codificación de texto UTF
 author: Mindusting
 corrected: false
 headerFile: false
 tags:
-  - UTF-8
+  - UTF
 rating:
 ---
 
-# CODIFICACIÓN DE TEXTO UTF-8
+# CODIFICACIÓN DE TEXTO UTF
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
@@ -18,3 +18,9 @@ rating:
 > [!help]- REFERENCIAS WEB
 > YouTube:
 > - [Nic Barker](https://youtu.be/vpSkBV5vydg) #WWW/YT/NicBarker
+
+## UTF-8
+
+## UTF-16
+
+## UTF-32
