@@ -1,11 +1,10 @@
 ---
-aliases:
-  - Codifiación de texto ASCII
+aliases: [Codifiación de texto ASCII]
 author: Mindusting
 corrected: false
 headerFile: true
-tags:
-  - ASCII
+rating: 
+tags: [ASCII]
 ---
 
 # CODIFIACIÓN DE TEXTO ASCII

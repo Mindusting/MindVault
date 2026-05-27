@@ -1,17 +1,16 @@
 ---
-aliases:
-  - Codificación de texto UTF
+aliases: [Codificación de texto UTF]
 author: Mindusting
 corrected: false
-headerFile: false
-tags:
-  - UTF
+headerFile: true
 rating:
+tags: [UTF]
 ---
 
 # CODIFICACIÓN DE TEXTO UTF
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Explicar que **UTF-8** es (*Unicode Transformation Format - 8bit*).
 

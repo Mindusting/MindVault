@@ -2,14 +2,15 @@
 aliases: [Unicode]
 author: Mindusting
 corrected: false
-headerFile: false
-rating: 
+headerFile: true
+rating:
 tags: []
 ---
 
 # UNICODE
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
 > [!external-link]- REFERENCIAS WEB
