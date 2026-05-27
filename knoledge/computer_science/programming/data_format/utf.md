@@ -28,4 +28,12 @@ El estandar [**Unicode**](unicode.md) por sí solo, define que números represen
 
 ## UTF-16
 
+- `utf-16`
+- `utf-16-le`
+- `utf-16-be`
+
 ## UTF-32
+
+- `utf-32`
+- `utf-32-le`
+- `utf-32-be`
