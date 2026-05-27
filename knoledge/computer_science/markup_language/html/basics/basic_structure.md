@@ -1,16 +1,15 @@
 ---
+aliases: [Estructura básica de HTML5]
 author: Mindusting
 corrected: false
-tags:
-  - Programming
-  - HTML
-  - Web
-title: Estructura básica de HTML5
+headerFile: false
+rating: 
+tags: [HTML, Programming, Web]
 ---
 
 # ESTRUCTURA BÁSICA
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [W3 Schools (html tag)](https://www.w3schools.com/tags/tag_html.asp) #WWW/W3Schools
 > - [W3 Schools (head tag)](https://www.w3schools.com/tags/tag_head.asp) #WWW/W3Schools
 > - [W3 Schools (title tag)](https://www.w3schools.com/tags/tag_title.asp) #WWW/W3Schools
@@ -26,10 +25,11 @@ SINTAXIS
 ```html
 <!DOCTYPE [document_type]>
 ```
+
 %%
 
->[!abstract] SINTAXIS
->\<!<span class="key-word-color">DOCTYPE</span> <span class="italic variable-color">[document_type]</span>\>
+> [!abstract] SINTAXIS
+> \<!<span class="key-word-color">DOCTYPE</span> <span class="italic variable-color">[document_type]</span>\>
 
 Este es un ejemplo de como se especifica el tipo de documento HTML5:
 
@@ -88,7 +88,6 @@ La etiqueta `title` permite cambiar como su nombre indica, el título de la pág
 ## ETIQUETA BODY
 
 La etiqueta `body` permite indicar que queremos que se muestre en nuestra página web.
-
 
 ```html
 <!DOCTYPE html>
