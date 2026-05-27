@@ -32,7 +32,7 @@ compile:
     javac -sourcepath src -d bin src/Main.java
 
 run:
-    java -cp bin Main.java
+    java -cp bin Main
 
 clear:
     rm -r bin/*
