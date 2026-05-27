@@ -76,7 +76,7 @@ SINTAXIS
 - [TABLAS 🍫](html_table.md)
 - [LINKS 🔗](html_hyperlink.md)
 - [DIV (CONTENEDOR)](tags/div.md)
-- [IMÁGENES 📷](html_img.md)
+- [IMÁGENES 📷](tags/img.md)
     - [MAPAS 🗺️](html_map.md)
 - [VÍDEOS 📼](html_videos.md)
 - [BARRA DE PROGRESO](html_progress.md)
