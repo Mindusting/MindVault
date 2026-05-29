@@ -19,17 +19,17 @@ title: Bash Script
 > - [Fazt](https://youtu.be/H4ayPYcZEfI) #WWW/YT/Fazt
 > - [Informatica Live](https://youtu.be/geyLYfZcdtQ) #WWW/YT/InformaticaLive
 
-![](bash_script_files.md)
+![](basics/bash_script_files.md)
 
 ## ÍNDICES
 
-- [Tipos de datos](bash_script_data_types.md)
-- [Variables](bash_script_variables.md)
-- [Operadores](bash_script_operators.md)
-- [Array](bash_script_array.md)
-- [Condicionales](bash_script_conditionals.md)
-- [Bucles](bash_script_loop.md)
-- [Funciones](bash_script_function.md)
+- [Tipos de datos](basics/bash_script_data_types.md)
+- [Variables](basics/bash_script_variables.md)
+- [Operadores](basics/bash_script_operators.md)
+- [Array](basics/bash_script_array.md)
+- [Condicionales](basics/bash_script_conditionals.md)
+- [Bucles](basics/bash_script_loop.md)
+- [Funciones](basics/bash_script_function.md)
 
 ## VARIABLES DE ENTORNO
 
