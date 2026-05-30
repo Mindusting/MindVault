@@ -72,6 +72,16 @@ img[class*="#fillall"] {
     max-width: 100% !important;
 }
 
+div[alt*="#fillall"] {
+    width: 100%;
+    max-width: 100% !important;
+}
+
+div[class*="#fillall"] {
+    width: 100%;
+    max-width: 100% !important;
+}
+
 div[class*="bases-cards-cover"] {
 	image-rendering: pixelated;
 }
