@@ -27,7 +27,7 @@ title: Linux 🐧
 > - [Nir Lichtman (Diving into Linux Kernel)](https://www.youtube.com/playlist?list=PL0tgH22U2S3GiMeldUs9osJCFDuqjKq_V) #WWW/YT/NirLichtman
 
 - [Archivos ocultos](linux_hidden_files.md)
-- [Comandos](command/linux_cmd.md)
+- [Comandos](linux_cmd.md)
 - [Bash Script](script/bash_script.md)
 - [INode](linux_inode.md)
 - [DESKTOP](linux_desktop_entry.md)

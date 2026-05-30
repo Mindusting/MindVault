@@ -11,5 +11,5 @@ title: Usuarios en Linux
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
 
-- [CREACIÓN DE USUARIOS](command/linux_cmd_adduser.md)
+- [CREACIÓN DE USUARIOS](command/adduser.md)
 - [BORRADO DE USUARIOS](command/bash_deluser.md)

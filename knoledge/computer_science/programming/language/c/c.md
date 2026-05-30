@@ -28,7 +28,7 @@ tags: [C, Programming]
 > - [Grokipedia](https://grokipedia.com/page/C_(programming_language)) #WWW/Grokipedia
 
 > [!seealso] Ver también
-> - [Comando `make`:](../../../../../temp/os/linux/command/linux_cmd_make.md)
+> - [Comando `make`:](../../../../../temp/os/linux/command/make.md)
 >     Sirve para poder trabajar sobre proyectos de programación más facilmente.
 > - [Git:](../../../dev_tools/git/git.md)
 >     Es un sistema de control de versiones, permite tener un desarrollo de proyecto más estructurado.

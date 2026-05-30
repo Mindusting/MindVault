@@ -38,7 +38,7 @@ El operador `LIKE` permite comparar dos textos; pudiendo hacer uso de caracteres
 
 ## GLOB
 
-Utiliza la sintaxis de archivos de [**Linux**](../../../../../../temp/os/linux/linux.md) como el que se usa en el comando [`ls`](../../../../../../temp/os/linux/command/linux_cmd_ls.md).
+Utiliza la sintaxis de archivos de [**Linux**](../../../../../../temp/os/linux/linux.md) como el que se usa en el comando [`ls`](../../../../../../temp/os/linux/command/ls.md).
 
 | CHAR  | SENTIDO                          |
 |:-----:|:-------------------------------- |
