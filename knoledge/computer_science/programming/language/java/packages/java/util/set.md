@@ -19,5 +19,5 @@ title: Interfaz Set en Java
 
 ## CLASES QUE IMPLEMENTAN ESTA INTERFAZ
 
-- [HashSet](java_util_hashset.md)
-- [TreeSet](java_util_treeset.md)
+- [HashSet](hashset.md)
+- [TreeSet](treeset.md)

@@ -23,7 +23,7 @@ title: JsonObject en GSON
 - `get`: devuelve el `JsonElement` correspondiente a la clave indicada.
 - `has`: devuelve el valor [booleano](../../data_types/java_boolean.md) indicando si contiene la clave indicada.
 - `isEmpty`: devuelve el valor [booleano](../../data_types/java_boolean.md) indicando si está vacío.
-- `keySet`: devuelve un [`Set`](../../packages/java/util/java_util_set.md) con las claves.
+- `keySet`: devuelve un [`Set`](../../packages/java/util/set.md) con las claves.
 - `remove`: elimina el par clave, valor en base a la clave indicada, devolviendo el [`JsonElement`](java_gson_jsonelement.md) perteneciente a la clave indiada.
 - `size`: devuelve el número de pares de clave, valor.
 
@@ -48,7 +48,7 @@ System.out.println(obj);
 
 ## INSERCIÓN DE PARES
 
-En el `JsonObject` no se puede meter cualquier tipo de elemento como puede ocurrir en los [*map*](../../packages/java/util/java_util_map.md) de **Java**, sino que solo se puede guardar unos tipos en concreto:
+En el `JsonObject` no se puede meter cualquier tipo de elemento como puede ocurrir en los [*map*](../../packages/java/util/map.md) de **Java**, sino que solo se puede guardar unos tipos en concreto:
 
 - `Boolean`
 - `Character`

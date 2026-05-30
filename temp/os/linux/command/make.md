@@ -23,9 +23,9 @@ tags:
 > >     - [ ] Explicar las variables automáticas.
 > > - [ ] Explicar que una instrucción se divide en *objetivo*, *dependencias* y *comando*.
 
-El comando `make` junto a los archivos `makefile` son una erramienta muy buena para los programadores, ya que permite automatizar ciertas tareas durante el desarrollo, como por ejemplo la compilación de todos los archivos, ejecución del programa, lipieza de los archivos temporales, cubrir dependencias.
+El comando `make` junto a los archivos `Makefile` son una herramienta muy buena para los programadores, ya que permite automatizar ciertas tareas durante el desarrollo, como por ejemplo la compilación de todos los archivos, ejecución del programa, lipieza de los archivos temporales y cubrir dependencias.
 
-Cuando nosotro ejecutamos el comando `make` este buscará en el directorio en el que nos encontremos un archivo con el nombre `makefile` y ejecutará las instrucciones que le hayamos indicado.
+Cuando nosotro ejecutamos el comando `make` este buscará en el directorio en el que nos encontremos un archivo con el nombre `Makefile` y ejecutará las instrucciones que le hayamos indicado.
 
 ---
 
@@ -34,10 +34,10 @@ Imaginemos que tenemos la siguiente estructura en un proyecto:
 ```txt
 /.
 |- main.c
-|- makefile
+|- Makefile
 ```
 
-Dentro del archivo `makefile` podríamos tener algo así:
+Dentro del archivo `Makefile` podríamos tener algo así:
 
 ```makefile
 all: main.c

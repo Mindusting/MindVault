@@ -19,5 +19,5 @@ title: Interfaz List en Java
 
 ## CLASES QUE IMPLEMENTAN ESTA INTERFAZ
 
-- [ArrayList](java_util_arraylist.md)
-- [LinkedList](java_util_linkedlist.md)
+- [ArrayList](arraylist.md)
+- [LinkedList](linkedlist.md)

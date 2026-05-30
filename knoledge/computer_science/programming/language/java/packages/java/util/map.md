@@ -19,6 +19,6 @@ title: Interfaz Map en Java
 
 ## CLASES QUE IMPLEMENTAN ESTA INTERFAZ
 
-- [HashMap](java_util_hashmap.md)
-- [TreeMap](java_util_treemap.md)
-- [LinkedHashMap](java_util_linkedhashmap.md)
+- [HashMap](hashmap.md)
+- [TreeMap](treemap.md)
+- [LinkedHashMap](linkedhashmap.md)

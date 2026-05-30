@@ -220,7 +220,7 @@ public User selectById(int id) {
 ```
 ^selectById-example
 
-Este otro [método](java_method.md) devuelve un [`ArrayList`](packages/java/util/java_util_arraylist.md) de todos los usuarios que haya en la base de datos.
+Este otro [método](java_method.md) devuelve un [`ArrayList`](packages/java/util/arraylist.md) de todos los usuarios que haya en la base de datos.
 
 ```java
 public ArrayList<User> selectAll() {

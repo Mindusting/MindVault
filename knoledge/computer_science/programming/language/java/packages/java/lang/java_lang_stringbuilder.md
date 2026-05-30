@@ -16,7 +16,7 @@ title: StringBuilder en Java
 > [!abstract] SINTAXIS
 > StringBuilder ***\[name\]*** = new StringBuilder();
 
-El `StringBuilder` se comporta como una [lista](../util/java_util_list.md), ya que podemos ir añadiendo [`Strings`](java_lang_string.md) mediante el [método](../../../java_method.md) `append`, una vez hemos añadido todos los [`Strings`](java_lang_string.md) que queramos, podemos juntarlos todos mediante el [método](../../../java_method.md) `toString`.
+El `StringBuilder` se comporta como una [lista](../util/list.md), ya que podemos ir añadiendo [`Strings`](java_lang_string.md) mediante el [método](../../../java_method.md) `append`, una vez hemos añadido todos los [`Strings`](java_lang_string.md) que queramos, podemos juntarlos todos mediante el [método](../../../java_method.md) `toString`.
 
 ```java
 StringBuilder stringBuilder = new StringBuilder();
