@@ -38,11 +38,33 @@ img[class*="#center"] {
     margin-right: auto;
 }
 
+div[alt*="#center"] {
+    /*text-align: center !important;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div[class*="#center"] {
+    /*text-align: center !important;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 img[class*="#left"] {
     text-align: left;
 }
 
 img[alt*="#left"] {
+    text-align: left;
+}
+
+div[class*="#left"] {
+    text-align: left;
+}
+
+div[alt*="#left"] {
     text-align: left;
 }
 
@@ -55,6 +77,14 @@ img[class*="#right"] {
 }
 
 img[alt*="#pixel-art"] {
+    image-rendering: pixelated;
+}
+
+div[class*="#right"] {
+    text-align: right;
+}
+
+div[alt*="#pixel-art"] {
     image-rendering: pixelated;
 }
 
