@@ -56,3 +56,27 @@ clear:
     rm ./main
     # Borramos el ejecutable.
 ```
+
+## PHONY
+
+Para indicar que un objetivo no es un archivo real sino un nombre que le hemos dado a una serie de instrucciones se usa la palabra clave `.PHONY` seguida de dos puntos (`:`) y los objetivos separados por espacios.
+
+```makefile
+.PHONY: all compile run clear
+
+all: main.c
+    gcc -o main main.c -lm && ./main
+    # Combinamos compilación y ejecución.
+
+compile: main.c
+    gcc -o main main.c -lm
+    # Compilamos el archivo con sus dependencias.
+
+run: main
+    ./main
+    # Ejecutamos el archivo.
+
+clear:
+    rm ./main
+    # Borramos el ejecutable.
+```
