@@ -14,7 +14,7 @@ title: Arrays en Java
 > > [!todo] #TODO
 
 > [!faq]- FAQ
-> - [¿Qué son los arrays en programación?](../../fundamentals/temp-dump/data_structures/pc_ds_array.md)
+> - [¿Qué son los arrays en programación?](../../../fundamentals/temp-dump/data_structures/pc_ds_array.md)
 
 Los **arrays** en Java son internamente un [objeto](java_class.md), estos permiten almacenar varios valores de un mismo tipo en una sola [variable](java_variable.md), pudiendo hacer referencia a los distintos elementos guardados mediante un índice (*siendo este un número*).
 

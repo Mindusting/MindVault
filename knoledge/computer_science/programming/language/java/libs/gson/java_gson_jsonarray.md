@@ -15,7 +15,7 @@ tags: [Java, JSON, Programming]
 > [!important] IMPORTANTE
 > Cabe resaltar que esta [clase](../../java_class.md) (`JsonArray`) hereda de la [clase](../../java_class.md) [`JsonElement`](java_gson_jsonelement.md), por lo que además de los [métodos](../../java_method.md) que se documentan en este apartado, también contienen los de [`JsonElement`](java_gson_jsonelement.md).
 
-Los [*arrays*](../../java_array.md) en [**JSON**](../../../../data_format/json.md) son más flexibles que los [*arrays*](../../java_array.md) en **Java**, ya que estos pueden contener valores de **distintos tipos**, por lo que al tratar con la información contenida dentro de estos, tendremos que ir especificando de qué forma interpretar la información guardada en su interior.
+Los [*arrays*](../../theory/arrays.md) en [**JSON**](../../../../data_format/json.md) son más flexibles que los [*arrays*](../../theory/arrays.md) en **Java**, ya que estos pueden contener valores de **distintos tipos**, por lo que al tratar con la información contenida dentro de estos, tendremos que ir especificando de qué forma interpretar la información guardada en su interior.
 
 ---
 
@@ -50,7 +50,7 @@ System.out.println(arr);
 
 ## INSERCIÓN DE ELEMENTOS
 
-En el `JsonArray` no se puede meter cualquier tipo de elemento como puede ocurrir en los [*array*](../../java_array.md) de **Java**, sino que solo se pueden guardar unos tipos en concreto:
+En el `JsonArray` no se puede meter cualquier tipo de elemento como puede ocurrir en los [*array*](../../theory/arrays.md) de **Java**, sino que solo se pueden guardar unos tipos en concreto:
 
 - `Boolean`
 - `Character`

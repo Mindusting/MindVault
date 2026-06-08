@@ -127,7 +127,7 @@ Para insertar datos en donde van los interrogantes tendremos que usar una serie 
 - `setString`
 - `setDate`
 
-Todos estos tienen un argumento en común y es el primero, siendo este un número de tipo [`int`](data_types/java_integer.md#INT), con este se indica sobre qué interrogante se quiere poner la información, este número comienza por el 1, esto quiere decir que si queremos introducir el dato en el segundo interrogante, tendremos que poner un 2 y no un 1 como si estuviéramos trabajando con un [array](java_array.md).
+Todos estos tienen un argumento en común y es el primero, siendo este un número de tipo [`int`](data_types/java_integer.md#INT), con este se indica sobre qué interrogante se quiere poner la información, este número comienza por el 1, esto quiere decir que si queremos introducir el dato en el segundo interrogante, tendremos que poner un 2 y no un 1 como si estuviéramos trabajando con un [array](theory/arrays.md).
 
 El segundo argumento dependerá del [método](java_method.md) que estemos llamando, introduciendo así el dato que queramos insertar.
 

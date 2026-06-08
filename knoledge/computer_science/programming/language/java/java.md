@@ -50,7 +50,7 @@ rating:
         - [FORMATE STRING](java_format_string.md)
 - [CONDICIONALES 🚦](java_condicion.md)
 - [BUCLES ➰](java_loop.md)
-- [ARRAY](java_array.md)
+- [ARRAY](theory/arrays.md)
 - [MÉTODOS 📞](java_method.md)
 - [CLASES 📦](java_class.md)
     - [ENTIDADES](java_entity.md)

@@ -200,7 +200,7 @@ En Java no existen límites en los tipos de **referencia**, esto es por que inte
 
 #### STRING
 
-Para poder guardar un texto y poder trabajar sobre el de forma sencilla existen las variables de tipo `String`, estas en esencia son un [objeto](java_class.md) el cual guarda un [array](java_array.md) de tipo [char](<# CHAR>), junto a algunos métodos que nos permite el fácil manejo de la información que queramos meter.
+Para poder guardar un texto y poder trabajar sobre el de forma sencilla existen las variables de tipo `String`, estas en esencia son un [objeto](java_class.md) el cual guarda un [array](theory/arrays.md) de tipo [char](<# CHAR>), junto a algunos métodos que nos permite el fácil manejo de la información que queramos meter.
 
 ```java
 public class CharVariables {
