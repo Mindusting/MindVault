@@ -21,7 +21,7 @@ Los archivos de Java son en esencia archivos de texto, con extensión `.java`, e
 
 ## CLASE DEL ARCHIVO
 
-Todos los archivos de Java deben tener una [clase](java_class.md) con el mismo nombre que el archivo:
+Todos los archivos de Java deben tener una [clase](theory/oop.md) con el mismo nombre que el archivo:
 
 ```java
 public class MyFirstProgram {
@@ -31,7 +31,7 @@ public class MyFirstProgram {
 
 ## MÉTODO MAIN
 
-Esta a su vez, es la única [clase](java_class.md) que puede tener un método `main`:
+Esta a su vez, es la única [clase](theory/oop.md) que puede tener un método `main`:
 
 ```java
 public class MyFirstProgram {

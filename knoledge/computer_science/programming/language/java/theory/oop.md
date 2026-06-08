@@ -1,16 +1,18 @@
 ---
+aliases: [OOP en Java]
 author: Mindusting
 corrected: false
-tags:
-  - Programming
-  - Java
-  - Class
-title: Clases en Java
+creationDate: 2026-06-08 10:29:14
+headerFile: false
+modificationDate: 2026-06-08 10:29:14
+rating: 
+tags: [Java, OOP, Programming]
 ---
 
-# CLASES EN JAVA
+# OOP EN JAVA
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Hacer una explicación a cerca de la estructura del primer ejemplo (*Los paquetes*).
 > > - [ ] Explicar qué son los `POJO`.
@@ -91,14 +93,19 @@ public class ClassesMain {
 ## HERENCIA
 
 ---
+
 ---
+
 ---
+
 ---
+
 ---
 
 El uso de distintas clases en Java permite trocear el código en diferentes archivos (*Clases*), pudiendo así tenerlo más organizado, a si vez estos archivos pueden estar organizados en diferentes [paquetes](java_package.md) (*En esencia son carpetas*), ahora veremos una estructura de archivos sencilla de un proyecto de ejemplo:
 
 > [!quote] ESTRUCTURA DE DIRECTORIO
+> 
 > ```txt
 > /.
 > └─/classExample
@@ -241,11 +248,13 @@ public class ArrayUtilities {
 ## CONSTRUCTORES
 
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
 ## FINALIZA
 
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
 > [!faq]- FAQ

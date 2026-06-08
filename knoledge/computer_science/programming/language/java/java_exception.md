@@ -217,7 +217,7 @@ public static double pitagoras(double[] vector) throws ArrayIndexOutOfBoundsExce
 ```
 
 > [!example] EJEMPLO DE USO
-> Si estamos trabajando sobre un entorno gráfico y este debe tener una conexión a una base de datos, podríamos propagas las excepciones que ocurran en la base de datos para tratarlas en el entorno gráfico, haciendo que salga una ventana emergente indicando que ha ocurrido algún problema, de esta forma, con la propagación de excepciones hemos podido comunicar dos [clases](java_class.md) (*la encargada del entorno gráfico y la que se comunica con la base de datos*) para que trabajen en conjunto.
+> Si estamos trabajando sobre un entorno gráfico y este debe tener una conexión a una base de datos, podríamos propagas las excepciones que ocurran en la base de datos para tratarlas en el entorno gráfico, haciendo que salga una ventana emergente indicando que ha ocurrido algún problema, de esta forma, con la propagación de excepciones hemos podido comunicar dos [clases](theory/oop.md) (*la encargada del entorno gráfico y la que se comunica con la base de datos*) para que trabajen en conjunto.
 
 ## EXCEPCIONES PERSONALIZADAS
 

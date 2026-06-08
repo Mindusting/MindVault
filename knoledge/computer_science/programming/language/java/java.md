@@ -52,7 +52,7 @@ rating:
 - [BUCLES ➰](java_loop.md)
 - [ARRAY](theory/arrays.md)
 - [MÉTODOS 📞](java_method.md)
-- [CLASES 📦](java_class.md)
+- [CLASES 📦](theory/oop.md)
     - [ENTIDADES](java_entity.md)
     - [HERENCIA](java_inheritance.md)
     - [ID DE VERSIONES](java_serialversionuid.md)

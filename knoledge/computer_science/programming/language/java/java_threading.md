@@ -38,7 +38,7 @@ title: Hilos en Java
 
 ## CREACIÓN DE LA CLASE HILO
 
-Para crear un **hilo** en **Java**, se puede hacer de dos formas; la primera consiste en extender la una [**clase**](java_class.md) a `Thread`, y la otra es implementando `Runnable`; las dos funcionan de la misma forma, por lo que se pueden usar indistintamente.
+Para crear un **hilo** en **Java**, se puede hacer de dos formas; la primera consiste en extender la una [**clase**](theory/oop.md) a `Thread`, y la otra es implementando `Runnable`; las dos funcionan de la misma forma, por lo que se pueden usar indistintamente.
 
 ```java
 public class MyThread extends Thread { // <- La diferencia.
@@ -61,13 +61,13 @@ public class MyRunnable implements Runnable { // <- La diferencia.
 Como puedes ver ambos formas requieren de un [**método**](java_method.md) llamado `run` el cual tendremos que sobre escribir (*con el decorador `@Override`*); cuando se inicie el hilo, este ejecutará el contendido que pongamos dentro de este [**método**](java_method.md).
 
 > [!important] IMPORTANTE
-> Esta parte en la que creamos las [**clases**](java_class.md) que usaremos como *hilos* son muy parecidas, pero dependiendo de qué método elijamos, la creación del **objeto** *hilo* cambia; este punto lo veremos más adelante.
+> Esta parte en la que creamos las [**clases**](theory/oop.md) que usaremos como *hilos* son muy parecidas, pero dependiendo de qué método elijamos, la creación del **objeto** *hilo* cambia; este punto lo veremos más adelante.
 
 ## CREACIÓN DEL OBJETO HILO
 
-Dependiendo de la forma en la que hayamos creado la [**clase**](java_class.md) tendremos que crear los **objetos** de una forma distinta.
+Dependiendo de la forma en la que hayamos creado la [**clase**](theory/oop.md) tendremos que crear los **objetos** de una forma distinta.
 
-Para crear un **objeto** a partir de una [**clase**](java_class.md) que extiende de `Thread`:
+Para crear un **objeto** a partir de una [**clase**](theory/oop.md) que extiende de `Thread`:
 
 ```java
 public class MainThread {
@@ -82,7 +82,7 @@ public class MainThread {
 }
 ```
 
-Para crear un **objeto** a partir de una [**clase**](java_class.md) que implementa de `Runnable`:
+Para crear un **objeto** a partir de una [**clase**](theory/oop.md) que implementa de `Runnable`:
 
 ```java
 public class MainThread {
@@ -106,9 +106,9 @@ public class MainThread {
 
 ## EJECUCIÓN DE HILOS
 
-Hayamos [creado los *hilos*](#CREACIÓN%20DEL%20OBJETO%20HILO) de una forma u otra, el manejo de estos es igual, ya que ambos terminan convergiendo en la misma [clase](java_class.md) `Thread`; por lo que a partir de aquí la explicación se unifica.
+Hayamos [creado los *hilos*](#CREACIÓN%20DEL%20OBJETO%20HILO) de una forma u otra, el manejo de estos es igual, ya que ambos terminan convergiendo en la misma [clase](theory/oop.md) `Thread`; por lo que a partir de aquí la explicación se unifica.
 
-Para ejecutar un *hilo* se usa el [método](java_method.md) `start`; al ejecutar este [método](java_method.md) *Java* creará otro *hilo* (*no una [clase](java_class.md) `Thread` sino un hilo interno*) el cual se encargará de ejecutar el [método](java_method.md) `run` de este.
+Para ejecutar un *hilo* se usa el [método](java_method.md) `start`; al ejecutar este [método](java_method.md) *Java* creará otro *hilo* (*no una [clase](theory/oop.md) `Thread` sino un hilo interno*) el cual se encargará de ejecutar el [método](java_method.md) `run` de este.
 
 > [!important] IMPORTANTE
 > No ejecutes el [método](java_method.md) `run` del *hilo* directamente, ya que de esta forma se estará ejecutando de forma directa en vez de a través de un nuevo *hilo*; es por esto que se debe ejecutar el [método](java_method.md) `start`, ya que de esta forma creará un *hilo* interno y será este quien de forma automática ejecutará el [método](java_method.md) `run`; así que recuerda que si llamas el [método](java_method.md) `run` no estarás usando el *hilo* correctamente.

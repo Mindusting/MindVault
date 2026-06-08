@@ -17,13 +17,13 @@ Para poder conectarnos a una [base de datos](../../../data_base/relational/theor
 - [MySQL](java_mysql.md)
 
 > [!important] IMPORTANTE
-> Para poder trabajar sobre [bases de datos](../../../data_base/relational/theory/db.md) en **Java** se usa el paquete `java.sql`, este contiene todas las [clases](java_class.md) necesarias para desempeñar esta tarea.
+> Para poder trabajar sobre [bases de datos](../../../data_base/relational/theory/db.md) en **Java** se usa el paquete `java.sql`, este contiene todas las [clases](theory/oop.md) necesarias para desempeñar esta tarea.
 
 ## CONEXIÓN
 
 Dependiendo del tipo de [base de datos](../../../data_base/relational/theory/db.md) a la que queramos conectarnos el proceso de creación de la conexión cambia un poco, podrás verlo más en detalle en su documentación correspondiente.
 
-Para poder realizar una conexión hace falta importar las siguientes [clases](java_class.md):
+Para poder realizar una conexión hace falta importar las siguientes [clases](theory/oop.md):
 
 ```java
 import java.sql.Connection;
@@ -31,7 +31,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 ```
 
-Usaremos la [clase](java_class.md) `Connection` para guardar la conexión, `DriverManager` para realizar la conexión y `SQLException` para poder controlarla, ya que si el proceso de creación de la conexión falla, se lanzará una [excepción](java_exception.md) de este tipo.
+Usaremos la [clase](theory/oop.md) `Connection` para guardar la conexión, `DriverManager` para realizar la conexión y `SQLException` para poder controlarla, ya que si el proceso de creación de la conexión falla, se lanzará una [excepción](java_exception.md) de este tipo.
 
 ```java
 // Creación de la variable que contendrá
@@ -67,11 +67,11 @@ Los tres argumentos son de tipo [`String`](packages/java/lang/java_lang_string.m
 
 ## DECLARACIONES
 
-Tenemos dos formas de ejecutar sentencias de [SQL](../../../data_base/relational/query_language/sql.md), estas son a través de las [clases](java_class.md) [`Statement`](#DECLARACIÓN%20SIMPLE) y [`PreparedStatement`](#DECLARACIÓN%20COMPLEJA), cada una de estas se verá más en detalle en sus propios apartados.
+Tenemos dos formas de ejecutar sentencias de [SQL](../../../data_base/relational/query_language/sql.md), estas son a través de las [clases](theory/oop.md) [`Statement`](#DECLARACIÓN%20SIMPLE) y [`PreparedStatement`](#DECLARACIÓN%20COMPLEJA), cada una de estas se verá más en detalle en sus propios apartados.
 
 ### DECLARACIÓN SIMPLE
 
-Para hacer una declaración simple se usa la [clase](java_class.md) `Statement`, para obtener un [objeto](java_class.md) de esta, tendremos que hacerlo mediante la [conexión](#CONEXIÓN) a la [base de datos](../../../data_base/relational/theory/db.md), ya que esta contiene el [método](java_method.md) `createStatement`, este no recibe ningún argumento.
+Para hacer una declaración simple se usa la [clase](theory/oop.md) `Statement`, para obtener un [objeto](theory/oop.md) de esta, tendremos que hacerlo mediante la [conexión](#CONEXIÓN) a la [base de datos](../../../data_base/relational/theory/db.md), ya que esta contiene el [método](java_method.md) `createStatement`, este no recibe ningún argumento.
 
 ```java
 // Creación de la variable que contendrá
@@ -104,9 +104,9 @@ try {
 > [!important] IMPORTANTE
 > Es importante cerrar los recursos en el `finally` en el orden inverso al que se han creado para evitar problemas.
 
-El [objeto](java_class.md) `Statement` contiene dos [métodos](java_method.md) (*en realidad tiene más, pero estos son los más usados*) `executeQuery` y `executeUpdate`, dependiendo del tipo del tipo de sentencia que queramos ejecutar tendremos que usar uno u otro, en cualquiera de los dos casos reciben un [`String`](packages/java/lang/java_lang_string.md) como argumento y pueden lanzar dos tipos de [excepciones](java_exception.md), `SQLException` y `SQLTimeoutException`, indicando con la primera que la sentencia no se ha podido ejecutar debido a por ejemplo un fallo en la sintaxis y la segunda indicado que ha pasado demasiado tiempo para ejecutar la sentencia, esto último puede ocurrir cuando se pierde la conexión con la [base de datos](../../../data_base/relational/theory/db.md).
+El [objeto](theory/oop.md) `Statement` contiene dos [métodos](java_method.md) (*en realidad tiene más, pero estos son los más usados*) `executeQuery` y `executeUpdate`, dependiendo del tipo del tipo de sentencia que queramos ejecutar tendremos que usar uno u otro, en cualquiera de los dos casos reciben un [`String`](packages/java/lang/java_lang_string.md) como argumento y pueden lanzar dos tipos de [excepciones](java_exception.md), `SQLException` y `SQLTimeoutException`, indicando con la primera que la sentencia no se ha podido ejecutar debido a por ejemplo un fallo en la sintaxis y la segunda indicado que ha pasado demasiado tiempo para ejecutar la sentencia, esto último puede ocurrir cuando se pierde la conexión con la [base de datos](../../../data_base/relational/theory/db.md).
 
-Si queremos ejecutar una **consulta** tendremos que usar el [método](java_method.md) `executeQuery`, este nos devolverá un [objeto](java_class.md) de tipo [`ResultSet`](#RESULTADO) pudiendo así con el leer el resultado de la **consulta**.
+Si queremos ejecutar una **consulta** tendremos que usar el [método](java_method.md) `executeQuery`, este nos devolverá un [objeto](theory/oop.md) de tipo [`ResultSet`](#RESULTADO) pudiendo así con el leer el resultado de la **consulta**.
 
 Si queremos ejecutar una **inserción**, **actualización** o **borrado** de datos, tendremos que usar el [método](java_method.md) `executeUpdate`, este nos devolverá un [`int`](data_types/java_integer.md#INT) indicando el número de tuplas afectadas.
 
@@ -115,7 +115,7 @@ Si queremos ejecutar una **inserción**, **actualización** o **borrado** de dat
 > [!important] IMPORTANTE
 > Este apartado explica cómo insertar datos de forma dinámica a la sentencia de [SQL](../../../data_base/relational/query_language/sql.md), no es recomendable usar el [f-string](java_format_string.md) como sustituto a este apartado, ya que si sigues esta documentación estarás evitando la [inyección de SQL](../../../data_base/relational/query_language/sql_injection.md).
 
-Para hacer una declaración simple se usa la [clase](java_class.md) `PreparedStatement`, para obtener un [objeto](java_class.md) de esta, tendremos que hacerlo mediante la [conexión](#CONEXIÓN) a la [base de datos](../../../data_base/relational/theory/db.md), ya que esta contiene el [método](java_method.md) `prepareStatement`, este recibe un argumento de tipo [`String`](packages/java/lang/java_lang_string.md) con la sentencia [SQL](../../../data_base/relational/query_language/sql.md) que queramos ejecutar.
+Para hacer una declaración simple se usa la [clase](theory/oop.md) `PreparedStatement`, para obtener un [objeto](theory/oop.md) de esta, tendremos que hacerlo mediante la [conexión](#CONEXIÓN) a la [base de datos](../../../data_base/relational/theory/db.md), ya que esta contiene el [método](java_method.md) `prepareStatement`, este recibe un argumento de tipo [`String`](packages/java/lang/java_lang_string.md) con la sentencia [SQL](../../../data_base/relational/query_language/sql.md) que queramos ejecutar.
 
 La sentencia [SQL](../../../data_base/relational/query_language/sql.md) puede tener *interrogantes* (`?`), estos indican donde pondremos los datos que queremos insertar en la sentencia.
 
@@ -135,11 +135,11 @@ Un ejemplo de esto lo puedes ver en la [selección de un usuario por `id`](java_
 
 ---
 
-Una vez hemos terminado de insertar los datos que queremos dentro de la sentencia [SQL](../../../data_base/relational/query_language/sql.md) podremos ejecutarla mediante los [métodos](java_method.md) `executeQuery` y `executeUpdate` sobre el [objeto](java_class.md) `PreparedStatement`, los cuales funcionan igual que como se ha explicado en el apartado de [declaración simple](#DECLARACIÓN%20SIMPLE) son la deferencia que estos al ya haber indicado la sentencia [SQL](../../../data_base/relational/query_language/sql.md) con anterioridad, no requieren de un argumento de tipo [`String`](packages/java/lang/java_lang_string.md).
+Una vez hemos terminado de insertar los datos que queremos dentro de la sentencia [SQL](../../../data_base/relational/query_language/sql.md) podremos ejecutarla mediante los [métodos](java_method.md) `executeQuery` y `executeUpdate` sobre el [objeto](theory/oop.md) `PreparedStatement`, los cuales funcionan igual que como se ha explicado en el apartado de [declaración simple](#DECLARACIÓN%20SIMPLE) son la deferencia que estos al ya haber indicado la sentencia [SQL](../../../data_base/relational/query_language/sql.md) con anterioridad, no requieren de un argumento de tipo [`String`](packages/java/lang/java_lang_string.md).
 
 ## RESULTADO
 
-Para obtener el resultado de una [consulta](#DECLARACIONES) está usaremos la [clase](java_class.md) `ResultSet`, este contiene el [método](java_method.md) `next`, este no recibe argumentos y cada vez que lo ejecutamos indicamos que queremos trabajar sobre la siguiente tupla del resultado, empezando por la 0 por lo que de primeras no tendremos acceso a ninguna de ellas, al mismo tiempo este [método](java_method.md) devuelve un valor [`boolean`](data_types/java_boolean.md) indicando si existe una siguiente tupla.
+Para obtener el resultado de una [consulta](#DECLARACIONES) está usaremos la [clase](theory/oop.md) `ResultSet`, este contiene el [método](java_method.md) `next`, este no recibe argumentos y cada vez que lo ejecutamos indicamos que queremos trabajar sobre la siguiente tupla del resultado, empezando por la 0 por lo que de primeras no tendremos acceso a ninguna de ellas, al mismo tiempo este [método](java_method.md) devuelve un valor [`boolean`](data_types/java_boolean.md) indicando si existe una siguiente tupla.
 
 > [!example] EJEMPLO
 > Si hacemos una consulta en la que obtenemos dos tuplas de la información de los usuarios, de primeras no podremos acceder a ninguna de ellas, si ejecutamos una vez el [método](java_method.md) `next` este nos devolverá el valor `true`, indicándonos que existe una próxima tupla (*en este caso la primera*), en este punto podremos acceder a la información de ésta como veremos en el [siguiente apartado](#LEER%20TUPLA).
@@ -183,15 +183,15 @@ Cuando el [método](java_method.md) `next` nos devuelve el valor `true` quiere d
 Todos estos comparten una misma regla y es que reciben un argumento que puede ser de tipo [`int`](data_types/java_integer.md#INT) o [`String`](packages/java/lang/java_lang_string.md) bien indicando el *número* de la columna o el *nombre* de esta, este nos devolverá el tipo de dato que indiquemos de la columna que indiquemos.
 
 > [!important] IMPORTANTE
-> Ten en cuenta que cuando usas el [método](java_method.md) `getDate` devuelve un [objeto](java_class.md) de tipo `java.sql.Date` y no de `java.util.Date`, si quieres ver como hacer la conversión puedes ir al apartado de [conversión de datos](#CONVERSIÓN%20DE%20FECHAS)
+> Ten en cuenta que cuando usas el [método](java_method.md) `getDate` devuelve un [objeto](theory/oop.md) de tipo `java.sql.Date` y no de `java.util.Date`, si quieres ver como hacer la conversión puedes ir al apartado de [conversión de datos](#CONVERSIÓN%20DE%20FECHAS)
 
 ## CONVERSIÓN DE DATOS
 
-Cuando trabajamos sobre una [base de datos](../../../data_base/relational/theory/db.md) en **Java** a veces tenemos que hacer conversiones entre datos, esto es debido a que las librerías tienen sus propios tipos de datos ya que se amoldan a sus necesidades, es por esto que tendremos que hacer las conversiones, para que cuando queramos trabajar de forma normal sobre la información usaremos las [clases](java_class.md) originales de **Java** y cuando interactuamos con la [base de datos](../../../data_base/relational/theory/db.md) los convertiremos a las [clases](java_class.md) que necesite.
+Cuando trabajamos sobre una [base de datos](../../../data_base/relational/theory/db.md) en **Java** a veces tenemos que hacer conversiones entre datos, esto es debido a que las librerías tienen sus propios tipos de datos ya que se amoldan a sus necesidades, es por esto que tendremos que hacer las conversiones, para que cuando queramos trabajar de forma normal sobre la información usaremos las [clases](theory/oop.md) originales de **Java** y cuando interactuamos con la [base de datos](../../../data_base/relational/theory/db.md) los convertiremos a las [clases](theory/oop.md) que necesite.
 
 ### CONVERSIÓN DE FECHAS
 
-Para convertir el tipo de dato `java.util.Date` a `java.sql.Date` o viceversa se hace mediante el uso del [método](java_method.md) `getTime` que poseen los dos, este no recibe ningún argumento y devuelve un [`long`](data_types/java_integer.md#LONG), este se puede usar para pasárselo como argumento al constructor de cualquiera de las dos [clases](java_class.md) `Date`, pudiendo hacer así la conversión.
+Para convertir el tipo de dato `java.util.Date` a `java.sql.Date` o viceversa se hace mediante el uso del [método](java_method.md) `getTime` que poseen los dos, este no recibe ningún argumento y devuelve un [`long`](data_types/java_integer.md#LONG), este se puede usar para pasárselo como argumento al constructor de cualquiera de las dos [clases](theory/oop.md) `Date`, pudiendo hacer así la conversión.
 
 ```java
 java.util.Date utilDate = null;
