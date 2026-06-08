@@ -58,7 +58,7 @@ rating:
     - [ID DE VERSIONES](java_serialversionuid.md)
     - [GENERICOS](java_generics.md)
 - [INTERFACES](java_interface.md)
-- [ENUM](java_enum.md)
+- [ENUM](theory/enums.md)
 - [EXCEPCIONES ⚠️](java_exception.md)
 - [JAVADOC 📙](java_doc.md)
 - [ASSERTS 👌](java_assert.md)
