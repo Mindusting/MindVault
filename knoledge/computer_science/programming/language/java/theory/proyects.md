@@ -13,15 +13,17 @@ tags: [Java, Programmin]
 > > [!todo] #TODO
 
 ```txt
-./ (directorio del proyecto)
- |-/src (aquí va el código fuente)
- |-/bin (aquí va el código compilado)
- |- makefile
+/. (directorio del proyecto)
+|-/src (aquí va el código fuente)
+|-/bin (aquí va el código compilado)
+|- Makefile
 ```
 
-**makefile:**
+**Makefile:**
 
-```makefile
+```Makefile
+.PHONY all compile run clear
+
 all:
     rm -r bin/* && \
     javac -sourcepath src -d bin src/Main.java && \
