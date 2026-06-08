@@ -44,7 +44,7 @@ rating:
 - [ARCHIVOS DE JAVA 📄](java_files.md)
 - [MÉTODO MAIN](java_main_method.md)
 - [EJECUCIÓN DE JAVA](java_javac.md)
-- [COMENTARIOS 💬](java_comment.md)
+- [COMENTARIOS 💬](theory/comments.md)
 - [VARIABLES 💾](java_variable.md)
     - [STRING](packages/java/lang/java_lang_string.md)
         - [FORMATE STRING](java_format_string.md)
