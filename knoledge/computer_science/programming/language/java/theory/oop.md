@@ -57,7 +57,7 @@ public class ClassesMain {
 }
 ```
 
-## MÉTODOS DE CLASE
+## MÉTODOS
 
 Los [**métodos**](java_method.md) de *clase* son aquellos que tienen la propiedad `static`
 
