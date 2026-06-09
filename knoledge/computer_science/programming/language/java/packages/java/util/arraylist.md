@@ -1,22 +1,23 @@
 ---
+aliases: [ArrayList en Java]
 author: Mindusting
 corrected: false
-tags:
-  - Programming
-  - Java
-  - Packag
-  - List
-title: ArrayList en Java
+creationDate: 2026-04-30 09:22:06
+headerFile: false
+modificationDate: 2026-05-30 06:00:14
+rating: 
+tags: [Java, Programming]
 ---
 
 # ARRAYLIST EN JAVA
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
 El `ArrayList` en Java es una [clase](../../../java_class.md) que permite trabajar con un conjunto de valores, al igual que con los [arrays](../../../java_array.md), ahora, la diferencia entre estos dos es que el `ArrayList` no tiene un tamaño fijo, si no que este va variando dependiendo del uso que le vayamos dando, y que estos trabajan sobre [objetos](../../../java_class.md), es por esto que cando queremos trabajar sobre valores primitivos tenemos que hacer lo sobre las [clases](../../../java_class.md) [`wrapper`](../../../java_wrapper_classes.md).
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > ArrayList<***\[dataType]***> ***\[name]*** = new ArrayList<***\[dataType]***>();
 
 ```java
@@ -49,25 +50,25 @@ public class ArrayListMain {
 
 ## AÑADIR ELEMENTOS
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > ***\[arrayList\]***.add(***\[element\]***)
 
 ## BORRAR ELEMENTOS
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > ***\[arrayList\]***.remove(***\[index\]***)
 
 ## INSERTAR ELEMENTOS
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > ***\[arrayList\]***.set(***\[index\]***, ***\[element\]***)
 
 ## LEER ELEMENTOS
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > ***\[arrayList\]***.get(***\[index\]***)
 
 ## LIMPIAR ARRAY LIST
 
-> [!abstract] SINTAXIS
+> [!syntax] SINTAXIS
 > ***\[arrayList\]***.clear()
