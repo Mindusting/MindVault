@@ -22,7 +22,7 @@ tags: [Java, Programmin]
 **Makefile:**
 
 ```Makefile
-.PHONY all compile run clear
+.PHONY: all compile run clear
 
 all:
     rm -r bin/* && \
