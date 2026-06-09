@@ -1,11 +1,10 @@
 ---
+aliases: [Clase String en Java]
 author: Mindusting
 corrected: false
 tags:
   - Programming
   - Java
-  - String
-title: String en Java
 ---
 
 # STRING EN JAVA
