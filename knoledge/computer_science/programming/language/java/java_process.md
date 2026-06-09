@@ -14,7 +14,7 @@ title: Procesos en Java
 > > - [ ] Hacer una documentación más extensa y detallada.
 
 > [!help]- REFERENCIAS INTERNAS
-> Recomiendo tener a mano los siguiente documentos para poder comprender la siguiente documentación, sobre todo si tu intención es llegar más haya de los ejemplos simples que puedes encontrar aquí, ya que los siguientes documentos entran más en detalle sobre cada [clase](java_class.md):
+> Recomiendo tener a mano los siguiente documentos para poder comprender la siguiente documentación, sobre todo si tu intención es llegar más haya de los ejemplos simples que puedes encontrar aquí, ya que los siguientes documentos entran más en detalle sobre cada [clase](theory/oop.md):
 > - [Clase `Process`](packages/java/lang/java_lang_process.md)
 > - [Clase `ProcessBuilder`](packages/java/lang/java_lang_processbuilder.md)
 > - [Clase `Runtime`](packages/java/lang/java_lang_runtime.md)
@@ -25,7 +25,7 @@ title: Procesos en Java
 > - [¿Qué son las tuberías?]()
 
 
-Para ejecutar otro proceso desde **Java** se usan principalmente dos [clases](java_class.md); [`ProcessBuilder`](packages/java/lang/java_lang_processbuilder.md) y [`Process`](packages/java/lang/java_lang_process.md); el primero se encargará de como tal crear el proceso mientras que el segundo es el tipo de objeto que representará el proceso en cuestión.
+Para ejecutar otro proceso desde **Java** se usan principalmente dos [clases](theory/oop.md); [`ProcessBuilder`](packages/java/lang/java_lang_processbuilder.md) y [`Process`](packages/java/lang/java_lang_process.md); el primero se encargará de como tal crear el proceso mientras que el segundo es el tipo de objeto que representará el proceso en cuestión.
 
 ---
 

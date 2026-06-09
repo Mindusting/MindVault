@@ -11,7 +11,7 @@ title: Comentarios en Java
 # COMENTARIOS EN JAVA
 
 > [!faq]- FAQ
-> - [¿Qué son los comentario en programación?](../../fundamentals/temp-dump/pc_comment.md)
+> - [¿Qué son los comentario en programación?](../../../fundamentals/temp-dump/pc_comment.md)
 
 En Java existen dos formas de escribir comentarios, una es para escribir una sola línea y la otra permite escribir múltiples líneas, ahora, un comentario no es más que texto que el compilador de Java va a omitir a la hora de compilar el código, por lo que a efectos de nuestro programa este no va a provocar ningún cambio (*A priori, en un momento veremos eso*), esto nos permite redactar información en el código de nuestro programa para dar indicaciones que cómo funciona nuestro código, esto te puede parecer que no tiene mucho sentido ya que podrías pensar que leyendo el código ya lo vas a entender, pero hazme caso, que leer un texto explicativo va a ser mucho más sencillo que intentar entender qué hace un programa mediante leer el código a piñón (*Historia personal, una vez empecé un proyecto, por cuestiones personales lo dejé apartado y al cabo de un tiempo, al querer retomarlo, me quedé como un bobo pensando “¿Que co\*\*nes se supone que hace esto?”, por lo que recuerda, siempre escribe comentarios **útiles** y hago énfasis en lo de **útiles** por que no quiero que seas de la clase de persona que hace el siguiente tipo de comentario*).
 

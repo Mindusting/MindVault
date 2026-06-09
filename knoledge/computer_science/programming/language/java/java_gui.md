@@ -20,7 +20,7 @@ title: GUI en Java
 - [Swing](packages/javax/swing/java_swing.md)
 
 %%
-Para crear un entorno gráfico usamos las librerías `javax.swing` y `java.awt`, dentro de estas podemos encontrar las [clases](java_class.md) necesarias para trabajar con entornos gráficos.
+Para crear un entorno gráfico usamos las librerías `javax.swing` y `java.awt`, dentro de estas podemos encontrar las [clases](theory/oop.md) necesarias para trabajar con entornos gráficos.
 
 ```java
 import javax.swing.JFrame;
@@ -91,7 +91,7 @@ Aquí estoy usando uno valor hexadecimal, peso se puede usar tres números enter
 
 ## USO REAL
 
-Por lo general no se suele hacer como hemos estado viendo hasta ahora en estos ejemplos, esto ha sido simplemente para ver las bases, esta forma de trabajar sobre la [clase](java_class.md) `JFrame` provoca que como queramos hacer algún tipo de modificación, no vamos a poder, para ello, lo que se suele hacer es crear una [clase](java_class.md) que herede de `JFrame`, así podremos usar esta nueva [clase](java_class.md) al igual que `JFrame`, pero podremos modificarla a nuestro antojo.
+Por lo general no se suele hacer como hemos estado viendo hasta ahora en estos ejemplos, esto ha sido simplemente para ver las bases, esta forma de trabajar sobre la [clase](theory/oop.md) `JFrame` provoca que como queramos hacer algún tipo de modificación, no vamos a poder, para ello, lo que se suele hacer es crear una [clase](theory/oop.md) que herede de `JFrame`, así podremos usar esta nueva [clase](theory/oop.md) al igual que `JFrame`, pero podremos modificarla a nuestro antojo.
 
 ```java
 import javax.swing.JFrame;

@@ -32,13 +32,13 @@ Para poder usar la librería necesaria para poder trabajar con [JSON](../../../.
 
 ## IMPORTAR CLASES
 
-Para poder importar a nuestro proyecto las [clases](../../java_class.md) que se encuentran dentro del [`.jar`](../../java_jar.md) tendremos que acceder al siguiente paquete:
+Para poder importar a nuestro proyecto las [clases](../../theory/oop.md) que se encuentran dentro del [`.jar`](../../java_jar.md) tendremos que acceder al siguiente paquete:
 
 ```java
 import org.json.*;
 ```
 
-Pudiendo sustituir el **asterisco** (`*`) por cualquiera de las siguientes [clases](../../java_class.md):
+Pudiendo sustituir el **asterisco** (`*`) por cualquiera de las siguientes [clases](../../theory/oop.md):
 
 - [JSONArray](java_jsonsimple_jsonarray.md)
 - [JSONObject](java_jsonsimple_jsonobject.md)

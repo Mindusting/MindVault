@@ -13,13 +13,13 @@ tags: [Java, JSON, Programming]
 > - [¿Qué es la **copia profunda** (*deepcopy*) en programación?](../../../../fundamentals/temp-dump/pc_deepcopy.md)
 
 > [!important] IMPORTANTE
-> Cabe resaltar que esta [clase](../../java_class.md) (`JsonArray`) hereda de la [clase](../../java_class.md) [`JsonElement`](java_gson_jsonelement.md), por lo que además de los [métodos](../../java_method.md) que se documentan en este apartado, también contienen los de [`JsonElement`](java_gson_jsonelement.md).
+> Cabe resaltar que esta [clase](../../theory/oop.md) (`JsonArray`) hereda de la [clase](../../theory/oop.md) [`JsonElement`](java_gson_jsonelement.md), por lo que además de los [métodos](../../java_method.md) que se documentan en este apartado, también contienen los de [`JsonElement`](java_gson_jsonelement.md).
 
-Los [*arrays*](../../java_array.md) en [**JSON**](../../../../data_format/json.md) son más flexibles que los [*arrays*](../../java_array.md) en **Java**, ya que estos pueden contener valores de **distintos tipos**, por lo que al tratar con la información contenida dentro de estos, tendremos que ir especificando de qué forma interpretar la información guardada en su interior.
+Los [*arrays*](../../theory/arrays.md) en [**JSON**](../../../../data_format/json.md) son más flexibles que los [*arrays*](../../theory/arrays.md) en **Java**, ya que estos pueden contener valores de **distintos tipos**, por lo que al tratar con la información contenida dentro de estos, tendremos que ir especificando de qué forma interpretar la información guardada en su interior.
 
 ---
 
-Aquí tienes un resumen de los [métodos](../../java_method.md) que contiene esta [**clase**](../../java_class.md):
+Aquí tienes un resumen de los [métodos](../../java_method.md) que contiene esta [**clase**](../../theory/oop.md):
 
 - `add`: añade el nuevo *elemento*.
 - `size`: devuelve el número de *elementos* en el `JsonArray`.
@@ -50,7 +50,7 @@ System.out.println(arr);
 
 ## INSERCIÓN DE ELEMENTOS
 
-En el `JsonArray` no se puede meter cualquier tipo de elemento como puede ocurrir en los [*array*](../../java_array.md) de **Java**, sino que solo se pueden guardar unos tipos en concreto:
+En el `JsonArray` no se puede meter cualquier tipo de elemento como puede ocurrir en los [*array*](../../theory/arrays.md) de **Java**, sino que solo se pueden guardar unos tipos en concreto:
 
 - `Boolean`
 - `Character`
@@ -292,7 +292,7 @@ System.out.println(isIn);
 
 ## COPIA PROFUNDA
 
-Para poder hacer una [**copia profunda**](../../../../fundamentals/temp-dump/pc_deepcopy.md) de un `JsonArray` se usa el [método](../../java_method.md) `deepCopy`; este no recibe ningún argumento y devuelve otro [objeto](../../java_class.md#OBJETOS) de tipo `JsonArray`.
+Para poder hacer una [**copia profunda**](../../../../fundamentals/temp-dump/pc_deepcopy.md) de un `JsonArray` se usa el [método](../../java_method.md) `deepCopy`; este no recibe ningún argumento y devuelve otro [objeto](../../theory/oop.md#OBJETOS) de tipo `JsonArray`.
 
 > [!abstract] SINTAXIS
 > ***\[jsonArray\]***.deepCopy()

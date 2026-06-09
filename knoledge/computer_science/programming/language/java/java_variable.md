@@ -196,11 +196,11 @@ Nota que al la hora de inicializar la variable, el carácter asignado se ha espe
 
 ### REFERENCIA
 
-En Java no existen límites en los tipos de **referencia**, esto es por que internamente son una dirección de memoria, la cual apunto a un [objeto](java_class.md) (*Los objetos son algo más avanzado, por lo que de momento no tienes por qué saber que son*), por tanto, esta clase de variables son capaces de guardar varios valores, usan más memoria y son más lentos.
+En Java no existen límites en los tipos de **referencia**, esto es por que internamente son una dirección de memoria, la cual apunto a un [objeto](theory/oop.md) (*Los objetos son algo más avanzado, por lo que de momento no tienes por qué saber que son*), por tanto, esta clase de variables son capaces de guardar varios valores, usan más memoria y son más lentos.
 
 #### STRING
 
-Para poder guardar un texto y poder trabajar sobre el de forma sencilla existen las variables de tipo `String`, estas en esencia son un [objeto](java_class.md) el cual guarda un [array](java_array.md) de tipo [char](<# CHAR>), junto a algunos métodos que nos permite el fácil manejo de la información que queramos meter.
+Para poder guardar un texto y poder trabajar sobre el de forma sencilla existen las variables de tipo `String`, estas en esencia son un [objeto](theory/oop.md) el cual guarda un [array](theory/arrays.md) de tipo [char](<# CHAR>), junto a algunos métodos que nos permite el fácil manejo de la información que queramos meter.
 
 ```java
 public class CharVariables {

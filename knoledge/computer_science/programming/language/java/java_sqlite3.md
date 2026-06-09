@@ -59,7 +59,7 @@ CREATE TABLE users (
 
 ### CLASE USUARIO
 
-La [clase](java_class.md) `Usuario` es simplemente para guardar la información de los usuarios, teniendo sus *propiedades*, *constructores* y *getters*/*setters*.
+La [clase](theory/oop.md) `Usuario` es simplemente para guardar la información de los usuarios, teniendo sus *propiedades*, *constructores* y *getters*/*setters*.
 
 ```java
 public class User {
@@ -112,7 +112,7 @@ public class User {
 
 ### CLASE DE GESTIÓN DE USUARIOS
 
-Aquí podemos ver la [clase](java_class.md) que se va a encargar de hacer de intermediador entre la base de datos y el resto del programa, en este caso se va a encargar de administrar los usuarios, pero en caso de que tuviéramos una base de datos con más tablas lo ideal sería tener un gestor por cada una de ellas, si ese es tu caso, recomiendo tener otra clase a parte en al que se guarde el **protocolo** junto con el nombre de la base de datos y la *URL* así todas las [clases](java_class.md) gestoras podrían acceder a la misma información, evitando así problemas como que podrían estar descoordinadas.
+Aquí podemos ver la [clase](theory/oop.md) que se va a encargar de hacer de intermediador entre la base de datos y el resto del programa, en este caso se va a encargar de administrar los usuarios, pero en caso de que tuviéramos una base de datos con más tablas lo ideal sería tener un gestor por cada una de ellas, si ese es tu caso, recomiendo tener otra clase a parte en al que se guarde el **protocolo** junto con el nombre de la base de datos y la *URL* así todas las [clases](theory/oop.md) gestoras podrían acceder a la misma información, evitando así problemas como que podrían estar descoordinadas.
 
 ```java
 import java.sql.Connection;
@@ -162,7 +162,7 @@ El gestor debe contener una serie de [métodos](java_method.md) que permitan que
 
 ---
 
-Este primer [método](java_method.md) sirve para obtener un [objeto](java_class.md) de tipo `User` de la base de datos referenciando lo por el *id*.
+Este primer [método](java_method.md) sirve para obtener un [objeto](theory/oop.md) de tipo `User` de la base de datos referenciando lo por el *id*.
 
 ```java
 public User selectById(int id) {
@@ -367,7 +367,7 @@ public void insertAll(ArrayList<User> users) {
 }
 ```
 
-Este [método](java_method.md) permite actualizar los datos de un usuario que ha exista en la base de datos, es recomendable obtener el [objeto](java_class.md) usuario a través de este mismo gestor con alguno de los métodos anteriores, ya que requiere del *id* interno de la base de datos para identificar al usuario.
+Este [método](java_method.md) permite actualizar los datos de un usuario que ha exista en la base de datos, es recomendable obtener el [objeto](theory/oop.md) usuario a través de este mismo gestor con alguno de los métodos anteriores, ya que requiere del *id* interno de la base de datos para identificar al usuario.
 
 ```java
 public void update(User user) {

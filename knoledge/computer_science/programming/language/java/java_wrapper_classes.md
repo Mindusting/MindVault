@@ -43,7 +43,7 @@ title: Clases Wapper en Java
 
 ## STRING
 
-La clase `String` permite manejar texto de forma sencilla, otorgando diferentes métodos para poder manipular el contenido, este equivale a un [array](java_array.md) de tipo [char](<java_variable.md#CHAR>), ahora veremos como guardaríamos un mensaje con un [array](java_array.md):
+La clase `String` permite manejar texto de forma sencilla, otorgando diferentes métodos para poder manipular el contenido, este equivale a un [array](theory/arrays.md) de tipo [char](<java_variable.md#CHAR>), ahora veremos como guardaríamos un mensaje con un [array](theory/arrays.md):
 
 ```java
 public class StringExercise {

@@ -26,7 +26,7 @@ title: JFrame de Swing en Java
 > > - [ ] Añadir links a las palabras `int` a su apartado correspondiente.
 > > - [ ] Documentar la desaparición de elementos (`revalidate`, `repaint`).
 
-La [clase](../../../java_class.md) `JFrame` se encuentra en el paquete `javax.swing` y es la encargada de crear la ventana, en esta configuraremos cosas como el tamaño, la posición, el título, entre otras cosas, generalmente por cuestiones de comodidad se usa la herencia para crear nuestra propia [clase](../../../java_class.md).
+La [clase](../../../theory/oop.md) `JFrame` se encuentra en el paquete `javax.swing` y es la encargada de crear la ventana, en esta configuraremos cosas como el tamaño, la posición, el título, entre otras cosas, generalmente por cuestiones de comodidad se usa la herencia para crear nuestra propia [clase](../../../theory/oop.md).
 
 ```java
 import javax.swing.JFrame;
@@ -39,7 +39,7 @@ public class Window extends JFrame {
 }
 ```
 
-Dentro de esta clase podremos poner toda la configuración que queramos para nuestra ventana, una ver hayamos terminado con ella, podremos mostrar la ventana creando un [objeto](../../../java_class.md) de esta.
+Dentro de esta clase podremos poner toda la configuración que queramos para nuestra ventana, una ver hayamos terminado con ella, podremos mostrar la ventana creando un [objeto](../../../theory/oop.md) de esta.
 
 ```java
 public class ProyectMain {
@@ -78,7 +78,7 @@ public class Window extends JFrame {
 
 ## ACCIÓN AL CERRAR
 
-Para indicar que queremos que se haga cuando se pulse la "X" de la ventana se usa el [método](../../../java_method.md) `setDefaultCloseOperation`, este recibe un `int` con uno de cuatro opciones, podemos indicarlo mediante las [variables](../../../java_variable.md) constantes de la [clase](../../../java_class.md) `JFrame` o escribiendo sus valores directamente:
+Para indicar que queremos que se haga cuando se pulse la "X" de la ventana se usa el [método](../../../java_method.md) `setDefaultCloseOperation`, este recibe un `int` con uno de cuatro opciones, podemos indicarlo mediante las [variables](../../../java_variable.md) constantes de la [clase](../../../theory/oop.md) `JFrame` o escribiendo sus valores directamente:
 
 > [!abstract] SINTAXIS
 > setDefaultCloseOperation(***\[mode\]***)
@@ -313,7 +313,7 @@ public class Window extends JFrame {
 
 ## ICONO
 
-Para establecer una imagen como icono de la ventana primero tendremos que cargarla con la [clase](../../../java_class.md) `ImageIcon` la cual también se encuentra en el módulo `javax.swing`, una vez hayamos cargado imagen podremos establecerla como icono como se puede ver en el ejemplo, haciendo uso de del [método](../../../java_method.md) `setIconImage`, esta recibe un argumento de tipo `Image`.
+Para establecer una imagen como icono de la ventana primero tendremos que cargarla con la [clase](../../../theory/oop.md) `ImageIcon` la cual también se encuentra en el módulo `javax.swing`, una vez hayamos cargado imagen podremos establecerla como icono como se puede ver en el ejemplo, haciendo uso de del [método](../../../java_method.md) `setIconImage`, esta recibe un argumento de tipo `Image`.
 
 ```java
 import javax.swing.ImageIcon;

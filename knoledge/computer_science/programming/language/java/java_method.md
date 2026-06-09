@@ -65,7 +65,7 @@ La tabla de accesos es la siguiente:
 ## PROPIEDAD STATIC
 Cuando indicamos que un método es *estático* (`static`) quiere decir que este va a formar parte de la *clase* por lo que no lo podremos encontrar el los *objetos* que creemos de esta.
 
-Si quieres más información al respecto consulta la documentación de las [clases en java](java_class.md), concretamente el apartado del [`static`](java_class.md#PROPIEDAD%20STATIC).
+Si quieres más información al respecto consulta la documentación de las [clases en java](theory/oop.md), concretamente el apartado del [`static`](theory/oop.md#PROPIEDAD%20STATIC).
 
 ---
 

@@ -104,7 +104,7 @@ Como se ve en el anterior ejemplo a los `catch` les precede unos paréntesis, de
 Se pueden encadenar múltiples `catch` para poder especificar diferentes tipos de excepciones y así indicar diferentes comportamientos dependiendo de la excepción que se produzca.
 
 > [!example] EJEMPLO BÁSICO
-> Un ejemplo didáctico de esto sería el siguiente caso, en el que queremos obtener el inverso de Pitágoras de un vector de tres dimensiones, en este caso tenemos dos excepciones posibles, la división entre cero y acceder a una posición del [array](java_array.md) que no existe, por último, por sea caso, también controlamos cuando ocurra cualquier otra excepción.
+> Un ejemplo didáctico de esto sería el siguiente caso, en el que queremos obtener el inverso de Pitágoras de un vector de tres dimensiones, en este caso tenemos dos excepciones posibles, la división entre cero y acceder a una posición del [array](theory/arrays.md) que no existe, por último, por sea caso, también controlamos cuando ocurra cualquier otra excepción.
 > 
 > ```java
 > public double inversePitagoras(double[] vector) {
@@ -217,7 +217,7 @@ public static double pitagoras(double[] vector) throws ArrayIndexOutOfBoundsExce
 ```
 
 > [!example] EJEMPLO DE USO
-> Si estamos trabajando sobre un entorno gráfico y este debe tener una conexión a una base de datos, podríamos propagas las excepciones que ocurran en la base de datos para tratarlas en el entorno gráfico, haciendo que salga una ventana emergente indicando que ha ocurrido algún problema, de esta forma, con la propagación de excepciones hemos podido comunicar dos [clases](java_class.md) (*la encargada del entorno gráfico y la que se comunica con la base de datos*) para que trabajen en conjunto.
+> Si estamos trabajando sobre un entorno gráfico y este debe tener una conexión a una base de datos, podríamos propagas las excepciones que ocurran en la base de datos para tratarlas en el entorno gráfico, haciendo que salga una ventana emergente indicando que ha ocurrido algún problema, de esta forma, con la propagación de excepciones hemos podido comunicar dos [clases](theory/oop.md) (*la encargada del entorno gráfico y la que se comunica con la base de datos*) para que trabajen en conjunto.
 
 ## EXCEPCIONES PERSONALIZADAS
 

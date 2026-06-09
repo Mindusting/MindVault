@@ -15,7 +15,7 @@ tags: [Java, Programming]
 > 
 > > [!todo] #TODO
 
-El `ArrayList` en Java es una [clase](../../../java_class.md) que permite trabajar con un conjunto de valores, al igual que con los [arrays](../../../java_array.md), ahora, la diferencia entre estos dos es que el `ArrayList` no tiene un tamaño fijo, si no que este va variando dependiendo del uso que le vayamos dando, y que estos trabajan sobre [objetos](../../../java_class.md), es por esto que cando queremos trabajar sobre valores primitivos tenemos que hacer lo sobre las [clases](../../../java_class.md) [`wrapper`](../../../java_wrapper_classes.md).
+El `ArrayList` en Java es una [clase](../../../theory/oop.md) que permite trabajar con un conjunto de valores, al igual que con los [arrays](../../../theory/arrays.md), ahora, la diferencia entre estos dos es que el `ArrayList` no tiene un tamaño fijo, si no que este va variando dependiendo del uso que le vayamos dando, y que estos trabajan sobre [objetos](../../../theory/oop.md), es por esto que cando queremos trabajar sobre valores primitivos tenemos que hacer lo sobre las [clases](../../../theory/oop.md) [`wrapper`](../../../java_wrapper_classes.md).
 
 > [!syntax] SINTAXIS
 > ArrayList<***\[dataType]***> ***\[name]*** = new ArrayList<***\[dataType]***>();

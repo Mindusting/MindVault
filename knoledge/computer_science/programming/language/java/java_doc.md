@@ -28,7 +28,7 @@ Para crear esta documentación se utilizan las **etiquetas** (*tags*), las **eti
 
 ---
 
-Para crear la documentación, tenemos que crear un [comentario multilínea](java_comment.md) encima de las [funciones/métodos](java_method.md) o [clases](java_class.md):
+Para crear la documentación, tenemos que crear un [comentario multilínea](theory/comments.md) encima de las [funciones/métodos](java_method.md) o [clases](theory/oop.md):
 
 ```java
 public class MyJavaDoc {
