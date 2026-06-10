@@ -69,3 +69,55 @@ Hola mundo!
 ```
 
 ## ARGUMENTOS
+
+Los **argumentos** del [**método**](oop.md#MÉTODOS) `main` son usados para poder recibir los argumentos introducidos cuando el programa se usa a modo de comando, esto sirbe cuando queremos hacer un progrma que se va a usar en el terminal/consola; veamos un ejemplo:
+
+```java
+public class ListarArgumentos {
+    public static void main(String[] args) {
+        for (String arg: args) {
+            System.out.println(arg);
+        }
+    }
+}
+```
+
+Lo compilamos con el siguiente comando:
+
+```bash
+javac ListarArgumentos.java
+```
+
+A la hora de ejecutarlo podremos especificar múltiples arguemntos:
+
+```bash
+java ListarArgumentos Hola mundo!
+```
+
+Esto nos da como resultado:
+
+```txt
+Hola
+mundo!
+```
+
+---
+
+Esto incluso podríamos "envolverlo" dentro de de un archivo de [**Bash-Script**](../../../../../../temp/os/linux/script/bash_script.md) para no tener que suar el comando [`java`](../../../../../../temp/os/linux/command/java.md); para ello crearemos el archivo `listargs` con el siguiente contenido:
+
+```bash
+#!/bin/bash
+java ListarArgumentos $@
+```
+
+Le damos permisos de ejecución:
+
+```bash
+chmod u+x listargs
+```
+
+Y luego podremos ejecutar el siguiente comando, obteniendo en este caso el mismo resultado:
+
+```bash
+./listargs Hola mundo!
+```
