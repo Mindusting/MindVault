@@ -23,25 +23,35 @@ title: Librería stdlib en C
 
 ## CALLOC
 
-> [!abstract] SINTAXIS
-> calloc(***\[numberOfItems\]***, ***\[sizeOfItem\]***)
+> [!syntax] SINTAXIS
+> void \*calloc(size\_t nmemb, size\_t size)
 
 ## FREE
 
+> [!syntax] SINTAXIS
+> void free(void \*ptr)
+
 ## MALLOC
 
-> [!abstract] SINTAXIS
-> malloc(***\[size\]***)
+> [!syntax] SINTAXIS
+> void \*malloc(size\_t size)
 
 ## RAND
 
+> [!syntax] SINTAXIS
+> int rand(void)
+
 ## REALLOC
+
+> [!syntax] SINTAXIS
+> void \*realloc(void \*ptr, size\_t size)
+
+## REALLOCARRAY
+
+> [!syntax] SINTAXIS
+> void \*reallocarray(void \*ptr, size\_t nmemb, size\_t size)
 
 ## SRAND
 
-## REALLOC
-
-## SRAND
-
-> [!abstract] SINTAXIS
-> srand(***\[seed\]***)
+> [!syntax] SINTAXIS
+> void srand(unsigned int seed)
