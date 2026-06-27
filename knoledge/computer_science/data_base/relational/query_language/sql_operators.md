@@ -29,7 +29,7 @@ title: Operadores en SQL
 
 El operador `LIKE` se usa para comparar textos de una forma más flexible haciendo uso de caracteres especiales para definir patrones:
 
-- Porcentaje (`%`): expresa la existencia de cero a múltiples [\[0, x\]](../../../../mathematic/math_range_notation.md) caracteres.
+- Porcentaje (`%`): expresa la existencia de cero a múltiples [\[0, x\]](../../../../mathematic/temp/math_range_notation.md) caracteres.
 - Barrabaja (`_`): expresa la existencia obligatoria de un caracter.
 
 ---

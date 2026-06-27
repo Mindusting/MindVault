@@ -92,7 +92,7 @@ Al trabajar con este tipo de variables nos puede interesar los siguientes compar
 
 #### BYTE
 
-Las variables **byte** pueden almacenar un número entero entre [**\[-128, 127\]**](../../../../mathematic/math_range_notation.md), esto es debido a que usa **un byte** de memoria.
+Las variables **byte** pueden almacenar un número entero entre [**\[-128, 127\]**](../../../../mathematic/temp/math_range_notation.md), esto es debido a que usa **un byte** de memoria.
 
 ```java
 public class ByteVariables {
@@ -106,7 +106,7 @@ public class ByteVariables {
 
 #### SHORT
 
-Las variables **short** pueden almacenar un número entero entre [**\[-32.768, 32.767\]**](../../../../mathematic/math_range_notation.md), esto es debido a que usa **dos bytes** de memoria.
+Las variables **short** pueden almacenar un número entero entre [**\[-32.768, 32.767\]**](../../../../mathematic/temp/math_range_notation.md), esto es debido a que usa **dos bytes** de memoria.
 
 ```java
 public class ShortVariables {
@@ -120,7 +120,7 @@ public class ShortVariables {
 
 #### INT
 
-Las variables **int** (*Esta es la más usada para trabajar con números enteros*) pueden almacenar un número entero entre [**\[-2.147.483.648, 2.147.483.647\]**](../../../../mathematic/math_range_notation.md), esto es debido a que usa **cuatro bytes** de memoria.
+Las variables **int** (*Esta es la más usada para trabajar con números enteros*) pueden almacenar un número entero entre [**\[-2.147.483.648, 2.147.483.647\]**](../../../../mathematic/temp/math_range_notation.md), esto es debido a que usa **cuatro bytes** de memoria.
 
 ```java
 public class IntVariables {
@@ -134,7 +134,7 @@ public class IntVariables {
 
 #### LONG
 
-Las variables **long** pueden almacenar un número entero entre [**\[-9.223.372.036.854.775.808, 9.223.372.036.854.775.807\]**](../../../../mathematic/math_range_notation.md), esto es debido a que usa **ocho bytes** de memoria.
+Las variables **long** pueden almacenar un número entero entre [**\[-9.223.372.036.854.775.808, 9.223.372.036.854.775.807\]**](../../../../mathematic/temp/math_range_notation.md), esto es debido a que usa **ocho bytes** de memoria.
 
 ```java
 public class LongVariables {
@@ -150,7 +150,7 @@ Como se puede ver en los ejemplos, las variables de tipo `long` al ser inicializ
 
 #### FLOAT
 
-Las variables **float** siguen el estándar de [coma flotante](https://en.wikipedia.org/wiki/Floating-point_arithmetic), su rango es [**\[3.4e-038, 3.4e+038\]**](../../../../mathematic/math_range_notation.md), esto es debido a que usa **cuatro bytes** de memoria.
+Las variables **float** siguen el estándar de [coma flotante](https://en.wikipedia.org/wiki/Floating-point_arithmetic), su rango es [**\[3.4e-038, 3.4e+038\]**](../../../../mathematic/temp/math_range_notation.md), esto es debido a que usa **cuatro bytes** de memoria.
 
 ```java
 public class FloatVariables {
@@ -166,7 +166,7 @@ Como se puede ver en los ejemplos, las variables de tipo `float` al ser iniciali
 
 #### DOUBLE
 
-Las variables **double** (*Esta es la más usada para trabajar con números decimales*) siguen el estándar de [coma flotante](https://en.wikipedia.org/wiki/Floating-point_arithmetic), su rango es [**\[1.7e-308, 1.7e+308\]**](../../../../mathematic/math_range_notation.md), esto es debido a que usa **cuatro bytes** de memoria.
+Las variables **double** (*Esta es la más usada para trabajar con números decimales*) siguen el estándar de [coma flotante](https://en.wikipedia.org/wiki/Floating-point_arithmetic), su rango es [**\[1.7e-308, 1.7e+308\]**](../../../../mathematic/temp/math_range_notation.md), esto es debido a que usa **cuatro bytes** de memoria.
 
 ```java
 public class DoubleVariables {

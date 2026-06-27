@@ -13,5 +13,5 @@ title: Decimales en Java
 > > [!todo] #TODO
 
 > [!faq]- FAQ
-> - [¿Qué es la anotación de rango?](../../../../../mathematic/math_range_notation.md)
+> - [¿Qué es la anotación de rango?](../../../../../mathematic/temp/math_range_notation.md)
 > - [¿Qué diferencia hay entre `float` y `double`?](https://www.javatpoint.com/float-vs-double-java)

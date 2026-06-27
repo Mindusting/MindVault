@@ -56,7 +56,7 @@ print(Numeros.AUREO)
 # 1.618033988749895
 ```
 
-Ahora, estos atributos no pueden ser modificados (*En este caso no interesa ya que son constantes, pero si se podrían modificar, no obstante, más adelante veremos como evitar que se puedan modificar*) ya que forman parte de la clase, si queremos poder modificar los valores tendremos que **instanciar** la clase para crear un **objeto**, esto lo veremos con el ejemplo de un [vector](../../../../mathematic/math_vector.md):
+Ahora, estos atributos no pueden ser modificados (*En este caso no interesa ya que son constantes, pero si se podrían modificar, no obstante, más adelante veremos como evitar que se puedan modificar*) ya que forman parte de la clase, si queremos poder modificar los valores tendremos que **instanciar** la clase para crear un **objeto**, esto lo veremos con el ejemplo de un [vector](../../../../mathematic/temp/math_vector.md):
 
 ```python
 # Declaración de la clase

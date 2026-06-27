@@ -40,7 +40,7 @@ rng: Random = Random()
 
 ## MÉTODOS DE LA CLASE RANDOM
 
-- `random()`: devuelve un [float](py_float.md) aleatorio dentro del rango de valores [\[0, 1)](../../../../mathematic/math_range_notation.md).
+- `random()`: devuelve un [float](py_float.md) aleatorio dentro del rango de valores [\[0, 1)](../../../../mathematic/temp/math_range_notation.md).
 - `seed([seed])`: establece el valor indicado como nueva semilla del generador de números aleatorios.
 - `choice([iterable])`: se el da como argumento un *iterable* y devuelve un *elemento* aleatorio de este.
 - `shuffle([iterable])`: desordena el *iterable* que se le pasa como argumento.

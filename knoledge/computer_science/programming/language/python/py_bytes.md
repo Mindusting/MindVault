@@ -21,7 +21,7 @@ title: Bytes en Python
 Explicar el método "hex" y la función "fromhex".
 %%
 
-La [clase](py_class.md) **bytes** en Python sirve como transporte entre diferentes tipos de formatos, es decir, podemos por ejemplo transformar un texto a **bytes** y luego pasarlo a fomrmato [hexadecimal](../../../../mathematic/number_system/math_ns_hex.md).
+La [clase](py_class.md) **bytes** en Python sirve como transporte entre diferentes tipos de formatos, es decir, podemos por ejemplo transformar un texto a **bytes** y luego pasarlo a fomrmato [hexadecimal](../../../../mathematic/temp/number_system/math_ns_hex.md).
 
 ```python
 bs = bytes("Adiós", "UTF-8")

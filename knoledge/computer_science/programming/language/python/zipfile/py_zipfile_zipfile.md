@@ -85,7 +85,7 @@ A la hora de abrir un archivo `.zip` este utiliza el método por defecto que es 
 
 ### NIVEL DE COMPRESIÓN
 
-El nivel de compresión se aplica sobre el [método de compresión](#MÉTODO%20DE%20COMPRESIÓN) e indica la dureza de este último, a menor dureza menor compresión y por tanto menos tiempo de calculo, y a mayor dureza mayor compresión y por tanto más tiempo de calculo, el rango de valores es de [`[0, 9]`](../../../../../mathematic/math_range_notation.md), siendo el nivel `0` sin compresión, `1` el nivel más bajo de compresión y `9` el nivel más grade de compresión.
+El nivel de compresión se aplica sobre el [método de compresión](#MÉTODO%20DE%20COMPRESIÓN) e indica la dureza de este último, a menor dureza menor compresión y por tanto menos tiempo de calculo, y a mayor dureza mayor compresión y por tanto más tiempo de calculo, el rango de valores es de [`[0, 9]`](../../../../../mathematic/temp/math_range_notation.md), siendo el nivel `0` sin compresión, `1` el nivel más bajo de compresión y `9` el nivel más grade de compresión.
 
 Este argumento tiene como valor por defecto `-1`, el cual es interpretado como un punto medio entre nivel de compresión y tiempo de calculo, dando como resultado el nivel `6`.
 

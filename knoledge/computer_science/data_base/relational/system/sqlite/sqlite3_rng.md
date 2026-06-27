@@ -19,7 +19,7 @@ Para generar número aleatorios decimales en **SQLite3** no hay una función con
 
 ## RANGO EXCLUSIVO
 
-Un número decimal en el rango [**\[0.0, 1.0)**](../../../../../mathematic/math_range_notation.md) (*es decir, que esté entre 0 y 1, excluyendo el 1*) nos permite acceder a prácticamente cualquier rango de números si sabemos como hacerlo, ya que con multiplicaciones y sumas, podremos aumentar y desplazar el rango de número que podemos obtener.
+Un número decimal en el rango [**\[0.0, 1.0)**](../../../../../mathematic/temp/math_range_notation.md) (*es decir, que esté entre 0 y 1, excluyendo el 1*) nos permite acceder a prácticamente cualquier rango de números si sabemos como hacerlo, ya que con multiplicaciones y sumas, podremos aumentar y desplazar el rango de número que podemos obtener.
 
 > [!seealso] Ver también
 > - [Número aleatorios en informática.](../../../../programming/fundamentals/theory/rng.md)
@@ -76,7 +76,7 @@ SELECT FLOOR(9007199254740991 / 9007199254740992.0) AS RNG
 
 ## RANGO INCLUSIVO
 
-Hay a veces que lo que necesitamos no es un [número decimal exclusivo](#RANGO%20EXCLUSIVO), si no que hay a veces que necesitamos que sea inclusivo, es decir, que se encuentre en el rango [**\[0.0, 1.0\]**](../../../../../mathematic/math_range_notation.md); para esa clase de casos podremos usar el siguiente método:
+Hay a veces que lo que necesitamos no es un [número decimal exclusivo](#RANGO%20EXCLUSIVO), si no que hay a veces que necesitamos que sea inclusivo, es decir, que se encuentre en el rango [**\[0.0, 1.0\]**](../../../../../mathematic/temp/math_range_notation.md); para esa clase de casos podremos usar el siguiente método:
 
 ```sql
 --                                         (2 ^ 53) - 1

@@ -20,7 +20,7 @@ title: Tipos de datos en MySQL
 ## NUMÉRICOS
 
 > [!help] EN ESTE APARTADO SE HACE USO DE LOS SIGUIENTES RECURSOS
-> - [Anotación de rango](../../../../../mathematic/math_range_notation.md).
+> - [Anotación de rango](../../../../../mathematic/temp/math_range_notation.md).
 
 ### ENTERO BINARIO
 

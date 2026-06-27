@@ -95,3 +95,14 @@ if "__main__" == __name__:
 ```
 
 %%
+
+$$
+v=
+\begin{bmatrix}
+3\\4
+\end{bmatrix}\
+w=
+\begin{bmatrix}
+7\\5
+\end{bmatrix}
+$$

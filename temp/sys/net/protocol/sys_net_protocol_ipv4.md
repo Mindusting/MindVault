@@ -18,13 +18,13 @@ rating: 0.5
 > > - [ ] Poner un ejemplo complejo de cálculo (*usando una máscara que no sea múltiplo de 8*).
 > > - [ ] Añadir un código en bien en C o en Python para mostrar como se calculan las redes.
 
-El formato de **IPv4** se compone por una **dirección IP** (*IP address*) y una **máscara** (*mask*); representado la **IP** con cuatro bytes en [decimal](../../../../knoledge/mathematic/number_system/math_ns_dec.md) separados con un punto (`.`); y la **máscara** se sitúa al final separada por una barra (`/`); quedando algo con el siguiente aspecto: `192.168.0.1/24`.
+El formato de **IPv4** se compone por una **dirección IP** (*IP address*) y una **máscara** (*mask*); representado la **IP** con cuatro bytes en [decimal](../../../../knoledge/mathematic/temp/number_system/math_ns_dec.md) separados con un punto (`.`); y la **máscara** se sitúa al final separada por una barra (`/`); quedando algo con el siguiente aspecto: `192.168.0.1/24`.
 
 ## DIVISIÓN DE LA DIRECCIÓN IP Y LA MÁSCARA
 
 Una dirección **IPv4** de primeras se divide por la **barra** (`/`) quedándonos con la **dirección IP** a la izquierda y la **máscara** a la derecha.
 
-Una **dirección IP** (*IP address*) son simplemente los cuatro bytes separados por punto; a continuación podemos ver la el ejemplo de antes tanto en [decimal](../../../../knoledge/mathematic/number_system/math_ns_dec.md) como en [binario](../../../../knoledge/mathematic/number_system/math_ns_bin.md):
+Una **dirección IP** (*IP address*) son simplemente los cuatro bytes separados por punto; a continuación podemos ver la el ejemplo de antes tanto en [decimal](../../../../knoledge/mathematic/temp/number_system/math_ns_dec.md) como en [binario](../../../../knoledge/mathematic/temp/number_system/math_ns_bin.md):
 
 ```txt
 Decimal:
@@ -35,7 +35,7 @@ Binario:
 ```
 
 > [!important] IMPORTANTE
-> Es importante saber que estos número son internamente en [binario](../../../../knoledge/mathematic/number_system/math_ns_bin.md) ya que se van a hacer [operaciones binarias](../../../bin/bin.md) con estos para calcular ciertas cosas.
+> Es importante saber que estos número son internamente en [binario](../../../../knoledge/mathematic/temp/number_system/math_ns_bin.md) ya que se van a hacer [operaciones binarias](../../../bin/bin.md) con estos para calcular ciertas cosas.
 
 La **máscara** (*mask*) consiste en tener tantos unos a la izquierda de un número entero de 32 bits como indique la máscara; esto se ve mejor con unos ejemplos:
 
@@ -90,7 +90,7 @@ $$
 2^{(32-mask)}=validIps
 $$
 
-En caso de estar programandolo, es tan simple como invertir la máscara con el [operador binario **not**](../../../bin/bin.md#NOT) como un único número entero de cuatro bytes e interpretarlo en [decimal](../../../../knoledge/mathematic/number_system/math_ns_dec.md).
+En caso de estar programandolo, es tan simple como invertir la máscara con el [operador binario **not**](../../../bin/bin.md#NOT) como un único número entero de cuatro bytes e interpretarlo en [decimal](../../../../knoledge/mathematic/temp/number_system/math_ns_dec.md).
 
 ---
 

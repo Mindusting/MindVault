@@ -39,7 +39,7 @@ Bienvenidos a la galería de notas de **Mindusting**, aquí podrás encontrar lo
 
 Prácticamente ningún archivo está completo y muchos directamente están vacíos, ya que simplemente los cree para poder hacer la conexión entre ellos, pero a medida que vaya completando los apuntes iré rellenando los, al mismo tiempo seguirán surgiendo archivos en malas condiciones...
 
-Soy disléxico por lo que las notas están y estarán llenas de faltas de ortografía (*por lo que de primeras pido perdón por las ganas qeu te puedan entrar de arrancarte los ojos después de leer cualquier archivo de esta bóveda*), procuro corregir todos los que puedo, todas las notas (*en teoría*) tienen un metadato (*información que sale al principio de cada nota*) con el nombre `corrected`, este contiene un valor [booleano](knoledge/mathematic/math_boolean.md) (*verdadero o falso*), indicando si la nota la he pasado por un corrector de texto, pero esto no asegura que esté libre de faltas de ortografía, ahora mismo mientras escribo esto (*2024-09-25*) la amplia mayoría de las notas no han sido pasadas por un corrector de texto, la idea es una vez considere que he terminado la nota corregirla, igualmente esto no quiere decir que si pone que está corregida no esté sujeta a cambios en el futuro por mucho que eso impleque que en algún momento considerase que ya estaba terminada.
+Soy disléxico por lo que las notas están y estarán llenas de faltas de ortografía (*por lo que de primeras pido perdón por las ganas qeu te puedan entrar de arrancarte los ojos después de leer cualquier archivo de esta bóveda*), procuro corregir todos los que puedo, todas las notas (*en teoría*) tienen un metadato (*información que sale al principio de cada nota*) con el nombre `corrected`, este contiene un valor [booleano](knoledge/mathematic/temp/math_boolean.md) (*verdadero o falso*), indicando si la nota la he pasado por un corrector de texto, pero esto no asegura que esté libre de faltas de ortografía, ahora mismo mientras escribo esto (*2024-09-25*) la amplia mayoría de las notas no han sido pasadas por un corrector de texto, la idea es una vez considere que he terminado la nota corregirla, igualmente esto no quiere decir que si pone que está corregida no esté sujeta a cambios en el futuro por mucho que eso impleque que en algún momento considerase que ya estaba terminada.
 
 ## CONTACTO Y MÁS INFORMACIÓN
 
@@ -119,7 +119,7 @@ Si quieres más información o documentación más antigua hecha en google docum
     - [NIE](dump/nie.md)
     - [ASCII](knoledge/computer_science/programming/data_format/ascii.md)
     - [UTF](knoledge/computer_science/programming/data_format/utf.md)
-    - [Matemáticas](knoledge/mathematic/math.md)
+    - [Matemáticas](knoledge/mathematic/temp/math.md)
     - [Desarrollo de entornos](knoledge/computer_science/programming/design/design.md)
     - [QR](dump/qr.md)
     - [SVG](knoledge/computer_science/markup_language/svg/svg.md)

@@ -28,7 +28,7 @@ tags: [Binary]
 > - [Josh's Channel](https://youtu.be/PMpNhbMjDj0) #WWW/YT/JoshsChannel
 
 > [!note] NOTA
-> Esta documentación está oriendada al binario en la informática, por lo que si no sabes nada de binario, primero te recomiendo mirar la documentación del [**sistema numérico binario**](../../knoledge/mathematic/number_system/math_ns_bin.md), ya que biene bien como introducción.
+> Esta documentación está oriendada al binario en la informática, por lo que si no sabes nada de binario, primero te recomiendo mirar la documentación del [**sistema numérico binario**](../../knoledge/mathematic/temp/number_system/math_ns_bin.md), ya que biene bien como introducción.
 
 ## ESENCIAL
 

@@ -57,13 +57,13 @@ Podrías pensar que un valor *nulo* no indica nada, por lo que se podría inclus
 
 ### BOOLEANO
 
-Los [**booleanos**](../../../mathematic/math_boolean.md) son aquellos valores que solo pueden estar en dos estados, *verdadero* (`true`) o *false* (`false`); pudiendo ser usados para lo que nosotros queramos, por ejemplo, en la [(Figura 1)](#^basic-example) podemos ver como se ha usado para identificar si el usuario representado por esos datos es un hombre o una mujer (*siendo en este caso un hombre*).
+Los [**booleanos**](../../../mathematic/temp/math_boolean.md) son aquellos valores que solo pueden estar en dos estados, *verdadero* (`true`) o *false* (`false`); pudiendo ser usados para lo que nosotros queramos, por ejemplo, en la [(Figura 1)](#^basic-example) podemos ver como se ha usado para identificar si el usuario representado por esos datos es un hombre o una mujer (*siendo en este caso un hombre*).
 
 Para usar este tipo de datos se usan las palabas clave; `true` y `false`.
 
 ### NUMÉRICO
 
-Los valores numéricos son aquellos que representan (*como su nombre indica*) un número en [base 10](../../../mathematic/number_system/math_ns_dec.md), este puede ser **entero** o **decimal** (*separando la parte fraccionaria con un punto (`.`)*)
+Los valores numéricos son aquellos que representan (*como su nombre indica*) un número en [base 10](../../../mathematic/temp/number_system/math_ns_dec.md), este puede ser **entero** o **decimal** (*separando la parte fraccionaria con un punto (`.`)*)
 
 ### TEXTO
 
