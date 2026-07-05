@@ -66,3 +66,27 @@ tags:
 0.\overline{9}
 0.\widehat{9}
 ```
+
+## BARRAS VERTICALES
+
+Simples:
+
+```latex
+| x |
+\lvert x \rvert
+```
+
+$$
+\lvert x \rvert
+$$
+
+Dobles:
+
+```latex
+\| x \|
+\lVert x \rVert
+```
+
+$$
+\lVert x \rVert
+$$
