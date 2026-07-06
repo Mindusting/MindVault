@@ -68,3 +68,15 @@ print(f"c = {c}")
 ---
 
 ![#center](assets/vector_fisico.md)
+
+## MÓDULO
+
+El **módulo** de un **vector** es la longitud de la flecha que representa dicho **vector**, para calcular este valor
+
+$$
+\lVert \vec{v} \rVert
+$$
+
+$$
+\mathbb{R}^2 = \{(x_1, x_2), x_1, x_2 \in \mathbb{R}\}
+$$
