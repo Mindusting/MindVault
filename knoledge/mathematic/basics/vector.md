@@ -76,7 +76,3 @@ El **módulo** de un **vector** es la longitud de la flecha que representa dicho
 $$
 \lVert \vec{v} \rVert
 $$
-
-$$
-\mathbb{R}^2 = \{(x_1, x_2), x_1, x_2 \in \mathbb{R}\}
-$$
