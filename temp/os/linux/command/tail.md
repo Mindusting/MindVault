@@ -9,6 +9,8 @@ rating:
 tags: [Command]
 ---
 
+# COMANDO TAIL EN LINUX
+
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
