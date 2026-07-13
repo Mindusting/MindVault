@@ -14,3 +14,6 @@ tags: [Command]
 > [!unfinished-file]- ESTE APARATADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
+
+> [!syntax] SINTAXIS (básica)
+> find ***\[dir\]*** -name ***\[file\]*** -print
