@@ -1,15 +1,19 @@
 ---
+aliases: [Comando FIND en Linux]
 author: Mindusting
 corrected: false
-tags:
-  - OS
-  - Linux
-  - Bash
-  - Command
-title: Comando FIND en Linux
+creationDate: 2026-07-13 02:32:20
+headerFile: false
+modificationDate: 2026-07-13 02:32:20
+rating: 
+tags: [Command]
 ---
 
 # COMANDO FIND EN LINUX
 
-> [!fail]- ESTE APARATADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARATADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
+
+> [!syntax] SINTAXIS (básica)
+> find ***\[dir\]*** -name ***\[file\]*** -print
