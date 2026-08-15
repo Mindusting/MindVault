@@ -24,63 +24,63 @@
 }
 
 .callout[data-callout="unfinished-file"] {
-    --callout-color: var(--color-red-rgb);
+    --callout-color: var(--color-red);
     --callout-icon: file-exclamation-point;
 }
 
 .callout[data-callout="syntax"] {
-    --callout-color: var(--color-cyan-rgb);
+    --callout-color: var(--color-cyan);
     --callout-icon: code-2;
 }
 
 .callout[data-callout="external-link"] {
-    --callout-color: var(--color-orange-rgb);
+    --callout-color: var(--color-orange);
     --callout-icon: globe;
     --callout-icon: external-link;
 }
 
 .callout[data-callout="internal-link"] {
-    --callout-color: var(--color-orange-rgb);
+    --callout-color: var(--color-orange);
     --callout-icon: link;
 }
 
 .callout[data-callout="idea"] {
-    --callout-color: var(--color-yellow-rgb);
+    --callout-color: var(--color-yellow);
     --callout-icon: lightbulb;
 }
 
 .callout[data-callout="thanks"] {
-    --callout-color: var(--color-pink-rgb);
+    --callout-color: var(--color-pink);
     --callout-icon: heart;
 }
 
 .callout[data-callout="cog"] {
-    --callout-color: var(--color-orange-rgb);
+    --callout-color: var(--color-orange);
     --callout-icon: cog;
 }
 
 .callout[data-callout="seealso"] {
-    --callout-color: var(--color-blue-rgb);
+    --callout-color: var(--color-blue);
     --callout-icon: eye;
 }
 
 .callout[data-callout="deprecated"] {
-    --callout-color: var(--color-orange-rgb);
+    --callout-color: var(--color-orange);
     --callout-icon: square-x;
 }
 
 .callout[data-callout="like"] {
-    --callout-color: var(--color-green-rgb);
+    --callout-color: var(--color-green);
     --callout-icon: thumbs-up;
 }
 
 .callout[data-callout="dislike"] {
-    --callout-color: var(--color-red-rgb);
+    --callout-color: var(--color-red);
     --callout-icon: thumbs-down;
 }
 
 .callout[data-callout="perfect"] {
-    --callout-color: var(--color-yellow-rgb);
+    --callout-color: var(--color-yellow);
     --callout-icon: star;
 }
 
@@ -90,6 +90,6 @@
 }
 
 .callout[data-callout="brain"] {
-    --callout-color: var(--color-pink-rgb);
+    --callout-color: var(--color-pink);
     --callout-icon: brain;
 }
