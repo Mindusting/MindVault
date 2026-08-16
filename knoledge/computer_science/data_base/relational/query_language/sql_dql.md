@@ -14,4 +14,4 @@ title: DQL en SQL
 
 Date Query Language
 
-- [`SEELCT`](sql_select.md)
+- [`SELECT`](sql_select.md)
