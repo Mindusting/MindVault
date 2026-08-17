@@ -33,6 +33,10 @@ tags: [C, Programming]
 > - [Git:](../../../dev_tools/git/git.md)
 >     Es un sistema de control de versiones, permite tener un desarrollo de proyecto más estructurado.
 
+## A CERCA DEL LENGUAJE C
+
+El lenguaje de programación **C** fue creado en 1972 por *Dennis Ritchie*; este lenguaje
+
 ## ÍNDICE
 
 - [ARCHIVOS DE C 📄](tools/c_file.md)
@@ -73,7 +77,7 @@ int main()
     printf("Tu nombre es %s.\n", name);           // String
     printf("Tienes %d años.\n", age);             // Decimal
     printf("Mides %.2f metros.\n", height);       // Float
-    printf("Tu lenguage favorito es %c.\n", chr); // Char
+    printf("Tu lenguaje favorito es %c.\n", chr); // Char
 
     return 0;
 }
