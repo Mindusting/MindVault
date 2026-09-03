@@ -18,7 +18,8 @@ tags:
 
 ```makefile
 all: src/main/Main.java
-    javac src/main/Main.java -sourcepath src -d bin && java -cp bin main.Main
+    javac src/main/Main.java -sourcepath src -d bin
+    java -cp bin main.Main
 
 comp: src/main/Main.java
     javac src/main/Main.java -sourcepath src -d bin

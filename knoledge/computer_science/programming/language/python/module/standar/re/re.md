@@ -1,20 +1,18 @@
 ---
-aliases:
-  - Expresión Regular
-  - Regular Expresion
+aliases: [Módolo RE en Python]
 author: Mindusting
 corrected: false
-tags:
-  - Programming
-  - Python
-  - Module
-  - RE
-title: Módolo RE en Python
+creationDate: 2026-09-02 06:44:22
+headerFile: false
+modificationDate: 2026-09-02 06:44:23
+rating: 
+tags: [Module, Programming, Python, ReGex]
 ---
 
 # REGEX EN PYTHON
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Documentar el `fullmatch`.
 > > - [ ] Documentar el `search`.
@@ -24,7 +22,7 @@ title: Módolo RE en Python
 > > - [ ] Documentar el `finditer`.
 > > - [ ] Documentar el `sub`.
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [Python](https://docs.python.org/es/3/library/re.html) #WWW/Python
 >     - [`fullmatch`](https://docs.python.org/3/library/re.html#re.fullmatch)
 >     - [`search`](https://docs.python.org/3/library/re.html#re.search)
@@ -34,23 +32,113 @@ title: Módolo RE en Python
 >     - [`finditer`](https://docs.python.org/3/library/re.html#re.finditer)
 >     - [`sub`](https://docs.python.org/3/library/re.html#re.sub)
 > - [W3 scools](https://www.w3schools.com/python/python_regex.asp) #WWW/W3Schools
->
+> 
 > YouTube:
 > - [Corey Schafer](https://youtu.be/K8L6KVGG-7o) #WWW/YT/CoreySchafer
 > - [FRIKIdelTO](https://youtu.be/7QUmK6cW_Rg) #WWW/YT/FRIKIdelTO
 > - [NeuralNine](https://youtu.be/wnuBwl2ekmo) #WWW/YT/NeuralNine
 
 > [!faq]- FAQ
-> - [¿Qué son las expresiones regulares?](../../../text_processing/regex/regex.md)
+> - [¿Qué son las expresiones regulares?](../../../../../../text_processing/regex/regex.md)
+
+El [módulo](../../../basic/module.md) **re** en [Python](../../../py.md) es un estandar, ofrece herramientas para poder trabajar con con [expresiones regulares](../../../../../../text_processing/regex/regex.md); esto lo hace mediante una serie de [funciones](../../../basic/function.md) y [clases](../../../basic/oop.md) que veremos en esta documentación.
+
+| FUNCIÓN                             | USO                                       | RESULTADO           |
+|:----------------------------------- |:----------------------------------------- |:------------------- |
+| [`fullmatch`](#FUNCIÓN%20FULLMATCH) | ¿Coincide todo?                           | `Match` o `None`    |
+| [`match`](#FUNCIÓN%20MATCH)         | ¿Coincide al principio?                   | `Match` o `None`    |
+| [`search`](#FUNCIÓN%20SEARCH)       | ¿Existe alguna coincidencia?              | `Match` o `None`    |
+| [`findall`](#FUNCIÓN%20FINDALL)     | Dame todas las coincidencias.             | `list`              |
+| [`finditer`](#FUNCIÓN%20FINDITER)   | Dame todas las coincidencias con detalle. | Iterador de `Match` |
+| [`split`](#FUNCIÓN%20SPLIT)         | Separa por las coincidencias.             | `list`              |
+| [`sub`](#FUNCIÓN%20SUB)             | Sustitulle las coincidencias.             | `str`               |
+
+> [!important] IMPORTANTE
+> Aunque en esta documentación todo el rato de operar sobre [*strings*](../../../py_str.md) a la hora de encontrar los patrones, realmente también se puede usar [*bytes*](../../../py_bytes.md).
+
+## FUNCIÓN FULLMATCH
+
+La [función](../../../basic/function.md) `fullmatch` se usa para poder comprobar si un [*string*](../../../py_str.md) coincide de forma completa con el patrón con el que lo estemos comparando.
+
+> [!syntax] SINTAXIS
+> fullpath([***\[pattern\]***](#^fullmatch-arg-pattern), [***\[string\]***](#^fullmatch-arg-string), [***\{flags\}***](#BANDERAS%20(FRAGS)))
+
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](../../../../../../text_processing/regex/regex.md) que se debe cumplir en todo el [*string*](#^fullmatch-arg-string).
+^fullmatch-arg-pattern
+- ***string***: (*obligatorio*) es el string sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
+^fullmatch-arg-string
+- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado "[BANDERAS (FLAGS)](#BANDERAS%20(FRAGS))".
+
+---
+
+> [!example] EJEMPLO
+> Supongamos que tenemos que guardar una fecha con el formato `YYYY-MM-DD`, es decir: cuatro dígitos para el año (`YYYY`), dos dígitos para el mes (`MM`) y dos dígitos para el día (`DD`); sigiendo ese mismo orden y usando un guión (`-`) para separar estos valores, para poder hacer esto podremos usar el patrón `\d{4}-\d\d-\d\d` de la siguiente forma.
+
+```python
+import re
+
+pattern: str = r"\d{4}-\d\d-\d\d"
+date: str = "2026-09-02"
+
+result: re.Match | None = re.fullmatch(pattern, date)
+
+# Se comprueba si existe una coincidencia o no
+if result:
+    print("La fecha es válida!")
+else:
+    print("La fecha es inválida!")
+```
+
+Puedes cambiar la fecha y ver como se comporta el programa.
+
+## FUNCIÓN MATCH
+
+La [función](../../../basic/function.md) `match` se usa para poder comprobar si un [*string*](../../../py_str.md) comienza con el patrón con el que lo estamos comparando.
+
+> [!syntax] SINTAXIS
+> fullpath([***\[pattern\]***](#^match-arg-pattern), [***\[string\]***](#^match-arg-string), [***\{flags\}***](#BANDERAS%20(FRAGS)))
+
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](../../../../../../text_processing/regex/regex.md) que se debe cumplir en todo el [*string*](#^fullmatch-arg-string).
+^match-arg-pattern
+- ***string***: (*obligatorio*) es el string sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
+^match-arg-string
+- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado "[BANDERAS (FLAGS)](#BANDERAS%20(FRAGS))".
+
+---
+
+> [!example] EJEMPLO
+
+## FUNCIÓN SEARCH
+
+## FUNCIÓN FINDALL
+
+## FUNCIÓN FINDITER
+
+## FUNCIÓN SPLIT
+
+## FUNCIÓN SUB
+
+## CLASE MATCH
+
+## BANDERAS (FRAGS)
+
+Las banderas en son opcionales y debido a su complegidad estas tienen su propio apartado (*es decir, este*) en el que se detalla las características de estas, ya que además son comunes para todas las [funciones](../../../basic/function.md).
+
+---
+---
+---
+---
+---
 
 ## COMO ESCRIBIR UNA REGEX
 
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Explicar como se escriben los regex en Python.
 > > - [ ] Añadir un enlace al archivo de regex.
 
-Para poder escribir el **patrón** de una [expresión regular](../../../text_processing/regex/regex.md) se utiliza [`r-str`](py_str.md#R-STRING) ya que este nos permite escribir los caracteres de escape de forma que el interprete del padrón podrá leerlos, es puede hacer si el [`r-str`](py_str.md#R-STRING) 
+Para poder escribir el **patrón** de una [expresión regular](../../../../../../text_processing/regex/regex.md) se utiliza [`r-str`](py_str.md#R-STRING) ya que este nos permite escribir los caracteres de escape de forma que el interprete del padrón podrá leerlos, es puede hacer si el [`r-str`](py_str.md#R-STRING) 
 
 ## COINCIDENCIA COMPLETA
 
@@ -191,6 +279,7 @@ print(string)
 ## FLAGS
 
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Explicar las banderas.
 

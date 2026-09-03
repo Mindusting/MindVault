@@ -1,13 +1,15 @@
 ---
-aliases: [Etiqueta H en HTML]
+aliases: [OOP en Python]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-02 08:40:04
 headerFile: false
+modificationDate: 2026-09-02 08:40:59
 rating: 
-tags: [HTML]
+tags: [OOP, Programming, Python]
 ---
 
-# ETIQUETA H EN HTML
+# OOP EN PYTHON
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
