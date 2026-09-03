@@ -46,16 +46,16 @@ Una vez aplicado el formato este se mantendrá hasta que se indique lo contrario
 Para modificar el formato del texto se escribe una *apertura de corchete* `[` y una *eme* `m`, entre estos podremos indicar diferentes argumentos, si quisiéramos indicar varios simultáneamente, tendremos que separarlos con un *punto y coma* (`;`).
 
 | FORMAT        | ARG |
-|:--------------|----:|
+|:------------- | ---:|
 | Default       |   0 |
 | Bold          |   1 |
 | Dim           |   2 |
 | Italic        |   3 |
 | Undercore     |   4 |
-| Blick         |   5 |
-| Reverse       |   6 |
-| Hidden        |   7 |
-| Strikethrough |   8 |
+| Blinck        |   5 |
+| Reverse       |   7 |
+| Hidden        |   8 |
+| Strikethrough |   9 |
 | Undercore-2   |  21 |
 | Overscore     |  53 |
 

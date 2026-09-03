@@ -1,15 +1,17 @@
 ---
+aliases: [Comando CHMOD en Linux]
 author: Mindusting
 corrected: false
-tags:
-  - OS
-  - Linux
-  - Bash
-  - Command
-title: Comando CHMOD en Linux
+headerFile: false
+rating: 
+tags: [Command, Linux]
 ---
 
 # COMANDO CHMOD EN LINUX
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
+
+> [!syntax] SINTAXIS
+> chmod ***\[options\] \[file\]***
