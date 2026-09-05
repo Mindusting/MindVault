@@ -4,7 +4,7 @@ author: Mindusting
 corrected: false
 creationDate: 2026-09-02 06:44:22
 headerFile: false
-modificationDate: 2026-09-02 06:44:23
+modificationDate: 2026-09-05 03:28:26
 rating: 
 tags: [Module, Programming, Python, ReGex]
 ---
@@ -14,13 +14,15 @@ tags: [Module, Programming, Python, ReGex]
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
-> > - [ ] Documentar el `fullmatch`.
+> > - [x] Documentar el `fullmatch`.
+> > - [x] Documentar el `match`.
 > > - [ ] Documentar el `search`.
-> > - [ ] Documentar el `match`.
-> > - [ ] Documentar el `split`.
 > > - [ ] Documentar el `findall`.
 > > - [ ] Documentar el `finditer`.
+> > - [ ] Documentar el `split`.
 > > - [ ] Documentar el `sub`.
+> > - [ ] Documentar las *flags*.
+> > - [ ] Documentar la clase `Match`.
 
 > [!external-link]- REFERENCIAS WEB
 > - [Python](https://docs.python.org/es/3/library/re.html) #WWW/Python
@@ -58,16 +60,18 @@ El [módulo](../../../basic/module.md) **re** en [Python](../../../py.md) es un 
 
 ## FUNCIÓN FULLMATCH
 
-La [función](../../../basic/function.md) `fullmatch` se usa para poder comprobar si un [*string*](../../../py_str.md) coincide de forma completa con el patrón con el que lo estemos comparando.
+La [función](../../../basic/function.md) `fullmatch` se usa para poder comprobar si un [*string*](../../../py_str.md) **coincide de forma completa** con el patrón con el que lo estemos comparando.
+
+Si todo el texto coincide, esta [función](../../../basic/function.md) nos devolverá un [objeto](../../../basic/oop.md) de tipo [`Match`](#CLASE%20MATCH), sino nos devolverá [`None`](../../../basic/none.md).
 
 > [!syntax] SINTAXIS
-> fullpath([***\[pattern\]***](#^fullmatch-arg-pattern), [***\[string\]***](#^fullmatch-arg-string), [***\{flags\}***](#BANDERAS%20(FRAGS)))
+> fullpath([***\[pattern\]***](#^fullmatch-arg-pattern), [***\[string\]***](#^fullmatch-arg-string), [***\{flags\}***](#BANDERAS%20(FLAGS)))
 
 - ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](../../../../../../text_processing/regex/regex.md) que se debe cumplir en todo el [*string*](#^fullmatch-arg-string).
 ^fullmatch-arg-pattern
 - ***string***: (*obligatorio*) es el string sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
 ^fullmatch-arg-string
-- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado "[BANDERAS (FLAGS)](#BANDERAS%20(FRAGS))".
+- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado "[BANDERAS (FLAGS)](#BANDERAS%20(FLAGS))".
 
 ---
 
@@ -82,27 +86,31 @@ date: str = "2026-09-02"
 
 result: re.Match | None = re.fullmatch(pattern, date)
 
-# Se comprueba si existe una coincidencia o no
 if result:
     print("La fecha es válida!")
 else:
     print("La fecha es inválida!")
+
+# SALIDA:
+# La fecha es válida!
 ```
 
 Puedes cambiar la fecha y ver como se comporta el programa.
 
 ## FUNCIÓN MATCH
 
-La [función](../../../basic/function.md) `match` se usa para poder comprobar si un [*string*](../../../py_str.md) comienza con el patrón con el que lo estamos comparando.
+La [función](../../../basic/function.md) `match` se usa para poder comprobar si un [*string*](../../../py_str.md) **comienza** con el patrón con el que lo estamos comparando.
+
+Si se encuentra una coincidencia al principio, esta [función](../../../basic/function.md) nos devolverá un [objeto](../../../basic/oop.md) de tipo [`Match`](#CLASE%20MATCH), sino nos devolverá [`None`](../../../basic/none.md).
 
 > [!syntax] SINTAXIS
-> fullpath([***\[pattern\]***](#^match-arg-pattern), [***\[string\]***](#^match-arg-string), [***\{flags\}***](#BANDERAS%20(FRAGS)))
+> fullpath([***\[pattern\]***](#^match-arg-pattern), [***\[string\]***](#^match-arg-string), [***\{flags\}***](#BANDERAS%20(FLAGS)))
 
 - ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](../../../../../../text_processing/regex/regex.md) que se debe cumplir en todo el [*string*](#^fullmatch-arg-string).
 ^match-arg-pattern
 - ***string***: (*obligatorio*) es el string sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
 ^match-arg-string
-- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado "[BANDERAS (FLAGS)](#BANDERAS%20(FRAGS))".
+- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado "[BANDERAS (FLAGS)](#BANDERAS%20(FLAGS))".
 
 ---
 
@@ -113,7 +121,7 @@ La [función](../../../basic/function.md) `match` se usa para poder comprobar si
 import re
 
 pattern: str = r"\d{3}-"
-name: str = "23-Engranage"
+name: str = "123-Engranage"
 
 result: re.Match | None = re.match(pattern, name)
 
@@ -121,11 +129,51 @@ if result:
     print("El nombre es valido!")
 else:
     print("El nombre es inválido!")
+
+# SALIDA:
+# El nombre es válido!
 ```
 
 Puedes cambiar el nombre y ver como se comporta el programa.
 
 ## FUNCIÓN SEARCH
+
+La [función](../../../basic/function.md) `search`, a diferencia de [`match`](#FUNCIÓN%20MATCH) en donde busca la coincidencia del patrón al principio del [*string*](../../../py_str.md), esta busca la **primera coincidencia** independientemente de la posición en la que se encuentre dentro de [*string*](../../../py_str.md).
+
+Si se encuentra una coincidencia, esta [función](../../../basic/function.md) nos devolverá un [objeto](../../../basic/oop.md) de tipo [`Match`](#CLASE%20MATCH), sino nos devolverá [`None`](../../../basic/none.md).
+
+> [!syntax] SINTAXIS
+> search([***\[pattern\]***](#^search-arg-pattern), [***\[string\]***](#^search-arg-string), [***{flags}***](#BANDERAS%20(FLAGS)))
+
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](../../../../../../text_processing/regex/regex.md) que se quiere buscar dentro del [*string*](#^search-arg-string).
+  ^search-arg-pattern
+- ***string***: (*obligatorio*) es el string sobre el que se va a buscar la primera coincidencia.
+  ^search-arg-string
+- ***flags***: este argumento es opcional y lo suficientemente complejo como para tener su propio apartado "[BANDERAS (FLAGS)](#BANDERAS%20(FLAGS))".
+
+---
+
+> [!example] EJEMPLO
+> Imaginemos que tenemos un texto y queremos encontrar la primera fecha que aparece dentro de este, para ello podemos hacerlo como en el siguiente ejemplo, pero hay que tener una cosa clara, solo obtendremos la primera fecha.
+
+```python
+import re
+
+pattern: str = r"\d{4}-\d\d-\d\d"
+text: str = "Empecé a programar al rededor de 2020-10-15 y estoy escribiendo esto en 2026-09-05."
+
+result: re.Match | None = re.search(pattern, text)
+
+if result:
+    print(f"Fecha encontrada: {result.group()}")
+else:
+    print("No se ha encontrado ninguna fecha.")
+
+# SALIDA:
+# Fecha encontrada: 2020-10-15
+```
+
+Como se puede ver en el ejemplo a pesar de que haya dos fechas en el texto, solo obtenemos la primera.
 
 ## FUNCIÓN FINDALL
 
@@ -137,14 +185,18 @@ Puedes cambiar el nombre y ver como se comporta el programa.
 
 ## CLASE MATCH
 
-## BANDERAS (FRAGS)
+## BANDERAS (FLAGS)
 
 Las banderas en son opcionales y debido a su complegidad estas tienen su propio apartado (*es decir, este*) en el que se detalla las características de estas, ya que además son comunes para todas las [funciones](../../../basic/function.md).
 
 ---
+
 ---
+
 ---
+
 ---
+
 ---
 
 ## COMO ESCRIBIR UNA REGEX
