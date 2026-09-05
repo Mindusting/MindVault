@@ -107,6 +107,23 @@ La [función](../../../basic/function.md) `match` se usa para poder comprobar si
 ---
 
 > [!example] EJEMPLO
+> Imaginemos que queremos tener un programa que debe administrar una lista de productos, estos deben de estar identificados por un nombre, pero este nombre no puede estar hecho de cualquier forma, queremos que este empiece por un número de tres dígitos, un guión y a partír de ahí lo que queramos; para ello podremos usar esta [función](../../../basic/function.md), ya que lo que tendremos que hacer es comprobar si el inicio del nombre coincide con el patrón `\d{3}-`.
+
+```python
+import re
+
+pattern: str = r"\d{3}-"
+name: str = "23-Engranage"
+
+result: re.Match | None = re.match(pattern, name)
+
+if result:
+    print("El nombre es valido!")
+else:
+    print("El nombre es inválido!")
+```
+
+Puedes cambiar el nombre y ver como se comporta el programa.
 
 ## FUNCIÓN SEARCH
 
