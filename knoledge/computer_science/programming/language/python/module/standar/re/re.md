@@ -17,8 +17,8 @@ tags: [Module, Programming, Python, ReGex]
 > > - [x] Documentar el `fullmatch`.
 > > - [x] Documentar el `match`.
 > > - [x] Documentar el `search`.
-> > - [ ] Documentar el `findall`.
-> > - [ ] Documentar el `finditer`.
+> > - [x] Documentar el `findall`.
+> > - [x] Documentar el `finditer`.
 > > - [ ] Documentar el `split`.
 > > - [ ] Documentar el `sub`.
 > > - [ ] Documentar las *flags*.
@@ -105,7 +105,7 @@ Si se encuentra una coincidencia al principio, esta [función](../../../basic/fu
 > [!syntax] SINTAXIS
 > fullpath([***\[pattern\]***](#^match-arg-pattern), [***\[string\]***](#^match-arg-string), [***\{flags\}***](flags.md))
 
-- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se debe cumplir en todo el [*string*](#^fullmatch-arg-string).
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se debe cumplir en todo el [*string*](#^match-arg-string).
 ^match-arg-pattern
 - ***string***: (*obligatorio*) es el string sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
 ^match-arg-string
@@ -181,9 +181,9 @@ La [función](../../../basic/function.md) `findall` se usa para obtener **todas 
 Esta [función](../../../basic/function.md) devuelve una [lista](../../../py_list.md), esta puede contener [*strings*](../../../py_str.md) o [tuplas](../../../py_tuple.md), dependiendo de la catidad de grupos que contenga el patrón que estamos aplicando; si solo tiene un grupo tendrá [*strings*](../../../py_str.md) sino [tuplas](../../../py_tuple.md).
 
 > [!syntax] SINTAXIS
-> search([***\[pattern\]***](#^search-arg-pattern), [***\[string\]***](#^search-arg-string), [***{flags}***](flags.md))
+> search([***\[pattern\]***](#^findall-arg-pattern), [***\[string\]***](#^findall-arg-string), [***{flags}***](flags.md))
 
-- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se quiere buscar dentro del [*string*](#^search-arg-string).
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se quiere buscar dentro del [*string*](#^findall-arg-string).
   ^findall-arg-pattern
 - ***string***: (*obligatorio*) es el string sobre el que se va a buscar la primera coincidencia.
   ^findall-arg-string
@@ -249,6 +249,62 @@ for date in dates:
 Como se puede ver en el ejemplo, en los casos en los que encuentra una fecha sin hora, obtenemos la [tupla](../../../py_tuple.md) teniendo como primer elemento la propia fecha mientras que el segundo elemento se queda vacío; por otro lado, si la fecha incluye la hora, esta aparecerá como segundo elemento.
 
 ## FUNCIÓN FINDITER
+
+La [función](../../../basic/function.md) `finditer` es similar a [`findall`](#FUNCIÓN%20FINDALL), ya que busca todas las coincidencias del patrón en el [*string*](../../../py_str.md), pero este nos devuelve un [*iterable*](../../../basic/iterable.md) con [objetos `Match`](#CLASE%20MATCH).
+
+> [!syntax] SINTAXIS
+> search([***\[pattern\]***](#^finditer-arg-pattern), [***\[string\]***](#^finditer-arg-string), [***{flags}***](flags.md))
+
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se quiere buscar dentro del [*string*](#^finditer-arg-string).
+  ^finditer-arg-pattern
+- ***string***: (*obligatorio*) es el string sobre el que se va a buscar la primera coincidencia.
+  ^finditer-arg-string
+- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
+
+---
+
+> [!example] EJEMPLO
+> Siguiendo con el ejmplo del apartado anterior, podemos querer buscar las fechas, pero no queremos la solo la fecha, queremos más flexibilidad, para esto mismo sirve la [funcion](../../../basic/function.md) `finditer`; como se puede ver en ejemplo, al obtener los [objetos `Match`](#CLASE%20MATCH) podemos acceder a los distintos grupos (*en este caso tienen nombre*).
+> 
+> Este caso es didáctico, por lo que no hay mucha diferencia entre usar este ejemplo o el del apartado anterior, ya que se puede llegar a hacer lo mismo; esto cambia cuando estamos trabajando con patrones más complejos y que pueden tener múltiples capas de grupos.
+
+```python
+import re
+
+text: str = """\
+Lanzamiento: 1969-07-16
+Alunizaje: 1969-07-20 20:17:00
+Primer paso humano: 1969-07-21 02:56:00
+Retorno a la Tierra: 1969-07-24
+"""
+
+pattern: str = r"(?P<datetime>(?P<date>\d{4}-\d\d-\d\d)(?:\s(?P<time>\d\d(?:\:\d\d){2}))?)"
+
+dates = re.finditer(pattern, text)
+
+for date in dates:
+    print(f"datetime: {date.group('datetime')}")
+    print(f"date: {date.group('date')}")
+    print(f"time: {date.group('time')}")
+    print()
+
+# SALIDA:
+# datetime: 1969-07-16
+# date: 1969-07-16
+# time: None
+# 
+# datetime: 1969-07-20 20:17:00
+# date: 1969-07-20
+# time: 20:17:00
+# 
+# datetime: 1969-07-21 02:56:00
+# date: 1969-07-21
+# time: 02:56:00
+# 
+# datetime: 1969-07-24
+# date: 1969-07-24
+# time: None
+```
 
 ## FUNCIÓN SPLIT
 
