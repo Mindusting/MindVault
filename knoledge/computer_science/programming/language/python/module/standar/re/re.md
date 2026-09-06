@@ -16,7 +16,7 @@ tags: [Module, Programming, Python, ReGex]
 > > [!todo] #TODO
 > > - [x] Documentar el `fullmatch`.
 > > - [x] Documentar el `match`.
-> > - [ ] Documentar el `search`.
+> > - [x] Documentar el `search`.
 > > - [ ] Documentar el `findall`.
 > > - [ ] Documentar el `finditer`.
 > > - [ ] Documentar el `split`.
@@ -41,9 +41,8 @@ tags: [Module, Programming, Python, ReGex]
 > - [NeuralNine](https://youtu.be/wnuBwl2ekmo) #WWW/YT/NeuralNine
 
 > [!faq]- FAQ
-> - [¿Qué son las expresiones regulares?](../../../../../../text_processing/regex/regex.md)
 
-El [módulo](../../../basic/module.md) **re** en [Python](../../../py.md) es un estandar, ofrece herramientas para poder trabajar con con [expresiones regulares](../../../../../../text_processing/regex/regex.md); esto lo hace mediante una serie de [funciones](../../../basic/function.md) y [clases](../../../basic/oop.md) que veremos en esta documentación.
+El [módulo](../../../basic/module.md) **re** en [Python](../../../py.md) es un estandar, ofrece herramientas para poder trabajar con con [expresiones regulares](regex.md); esto lo hace mediante una serie de [funciones](../../../basic/function.md) y [clases](../../../basic/oop.md) que veremos en esta documentación.
 
 | FUNCIÓN                             | USO                                       | RESULTADO           |
 |:----------------------------------- |:----------------------------------------- |:------------------- |
@@ -65,13 +64,13 @@ La [función](../../../basic/function.md) `fullmatch` se usa para poder comproba
 Si todo el texto coincide, esta [función](../../../basic/function.md) nos devolverá un [objeto](../../../basic/oop.md) de tipo [`Match`](#CLASE%20MATCH), sino nos devolverá [`None`](../../../basic/none.md).
 
 > [!syntax] SINTAXIS
-> fullpath([***\[pattern\]***](#^fullmatch-arg-pattern), [***\[string\]***](#^fullmatch-arg-string), [***\{flags\}***](#BANDERAS%20(FLAGS)))
+> fullpath([***\[pattern\]***](#^fullmatch-arg-pattern), [***\[string\]***](#^fullmatch-arg-string), [***\{flags\}***](flags.md))
 
-- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](../../../../../../text_processing/regex/regex.md) que se debe cumplir en todo el [*string*](#^fullmatch-arg-string).
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se debe cumplir en todo el [*string*](#^fullmatch-arg-string).
 ^fullmatch-arg-pattern
 - ***string***: (*obligatorio*) es el string sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
 ^fullmatch-arg-string
-- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado "[BANDERAS (FLAGS)](#BANDERAS%20(FLAGS))".
+- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
 ---
 
@@ -104,13 +103,13 @@ La [función](../../../basic/function.md) `match` se usa para poder comprobar si
 Si se encuentra una coincidencia al principio, esta [función](../../../basic/function.md) nos devolverá un [objeto](../../../basic/oop.md) de tipo [`Match`](#CLASE%20MATCH), sino nos devolverá [`None`](../../../basic/none.md).
 
 > [!syntax] SINTAXIS
-> fullpath([***\[pattern\]***](#^match-arg-pattern), [***\[string\]***](#^match-arg-string), [***\{flags\}***](#BANDERAS%20(FLAGS)))
+> fullpath([***\[pattern\]***](#^match-arg-pattern), [***\[string\]***](#^match-arg-string), [***\{flags\}***](flags.md))
 
-- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](../../../../../../text_processing/regex/regex.md) que se debe cumplir en todo el [*string*](#^fullmatch-arg-string).
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se debe cumplir en todo el [*string*](#^fullmatch-arg-string).
 ^match-arg-pattern
 - ***string***: (*obligatorio*) es el string sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
 ^match-arg-string
-- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado "[BANDERAS (FLAGS)](#BANDERAS%20(FLAGS))".
+- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
 ---
 
@@ -143,13 +142,13 @@ La [función](../../../basic/function.md) `search`, a diferencia de [`match`](#F
 Si se encuentra una coincidencia, esta [función](../../../basic/function.md) nos devolverá un [objeto](../../../basic/oop.md) de tipo [`Match`](#CLASE%20MATCH), sino nos devolverá [`None`](../../../basic/none.md).
 
 > [!syntax] SINTAXIS
-> search([***\[pattern\]***](#^search-arg-pattern), [***\[string\]***](#^search-arg-string), [***{flags}***](#BANDERAS%20(FLAGS)))
+> search([***\[pattern\]***](#^search-arg-pattern), [***\[string\]***](#^search-arg-string), [***{flags}***](flags.md))
 
-- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](../../../../../../text_processing/regex/regex.md) que se quiere buscar dentro del [*string*](#^search-arg-string).
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se quiere buscar dentro del [*string*](#^search-arg-string).
   ^search-arg-pattern
 - ***string***: (*obligatorio*) es el string sobre el que se va a buscar la primera coincidencia.
   ^search-arg-string
-- ***flags***: este argumento es opcional y lo suficientemente complejo como para tener su propio apartado "[BANDERAS (FLAGS)](#BANDERAS%20(FLAGS))".
+- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
 ---
 
@@ -177,6 +176,78 @@ Como se puede ver en el ejemplo a pesar de que haya dos fechas en el texto, solo
 
 ## FUNCIÓN FINDALL
 
+La [función](../../../basic/function.md) `findall` se usa para obtener **todas las coincidencias** de un patrón dentro de un [*string*](../../../py_str.md), esta nos las devolverá en el orden en las que las ha ido encontrando.
+
+Esta [función](../../../basic/function.md) devuelve una [lista](../../../py_list.md), esta puede contener [*strings*](../../../py_str.md) o [tuplas](../../../py_tuple.md), dependiendo de la catidad de grupos que contenga el patrón que estamos aplicando; si solo tiene un grupo tendrá [*strings*](../../../py_str.md) sino [tuplas](../../../py_tuple.md).
+
+> [!syntax] SINTAXIS
+> search([***\[pattern\]***](#^search-arg-pattern), [***\[string\]***](#^search-arg-string), [***{flags}***](flags.md))
+
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se quiere buscar dentro del [*string*](#^search-arg-string).
+  ^findall-arg-pattern
+- ***string***: (*obligatorio*) es el string sobre el que se va a buscar la primera coincidencia.
+  ^findall-arg-string
+- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
+
+---
+
+> [!example] EJEMPLO
+> Imaginemos que queremos obtener todas las fechas de un texto; podemos hacerlo usando el patrón de la fecha (`\d{4}-\d\d-\d\d`) y como se puede ver en el ejemplo, terminamos obteniendo las dos fechas.
+
+```python
+import re
+
+text: str = """\
+Este es un texto que estoy
+escribiendo el día 2026-09-06.
+
+Como podeis ver me lo estoy
+tomando con calma ya que el
+anterior apartado lo redacte
+ayer (2026-09-05).
+"""
+
+pattern: str = r"\d{4}-\d\d-\d\d"
+
+dates = re.findall(pattern, text)
+
+print(dates)
+
+# SALIDA:
+# ['2026-09-06', '2026-09-05']
+```
+
+---
+
+> [!example] EJEMPLO
+> Ahora imaginemos que queremos obtener la fecha y en caso de que lo haya, también la hora; este ejemplo es un poco más complicado ya que contendrá grupos, por lo que en la [lista](../../../py_list.md) tendremos [tuplas](../../../py_tuple.md) en vez de [*strings*](../../../py_str.md).
+
+```python
+import re
+
+text: str = """\
+Lanzamiento: 1969-07-16
+Alunizaje: 1969-07-20 20:17:00
+Primer paso humano: 1969-07-21 02:56:00
+Retorno a la Tierra: 1969-07-24
+"""
+
+pattern: str = r"(\d{4}-\d\d-\d\d)(?:\s(\d\d(?:\:\d\d){2}))?"
+
+dates = re.findall(pattern, text)
+
+for date in dates:
+    print(date)
+
+# SALIDA:
+# ('1969-07-16', '')
+# ('1969-07-20', '20:17:00')
+# ('1969-07-21', '02:56:00')
+# ('1969-07-24', '')
+```
+
+Como se puede ver en el ejemplo, en los casos en los que encuentra una fecha sin hora, obtenemos la [tupla](../../../py_tuple.md) teniendo como primer elemento la propia fecha mientras que el segundo elemento se queda vacío; por otro lado, si la fecha incluye la hora, esta aparecerá como segundo elemento.
+
 ## FUNCIÓN FINDITER
 
 ## FUNCIÓN SPLIT
@@ -184,10 +255,6 @@ Como se puede ver en el ejemplo a pesar de que haya dos fechas en el texto, solo
 ## FUNCIÓN SUB
 
 ## CLASE MATCH
-
-## BANDERAS (FLAGS)
-
-Las banderas en son opcionales y debido a su complegidad estas tienen su propio apartado (*es decir, este*) en el que se detalla las características de estas, ya que además son comunes para todas las [funciones](../../../basic/function.md).
 
 ---
 
@@ -207,7 +274,7 @@ Las banderas en son opcionales y debido a su complegidad estas tienen su propio 
 > > - [ ] Explicar como se escriben los regex en Python.
 > > - [ ] Añadir un enlace al archivo de regex.
 
-Para poder escribir el **patrón** de una [expresión regular](../../../../../../text_processing/regex/regex.md) se utiliza [`r-str`](py_str.md#R-STRING) ya que este nos permite escribir los caracteres de escape de forma que el interprete del padrón podrá leerlos, es puede hacer si el [`r-str`](py_str.md#R-STRING) 
+Para poder escribir el **patrón** de una [expresión regular](regex.md) se utiliza [`r-str`](py_str.md#R-STRING) ya que este nos permite escribir los caracteres de escape de forma que el interprete del padrón podrá leerlos, es puede hacer si el [`r-str`](py_str.md#R-STRING) 
 
 ## COINCIDENCIA COMPLETA
 
