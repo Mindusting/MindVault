@@ -185,7 +185,7 @@ Esta [función](../../../basic/function.md) devuelve una [lista](../../../py_lis
 
 - ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se quiere buscar dentro del [*string*](#^findall-arg-string).
   ^findall-arg-pattern
-- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar la primera coincidencia.
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar las coincidencias del [patrón](#^findall-arg-pattern).
   ^findall-arg-string
 - ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
@@ -257,7 +257,7 @@ La [función](../../../basic/function.md) `finditer` es similar a [`findall`](#F
 
 - ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se quiere buscar dentro del [*string*](#^finditer-arg-string).
   ^finditer-arg-pattern
-- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar la primera coincidencia.
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar las coincidencias del [patrón](#^finditer-arg-pattern).
   ^finditer-arg-string
 - ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
@@ -315,7 +315,7 @@ La [función](../../../basic/function.md) `split` permite separar el [*string*](
 
 - ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se ba a usar como línea de corte en el [*string*](#^split-arg-string).
   ^split-arg-pattern
-- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar la primera coincidencia.
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a hacer los cortes en vase al [patrón](#^split-arg-pattern).
   ^split-arg-string
 - ***maxsplit***: (*opcional con valor por defecto `0`*) este argumento indica cuantas veces se debe aplicar como máximo el corte en el [*string*](#^split-arg-string); si este tiene el valor `0`, se harán todos los cortes posibles.
   ^split-arg-maxsplit
@@ -347,6 +347,21 @@ print(" ".join(pices))
 ```
 
 ## FUNCIÓN SUB
+
+La [función](../../../basic/function.md) `sub` permite indicar un patrón que será sustituido por un [*string* de remplazo](#^sub-arg-repl), devolviendo como resultado otro [*string*](../../../py_str.md).
+
+> [!syntax] SINTAXIS
+> search([***\[pattern\]***](#^sub-arg-pattern), [***\[string\]***](#^sub-arg-string), [***\[repl\]***](#^sub-arg-repl), [***\{maxsplit\}***](#^sub-arg-maxsplit), [***\{flags\}***](flags.md))
+
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que define que parte del [*string*](#^split-arg-string) se va a sustituir.
+  ^sub-arg-pattern
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a remplazar las coincidencias.
+  ^sub-arg-string
+- ***repl***: (*obligatorio*) es el [*string*](../../../py_str.md) que se usará como sustituto sobre las coincidencias en el [*string*](#^sub-arg-pattern).
+  ^sub-arg-repl
+- ***maxsplit***: (*opcional con valor por defecto `0`*) este argumento indica cuantas veces se debe aplicar como máximo la sustitución en el [*string*](#^split-arg-string); si este tiene el valor `0`, se harán todas las sustituciones posibles.
+  ^sub-arg-maxsplit
+- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
 ## CLASE MATCH
 
