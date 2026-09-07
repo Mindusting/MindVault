@@ -15,4 +15,7 @@ tags: [Programming, Python]
 > 
 > > [!todo] #TODO
 
+> [!external-link]- REFERENCIAS WEB
+> - https://docs.python.org/3/library/re.html#flags #WWW/Python
+
 Las banderas en son opcionales y debido a su complegidad estas tienen su propio apartado (*es decir, este*) en el que se detalla las características de estas, ya que además son comunes para todas las [funciones](../../../basic/function.md).
