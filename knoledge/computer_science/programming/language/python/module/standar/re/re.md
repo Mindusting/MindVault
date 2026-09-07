@@ -39,8 +39,6 @@ tags: [Module, Programming, Python, ReGex]
 > - [FRIKIdelTO](https://youtu.be/7QUmK6cW_Rg) #WWW/YT/FRIKIdelTO
 > - [NeuralNine](https://youtu.be/wnuBwl2ekmo) #WWW/YT/NeuralNine
 
-> [!faq]- FAQ
-
 El [módulo](../../../basic/module.md) **re** en [Python](../../../py.md) es un estandar, ofrece herramientas para poder trabajar con con [expresiones regulares](regex.md); esto lo hace mediante una serie de [funciones](../../../basic/function.md) y [clases](../../../basic/oop.md) que veremos en esta documentación.
 
 | FUNCIÓN                             | USO                                       | RESULTADO           |
@@ -350,14 +348,14 @@ print(" ".join(pices))
 La [función](../../../basic/function.md) `sub` permite indicar un patrón que será sustituido por un [*string* de remplazo](#^sub-arg-repl), devolviendo como resultado otro [*string*](../../../py_str.md).
 
 > [!syntax] SINTAXIS
-> search([***\[pattern\]***](#^sub-arg-pattern), [***\[string\]***](#^sub-arg-string), [***\[repl\]***](#^sub-arg-repl), [***\{maxsplit\}***](#^sub-arg-maxsplit), [***\{flags\}***](flags.md))
+> search([***\[pattern\]***](#^sub-arg-pattern), [***\[repl\]***](#^sub-arg-repl), [***\[string\]***](#^sub-arg-string), [***\{maxsplit\}***](#^sub-arg-maxsplit), [***\{flags\}***](flags.md))
 
 - ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que define que parte del [*string*](#^split-arg-string) se va a sustituir.
   ^sub-arg-pattern
-- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a remplazar las coincidencias.
-  ^sub-arg-string
 - ***repl***: (*obligatorio*) es el [*string*](../../../py_str.md) que se usará como sustituto sobre las coincidencias en el [*string*](#^sub-arg-pattern).
   ^sub-arg-repl
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a remplazar las coincidencias.
+  ^sub-arg-string
 - ***maxsplit***: (*opcional con valor por defecto `0`*) este argumento indica cuantas veces se debe aplicar como máximo la sustitución en el [*string*](#^split-arg-string); si este tiene el valor `0`, se harán todas las sustituciones posibles.
   ^sub-arg-maxsplit
 - ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
