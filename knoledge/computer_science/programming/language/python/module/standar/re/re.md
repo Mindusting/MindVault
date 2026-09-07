@@ -324,7 +324,7 @@ La [función](../../../basic/function.md) `split` permite separar el [*string*](
 ---
 
 > [!example] EJEMPLO
-> Imaginemos
+> Imaginemos que tenemos un texto escrito en mútiples líneas y estando justificado, de forma que entre las palabras pueden haber múltiples espacios; si quisieramos transformar este texto par que esté todo el una sola línea podríamos separarlo por los grupos de espacios (*incluyendo saltos de línea*) y luego juntar los bloques restantes con un único espacio.
 
 ```python
 import re
