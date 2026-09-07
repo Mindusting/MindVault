@@ -1,15 +1,15 @@
 ---
-aliases: [Módolo RE en Python]
+aliases: [Módulo RE en Python]
 author: Mindusting
 corrected: false
 creationDate: 2026-09-02 06:44:22
 headerFile: false
-modificationDate: 2026-09-05 03:28:26
-rating: 
+modificationDate: 2026-09-07 06:21:28
+rating:
 tags: [Module, Programming, Python, ReGex]
 ---
 
-# REGEX EN PYTHON
+# MÓDULO RE EN PYTHON
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
@@ -39,7 +39,7 @@ tags: [Module, Programming, Python, ReGex]
 > - [FRIKIdelTO](https://youtu.be/7QUmK6cW_Rg) #WWW/YT/FRIKIdelTO
 > - [NeuralNine](https://youtu.be/wnuBwl2ekmo) #WWW/YT/NeuralNine
 
-El [módulo](../../../basic/module.md) **re** en [Python](../../../py.md) es un estandar, ofrece herramientas para poder trabajar con con [expresiones regulares](regex.md); esto lo hace mediante una serie de [funciones](../../../basic/function.md) y [clases](../../../basic/oop.md) que veremos en esta documentación.
+El [módulo](../../../basic/module.md) **re** en [Python](../../../py.md) es un estándar, ofrece herramientas para poder trabajar con [expresiones regulares](regex.md); esto lo hace mediante una serie de [funciones](../../../basic/function.md) y [clases](../../../basic/oop.md) que veremos en esta documentación.
 
 | FUNCIÓN                             | USO                                       | RESULTADO           |
 |:----------------------------------- |:----------------------------------------- |:------------------- |
@@ -49,10 +49,10 @@ El [módulo](../../../basic/module.md) **re** en [Python](../../../py.md) es un 
 | [`findall`](#FUNCIÓN%20FINDALL)     | Dame todas las coincidencias.             | `list`              |
 | [`finditer`](#FUNCIÓN%20FINDITER)   | Dame todas las coincidencias con detalle. | Iterador de `Match` |
 | [`split`](#FUNCIÓN%20SPLIT)         | Separa por las coincidencias.             | `list`              |
-| [`sub`](#FUNCIÓN%20SUB)             | Sustitulle las coincidencias.             | `str`               |
+| [`sub`](#FUNCIÓN%20SUB)             | Sustituye las coincidencias.              | `str`               |
 
 > [!important] IMPORTANTE
-> Aunque en esta documentación todo el rato de operar sobre [*strings*](../../../py_str.md) a la hora de encontrar los patrones, realmente también se puede usar [*bytes*](../../../py_bytes.md).
+> Aunque en esta documentación todo el tiempo de operar sobre [*strings*](../../../py_str.md) a la hora de encontrar los patrones, realmente también se puede usar [*bytes*](../../../py_bytes.md).
 
 ## FUNCIÓN FULLMATCH
 
@@ -67,12 +67,12 @@ Si todo el texto coincide, esta [función](../../../basic/function.md) nos devol
 ^fullmatch-arg-pattern
 - ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
 ^fullmatch-arg-string
-- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
+- ***flags***: este argumento es opcional y lo suficientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
 ---
 
 > [!example] EJEMPLO
-> Supongamos que tenemos que guardar una fecha con el formato `YYYY-MM-DD`, es decir: cuatro dígitos para el año (`YYYY`), dos dígitos para el mes (`MM`) y dos dígitos para el día (`DD`); sigiendo ese mismo orden y usando un guión (`-`) para separar estos valores, para poder hacer esto podremos usar el patrón `\d{4}-\d\d-\d\d` de la siguiente forma.
+> Supongamos que tenemos que guardar una fecha con el formato `YYYY-MM-DD`, es decir: cuatro dígitos para el año (`YYYY`), dos dígitos para el mes (`MM`) y dos dígitos para el día (`DD`); siguiendo ese mismo orden y usando un guión (`-`) para separar estos valores, para poder hacer esto podremos usar el patrón `\d{4}-\d\d-\d\d` de la siguiente forma.
 
 ```python
 import re
@@ -91,7 +91,7 @@ else:
 # La fecha es válida!
 ```
 
-Puedes cambiar la fecha y ver como se comporta el programa.
+Puedes cambiar la fecha y ver cómo se comporta el programa.
 
 ## FUNCIÓN MATCH
 
@@ -106,7 +106,7 @@ Si se encuentra una coincidencia al principio, esta [función](../../../basic/fu
 ^match-arg-pattern
 - ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
 ^match-arg-string
-- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
+- ***flags***: este argumento es opcional y lo suficientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
 ---
 
@@ -117,12 +117,12 @@ Si se encuentra una coincidencia al principio, esta [función](../../../basic/fu
 import re
 
 pattern: str = r"\d{3}-"
-name: str = "123-Engranage"
+name: str = "123-Engranaje"
 
 result: re.Match | None = re.match(pattern, name)
 
 if result:
-    print("El nombre es valido!")
+    print("El nombre es válido!")
 else:
     print("El nombre es inválido!")
 
@@ -130,11 +130,11 @@ else:
 # El nombre es válido!
 ```
 
-Puedes cambiar el nombre y ver como se comporta el programa.
+Puedes cambiar el nombre y ver cómo se comporta el programa.
 
 ## FUNCIÓN SEARCH
 
-La [función](../../../basic/function.md) `search`, a diferencia de [`match`](#FUNCIÓN%20MATCH) en donde busca la coincidencia del patrón al principio del [*string*](../../../py_str.md), esta busca la **primera coincidencia** independientemente de la posición en la que se encuentre dentro de [*string*](../../../py_str.md).
+La [función](../../../basic/function.md) `search`, a diferencia de [`match`](#FUNCIÓN%20MATCH) en donde busca la coincidencia del patrón al principio del [*string*](../../../py_str.md), está busca la **primera coincidencia** independientemente de la posición en la que se encuentre dentro de [*string*](../../../py_str.md).
 
 Si se encuentra una coincidencia, esta [función](../../../basic/function.md) nos devolverá un [objeto](../../../basic/oop.md) de tipo [`Match`](#CLASE%20MATCH), sino nos devolverá [`None`](../../../basic/none.md).
 
@@ -145,7 +145,7 @@ Si se encuentra una coincidencia, esta [función](../../../basic/function.md) no
   ^search-arg-pattern
 - ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar la primera coincidencia.
   ^search-arg-string
-- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
+- ***flags***: este argumento es opcional y lo suficientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
 ---
 
@@ -156,7 +156,7 @@ Si se encuentra una coincidencia, esta [función](../../../basic/function.md) no
 import re
 
 pattern: str = r"\d{4}-\d\d-\d\d"
-text: str = "Empecé a programar al rededor de 2020-10-15 y estoy escribiendo esto en 2026-09-05."
+text: str = "Empecé a programar alrededor de 2020-10-15 y estoy escribiendo esto en 2026-09-05."
 
 result: re.Match | None = re.search(pattern, text)
 
@@ -173,9 +173,9 @@ Como se puede ver en el ejemplo a pesar de que haya dos fechas en el texto, solo
 
 ## FUNCIÓN FINDALL
 
-La [función](../../../basic/function.md) `findall` se usa para obtener **todas las coincidencias** de un patrón dentro de un [*string*](../../../py_str.md), esta nos las devolverá en el orden en las que las ha ido encontrando.
+La [función](../../../basic/function.md) `findall` se usa para obtener **todas las coincidencias** de un patrón dentro de un [*string*](../../../py_str.md), está nos las devolverá en el orden en las que las ha ido encontrando.
 
-Esta [función](../../../basic/function.md) devuelve una [lista](../../../py_list.md), esta puede contener [*strings*](../../../py_str.md) o [tuplas](../../../py_tuple.md), dependiendo de la catidad de grupos que contenga el patrón que estamos aplicando; si solo tiene un grupo tendrá [*strings*](../../../py_str.md) sino [tuplas](../../../py_tuple.md).
+Esta [función](../../../basic/function.md) devuelve una [lista](../../../py_list.md), esta puede contener [*strings*](../../../py_str.md) o [tuplas](../../../py_tuple.md), dependiendo de la cantidad de grupos que contenga el patrón que estamos aplicando; si solo tiene un grupo tendrá [*strings*](../../../py_str.md) sino [tuplas](../../../py_tuple.md).
 
 > [!syntax] SINTAXIS
 > search([***\[pattern\]***](#^findall-arg-pattern), [***\[string\]***](#^findall-arg-string), [***{flags}***](flags.md))
@@ -184,7 +184,7 @@ Esta [función](../../../basic/function.md) devuelve una [lista](../../../py_lis
   ^findall-arg-pattern
 - ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar las coincidencias del [patrón](#^findall-arg-pattern).
   ^findall-arg-string
-- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
+- ***flags***: este argumento es opcional y lo suficientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
 ---
 
@@ -198,7 +198,7 @@ text: str = """\
 Este es un texto que estoy
 escribiendo el día 2026-09-06.
 
-Como podeis ver me lo estoy
+Como podéis ver me lo estoy
 tomando con calma ya que el
 anterior apartado lo redacte
 ayer (2026-09-05).
@@ -256,12 +256,12 @@ La [función](../../../basic/function.md) `finditer` es similar a [`findall`](#F
   ^finditer-arg-pattern
 - ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar las coincidencias del [patrón](#^finditer-arg-pattern).
   ^finditer-arg-string
-- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
+- ***flags***: este argumento es opcional y lo suficientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
 ---
 
 > [!example] EJEMPLO
-> Siguiendo con el ejmplo del apartado anterior, podemos querer buscar las fechas, pero no queremos la solo la fecha, queremos más flexibilidad, para esto mismo sirve la [funcion](../../../basic/function.md) `finditer`; como se puede ver en ejemplo, al obtener los [objetos `Match`](#CLASE%20MATCH) podemos acceder a los distintos grupos (*en este caso tienen nombre*).
+> Siguiendo con el ejemplo del apartado anterior, podemos querer buscar las fechas, pero no queremos la solo la fecha, queremos más flexibilidad, para esto mismo sirve la [funcion](../../../basic/function.md) `finditer`; como se puede ver en ejemplo, al obtener los [objetos `Match`](#CLASE%20MATCH) podemos acceder a los distintos grupos (*en este caso tienen nombre*).
 > 
 > Este caso es didáctico, por lo que no hay mucha diferencia entre usar este ejemplo o el del apartado anterior, ya que se puede llegar a hacer lo mismo; esto cambia cuando estamos trabajando con patrones más complejos y que pueden tener múltiples capas de grupos.
 
@@ -310,42 +310,42 @@ La [función](../../../basic/function.md) `split` permite separar el [*string*](
 > [!syntax] SINTAXIS
 > search([***\[pattern\]***](#^split-arg-pattern), [***\[string\]***](#^split-arg-string), [***\{maxsplit\}***](#^split-arg-maxsplit), [***\{flags\}***](flags.md))
 
-- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se ba a usar como línea de corte en el [*string*](#^split-arg-string).
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se va a usar como línea de corte en el [*string*](#^split-arg-string).
   ^split-arg-pattern
-- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a hacer los cortes en vase al [patrón](#^split-arg-pattern).
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a hacer los cortes en base al [patrón](#^split-arg-pattern).
   ^split-arg-string
 - ***maxsplit***: (*opcional con valor por defecto `0`*) este argumento indica cuantas veces se debe aplicar como máximo el corte en el [*string*](#^split-arg-string); si este tiene el valor `0`, se harán todos los cortes posibles.
   ^split-arg-maxsplit
-- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
+- ***flags***: este argumento es opcional y lo suficientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
 ---
 
 > [!example] EJEMPLO
-> Imaginemos que tenemos un texto escrito en mútiples líneas y estando justificado, de forma que entre las palabras pueden haber múltiples espacios; si quisieramos transformar este texto par que esté todo el una sola línea podríamos separarlo por los grupos de espacios (*incluyendo saltos de línea*) y luego juntar los bloques restantes con un único espacio.
+> Imaginemos que tenemos un texto escrito en múltiples líneas y estando justificado, de forma que entre las palabras pueden haber múltiples espacios; si quisiéramos transformar este texto par que esté todo él una sola línea podríamos separarlo por los grupos de espacios (*incluyendo saltos de línea*) y luego juntar los bloques restantes con un único espacio.
 
 ```python
 import re
 
 text: str = """\
 Esto   es    un   texto
-de  pruba   para  poder
+de  prueba  para  poder
 demostrar como se puede
 usar la  función split.\
 """
 
 pattern: str = r"\s+"
 
-pices = re.split(pattern, text)
+pieces = re.split(pattern, text)
 
-print(" ".join(pices))
+print(" ".join(pieces))
 
 # SALIDA:
-# Esto es un texto de pruba para poder demostrar como se puede usar la función split.
+# Esto es un texto de prueba para poder demostrar como se puede usar la función split.
 ```
 
 ## FUNCIÓN SUB
 
-La [función](../../../basic/function.md) `sub` permite indicar un patrón que será sustituido por un [*string* de remplazo](#^sub-arg-repl), devolviendo como resultado otro [*string*](../../../py_str.md).
+La [función](../../../basic/function.md) `sub` permite indicar un patrón que será sustituido por un [*string* de reemplazo](#^sub-arg-repl), devolviendo como resultado otro [*string*](../../../py_str.md).
 
 > [!syntax] SINTAXIS
 > search([***\[pattern\]***](#^sub-arg-pattern), [***\[repl\]***](#^sub-arg-repl), [***\[string\]***](#^sub-arg-string), [***\{maxsplit\}***](#^sub-arg-maxsplit), [***\{flags\}***](flags.md))
@@ -354,30 +354,30 @@ La [función](../../../basic/function.md) `sub` permite indicar un patrón que s
   ^sub-arg-pattern
 - ***repl***: (*obligatorio*) es el [*string*](../../../py_str.md) que se usará como sustituto sobre las coincidencias en el [*string*](#^sub-arg-pattern).
   ^sub-arg-repl
-- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a remplazar las coincidencias.
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a reemplazar las coincidencias.
   ^sub-arg-string
 - ***maxsplit***: (*opcional con valor por defecto `0`*) este argumento indica cuantas veces se debe aplicar como máximo la sustitución en el [*string*](#^split-arg-string); si este tiene el valor `0`, se harán todas las sustituciones posibles.
   ^sub-arg-maxsplit
-- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
+- ***flags***: este argumento es opcional y lo suficientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
 ---
 
 > [!example] EJEMPLO
-> Imaginemos que tenemos un texto y por cuestión de anonimato queremos censurar los coreos electrónicos de la gente que aparece involucrada.
+> Imaginemos que tenemos un texto y por cuestión de anonimato queremos censurar los correos electrónicos de la gente que aparece involucrada.
 
 ```python
 import re
 
 patter: str = r"\w+@\w+.\w+"
 repl: str = "[EMAIL]"
-text: str = "Los usuarios adelio@email.com y adelia@email.com son los sugetos de prueba."
+text: str = "Los usuarios adelio@email.com y adelia@email.com son los sujetos de prueba."
 
 new_text: str = re.sub(patter, repl, text)
 
 print(new_text)
 
 #SALIDA:
-# Los usuarios [EMAIL] y [EMAIL] son los sugetos de prueba.
+# Los usuarios [EMAIL] y [EMAIL] son los sujetos de prueba.
 ```
 
 ## CLASE MATCH
