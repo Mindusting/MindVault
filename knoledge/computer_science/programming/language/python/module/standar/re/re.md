@@ -19,9 +19,8 @@ tags: [Module, Programming, Python, ReGex]
 > > - [x] Documentar el `search`.
 > > - [x] Documentar el `findall`.
 > > - [x] Documentar el `finditer`.
-> > - [ ] Documentar el `split`.
-> > - [ ] Documentar el `sub`.
-> > - [ ] Documentar las *flags*.
+> > - [x] Documentar el `split`.
+> > - [x] Documentar el `sub`.
 > > - [ ] Documentar la clase `Match`.
 
 > [!external-link]- REFERENCIAS WEB
