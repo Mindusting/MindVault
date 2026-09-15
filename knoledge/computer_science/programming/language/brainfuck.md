@@ -14,20 +14,25 @@ tags: [Programming]
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
+> > - [ ] Explicar las bases del lenguaje.
+> > - [ ] Hacer un mejor ejeplo de un pequeño programa en BrainFuck.
+> > - [ ] Añadir un programa escrito en C para poder ejecutar código BrainFuck.
 
 > [!external-link]- REFERENCIAS WEB
 > - [brainfuck](https://brainfuck.org) #WWW/brainfuck
+
+
 
 ```brainfuck
 [ Todo este bloque es un comentario:
 
     Este texto ha sido escrito por "Mindusting", este es un
-    programa escrito para ser ejecutado pro el intreprete de
+    programa escrito para ser ejecutado por el intreprete de
     BrainFuck, pudiendo ser usado como una mini máquina
     virtual para futuros programas.
 
     Los únicos caracteres que necesita este lenguaje son los
-    iguientes:
+    siguientes:
         + y -: permite incrementar y decrementar el valor del
         byte al que apunta la cabeza de la memoria.
 
