@@ -68,7 +68,7 @@ Si todo el texto coincide, esta [función](../../../basic/function.md) nos devol
 
 - ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se debe cumplir en todo el [*string*](#^fullmatch-arg-string).
 ^fullmatch-arg-pattern
-- ***string***: (*obligatorio*) es el string sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
 ^fullmatch-arg-string
 - ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
@@ -107,7 +107,7 @@ Si se encuentra una coincidencia al principio, esta [función](../../../basic/fu
 
 - ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se debe cumplir en todo el [*string*](#^match-arg-string).
 ^match-arg-pattern
-- ***string***: (*obligatorio*) es el string sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a hacer la comprobación de si el patrón coincide por completo.
 ^match-arg-string
 - ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
@@ -146,7 +146,7 @@ Si se encuentra una coincidencia, esta [función](../../../basic/function.md) no
 
 - ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se quiere buscar dentro del [*string*](#^search-arg-string).
   ^search-arg-pattern
-- ***string***: (*obligatorio*) es el string sobre el que se va a buscar la primera coincidencia.
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar la primera coincidencia.
   ^search-arg-string
 - ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
@@ -185,7 +185,7 @@ Esta [función](../../../basic/function.md) devuelve una [lista](../../../py_lis
 
 - ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se quiere buscar dentro del [*string*](#^findall-arg-string).
   ^findall-arg-pattern
-- ***string***: (*obligatorio*) es el string sobre el que se va a buscar la primera coincidencia.
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar la primera coincidencia.
   ^findall-arg-string
 - ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
@@ -257,7 +257,7 @@ La [función](../../../basic/function.md) `finditer` es similar a [`findall`](#F
 
 - ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se quiere buscar dentro del [*string*](#^finditer-arg-string).
   ^finditer-arg-pattern
-- ***string***: (*obligatorio*) es el string sobre el que se va a buscar la primera coincidencia.
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar la primera coincidencia.
   ^finditer-arg-string
 - ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
 
@@ -307,6 +307,44 @@ for date in dates:
 ```
 
 ## FUNCIÓN SPLIT
+
+La [función](../../../basic/function.md) `split` permite separar el [*string*](#^split-arg-string) utilizando el [patrón](#^split-arg-pattern) como línea de corte, obteniendo como resultado una [lista](../../../py_list.md) que contienen los [*strings*](../../../py_str.md) que se encuentran entre las coincidencias del [patrón](#^split-arg-pattern).
+
+> [!syntax] SINTAXIS
+> search([***\[pattern\]***](#^split-arg-pattern), [***\[string\]***](#^split-arg-string), [***\{maxsplit\}***](#^split-arg-maxsplit), [***\{flags\}***](flags.md))
+
+- ***pattern***: (*obligatorio*) es la parte que define la [expresión regular](regex.md) que se ba a usar como línea de corte en el [*string*](#^split-arg-string).
+  ^split-arg-pattern
+- ***string***: (*obligatorio*) es el [*string*](../../../py_str.md) sobre el que se va a buscar la primera coincidencia.
+  ^split-arg-string
+- ***maxsplit***: (*opcional con valor por defecto `0`*) este argumento indica cuantas veces se debe aplicar como máximo el corte en el [*string*](#^split-arg-string); si este tiene el valor `0`, se harán todos los cortes posibles.
+  ^split-arg-maxsplit
+- ***flags***: este argumento es opcional y lo sufucientemente complejo como para tener su propio apartado sobre [*flags*](flags.md).
+
+---
+
+> [!example] EJEMPLO
+> Imaginemos
+
+```python
+import re
+
+text: str = """\
+Esto   es    un   texto
+de  pruba   para  poder
+demostrar como se puede
+usar la  función split.\
+"""
+
+pattern: str = r"\s+"
+
+pices = re.split(pattern, text)
+
+print(" ".join(pices))
+
+# SALIDA:
+# Esto es un texto de pruba para poder demostrar como se puede usar la función split.
+```
 
 ## FUNCIÓN SUB
 
