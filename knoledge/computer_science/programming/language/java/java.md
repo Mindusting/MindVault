@@ -12,7 +12,7 @@ tags: [Java, Programming]
 
 <h1 align="center" style="color:#f81;">JAVA</h1>
 
-![#logo](../../../../../imgs/java_logo.png)
+![#logo](assets/java_logo.png)
 
 ---
 
