@@ -1,14 +1,13 @@
 ---
-aliases:
-  - Java ☕
+aliases: [Java ☕, Lenguaje de programación Java]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-05 12:40:08
 headerFile: true
 logo: imgs/java_logo.png
-tags:
-  - Programming
-  - Java
+modificationDate: 2026-09-17 07:23:42
 rating:
+tags: [Java, Programming]
 ---
 
 <h1 align="center" style="color:#f81;">JAVA</h1>
@@ -20,6 +19,7 @@ rating:
 # JAVA
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Explicar que es Java.
 > > - [ ] [java ejecución dinámica de funciones](http://delphiaccess.com/foros/index.php/articulos/java/855-ejecutar-de-forma-din%C3%A1mica-un-m%C3%A9todo-de-un-objeto-dado)
@@ -32,7 +32,7 @@ rating:
 > - [CODERANCH](https://coderanch.com/) #WWW/CodeRanch
 > - [REFACTORING GURU](https://refactoring.guru/es/design-patterns/java) #WWW/FactoringGuru
 > - [TpointTeach](https://www.tpointtech.com/java-tutorial) #WWW/TpointTeach
->
+> 
 > YouTube:
 > - [Bro Code](https://www.youtube.com/playlist?list=PLZPZq0r_RZOOj_NOZYq_R2PECIMglLemc) #WWW/YT/BroCode
 > - [pildorasinformaticas](https://www.youtube.com/playlist?list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk) #WWW/YT/pildorasinformaticas
