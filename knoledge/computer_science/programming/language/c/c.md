@@ -1,9 +1,11 @@
 ---
-aliases: [Lenguaje C 🦖]
+aliases: [Lenguaje de programación C 🦖]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-05 12:40:07
 headerFile: true
 logo: assets/c_logo.png
+modificationDate: 2026-09-17 07:26:34
 rating: 
 tags: [C, Programming]
 ---
@@ -29,9 +31,9 @@ tags: [C, Programming]
 
 > [!seealso] Ver también
 > - [Comando `make`:](../../../../../temp/os/linux/command/make.md)
->     Sirve para poder trabajar sobre proyectos de programación más facilmente.
+> Sirve para poder trabajar sobre proyectos de programación más facilmente.
 > - [Git:](../../../dev_tools/git/git.md)
->     Es un sistema de control de versiones, permite tener un desarrollo de proyecto más estructurado.
+> Es un sistema de control de versiones, permite tener un desarrollo de proyecto más estructurado.
 
 ## A CERCA DEL LENGUAJE C
 
