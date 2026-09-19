@@ -23,7 +23,7 @@ tags:
 > - [TpointTech](https://tpointtech.com/yaml) #WWW/TpointTeach
 
 > [!internal-link]- REFERENCIAS INTERNAS
-> - [¿Qué son los comentarios en programación?](../fundamentals/temp-dump/pc_comment.md)
+> - [¿Qué son los comentarios en programación?](../fundamentals/basics/comment.md)
 > - [¿Qué son los diccionarios en programación?](../fundamentals/temp-dump/pc_dictionary.md)
 > - [¿Qué son las listas en programación?](../fundamentals/temp-dump/data_structures/pc_ds_list.md)
 

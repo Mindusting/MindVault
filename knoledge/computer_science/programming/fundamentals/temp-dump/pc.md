@@ -31,7 +31,7 @@ Si eres un nuevo programador esta es tu documentación.
 ## ÍNDICE
 
 - [LENGUAJE MÁQUINA](pc_machine_language.md)
-- [COMENTARIOS](pc_comment.md)
+- [COMENTARIOS](../basics/comment.md)
 - [VARIABLES](pc_variable.md)
     - [BOOLEANOS](pc_boolean.md)
     - [CONSTANTES](pc_constant.md)
@@ -53,7 +53,7 @@ Si eres un nuevo programador esta es tu documentación.
     - [RECURSIVIDAD](pc_recursivity.md)
     - [GENERADORES](pc_generator.md)
     - [RNG](pc_rng.md)
-- [CLASES](pc_oop.md)
+- [CLASES](../basics/oop.md)
     - [OBJETOS](pc_objects.md)
     - [ENTIDADES](pc_entity.md)
     - [INTERFACES](pc_interface.md)
