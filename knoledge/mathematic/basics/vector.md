@@ -87,33 +87,18 @@ $$
 
 Para calcualr la **magnitud** de un **vector** tendremos que hallar la raiz cuadrada de la suma de los [componentes del vector](#COMPONENTES%20DE%20UN%20VECTOR) elevados al cudarado:
 
-$$
-\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}
-$$
+$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
 
 En el caso de un **vector** de dos dimensiones tendremos elevar al cuadrado los compoentes $x$ e $y$ para luego sumarlos y obtener su raiz cuadrada:
 
-$$
-\lVert \vec{v} \rVert=\sqrt{v^2_x+v^2_y}
-$$
+$$\lVert \vec{v} \rVert=\sqrt{v^2_x+v^2_y}$$
 
 En donde $x=3$ e $y=4$:
 
-$$
-\sqrt{3^2+4^2}
-$$
-
-$$
-=\sqrt{9+16}
-$$
-
-$$
-=\sqrt{25}
-$$
-
-$$
-=5
-$$
+$$\sqrt{3^2+4^2}$$
+$$=\sqrt{9+16}$$
+$$=\sqrt{25}$$
+$$=5$$
 
 Por lo que la **magnitud** del **vector** $\vec{v}=(3, 4)$ es $\lVert \vec{v} \rVert=5$.
 
