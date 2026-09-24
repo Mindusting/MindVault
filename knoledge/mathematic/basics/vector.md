@@ -4,7 +4,7 @@ author: Mindusting
 corrected: false
 creationDate: 2026-06-30 10:34:40
 headerFile: false
-modificationDate: 2026-09-21 06:10:26
+modificationDate: 2026-09-25 12:55:29
 rating: 
 tags: [Math]
 ---
@@ -87,22 +87,38 @@ $$
 
 Para calcualr la **magnitud** de un **vector** tendremos que hallar la raiz cuadrada de la suma de los [componentes del vector](#COMPONENTES%20DE%20UN%20VECTOR) elevados al cudarado:
 
-$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
+$$
+\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}
+$$
 
 En el caso de un **vector** de dos dimensiones tendremos elevar al cuadrado los compoentes $x$ e $y$ para luego sumarlos y obtener su raiz cuadrada:
 
-$$\lVert \vec{v} \rVert=\sqrt{v^2_x+v^2_y}$$
+$$
+\lVert \vec{v} \rVert=\sqrt{v^2_x+v^2_y}
+$$
 
 En donde $x=3$ e $y=4$:
 
-$$\sqrt{3^2+4^2}$$
-$$=\sqrt{9+16}$$
-$$=\sqrt{25}$$
-$$=5$$
+$$
+\sqrt{3^2+4^2}
+$$
+
+$$
+=\sqrt{9+16}
+$$
+
+$$
+=\sqrt{25}
+$$
+
+$$
+=5
+$$
 
 Por lo que la **magnitud** del **vector** $\vec{v}=(3, 4)$ es $\lVert \vec{v} \rVert=5$.
 
 ![#center](assets/pitagoras.md)
+
 ^img-pitagoras
 
 ---
@@ -149,13 +165,30 @@ $$
 
 Consiste en ir aplicando el [teorema de pitágoras](#^img-pitagoras) sobre cada par de [componente del vector](#COMPONENTES%20DE%20UN%20VECTOR) de forma recursiva; si te fijas este tiene un patrón que se repite:
 
-$$(\sqrt{...})^2$$
+$$
+(\sqrt{...})^2
+$$
 
 Resulta que este patrón se puede obviar ya que $n=(\sqrt{n})^2$; por lo que simplificando la fórmula quitando esa parte obtenemos lo siguiente:
 
-$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
+$$
+\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}
+$$
 
 Esta es la fórmula que realmente se usa; me parece importante saber cual es la formula completa ya que nos puede dar una idea más profunda de como funciona.
+
+### COSENO Y SENO DE UN VECTOR
+
+El **coseno** como el **seno** son los componentes $x$ e $y$ de un **vector** normalizados en un rango [$[-1, 1] \subset \mathbb{R}$](../temp/math_range_notation.md), para calcular estos dos valores primero tendremos que entender en qué consiste la normalización de un conjunto de números:
+
+> [!example] EJEMPLO
+> #TODO: Explicar como normalizar una lista de números; para luego explicar como se normaliza el vector y así obtener el seno y coseno.
+
+![#center](assets/cos_sin_30.md)
+
+El **coseno** de un **vector** representa el componente $x$ normalizada en el rango 
+
+### TANGENTE DE UN VECTOR
 
 ### PRODUCTO ESCALAR
 
