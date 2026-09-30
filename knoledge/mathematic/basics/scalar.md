@@ -17,6 +17,7 @@ tags: [Math]
 > > - [ ] Explicar que es un escalar.
 > > - [ ] Explicar que generalmente se usa el `abs` de un escalar para definir su longitud.
 > > - [ ] La dirección de un escalar es su signo.
+> >     - [ ] Explicar que un escalar sin longitud no tiene signo.
 > > - [ ] Gráfico de un escalar:
 > >     - <=(...)=(-2)=(-1)=(0)=(1)=(2)=(...)=>
 
