@@ -14,6 +14,17 @@ tags: [Math]
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
+> > - [ ] Componentes de un vector.
+> > - [ ] Explicar que es $\theta$ y como calcularlo.
+> > - [x] Vectores nulos.
+> > - [ ] Vectores unitarios.
+> > - [ ] Componentes de un vector.
+> > - [ ] Operaciones con vectores.
+> >     - [ ] Magnitud de un vector.
+> >     - [ ] Seno de un vector.
+> >     - [ ] Coseno de un vector.
+> >     - [ ] Tangente de un vector.
+> >     - [ ] Producto escalar de un vector.
 
 > [!external-link]- REFERENCIAS WEB
 > YouTube:
