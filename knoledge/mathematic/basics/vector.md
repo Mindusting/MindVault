@@ -15,6 +15,15 @@ tags: [Math]
 > 
 > > [!todo] #TODO
 
+> [!external-link]- REFERENCIAS WEB
+> YouTube:
+> 
+> - [Math For Game Devs (2020)](https://www.youtube.com/playlist?list=PLImQaTpSAdsD88wprTConznD1OY1EfK_V) #WWW/YT/acegikmo
+> - [Visual Explanations](https://www.youtube.com/playlist?list=PLImQaTpSAdsB0DF6JfqTTm0sFdLVa80HJ) #WWW/YT/acegikmo
+
+> [!note] NOTA
+> Si quieres una versión resumida/chuleta de estos apuntes, tienes el archivo [*vector_cheatsheet*](vector_cheatsheet.md).
+
 Un **vector** es un conjunto de [escalares](scalar.md) (*tendiendo este dos o más [escalares](scalar.md)*); sirve para repesentar una posición, velocidad o fuerza, entre otros; este suele representarse de tres formas distintas, el cual escojas usar depederá fuertemente de en el ámbito en el que te muevas:
 
 1. **Matemáticos**: estos suelen ver los vectores como una letra con una flecha sobre ella que apunta a la derecha ($\vec{v}$); estas se utilizan en funciónes.
@@ -64,6 +73,70 @@ print(f"c = {c}")
 En cualquier caso las tres formas de representar los **vectores** son eso mismo, una forma de representarlos, por lo que podemos una forma u otra en base a nuestra combeniencia.
 
 ## COMPONENTES DE UN VECTOR
+
+Ya que un **vector** es en esecia un conjunto de [**escalares**](scalar.md), puede darse la situación en la que queramos tratar sobre uno de estos [**escalares**](scalar.md) en concreto, para ello tendremos que poder referenciar a cada uno de estos de forma independiente, esto se hace de las siguientes formas:
+
+1. **Vector 2D:**
+    Si tenemos un **vector** con dos dimensiones, se suele usar la $x$ para referirse al primer [**escalar**](scalar.md) y la $y$ para el segundo.
+    $$
+    \vec{v} = (v_x, v_y)
+    $$
+2. **Vector 3D:**
+    Funciona igual que un **vector 2D** pero se añade la tercera dimensión, siendo esta referenciada con la letra $z$.
+    $$
+    \vec{v} = (v_x, v_y, v_z)
+    $$
+3. **Vector $n$D:**
+    En el caso de estar tratando con **vectores** bien de **dos o más dimensiones** se puede usar un número para referirnos al componente; este es el método que se utiliza cuando el **vector** tiene más de tres dimensiones; ten en cuenta que se empieza a contar desde el $1$ hasta $n$.
+    $$
+    \vec{v} = (v_1, v_2, v_3, ...)
+    $$
+^comp-nd
+
+En caso de estar trabajando con varios **vectores** con el mismo nombre, tendremos que especificar a cual de ellos nos referimos y luego su componente:
+
+$$
+\vec{v}_1 = (v_{1x}, v_{1y})
+$$
+
+$$
+\vec{v}_2 = (v_{2x}, v_{2y})
+$$
+
+$$
+\vec{v}_1 + \vec{v}_2 = (v_{1x} + v_{2x}, v_{1y} + v_{2y})
+$$
+
+También se puede indicar el componente [mediante un número](#^comp-nd), pero esto puede ser confuso ya que si bien tenemos muchos vectores o componentes, podría llegar a ser ambiguo, por esto mismo, lo que se puede hacer es separar el identificador del vector y el del componente con una coma:
+
+$$
+\vec{v}_1 + \vec{v}_2 = (v_{1,1} + v_{2,1}, v_{1,2} + v_{2,2})
+$$
+
+Esto tra otros problemas, ya que la coma en este caso también se usa para separar la suma de los componentes de ambos vectores, entonces, en el caso de que queramos ser aún más explícitos con a qué nos estamos refiriendo podemos seguir la siguiente sintaxis:
+
+$$
+(\vec{v}_1)_x = (\vec{v}_1)_1
+$$
+
+Aunque en este caso pueda quedar más sucio devido al incremento de paréntesis en la fórmula, el resultado es más explicito:
+
+$$
+\vec{v}_1 + \vec{v}_2 =
+((\vec{v}_1)_1 + (\vec{v}_2)_1, (\vec{v}_1)_2 + (\vec{v}_2)_2)
+$$
+
+## VECTORES NULOS
+
+Un **vector nulo** es aquel cullos [**componentes**](#COMPONENTES%20DE%20UN%20VECTOR) están establecidos a cero, es decir, cuya [**magnitud**](#MAGNITUD%20DE%20UN%20VECTOR) sea cero (*su longitud es cero*).
+
+$$
+\vec{vec\_nulo} = (0, 0)
+$$
+
+$$
+\lVert \vec{vec\_nulo} \rVert = 0
+$$
 
 ## OPERACIONES CON VECTORES
 
@@ -177,18 +250,104 @@ $$
 
 Esta es la fórmula que realmente se usa; me parece importante saber cual es la formula completa ya que nos puede dar una idea más profunda de como funciona.
 
-### COSENO Y SENO DE UN VECTOR
+### SENO, COSENO Y TANGENTE DE UN VECTOR
 
+Para entender bien como calcular el [**seno**](#SENO%20DE%20UN%20VECTOR) y el [**coseno**](#COSENO%20DE%20UN%20VECTOR) de un vector, primero tenemos que entender en qué consiste la normalización de una lista de números; imaginemos que somos un profesor y hemos puesto un examen de tipo test a nuestros alunos, sabemos que el examen tenía 20 pregusta y que tenemos una lista de números en donde cada número representa la cantidad de preguntas correctas que escribio el aluno:
+
+```python
+numero_de_pregunta = 20
+puntuaciones = [18, 7, 13]
+# Hay tres alunos.
+```
+
+Para poder transformar estas puntuaciones en una nota de 0 a 10, perimero tenemos que normalizarlas, para ello, dividiremos cada puntuación (*número de respuestas correctas*) entre el total de preguntas:
+
+```python
+numero_de_pregunta = 20
+puntuaciones = [18, 7, 13]
+
+for i in range(len(puntuaciones)):
+    puntuaciones[i] = puntuaciones[i] / numero_de_pregunta
+
+print(puntuaciones)
+# SALIDA:
+# [0.9, 0.35, 0.65]
+```
+
+Al haber normalizado las `puntuaciones`, estas quedan en un número entre el `0.0` (*siendo esta la nota mínima que se puede obtener*) y el `1.0` (*siendo esta la nota máxima que se puede obtener*); una vez hecho esto podríamos multiplicar todas las puntuaciones por 10 para obtener la nota entre 0 y 10 (*como se suele puntuar en España*), pero para lo que estamos aprendiendo ahora no hace falta, ya que el punto es entender como podemos normalizar una serie de número para tranformarlos en un rango entre 0 y 1.
+
+---
+
+%%
 El **coseno** como el **seno** son los componentes $x$ e $y$ de un **vector** normalizados en un rango [$[-1, 1] \subset \mathbb{R}$](../temp/math_range_notation.md), para calcular estos dos valores primero tendremos que entender en qué consiste la normalización de un conjunto de números:
+%%
 
-> [!example] EJEMPLO
-> #TODO: Explicar como normalizar una lista de números; para luego explicar como se normaliza el vector y así obtener el seno y coseno.
+%%![#center](assets/cos_sin_30.md)%%
 
-![#center](assets/cos_sin_30.md)
+> [!important] IMPORTANTE
+> Es importante saber que a la hora de calcular tanto el [**seno**](#SENO%20DE%20UN%20VECTOR), [**coseno**](#COSENO%20DE%20UN%20VECTOR) y [**tangente**](#TANGENTE%20DE%20UN%20VECTOR); no se puede usar un [**vector nulo**](#VECTORES%20NULOS), ya que como el cálculo de estos requieren de una división, implica que tendríamos que hacer una división entre 0.
+
+#### SENO DE UN VECTOR
+
+El **seno** de un vector consiste en la normalización de la componente $y$ sobre la [**magnitud**](#MAGNITUD%20DE%20UN%20VECTOR) del mismo:
+
+$$
+\sin(\theta) = \frac{\vec{v}_y}{\lVert \vec{v} \rVert}
+$$
+
+La parte en la que pone 
+
+```python
+import math
+
+def magnitude(vector) -> float:
+    summation = 0
+    for scalar in vector:
+        summation += scalar * scalar
+    return math.sqrt(summation)
+
+def sin(vector) -> float:
+    return vector[1] / magnitude(vector)
+
+vector = [3, 4]
+print(sin(vector))
+# SALIDA:
+# 0.8
+```
+
+#### COSENO DE UN VECTOR
 
 El **coseno** de un **vector** representa el componente $x$ normalizada en el rango 
 
-### TANGENTE DE UN VECTOR
+```python
+import math
+
+def magnitude(vector) -> float:
+    summation = 0
+    for scalar in vector:
+        summation += scalar * scalar
+    return math.sqrt(summation)
+
+def cos(vector) -> float:
+    return vector[0] / magnitude(vector)
+
+vector = [3, 4]
+print(cos(vector))
+# SALIDA:
+# 0.6
+```
+
+#### TANGENTE DE UN VECTOR
+
+```python
+def tan(vector) -> float:
+    return vector[1] / vector[0]
+
+vector = [3, 4]
+print(tan(vector))
+# SALIDA:
+# 1.3333333333333333
+```
 
 ### PRODUCTO ESCALAR
 
