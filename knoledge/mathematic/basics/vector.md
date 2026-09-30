@@ -4,7 +4,7 @@ author: Mindusting
 corrected: false
 creationDate: 2026-06-30 10:34:40
 headerFile: false
-modificationDate: 2026-09-25 12:55:29
+modificationDate: 2026-09-30 01:49:17
 rating: 
 tags: [Math]
 ---
@@ -78,46 +78,39 @@ Ya que un **vector** es en esecia un conjunto de [**escalares**](scalar.md), pue
 
 1. **Vector 2D:**
     Si tenemos un **vector** con dos dimensiones, se suele usar la $x$ para referirse al primer [**escalar**](scalar.md) y la $y$ para el segundo.
-    $$
-    \vec{v} = (v_x, v_y)
-    $$
+
+    $$\vec{v} = (v_x, v_y)$$
+
 2. **Vector 3D:**
     Funciona igual que un **vector 2D** pero se añade la tercera dimensión, siendo esta referenciada con la letra $z$.
-    $$
-    \vec{v} = (v_x, v_y, v_z)
-    $$
+
+    $$\vec{v} = (v_x, v_y, v_z)$$
+
 3. **Vector $n$D:**
     En el caso de estar tratando con **vectores** bien de **dos o más dimensiones** se puede usar un número para referirnos al componente; este es el método que se utiliza cuando el **vector** tiene más de tres dimensiones; ten en cuenta que se empieza a contar desde el $1$ hasta $n$.
-    $$
-    \vec{v} = (v_1, v_2, v_3, ...)
-    $$
+
+    $$\vec{v} = (v_1, v_2, v_3,...)$$
+
 ^comp-nd
 
 En caso de estar trabajando con varios **vectores** con el mismo nombre, tendremos que especificar a cual de ellos nos referimos y luego su componente:
 
-$$
-\vec{v}_1 = (v_{1x}, v_{1y})
-$$
+$$\vec{v}_1 = (v_{1x}, v_{1y})$$
 
-$$
-\vec{v}_2 = (v_{2x}, v_{2y})
-$$
+$$\vec{v}_2 = (v_{2x}, v_{2y})$$
 
-$$
-\vec{v}_1 + \vec{v}_2 = (v_{1x} + v_{2x}, v_{1y} + v_{2y})
-$$
+$$\vec{v}_1 + \vec{v}_2 = (v_{1x} + v_{2x}, v_{1y} + v_{2y})$$
 
 También se puede indicar el componente [mediante un número](#^comp-nd), pero esto puede ser confuso ya que si bien tenemos muchos vectores o componentes, podría llegar a ser ambiguo, por esto mismo, lo que se puede hacer es separar el identificador del vector y el del componente con una coma:
 
 $$
-\vec{v}_1 + \vec{v}_2 = (v_{1,1} + v_{2,1}, v_{1,2} + v_{2,2})
+\vec{v}_1 + \vec{v}_2 =
+(v_{1,1} + v_{2,1}, v_{1,2} + v_{2,2})
 $$
 
 Esto tra otros problemas, ya que la coma en este caso también se usa para separar la suma de los componentes de ambos vectores, entonces, en el caso de que queramos ser aún más explícitos con a qué nos estamos refiriendo podemos seguir la siguiente sintaxis:
 
-$$
-(\vec{v}_1)_x = (\vec{v}_1)_1
-$$
+$$(\vec{v}_1)_x = (\vec{v}_1)_1$$
 
 Aunque en este caso pueda quedar más sucio devido al incremento de paréntesis en la fórmula, el resultado es más explicito:
 
@@ -130,13 +123,9 @@ $$
 
 Un **vector nulo** es aquel cullos [**componentes**](#COMPONENTES%20DE%20UN%20VECTOR) están establecidos a cero, es decir, cuya [**magnitud**](#MAGNITUD%20DE%20UN%20VECTOR) sea cero (*su longitud es cero*).
 
-$$
-\vec{vec\_nulo} = (0, 0)
-$$
+$$\vec{vec\_nulo} = (0, 0)$$
 
-$$
-\lVert \vec{vec\_nulo} \rVert = 0
-$$
+$$\lVert \vec{vec\_nulo} \rVert = 0$$
 
 ## OPERACIONES CON VECTORES
 
@@ -146,47 +135,31 @@ La **magnitud** o **módulo** de un **vector** es la longitud de la flecha que r
 
 La representación de este valor se escribe poniendo una flecha sobre el **vector** y dos barras verticales a cada lado de este:
 
-$$
-\lVert \vec{v} \rVert
-$$
+$$\lVert \vec{v} \rVert$$
 
 Aunque bajo ciertos contextos también hay otras dos formas de representarlo: 1) poniendo una única barra vertical a cada lado del vector, 2) sin poner barras verticales ni la flecha sobre el vector (*siendo esta la menos usada*).
 
-$$
-\lVert \vec{v} \rVert=|\vec{v}|=v
-$$
+$$\lVert \vec{v} \rVert=|\vec{v}|=v$$
 
 ---
 
 Para calcualr la **magnitud** de un **vector** tendremos que hallar la raiz cuadrada de la suma de los [componentes del vector](#COMPONENTES%20DE%20UN%20VECTOR) elevados al cudarado:
 
-$$
-\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}
-$$
+$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
 
 En el caso de un **vector** de dos dimensiones tendremos elevar al cuadrado los compoentes $x$ e $y$ para luego sumarlos y obtener su raiz cuadrada:
 
-$$
-\lVert \vec{v} \rVert=\sqrt{v^2_x+v^2_y}
-$$
+$$\lVert \vec{v} \rVert=\sqrt{v^2_x+v^2_y}$$
 
 En donde $x=3$ e $y=4$:
 
-$$
-\sqrt{3^2+4^2}
-$$
+$$\sqrt{3^2+4^2}$$
 
-$$
-=\sqrt{9+16}
-$$
+$$=\sqrt{9+16}$$
 
-$$
-=\sqrt{25}
-$$
+$$=\sqrt{25}$$
 
-$$
-=5
-$$
+$$=5$$
 
 Por lo que la **magnitud** del **vector** $\vec{v}=(3, 4)$ es $\lVert \vec{v} \rVert=5$.
 
@@ -232,21 +205,17 @@ print(magnitude(vector))
 A la hora de trabajar sobre **vectores** con más de dos dimensiones la formula completa es la siguiente:
 
 $$
-\lVert \vec{v} \rVert=
+\lVert \vec{v} \rVert =
 \sqrt{v^2_1+(\sqrt{v^2_2+(\sqrt{v^2_3+...})^2})^2}
 $$
 
 Consiste en ir aplicando el [teorema de pitágoras](#^img-pitagoras) sobre cada par de [componente del vector](#COMPONENTES%20DE%20UN%20VECTOR) de forma recursiva; si te fijas este tiene un patrón que se repite:
 
-$$
-(\sqrt{...})^2
-$$
+$$(\sqrt{...})^2$$
 
 Resulta que este patrón se puede obviar ya que $n=(\sqrt{n})^2$; por lo que simplificando la fórmula quitando esa parte obtenemos lo siguiente:
 
-$$
-\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}
-$$
+$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
 
 Esta es la fórmula que realmente se usa; me parece importante saber cual es la formula completa ya que nos puede dar una idea más profunda de como funciona.
 
@@ -291,9 +260,7 @@ El **coseno** como el **seno** son los componentes $x$ e $y$ de un **vector** no
 
 El **seno** de un vector consiste en la normalización de la componente $y$ sobre la [**magnitud**](#MAGNITUD%20DE%20UN%20VECTOR) del mismo:
 
-$$
-\sin(\theta) = \frac{\vec{v}_y}{\lVert \vec{v} \rVert}
-$$
+$$\sin(\theta) = \frac{\vec{v}_y}{\lVert \vec{v} \rVert}$$
 
 La parte en la que pone 
 
@@ -353,15 +320,11 @@ print(tan(vector))
 
 El producto escalar (*dot product*)
 
-$$
-\vec{v}_1 \cdot \vec{v}_2
-$$
+$$\vec{v}_1 \cdot \vec{v}_2$$
 
 la suma de las multiplicaciones de los pares de componentes de dos vectores
 
-$$
-v_{1,x}
-$$
+$$v_{1,x}$$
 
 ```python
 def dot_product(v1, v2) -> float:
