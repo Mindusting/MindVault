@@ -14,6 +14,10 @@ tags: [Math]
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
+> > - [ ] Reorganización de los apuntes, ya que como soy nuevo en este tema, no he empezado poniendo el contendido en el que corresponde.
+> > 
+> > ---
+> > 
 > > - [ ] Componentes de un vector.
 > > - [ ] Explicar que es $\theta$ y como calcularlo.
 > > - [x] Vectores nulos.
@@ -25,6 +29,7 @@ tags: [Math]
 > >     - [ ] Coseno de un vector.
 > >     - [ ] Tangente de un vector.
 > >     - [ ] Producto escalar de un vector.
+> > - [ ] Normalización de un vector $\hat{v}$.
 
 > [!external-link]- REFERENCIAS WEB
 > YouTube:
