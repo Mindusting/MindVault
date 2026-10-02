@@ -29,6 +29,11 @@ tags: [Math, Vector]
 > >     - [ ] VECTORES DE TRES DIMENSIONES
 > >     - [ ] VECTORES DE MÚLTIPLES DIMENSIONES
 > > - [ ] VECTOR NULO
+> > - [ ] OPERACIONES BÁSICAS CON VECTORES
+> >     - [ ] SUMA DE VECTORES
+> >     - [ ] RESTA DE VECTORES
+> >     - [ ] MULTIPLICACIÓN DE VECTORES
+> >     - [ ] DIVISIÓN DE VECTORES
 > > - [ ] MAGNITUD DE UN VECTOR
 > > - [ ] DIRECCIÓN DE UN VECTOR
 > > - [ ] RELACIONES TRIGONOMÉTRICAS:
@@ -127,9 +132,15 @@ En cualquier caso las tres formas de representar los **vectores** son eso mismo,
 
 ### MATEMÁTICA
 
-En **matemáticas** un vector se suele representar con una **letra** que tiene una **flecha encima de ella** ($\vec{v}$), esta referencia a una **tupla** que contiene un conjunto de [**escalares**](scalar.md) (*número reales*)
+En **matemáticas** un vector se suele representar con una **letra** que tiene una **flecha encima de ella** ($\vec{v}$), esta referencia a una **tupla** que contiene un conjunto de [**escalares**](scalar.md) (*número reales*):
+
+$$\vec{v} = (3, 4)$$
 
 ### FÍSICA
+
+En **física** un vector se suele representar como **una flecha** que apunta a un punto en el espacio
+
+![#center](assets/vector_fisico.md)
 
 ### PROGRAMACIÓN
 
@@ -197,6 +208,16 @@ Un **vector nulo** es aquel cullos [**componentes**](#COMPONENTES%20DE%20UN%20VE
 $$\vec{vec\_nulo} = (0, 0)$$
 
 $$\lVert \vec{vec\_nulo} \rVert = 0$$
+
+## OPERACIONES BÁSICAS CON VECTORES
+
+### SUMA DE VECTORES
+
+### RESTA DE VECTORES
+
+### MULTIPLICACIÓN DE VECTORES
+
+### DIVISIÓN DE VECTORES
 
 ## MAGNITUD DE UN VECTOR
 
