@@ -138,7 +138,7 @@ $$\vec{v} = (3, 4)$$
 
 ### FÍSICA
 
-En **física** un vector se suele representar como **una flecha** que apunta a un punto en el espacio
+En **física** un vector se suele representar como **una flecha** que apunta a un punto en el espacio; normalmente situando su origen en el origen del plano cartesiano, pero este puede estar en cualquier punto.
 
 ![#center](assets/vector_fisico.md)
 
