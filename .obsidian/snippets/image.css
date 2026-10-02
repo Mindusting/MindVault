@@ -93,22 +93,22 @@ img[class*="#pixel-art"] {
 }
 
 img[alt*="#fillall"] {
-    width: 100%;
+    width: 100% !important;
     max-width: 100% !important;
 }
 
 img[class*="#fillall"] {
-    width: 100%;
+    width: 100% !important;
     max-width: 100% !important;
 }
 
 div[alt*="#fillall"] {
-    width: 100%;
+    width: 100% !important;
     max-width: 100% !important;
 }
 
 div[class*="#fillall"] {
-    width: 100%;
+    width: 100% !important;
     max-width: 100% !important;
 }
 
