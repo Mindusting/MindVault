@@ -1,15 +1,15 @@
 ---
-aliases: [Vectores en matemáticas]
+aliases: [Vectores]
 author: Mindusting
 corrected: false
 creationDate: 2026-06-30 10:34:40
 headerFile: false
 modificationDate: 2026-09-30 01:49:17
 rating: 
-tags: [Math]
+tags: [Math, Vector]
 ---
 
-# VECTORES EN MATEMÁTICAS
+# VECTORES
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
@@ -18,7 +18,32 @@ tags: [Math]
 > > 
 > > ---
 > > 
-> > - [ ] Componentes de un vector.
+> > - [ ] DEFINICIÓN
+> >     - Angulo $\theta$.
+> > - [ ] REPRESENTACIÓN:
+> >     - [ ] REPRESENTACIÓN EN MATEMÁTICAS
+> >     - [ ] REPRESENTACIÓN EN FÍSICA
+> >     - [ ] REPRESENTACIÓN EN PROGRAMACIÓN
+> > - [ ] COMPONENTES DE UN VECTOR:
+> >     - [ ] VECTORES DE DOS DIMENSIONES
+> >     - [ ] VECTORES DE TRES DIMENSIONES
+> >     - [ ] VECTORES DE MÚLTIPLES DIMENSIONES
+> > - [ ] VECTOR NULO
+> > - [ ] MAGNITUD DE UN VECTOR
+> > - [ ] DIRECCIÓN DE UN VECTOR
+> > - [ ] RELACIONES TRIGONOMÉTRICAS:
+> >     - [ ] SENO
+> >         - $\sin{\theta} = \frac{v_y}{\lVert\vec{v}\rVert}$
+> >     - [ ] COSENO
+> >         - $\cos{\theta} = \frac{v_x}{\lVert\vec{v}\rVert}$
+> >     - [ ] TANGENTE
+> >         - $\tan{\theta} = \frac{v_y}{v_x}$
+> > - [ ] NORMALIZACIÓN
+> >     - Un vector normalizado se representa con $\hat{v}$.
+> > - [ ] VECTOR UNITARIO
+> > 
+> > ---
+> > 
 > > - [ ] Explicar que es $\theta$ y como calcularlo.
 > > - [x] Vectores nulos.
 > > - [ ] Vectores unitarios.
@@ -39,6 +64,12 @@ tags: [Math]
 
 > [!note] NOTA
 > Si quieres una versión resumida/chuleta de estos apuntes, tienes el archivo [*vector_cheatsheet*](vector_cheatsheet.md).
+
+## DEFINICIÓN
+
+## REPRESENTACIÓN
+
+%%
 
 Un **vector** es un conjunto de [escalares](scalar.md) (*tendiendo este dos o más [escalares](scalar.md)*); sirve para repesentar una posición, velocidad o fuerza, entre otros; este suele representarse de tres formas distintas, el cual escojas usar depederá fuertemente de en el ámbito en el que te muevas:
 
@@ -88,7 +119,17 @@ print(f"c = {c}")
 
 En cualquier caso las tres formas de representar los **vectores** son eso mismo, una forma de representarlos, por lo que podemos una forma u otra en base a nuestra combeniencia.
 
+%%
+
+### MATEMÁTICA
+
+### FÍSICA
+
+### PROGRAMACIÓN
+
 ## COMPONENTES DE UN VECTOR
+
+%%
 
 Ya que un **vector** es en esecia un conjunto de [**escalares**](scalar.md), puede darse la situación en la que queramos tratar sobre uno de estos [**escalares**](scalar.md) en concreto, para ello tendremos que poder referenciar a cada uno de estos de forma independiente, esto se hace de las siguientes formas:
 
@@ -135,6 +176,8 @@ $$
 ((\vec{v}_1)_1 + (\vec{v}_2)_1, (\vec{v}_1)_2 + (\vec{v}_2)_2)
 $$
 
+%%
+
 ## VECTORES NULOS
 
 Un **vector nulo** es aquel cullos [**componentes**](#COMPONENTES%20DE%20UN%20VECTOR) están establecidos a cero, es decir, cuya [**magnitud**](#MAGNITUD%20DE%20UN%20VECTOR) sea cero (*su longitud es cero*).
@@ -142,6 +185,36 @@ Un **vector nulo** es aquel cullos [**componentes**](#COMPONENTES%20DE%20UN%20VE
 $$\vec{vec\_nulo} = (0, 0)$$
 
 $$\lVert \vec{vec\_nulo} \rVert = 0$$
+
+### VECTORES DE DOS DIMENSIONES
+
+### VECTORES DE TRES DIMENSIONES
+
+### VECTORES DE MÚLTIPLES DIMENSIONES
+
+## MAGNITUD DE UN VECTOR
+
+## DIRECCIÓN DE UN VECTOR
+
+## RELACIONES TRIGONOMÉTRICAS
+
+### SENO
+
+### COSENO
+
+### TANGENTE
+
+## NORMALIZACIÓN
+
+## VETOR UNITARIO
+
+%%
+
+---
+---
+---
+---
+---
 
 ## OPERACIONES CON VECTORES
 
@@ -263,11 +336,9 @@ Al haber normalizado las `puntuaciones`, estas quedan en un número entre el `0.
 
 ---
 
-%%
 El **coseno** como el **seno** son los componentes $x$ e $y$ de un **vector** normalizados en un rango [$[-1, 1] \subset \mathbb{R}$](../temp/math_range_notation.md), para calcular estos dos valores primero tendremos que entender en qué consiste la normalización de un conjunto de números:
-%%
 
-%%![#center](assets/cos_sin_30.md)%%
+![#center](assets/cos_sin_30.md)
 
 > [!important] IMPORTANTE
 > Es importante saber que a la hora de calcular tanto el [**seno**](#SENO%20DE%20UN%20VECTOR), [**coseno**](#COSENO%20DE%20UN%20VECTOR) y [**tangente**](#TANGENTE%20DE%20UN%20VECTOR); no se puede usar un [**vector nulo**](#VECTORES%20NULOS), ya que como el cálculo de estos requieren de una división, implica que tendríamos que hacer una división entre 0.
@@ -356,3 +427,5 @@ def dot_product(v1, v2) -> float:
     assert len(v1) == len(v2), "Vectores incompatiples."
     return sum([v1[i] * v2[i] for i in range(len(v1))])
 ```
+
+%%
