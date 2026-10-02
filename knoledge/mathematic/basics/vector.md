@@ -67,7 +67,11 @@ tags: [Math, Vector]
 
 ## DEFINICIÓN
 
+Un **vector** es un objeto matemático y físico definido por tres características: **dirección**, **magnitud** y **sentido**; este permite representar: un **puto en el espacio**, **fuerza**, **velocidad**, **aceleración**, entre otras cosas.
+
 ## REPRESENTACIÓN
+
+Ya que el concepto de vector es una idea un tanto abstracta, esta se puede representar de diversas forman en base a nuestras necesidades: [matemática](#MATEMÁTICA), [física](#FÍSICA) y [programación](#PROGRAMACIÓN).
 
 %%
 
@@ -122,6 +126,8 @@ En cualquier caso las tres formas de representar los **vectores** son eso mismo,
 %%
 
 ### MATEMÁTICA
+
+En **matemáticas** un vector se suele representar con una **letra** que tiene una **flecha encima de ella** ($\vec{v}$), esta referencia a una **tupla** que contiene un conjunto de [**escalares**](scalar.md) (*número reales*)
 
 ### FÍSICA
 
@@ -178,6 +184,12 @@ $$
 
 %%
 
+### VECTORES DE DOS DIMENSIONES
+
+### VECTORES DE TRES DIMENSIONES
+
+### VECTORES DE MÚLTIPLES DIMENSIONES
+
 ## VECTORES NULOS
 
 Un **vector nulo** es aquel cullos [**componentes**](#COMPONENTES%20DE%20UN%20VECTOR) están establecidos a cero, es decir, cuya [**magnitud**](#MAGNITUD%20DE%20UN%20VECTOR) sea cero (*su longitud es cero*).
@@ -185,12 +197,6 @@ Un **vector nulo** es aquel cullos [**componentes**](#COMPONENTES%20DE%20UN%20VE
 $$\vec{vec\_nulo} = (0, 0)$$
 
 $$\lVert \vec{vec\_nulo} \rVert = 0$$
-
-### VECTORES DE DOS DIMENSIONES
-
-### VECTORES DE TRES DIMENSIONES
-
-### VECTORES DE MÚLTIPLES DIMENSIONES
 
 ## MAGNITUD DE UN VECTOR
 
