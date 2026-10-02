@@ -45,6 +45,7 @@ tags: [Math, Vector]
 > >         - $\tan{\theta} = \frac{v_y}{v_x}$
 > > - [ ] NORMALIZACIÓN
 > >     - Un vector normalizado se representa con $\hat{v}$.
+> >     - Si la magnitud del vector, sin importar si esta es mayor o menor a 1, tras normalizarlo esta termina siendo igual a 1.
 > > - [ ] VECTOR UNITARIO
 > > 
 > > ---
