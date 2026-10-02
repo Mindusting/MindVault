@@ -144,6 +144,16 @@ En **física** un vector se suele representar como **una flecha** que apunta a u
 
 ### PROGRAMACIÓN
 
+En **programación** un vector es suele representar con un [*array*](../../computer_science/programming/fundamentals/basics/array.md) con números, también se puede representar con una [clase](../../computer_science/programming/fundamentals/basics/oop.md) para añadir neveles de abstracción y encapsulación, pero lo mínimo que se necesita es un [*array*](../../computer_science/programming/fundamentals/basics/array.md) con números.
+
+```python
+vector = [3, 4]
+
+print(vector)
+# SALIDA:
+# [3, 4]
+```
+
 ## COMPONENTES DE UN VECTOR
 
 %%
