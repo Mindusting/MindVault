@@ -1,4 +1,4 @@
----
+[oop](essentials/oop.md)---
 aliases:
   - Rust 🦀
 author: Mindusting
@@ -34,4 +34,5 @@ Este nos abrirá en el buscador de internet un archivo local; dentro de esta pá
 ## ÍNDICE
 
 - [VARIABLES](essentials/variables.md)
+- [OOP](essentials/oop.md)
 - [VECTOR](essentials/vectors.md)
