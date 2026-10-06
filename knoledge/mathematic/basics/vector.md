@@ -77,59 +77,7 @@ Un **vector** es un objeto matemático y físico definido por tres característi
 
 ## REPRESENTACIÓN
 
-Ya que el concepto de vector es una idea un tanto abstracta, esta se puede representar de diversas forman en base a nuestras necesidades: [matemática](#MATEMÁTICA), [física](#FÍSICA) y [programación](#PROGRAMACIÓN).
-
-%%
-
-Un **vector** es un conjunto de [escalares](scalar.md) (*tendiendo este dos o más [escalares](scalar.md)*); sirve para repesentar una posición, velocidad o fuerza, entre otros; este suele representarse de tres formas distintas, el cual escojas usar depederá fuertemente de en el ámbito en el que te muevas:
-
-1. **Matemáticos**: estos suelen ver los vectores como una letra con una flecha sobre ella que apunta a la derecha ($\vec{v}$); estas se utilizan en funciónes.
-
-$$
-\begin{aligned}
-\vec{a} &=
-\begin{pmatrix}
-1 & 2
-\end{pmatrix}
-\\
-\vec{b} &=
-\begin{pmatrix}
-4 & -1
-\end{pmatrix}
-\\
-\vec{c} &= \vec{a} + \vec{b}
-\\
-\vec{c} &\rightarrow
-\begin{pmatrix}
-5 & 1
-\end{pmatrix}
-\end{aligned}
-$$
-
-2. **Físicos**: estos suelen ver los vectores como una flecha con magnitud, dirección y sentido, esta permite indicar la posición (*respecto a un punto de origen*), una velocidad o fuerza aplicada sobre un elemento físico.
-![#center](assets/vector_fisico.md)
-3. **Programadores**: estos suelen ver los vectores como una lista ordenada de números (*[escalares](scalar.md)*), es decir, a la hora de trabajar con un vector de dos dimensiones, este sería una lista con dos número (*el número $x$ y el número $y$, estando estos siempre en este orden*).
-
-```python
-import numpy as np
-
-a = np.array([1, 2])
-b = np.array([4, -1])
-
-c = a + b
-
-print(f"a = {a}")
-print(f"b = {b}")
-print(f"c = {c}")
-# SALIDA:
-# a = [1 2]
-# b = [4 -1]
-# c = [5 1]
-```
-
-En cualquier caso las tres formas de representar los **vectores** son eso mismo, una forma de representarlos, por lo que podemos una forma u otra en base a nuestra combeniencia.
-
-%%
+Ya que el concepto de vector es una idea un tanto abstracta, esta se puede representar de diversas forman en base a nuestras necesidades: [matemática](#MATEMÁTICA), [física](#FÍSICA) y [programación](#PROGRAMACIÓN); anuque todas ellas tiene algo en común y es que un vector es un **conjunto de [escalares](scalar.md) ordenados**.
 
 ### MATEMÁTICA
 
@@ -157,9 +105,19 @@ print(vector)
 
 ## COMPONENTES DE UN VECTOR
 
+Los componentes de un **vector** son los [**escalares**](scalar.md) que lo componen, por lo que tenemos diferentes formas de indicar a cual de ellos nos estamos refiriendo.
+
 %%
 
-Ya que un **vector** es en esecia un conjunto de [**escalares**](scalar.md), puede darse la situación en la que queramos tratar sobre uno de estos [**escalares**](scalar.md) en concreto, para ello tendremos que poder referenciar a cada uno de estos de forma independiente, esto se hace de las siguientes formas:
+Ya que un **vector** es en esecia un **conjunto de [escalares](scalar.md) ordenados**, tenemos que tener una forma de referenciar cada uno de estos [**escalares**](scalar.md) de forma individual.
+
+puede darse la situación en la que queramos tratar sobre uno de estos [**escalares**](scalar.md) en concreto, para ello tendremos que poder referenciar a cada uno de estos de forma independiente, esto se hace de las siguientes formas:
+
+%%
+
+Cabe resaltar que cuando se le quiere dar color a cada uno de los componentes de un vector, estos tienen la regla ***RGB*** (*rojo, verde, azul*); veremos unos ejemplos de esto en los siguientes apartados.
+
+%%
 
 1. **Vector 2D:**
     Si tenemos un **vector** con dos dimensiones, se suele usar la $x$ para referirse al primer [**escalar**](scalar.md) y la $y$ para el segundo.
@@ -464,6 +422,280 @@ def dot_product(v1, v2) -> float:
 def dot_product(v1, v2) -> float:
     assert len(v1) == len(v2), "Vectores incompatiples."
     return sum([v1[i] * v2[i] for i in range(len(v1))])
+```
+
+%%
+
+
+%%
+
+---
+---
+---
+---
+---
+%%
+
+$$
+\hat{v}
+$$
+
+$$
+\vec{v_1} \cdot \vec{v_2} =
+(v_1)_x \cdot (v_2)_x + (v_1)_y \cdot (v_2)_y
+$$
+
+$$
+\lVert \vec{v} \rVert = \sqrt{\text{dot}(\vec{v}, \vec{v})}
+$$
+
+%%
+
+```python
+class Vector2:
+    def __init__(self, x=0, y=0):
+        assert isinstance(x, (float, int, self.__class__))
+        assert isinstance(y, (float, int))
+
+        self.__scalars = [0, 0]
+
+        if isinstance(x, self.__class__):
+            self.x = x.x
+            self.y = x.y
+            return
+
+        self.x = x
+        self.y = y
+
+    @classmethod
+    def new_from_rad(cls, angle):
+        assert isinstance(angle, (float, int))
+        return cls(math.cos(angle), math.sin(angle))
+
+    @classmethod
+    def new_from_deg(cls, angle):
+        assert isinstance(angle, (float, int))
+        return cls.new_from_rad(math.radians(angle))
+
+    def __str__(self):
+        return f"Vector2({round(self.x, 6)}, {round(self.y, 6)})"
+
+    def __repr__(self):
+        return f"({round(self.x, 2)}, {round(self.y, 2)})"
+
+    def __bool__(self):
+        return self.x != 0 or self.y != 0
+
+    def __eq__(self, other):
+        assert isinstance(other, self.__class__)
+        return self.x == other.x and self.y == other.y
+
+    def __ne__(self, other):
+        assert isinstance(other, self.__class__)
+        return self.x != other.x or self.y != other.y
+
+    def clone(self):
+        return self.__class__(self)
+
+    @property
+    def x(self):
+        return self.__scalars[0]
+
+    @x.setter
+    def x(self, x):
+        assert isinstance(x, (float, int))
+        self.__scalars[0] = x
+
+    @property
+    def y(self):
+        return self.__scalars[1]
+
+    @y.setter
+    def y(self, y):
+        assert isinstance(y, (float, int))
+        self.__scalars[1] = y
+
+    def mag(self) -> float:
+        return math.sqrt((self.x * self.x) + (self.y * self.y))
+
+    def cos(self) -> float:
+        return self.x / self.mag()
+
+    def sin(self) -> float:
+        return self.y / self.mag()
+
+    def tan(self) -> float:
+        return self.y / self.x
+
+    def __matmul__(self, other):
+        assert isinstance(other, self.__class__)
+        return self.x * other.x + self.y * other.y
+
+    def __add__(self, other):
+        assert isinstance(other, (float, int, self.__class__))
+
+        new_vec = self.clone()
+
+        if isinstance(other, (float, int)):
+            new_vec.x += other
+            new_vec.y += other
+            return new_vec
+
+        new_vec.x += other.x
+        new_vec.y += other.y
+        return new_vec
+
+    def __radd__(self, other):
+        assert isinstance(other, (float, int, self.__class__))
+
+        if isinstance(other, (float, int)):
+            self.x += other
+            self.y += other
+            return self
+
+        self.x += other.x
+        self.y += other.y
+        return self
+
+    def __sub__(self, other):
+        assert isinstance(other, (float, int, self.__class__))
+
+        new_vec = self.clone()
+
+        if isinstance(other, (float, int)):
+            new_vec.x -= other
+            new_vec.y -= other
+            return new_vec
+
+        new_vec.x -= other.x
+        new_vec.y -= other.y
+        return new_vec
+
+    def __rsub__(self, other):
+        assert isinstance(other, (float, int, self.__class__))
+
+        if isinstance(other, (float, int)):
+            self.x -= other
+            self.y -= other
+            return self
+
+        self.x -= other.x
+        self.y -= other.y
+        return self
+
+    def __mul__(self, other):
+        assert isinstance(other, (float, int, self.__class__))
+
+        new_vec = self.clone()
+
+        if isinstance(other, (float, int)):
+            new_vec.x *= other
+            new_vec.y *= other
+            return new_vec
+
+        new_vec.x *= other.x
+        new_vec.y *= other.y
+        return new_vec
+
+    def __rmul__(self, other):
+        assert isinstance(other, (float, int, self.__class__))
+
+        if isinstance(other, (float, int)):
+            self.x *= other
+            self.y *= other
+            return self
+
+        self.x *= other.x
+        self.y *= other.y
+        return self
+
+    def __truediv__(self, other):
+        assert isinstance(other, (float, int, self.__class__))
+
+        new_vec = self.clone()
+
+        if isinstance(other, (float, int)):
+            new_vec.x /= other
+            new_vec.y /= other
+            return new_vec
+
+        new_vec.x /= other.x
+        new_vec.y /= other.y
+        return new_vec
+
+    def __rtruediv__(self, other):
+        assert isinstance(other, (float, int, self.__class__))
+
+        if isinstance(other, (float, int)):
+            self.x /= other
+            self.y /= other
+            return self
+
+        self.x /= other.x
+        self.y /= other.y
+        return self
+
+    def __mod__(self, other):
+        assert isinstance(other, (float, int, self.__class__))
+
+        new_vec = self.clone()
+
+        if isinstance(other, (float, int)):
+            new_vec.x %= other
+            new_vec.y %= other
+            return new_vec
+
+        new_vec.x %= other.x
+        new_vec.y %= other.y
+        return new_vec
+
+    def __rmod__(self, other):
+        assert isinstance(other, (float, int, self.__class__))
+
+        if isinstance(other, (float, int)):
+            self.x %= other
+            self.y %= other
+            return self
+
+        self.x %= other.x
+        self.y %= other.y
+        return self
+
+    def __abs__(self):
+        new_vec = self.clone()
+        new_vec.x = abs(new_vec.x)
+        new_vec.y = abs(new_vec.y)
+        return new_vec
+
+    def __neg__(self):
+        new_vec = self.clone()
+        new_vec.x = -new_vec.x
+        new_vec.y = -new_vec.y
+        return new_vec
+
+    def __hash__(self):
+        return hash(self.__scalars)
+
+    def norm(self):
+        mag = self.mag()
+        self.x /= mag
+        self.y /= mag
+        return self
+
+    def __iter__(self):
+        return iter(self.__scalars)
+
+    def angle_to(self, other):
+        assert isinstance(other, self.__class__)
+        return self.dot(other) / (self.mag() * other.mag())
+
+    def __getitem__(self, key):
+        assert isinstance(key, int)
+        return self.__scalars[key]
+
+    def __setitem__(self, key, value):
+        assert isinstance(key, int)
+        self.__scalars[key] = value
 ```
 
 %%
