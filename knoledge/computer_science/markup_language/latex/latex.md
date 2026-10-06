@@ -1,17 +1,18 @@
 ---
-aliases:
-  - LaTeX
+aliases: [LaTeX]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-05 12:39:51
 headerFile: true
-tags:
-  - Math
-  - LaTeX
+modificationDate: 2026-10-05 12:29:26
+rating: 
+tags: [LaTeX, Math]
 ---
 
 # LATEX
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Explicar que es LaTeX y para qué sirve.
 
@@ -19,6 +20,8 @@ tags:
 |:-------------:|:-------------:|
 |    $\div$     |    `\div`     |
 | $\frac{1}{1}$ | `\frac{1}{1}` |
+|   $\times$    |   `\times`    |
+|    $\cdot$    |    `\cdot`    |
 
 ---
 
