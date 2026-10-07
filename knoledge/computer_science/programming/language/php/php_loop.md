@@ -26,7 +26,7 @@ title: Bucles en PHP
 
 > [!abstract] SINTAXIS
 > 
-> for (***\[inst1\]***, ***\[inst2\]***, ***\[inst3\]***) {
+> for (***\[inst1\]***; ***\[inst2\]***; ***\[inst3\]***) {
 > // loop code
 > }
 
