@@ -1,18 +1,18 @@
 ---
+aliases: [IPv4 en Redes]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-05 12:39:55
 headerFile: false
-tags:
-  - Computing
-  - Systems
-  - Network
-title: IPv4 en Redes
+modificationDate: 2026-10-07 06:52:08
 rating: 0.5
+tags: [Computing, Network, Systems]
 ---
 
 # IPV4 EN REDES
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Explicar como calcular las subredes.
 > > - [ ] Poner un ejemplo complejo de cálculo (*usando una máscara que no sea múltiplo de 8*).
@@ -121,5 +121,7 @@ $$
 ## REGEX PARA IPV4
 
 Sin máscara: `[1-2]?\d{1,2}(?:\.[1-2]?\d{1,2}){3}`
-Com máscara: `[1-2]?\d{1,2}(?:\.[1-2]?\d{1,2}){3}\/[1-3]?\d`
-Com posíble máscara: `[1-2]?\d{1,2}(?:\.[1-2]?\d{1,2}){3}(?:\/[1-3]?\d)?`
+
+Con máscara: `[1-2]?\d{1,2}(?:\.[1-2]?\d{1,2}){3}\/[1-3]?\d`
+
+Con posíble máscara: `[1-2]?\d{1,2}(?:\.[1-2]?\d{1,2}){3}(?:\/[1-3]?\d)?`
