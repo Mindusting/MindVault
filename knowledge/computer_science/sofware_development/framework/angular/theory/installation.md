@@ -21,10 +21,10 @@ npm install -g @angular/cli
 > [!note] NOTA
 > Angular (*CLI*) significa **Angular Console Line Interface**.
 
-Para comprobar que [**Angular**](angular.md) se ha instalado correctamente podemos ejecutar el comando:
+Para comprobar que [**Angular**](../angular.md) se ha instalado correctamente podemos ejecutar el comando:
 
 ```bash
 ng --version
 ```
 
-Si nos aparece un **[ASCII](../../../../programming/data_format/ascii.md) art** con el nombre de [**Angular**](angular.md) entre otras cosas, quiere decir que se ha instalado correctamente; llegado a este punto ya podremos [crear proyectos de **Angular**](../commands/new.md).
+Si nos aparece un **[ASCII](../../../../programming/data_format/ascii.md) art** con el nombre de [**Angular**](../angular.md) entre otras cosas, quiere decir que se ha instalado correctamente; llegado a este punto ya podremos [crear proyectos de **Angular**](../commands/new.md).

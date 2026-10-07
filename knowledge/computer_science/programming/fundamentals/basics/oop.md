@@ -24,9 +24,9 @@ tags: [Programming/Concept]
 > 
 > Para poder enteder internamente como funciona la OOP recomiendo enteder los conceptos que se explican en los siguientes apartados; aunque no es nedesario si simplemente pretendes enteder de forma abtracta la OOP:
 > 
-> - [Punteros en programación.](pc_pointer.md)
-> - [Funciones en programación.](pc_function.md)
-> - [Estructuras en programación.](pc_struct.md)
+> - [Punteros en programación.](../temp-dump/pc_pointer.md)
+> - [Funciones en programación.](../temp-dump/pc_function.md)
+> - [Estructuras en programación.](../temp-dump/pc_struct.md)
 
 > [!faq] ¿Qué es una entidad?
 > 

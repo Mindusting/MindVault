@@ -31,4 +31,4 @@ title: Linux 🐧
 - [Bash Script](script/bash_script.md)
 - [INode](linux_inode.md)
 - [DESKTOP](linux_desktop_entry.md)
-- [SSH](../../../knoledge/computer_science/dev_tools/ssh/ssh.md)
+- [SSH](../../../knowledge/computer_science/dev_tools/ssh/ssh.md)

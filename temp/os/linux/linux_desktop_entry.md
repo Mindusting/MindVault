@@ -24,7 +24,7 @@ cd ~/.local/share/applications
 ```
 
 > [!note] NOTA
-> Los archivos `.desktop` siguen un formato parecido a [**INI**](../../../knoledge/computer_science/programming/data_format/ini.md), pero no es el mismo, este tiene ciertas restricciones.
+> Los archivos `.desktop` siguen un formato parecido a [**INI**](../../../knowledge/computer_science/programming/data_format/ini.md), pero no es el mismo, este tiene ciertas restricciones.
 
 ```ini
 [Desktop Entry]

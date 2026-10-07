@@ -22,7 +22,7 @@ tags:
 > > - [¿Como puedo instalar la última versión de NodeJS en linux?](https://askubuntu.com/questions/426750/how-can-i-update-my-nodejs-to-the-latest-version)
 
 
-**Node** es un intérprete de [**JavaScript**](../../knoledge/computer_science/programming/language/javascript/js.md)
+**Node** es un intérprete de [**JavaScript**](../../knowledge/computer_science/programming/language/javascript/js.md)
 
 ```bash
 sudo apt install nodejs

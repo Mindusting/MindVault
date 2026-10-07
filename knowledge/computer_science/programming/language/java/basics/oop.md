@@ -20,18 +20,18 @@ tags: [Java, OOP, Programming]
 > [!faq]- FAQ
 > - [¿Qué son los punteros en programación?](../../fundamentals/temp-dump/pc_pointer.md)
 > - [¿Qué son la clases en programación?](../../fundamentals/temp-dump/pc_oop.md)
-> - [¿Qué son los paquetes en Java?](java_package.md)
+> - [¿Qué son los paquetes en Java?](../java_package.md)
 
 Las **clases** en *Java* son extensas por lo que iremos viendo su contenido por partes, el uso correcto de ellas se verá al final del documento, ya que todos los ejemplos que iremos viendo de momento son didácticos para ir explicando paso a paso las posibilidades que ofrecen.
 
 > [!important] IMPORTANTE
-> Si quieres trabajar con múltiples *clases* al mismo tiempo quizás quieras ir viendo simultáneamente la documentación de los [**paquetes**](java_package.md) de *Java*; ya que estos se suelen usar para mantener las *clases* ordenadas.
+> Si quieres trabajar con múltiples *clases* al mismo tiempo quizás quieras ir viendo simultáneamente la documentación de los [**paquetes**](../java_package.md) de *Java*; ya que estos se suelen usar para mantener las *clases* ordenadas.
 
 ## INNER CLASS
 
 ## VARIBLES DE CLASE
 
-Las [**variables**](java_variable.md) de *clase* son aquellas que se encuentran dentro de una *clase* y tienen la propiedad `static`, esta es la encargada de indicar que pertenece a la *clase*; por ejemplo, imaginemos que tenemos la *clase* `Mates` y queremos que esta contenga los números `PI`, `E` y `GOLDEN`, además estos tendrán la propiedad `final` para que no se puedan modificar (*en caso de que no lo tuvieran sí se podrían modificar*) y van a ser públicos (*`public` hará que se pueda acceder desde cualquier otra clase*).
+Las [**variables**](../java_variable.md) de *clase* son aquellas que se encuentran dentro de una *clase* y tienen la propiedad `static`, esta es la encargada de indicar que pertenece a la *clase*; por ejemplo, imaginemos que tenemos la *clase* `Mates` y queremos que esta contenga los números `PI`, `E` y `GOLDEN`, además estos tendrán la propiedad `final` para que no se puedan modificar (*en caso de que no lo tuvieran sí se podrían modificar*) y van a ser públicos (*`public` hará que se pueda acceder desde cualquier otra clase*).
 
 ```java
 public class Mates {
@@ -59,7 +59,7 @@ public class ClassesMain {
 
 ## MÉTODOS
 
-Los [**métodos**](java_method.md) de *clase* son aquellos que tienen la propiedad `static`
+Los [**métodos**](../java_method.md) de *clase* son aquellos que tienen la propiedad `static`
 
 ```java
 public class Mates {
@@ -102,7 +102,7 @@ public class ClassesMain {
 
 ---
 
-El uso de distintas clases en Java permite trocear el código en diferentes archivos (*Clases*), pudiendo así tenerlo más organizado, a si vez estos archivos pueden estar organizados en diferentes [paquetes](java_package.md) (*En esencia son carpetas*), ahora veremos una estructura de archivos sencilla de un proyecto de ejemplo:
+El uso de distintas clases en Java permite trocear el código en diferentes archivos (*Clases*), pudiendo así tenerlo más organizado, a si vez estos archivos pueden estar organizados en diferentes [paquetes](../java_package.md) (*En esencia son carpetas*), ahora veremos una estructura de archivos sencilla de un proyecto de ejemplo:
 
 > [!quote] ESTRUCTURA DE DIRECTORIO
 > 
@@ -258,9 +258,9 @@ public class ArrayUtilities {
 > > [!todo] #TODO
 
 > [!faq]- FAQ
-> - [¿Qué es el recolector de basura de Java?](java_garbage_collector.md)
+> - [¿Qué es el recolector de basura de Java?](../java_garbage_collector.md)
 
-El [método](java_method.md) `finalize` es especial ya que este se ejecuta cuando el [recolector de basura](java_garbage_collector.md) de Java borra el objeto en cuestión.
+El [método](../java_method.md) `finalize` es especial ya que este se ejecuta cuando el [recolector de basura](../java_garbage_collector.md) de Java borra el objeto en cuestión.
 
 > [!abstract] SINTAXIS
 > <span class="key-word-color">public</span> <span class="class-color">void</span> <span class="function-color">finalize</span>() {<br><span class="transparency">····</span><span class="italic grey">[finalize_code]</span><br>}

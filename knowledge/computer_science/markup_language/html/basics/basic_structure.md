@@ -58,7 +58,7 @@ La etiqueta `html` permite indicar el contendido de nuestra página web entre ot
 
 ## ETIQUETA HEAD
 
-La etiqueta `head` permite indicar información de la página que no se va a ver en ella, como son por ejemplo los [metadatos](html_meta.md) entre otras cosas.
+La etiqueta `head` permite indicar información de la página que no se va a ver en ella, como son por ejemplo los [metadatos](../html_meta.md) entre otras cosas.
 
 ```html
 <!DOCTYPE html>
@@ -101,4 +101,4 @@ La etiqueta `body` permite indicar que queremos que se muestre en nuestra págin
 </html>
 ```
 
-En este caso he puesto como ejemplo un simple texto (*Aun que para añadir textos no es así como se debería hacer, si no con un [párrafo](html_text_format.md)*), pero también podremos poner por ejemplo [títulos](html_headers.md), [imágenes](../tags/img.md), [vídeos](html_videos.md) y [tablas](html_table.md) entre otras cosas.
+En este caso he puesto como ejemplo un simple texto (*Aun que para añadir textos no es así como se debería hacer, si no con un [párrafo](../html_text_format.md)*), pero también podremos poner por ejemplo [títulos](../html_headers.md), [imágenes](../tags/img.md), [vídeos](../html_videos.md) y [tablas](../html_table.md) entre otras cosas.

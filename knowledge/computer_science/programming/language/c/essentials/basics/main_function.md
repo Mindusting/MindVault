@@ -44,4 +44,4 @@ int main()
 }
 ```
 
-En este ejemplo hacemos uso de la [librería `stdio`](libs/standar/stdio.md) para poder imprimir un mensaje por consola.
+En este ejemplo hacemos uso de la [librería `stdio`](../../libs/standar/stdio.md) para poder imprimir un mensaje por consola.

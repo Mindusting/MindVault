@@ -18,7 +18,7 @@ rating:
 > [!external-link]- REFERENCIAS WEB
 > - [Angular](https://angular.dev/installation) #WWW/Angular
 
-Para crear un nuevo proyecto en [**Anglular**](angular.md) se usa el comando:
+Para crear un nuevo proyecto en [**Anglular**](../angular.md) se usa el comando:
 
 > [!syntax] SINTAXIS
 > ng new ***\[newProyectName\]***
