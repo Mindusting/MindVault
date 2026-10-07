@@ -303,19 +303,6 @@ $$
 (-1, 5) = \vec{r}
 $$
 
-$$
-\begin{bmatrix}
-3 & 2
-\end{bmatrix}\\
-\begin{bmatrix}
-3 \\ 2
-\end{bmatrix}
-\begin{bmatrix}
-- & -\\
-- & -
-\end{bmatrix}
-$$
-
 ### RESTA DE VECTORES
 
 ### MULTIPLICACIÓN DE VECTORES
