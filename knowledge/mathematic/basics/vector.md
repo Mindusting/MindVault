@@ -307,12 +307,55 @@ $$
 (-1, 5)
 $$
 
-$$
-\vec{r} = (-1, 5)
-$$
+$$\vec{r} = (-1, 5)$$
 
+El resultado de esta suma es que el vector $\vec{r}$ tiene como resultado $(-1, 5)$.
+
+```python
+a = Vector2( 3, 4)
+b = Vector2(-4, 1)
+
+r = a + b
+
+print(r)
+# SALIDA:
+# Vector2(-1, 5)
+```
 
 ### RESTA DE VECTORES
+
+La resta de dos vectores si gue exáctamente el mismo procedimiento que la suma de estos, con la diferencia que en esta en vez de sumar los [componentes](#COMPONENTES%20DE%20UN%20VECTOR), se restan.
+
+---
+
+Veamos un ejemplo en donde restamos los vectores $\vec{a}$ y $\vec{b}$ para obtener como resultado el vector $\vec{r}$:
+
+$$
+\vec{a} = (3, 4)\\
+\vec{b} = (-4, 1)
+$$
+
+$$
+\vec{a} - \vec{b} =\\
+(3, 4) - (-4, 1) =\\
+(3 - (-4), 4 - 1) =\\
+(7, 3)
+$$
+
+$$\vec{r} = (7, 3)$$
+
+El resultado de esta resta es que el vector $\vec{r}$ tiene como resultado $(7, 3)$.
+
+```python
+a = Vector2( 3, 4)
+b = Vector2(-4, 1)
+
+r = a - b
+
+print(r)
+# SALIDA:
+# Vector2(7, 3)
+```
 
 ### MULTIPLICACIÓN DE VECTORES
 
@@ -334,250 +377,6 @@ $$
 
 ## VETOR UNITARIO
 
-## PRODUCTO ESCALAR
-
-## ÁNGULO ENTRE DOS VECTORES
-
-%%
-
----
-
----
-
----
-
----
-
----
-
-## OPERACIONES CON VECTORES
-
-### MAGNITUD DE UN VECTOR
-
-La **magnitud** o **módulo** de un **vector** es la longitud de la flecha que representa dicho **vector**.
-
-La representación de este valor se escribe poniendo una flecha sobre el **vector** y dos barras verticales a cada lado de este:
-
-$$\lVert \vec{v} \rVert$$
-
-Aunque bajo ciertos contextos también hay otras dos formas de representarlo: 1) poniendo una única barra vertical a cada lado del vector, 2) sin poner barras verticales ni la flecha sobre el vector (*siendo esta la menos usada*).
-
-$$\lVert \vec{v} \rVert=|\vec{v}|=v$$
-
----
-
-Para calcualr la **magnitud** de un **vector** tendremos que hallar la raiz cuadrada de la suma de los [componentes del vector](#COMPONENTES%20DE%20UN%20VECTOR) elevados al cudarado:
-
-$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
-
-En el caso de un **vector** de dos dimensiones tendremos elevar al cuadrado los compoentes $x$ e $y$ para luego sumarlos y obtener su raiz cuadrada:
-
-$$\lVert \vec{v} \rVert=\sqrt{v^2_x+v^2_y}$$
-
-En donde $x=3$ e $y=4$:
-
-$$\sqrt{3^2+4^2}$$
-
-$$=\sqrt{9+16}$$
-
-$$=\sqrt{25}$$
-
-$$=5$$
-
-Por lo que la **magnitud** del **vector** $\vec{v}=(3, 4)$ es $\lVert \vec{v} \rVert=5$.
-
-![#center](assets/pitagoras.md)
-
-^img-pitagoras
-
----
-
-Si queremos implementar en código el cálculo de la **magnitud** podemos hacerlo de la siguiente forma (*lo he puesto en [Python](../../computer_science/programming/language/python/py.md) para que sea facil de enteder, pero este mismo concepto se puede aplicar en otros lenguajes de programación*):
-
-```python
-import math
-
-def magnitude(vector) -> float:
-    summation = 0
-    for scalar in vector:
-        summation += scalar * scalar
-    return math.sqrt(summation)
-
-vector = [3, 4]
-print(magnitude(vector))
-# SALIDA:
-# 5.0
-```
-
-También podemos escribirlo de la siguiente forma:
-
-```python
-import math
-
-def magnitude(vector) -> float:
-    return math.sqrt(sum(map(lambda scalar: scalar*scalar, vector)))
-
-vector = [3, 4]
-print(magnitude(vector))
-# SALIDA:
-# 5.0
-```
-
----
-
-A la hora de trabajar sobre **vectores** con más de dos dimensiones la formula completa es la siguiente:
-
-$$
-\lVert \vec{v} \rVert =
-\sqrt{v^2_1+(\sqrt{v^2_2+(\sqrt{v^2_3+...})^2})^2}
-$$
-
-Consiste en ir aplicando el [teorema de pitágoras](#^img-pitagoras) sobre cada par de [componente del vector](#COMPONENTES%20DE%20UN%20VECTOR) de forma recursiva; si te fijas este tiene un patrón que se repite:
-
-$$(\sqrt{...})^2$$
-
-Resulta que este patrón se puede obviar ya que $n=(\sqrt{n})^2$; por lo que simplificando la fórmula quitando esa parte obtenemos lo siguiente:
-
-$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
-
-Esta es la fórmula que realmente se usa; me parece importante saber cual es la formula completa ya que nos puede dar una idea más profunda de como funciona.
-
-### SENO, COSENO Y TANGENTE DE UN VECTOR
-
-Para entender bien como calcular el [**seno**](#SENO%20DE%20UN%20VECTOR) y el [**coseno**](#COSENO%20DE%20UN%20VECTOR) de un vector, primero tenemos que entender en qué consiste la normalización de una lista de números; imaginemos que somos un profesor y hemos puesto un examen de tipo test a nuestros alunos, sabemos que el examen tenía 20 pregusta y que tenemos una lista de números en donde cada número representa la cantidad de preguntas correctas que escribio el aluno:
-
-```python
-numero_de_pregunta = 20
-puntuaciones = [18, 7, 13]
-# Hay tres alunos.
-```
-
-Para poder transformar estas puntuaciones en una nota de 0 a 10, perimero tenemos que normalizarlas, para ello, dividiremos cada puntuación (*número de respuestas correctas*) entre el total de preguntas:
-
-```python
-numero_de_pregunta = 20
-puntuaciones = [18, 7, 13]
-
-for i in range(len(puntuaciones)):
-    puntuaciones[i] = puntuaciones[i] / numero_de_pregunta
-
-print(puntuaciones)
-# SALIDA:
-# [0.9, 0.35, 0.65]
-```
-
-Al haber normalizado las `puntuaciones`, estas quedan en un número entre el `0.0` (*siendo esta la nota mínima que se puede obtener*) y el `1.0` (*siendo esta la nota máxima que se puede obtener*); una vez hecho esto podríamos multiplicar todas las puntuaciones por 10 para obtener la nota entre 0 y 10 (*como se suele puntuar en España*), pero para lo que estamos aprendiendo ahora no hace falta, ya que el punto es entender como podemos normalizar una serie de número para tranformarlos en un rango entre 0 y 1.
-
----
-
-El **coseno** como el **seno** son los componentes $x$ e $y$ de un **vector** normalizados en un rango [$[-1, 1] \subset \mathbb{R}$](../temp/math_range_notation.md), para calcular estos dos valores primero tendremos que entender en qué consiste la normalización de un conjunto de números:
-
-![#center](assets/cos_sin_30.md)
-
-> [!important] IMPORTANTE
-> Es importante saber que a la hora de calcular tanto el [**seno**](#SENO%20DE%20UN%20VECTOR), [**coseno**](#COSENO%20DE%20UN%20VECTOR) y [**tangente**](#TANGENTE%20DE%20UN%20VECTOR); no se puede usar un [**vector nulo**](#VECTORES%20NULOS), ya que como el cálculo de estos requieren de una división, implica que tendríamos que hacer una división entre 0.
-
-#### SENO DE UN VECTOR
-
-El **seno** de un vector consiste en la normalización de la componente $y$ sobre la [**magnitud**](#MAGNITUD%20DE%20UN%20VECTOR) del mismo:
-
-$$\sin(\theta) = \frac{\vec{v}_y}{\lVert \vec{v} \rVert}$$
-
-La parte en la que pone 
-
-```python
-import math
-
-def magnitude(vector) -> float:
-    summation = 0
-    for scalar in vector:
-        summation += scalar * scalar
-    return math.sqrt(summation)
-
-def sin(vector) -> float:
-    return vector[1] / magnitude(vector)
-
-vector = [3, 4]
-print(sin(vector))
-# SALIDA:
-# 0.8
-```
-
-#### COSENO DE UN VECTOR
-
-El **coseno** de un **vector** representa el componente $x$ normalizada en el rango 
-
-```python
-import math
-
-def magnitude(vector) -> float:
-    summation = 0
-    for scalar in vector:
-        summation += scalar * scalar
-    return math.sqrt(summation)
-
-def cos(vector) -> float:
-    return vector[0] / magnitude(vector)
-
-vector = [3, 4]
-print(cos(vector))
-# SALIDA:
-# 0.6
-```
-
-#### TANGENTE DE UN VECTOR
-
-```python
-def tan(vector) -> float:
-    return vector[1] / vector[0]
-
-vector = [3, 4]
-print(tan(vector))
-# SALIDA:
-# 1.3333333333333333
-```
-
-### PRODUCTO ESCALAR
-
-El producto escalar (*dot product*)
-
-$$\vec{v}_1 \cdot \vec{v}_2$$
-
-la suma de las multiplicaciones de los pares de componentes de dos vectores
-
-$$v_{1,x}$$
-
-```python
-def dot_product(v1, v2) -> float:
-    assert len(v1) == len(v2), "Vectores incompatiples."
-    result = 0
-    for i in range(len(v1)):
-        result += v1[i] * v2[i]
-    return result
-```
-
-```python
-def dot_product(v1, v2) -> float:
-    assert len(v1) == len(v2), "Vectores incompatiples."
-    return sum([v1[i] * v2[i] for i in range(len(v1))])
-```
-
-%%
-
-%%
-
----
-
----
-
----
-
----
-
----
-
-%%
-
 $$
 \hat{v}
 $$
@@ -591,7 +390,11 @@ $$
 \lVert \vec{v} \rVert = \sqrt{\text{dot}(\vec{v}, \vec{v})}
 $$
 
-%%
+## PRODUCTO ESCALAR
+
+## ÁNGULO ENTRE DOS VECTORES
+
+## VECTOR 2D EN PYTHON
 
 ```python
 class Vector2:
@@ -838,6 +641,230 @@ class Vector2:
     def __setitem__(self, key, value):
         assert isinstance(key, int)
         self.__scalars[key] = value
+```
+
+%%
+
+---
+
+---
+
+---
+
+---
+
+---
+
+## OPERACIONES CON VECTORES
+
+### MAGNITUD DE UN VECTOR
+
+La **magnitud** o **módulo** de un **vector** es la longitud de la flecha que representa dicho **vector**.
+
+La representación de este valor se escribe poniendo una flecha sobre el **vector** y dos barras verticales a cada lado de este:
+
+$$\lVert \vec{v} \rVert$$
+
+Aunque bajo ciertos contextos también hay otras dos formas de representarlo: 1) poniendo una única barra vertical a cada lado del vector, 2) sin poner barras verticales ni la flecha sobre el vector (*siendo esta la menos usada*).
+
+$$\lVert \vec{v} \rVert=|\vec{v}|=v$$
+
+---
+
+Para calcualr la **magnitud** de un **vector** tendremos que hallar la raiz cuadrada de la suma de los [componentes del vector](#COMPONENTES%20DE%20UN%20VECTOR) elevados al cudarado:
+
+$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
+
+En el caso de un **vector** de dos dimensiones tendremos elevar al cuadrado los compoentes $x$ e $y$ para luego sumarlos y obtener su raiz cuadrada:
+
+$$\lVert \vec{v} \rVert=\sqrt{v^2_x+v^2_y}$$
+
+En donde $x=3$ e $y=4$:
+
+$$\sqrt{3^2+4^2}$$
+
+$$=\sqrt{9+16}$$
+
+$$=\sqrt{25}$$
+
+$$=5$$
+
+Por lo que la **magnitud** del **vector** $\vec{v}=(3, 4)$ es $\lVert \vec{v} \rVert=5$.
+
+![#center](assets/pitagoras.md)
+
+^img-pitagoras
+
+---
+
+Si queremos implementar en código el cálculo de la **magnitud** podemos hacerlo de la siguiente forma (*lo he puesto en [Python](../../computer_science/programming/language/python/py.md) para que sea facil de enteder, pero este mismo concepto se puede aplicar en otros lenguajes de programación*):
+
+```python
+import math
+
+def magnitude(vector) -> float:
+    summation = 0
+    for scalar in vector:
+        summation += scalar * scalar
+    return math.sqrt(summation)
+
+vector = [3, 4]
+print(magnitude(vector))
+# SALIDA:
+# 5.0
+```
+
+También podemos escribirlo de la siguiente forma:
+
+```python
+import math
+
+def magnitude(vector) -> float:
+    return math.sqrt(sum(map(lambda scalar: scalar*scalar, vector)))
+
+vector = [3, 4]
+print(magnitude(vector))
+# SALIDA:
+# 5.0
+```
+
+---
+
+A la hora de trabajar sobre **vectores** con más de dos dimensiones la formula completa es la siguiente:
+
+$$
+\lVert \vec{v} \rVert =
+\sqrt{v^2_1+(\sqrt{v^2_2+(\sqrt{v^2_3+...})^2})^2}
+$$
+
+Consiste en ir aplicando el [teorema de pitágoras](#^img-pitagoras) sobre cada par de [componente del vector](#COMPONENTES%20DE%20UN%20VECTOR) de forma recursiva; si te fijas este tiene un patrón que se repite:
+
+$$(\sqrt{...})^2$$
+
+Resulta que este patrón se puede obviar ya que $n=(\sqrt{n})^2$; por lo que simplificando la fórmula quitando esa parte obtenemos lo siguiente:
+
+$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
+
+Esta es la fórmula que realmente se usa; me parece importante saber cual es la formula completa ya que nos puede dar una idea más profunda de como funciona.
+
+### SENO, COSENO Y TANGENTE DE UN VECTOR
+
+Para entender bien como calcular el [**seno**](#SENO%20DE%20UN%20VECTOR) y el [**coseno**](#COSENO%20DE%20UN%20VECTOR) de un vector, primero tenemos que entender en qué consiste la normalización de una lista de números; imaginemos que somos un profesor y hemos puesto un examen de tipo test a nuestros alunos, sabemos que el examen tenía 20 pregusta y que tenemos una lista de números en donde cada número representa la cantidad de preguntas correctas que escribio el aluno:
+
+```python
+numero_de_pregunta = 20
+puntuaciones = [18, 7, 13]
+# Hay tres alunos.
+```
+
+Para poder transformar estas puntuaciones en una nota de 0 a 10, perimero tenemos que normalizarlas, para ello, dividiremos cada puntuación (*número de respuestas correctas*) entre el total de preguntas:
+
+```python
+numero_de_pregunta = 20
+puntuaciones = [18, 7, 13]
+
+for i in range(len(puntuaciones)):
+    puntuaciones[i] = puntuaciones[i] / numero_de_pregunta
+
+print(puntuaciones)
+# SALIDA:
+# [0.9, 0.35, 0.65]
+```
+
+Al haber normalizado las `puntuaciones`, estas quedan en un número entre el `0.0` (*siendo esta la nota mínima que se puede obtener*) y el `1.0` (*siendo esta la nota máxima que se puede obtener*); una vez hecho esto podríamos multiplicar todas las puntuaciones por 10 para obtener la nota entre 0 y 10 (*como se suele puntuar en España*), pero para lo que estamos aprendiendo ahora no hace falta, ya que el punto es entender como podemos normalizar una serie de número para tranformarlos en un rango entre 0 y 1.
+
+---
+
+El **coseno** como el **seno** son los componentes $x$ e $y$ de un **vector** normalizados en un rango [$[-1, 1] \subset \mathbb{R}$](../temp/math_range_notation.md), para calcular estos dos valores primero tendremos que entender en qué consiste la normalización de un conjunto de números:
+
+![#center](assets/cos_sin_30.md)
+
+> [!important] IMPORTANTE
+> Es importante saber que a la hora de calcular tanto el [**seno**](#SENO%20DE%20UN%20VECTOR), [**coseno**](#COSENO%20DE%20UN%20VECTOR) y [**tangente**](#TANGENTE%20DE%20UN%20VECTOR); no se puede usar un [**vector nulo**](#VECTORES%20NULOS), ya que como el cálculo de estos requieren de una división, implica que tendríamos que hacer una división entre 0.
+
+#### SENO DE UN VECTOR
+
+El **seno** de un vector consiste en la normalización de la componente $y$ sobre la [**magnitud**](#MAGNITUD%20DE%20UN%20VECTOR) del mismo:
+
+$$\sin(\theta) = \frac{\vec{v}_y}{\lVert \vec{v} \rVert}$$
+
+La parte en la que pone 
+
+```python
+import math
+
+def magnitude(vector) -> float:
+    summation = 0
+    for scalar in vector:
+        summation += scalar * scalar
+    return math.sqrt(summation)
+
+def sin(vector) -> float:
+    return vector[1] / magnitude(vector)
+
+vector = [3, 4]
+print(sin(vector))
+# SALIDA:
+# 0.8
+```
+
+#### COSENO DE UN VECTOR
+
+El **coseno** de un **vector** representa el componente $x$ normalizada en el rango 
+
+```python
+import math
+
+def magnitude(vector) -> float:
+    summation = 0
+    for scalar in vector:
+        summation += scalar * scalar
+    return math.sqrt(summation)
+
+def cos(vector) -> float:
+    return vector[0] / magnitude(vector)
+
+vector = [3, 4]
+print(cos(vector))
+# SALIDA:
+# 0.6
+```
+
+#### TANGENTE DE UN VECTOR
+
+```python
+def tan(vector) -> float:
+    return vector[1] / vector[0]
+
+vector = [3, 4]
+print(tan(vector))
+# SALIDA:
+# 1.3333333333333333
+```
+
+### PRODUCTO ESCALAR
+
+El producto escalar (*dot product*)
+
+$$\vec{v}_1 \cdot \vec{v}_2$$
+
+la suma de las multiplicaciones de los pares de componentes de dos vectores
+
+$$v_{1,x}$$
+
+```python
+def dot_product(v1, v2) -> float:
+    assert len(v1) == len(v2), "Vectores incompatiples."
+    result = 0
+    for i in range(len(v1)):
+        result += v1[i] * v2[i]
+    return result
+```
+
+```python
+def dot_product(v1, v2) -> float:
+    assert len(v1) == len(v2), "Vectores incompatiples."
+    return sum([v1[i] * v2[i] for i in range(len(v1))])
 ```
 
 %%
