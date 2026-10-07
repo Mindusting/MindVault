@@ -244,6 +244,12 @@ Otra forma de identificar los componentes es mediante números, este funciona bi
 
 $$\vec{v} = (v_1, v_2, v_3, v_4)$$
 
+$$
+v_x = v_1\\
+v_y = v_2\\
+v_z = v_3
+$$
+
 Cuando trabajamos con varios vectores podemos identificar cada uno de los vectores de la misma forma que hemos visto en los apartados anteriores, y aquí es donde podemos ver como la primera forma trae probemas, ya que es dificil de identificar donde empieza y termina el identificador de vector y el identificador del componente, sore todo en el momento en el que uno de ellos llega a los dos dígitos:
 
 $$
