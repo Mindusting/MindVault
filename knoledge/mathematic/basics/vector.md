@@ -285,7 +285,36 @@ Al trabajar con vectores se suele revisar si alguno de estos es nulo ya que hay 
 
 ## OPERACIONES BÁSICAS CON VECTORES
 
+Para poder realizar operciones básicas entre vectores estos tienen que tener el mismo número de dimensiones.
+
 ### SUMA DE VECTORES
+
+Para sumar dos vectores se debe sumar cada uno de los [componetes](#COMPONENTES%20DE%20UN%20VECTOR) de ambos vectores con sus pares; es decir: se susman los primeros [componetes](#COMPONENTES%20DE%20UN%20VECTOR) de ambos vectores, el resulado de esta suma se establece como el primer [componete](#COMPONENTES%20DE%20UN%20VECTOR) del vector sesultate, lo mismo se hace con el segundo y así asta completar el vector.
+
+$$
+\vec{a} = (3, 4)\\
+\vec{b} = (-4, 1)
+$$
+
+$$
+\vec{a} + \vec{b} =\\
+(3, 4) + (-4, 1) =\\
+(3 + (-4), 4 + 1) =\\
+(-1, 5) = \vec{r}
+$$
+
+$$
+\begin{bmatrix}
+3 & 2
+\end{bmatrix}\\
+\begin{bmatrix}
+3 \\ 2
+\end{bmatrix}
+\begin{bmatrix}
+- & -\\
+- & -
+\end{bmatrix}
+$$
 
 ### RESTA DE VECTORES
 
