@@ -20,21 +20,21 @@ tags: [Math, Vector]
 > > 
 > > - [ ] DEFINICIÓN
 > >     - Angulo $\theta$.
-> > - [ ] REPRESENTACIÓN:
-> >     - [ ] REPRESENTACIÓN EN MATEMÁTICAS
-> >     - [ ] REPRESENTACIÓN EN FÍSICA
-> >     - [ ] REPRESENTACIÓN EN PROGRAMACIÓN
-> > - [ ] COMPONENTES DE UN VECTOR:
-> >     - [ ] VECTORES DE DOS DIMENSIONES
-> >     - [ ] VECTORES DE TRES DIMENSIONES
-> >     - [ ] VECTORES DE MÚLTIPLES DIMENSIONES
-> > - [ ] VECTOR NULO
+> > - [x] REPRESENTACIÓN:
+> >     - [x] REPRESENTACIÓN EN MATEMÁTICAS
+> >     - [x] REPRESENTACIÓN EN FÍSICA
+> >     - [x] REPRESENTACIÓN EN PROGRAMACIÓN
+> > - [x] COMPONENTES DE UN VECTOR:
+> >     - [x] VECTORES DE DOS DIMENSIONES
+> >     - [x] VECTORES DE TRES DIMENSIONES
+> >     - [x] VECTORES DE MÚLTIPLES DIMENSIONES
+> > - [x] VECTOR NULO
 > > - [ ] OPERACIONES BÁSICAS CON VECTORES
-> >     - [ ] SUMA DE VECTORES
-> >     - [ ] RESTA DE VECTORES
+> >     - [x] SUMA DE VECTORES
+> >     - [x] RESTA DE VECTORES
 > >     - [ ] MULTIPLICACIÓN DE VECTORES
 > >     - [ ] DIVISIÓN DE VECTORES
-> > - [ ] MAGNITUD DE UN VECTOR
+> > - [x] MAGNITUD DE UN VECTOR
 > > - [ ] DIRECCIÓN DE UN VECTOR
 > > - [ ] RELACIONES TRIGONOMÉTRICAS:
 > >     - [ ] SENO
@@ -69,7 +69,8 @@ tags: [Math, Vector]
 > - [Visual Explanations](https://www.youtube.com/playlist?list=PLImQaTpSAdsB0DF6JfqTTm0sFdLVa80HJ) #WWW/YT/acegikmo
 
 > [!note] NOTA
-> Si quieres una versión resumida/chuleta de estos apuntes, tienes el archivo [*vector_cheatsheet*](vector_cheatsheet.md).
+> 1. Si quieres una versión resumida/chuleta de estos apuntes, tienes el archivo [*vector_cheatsheet*](vector_cheatsheet.md).
+> 2. En algunos de los ejemplo de código de este documento se usa la clase `Vector2`, esta no es una clase propia de [**Python**](../../computer_science/programming/language/python/py.md), sino que la he escrito a mano, si quieres ver su código fuente para enterder como funciona, la tienes en el apartado [Vector 2D en  Python](#VECTOR%202D%20EN%20PYTHON); no es necesario entender el código para estos apuntes, ya que estos están más orientados a el manejo de vectores en general, pero por si te interesa, ahí lo tienes.
 
 ## DEFINICIÓN
 
@@ -362,6 +363,86 @@ print(r)
 ### DIVISIÓN DE VECTORES
 
 ## MAGNITUD DE UN VECTOR
+
+La **magnitud**, **módulo** o **longitud** (*este último en el sentido matemático y no en el de la programación*) de un **vector** es la longitud de la flecha que representa dicho **vector**.
+
+La representación de este valor se escribe poniendo una flecha sobre el **vector** y dos barras verticales a cada lado de este:
+
+$$\lVert \vec{v} \rVert$$
+
+Aunque bajo ciertos contextos también hay otras dos formas de representarlo: 1) poniendo una única barra vertical a cada lado del vector, 2) sin poner barras verticales ni la flecha sobre el vector (*siendo esta la menos usada devido a su ambigüedad*).
+
+$$\lVert \vec{v} \rVert=|\vec{v}|=v$$
+
+---
+
+Para calcular la **magnitud** de un **vector** tendremos que hallar la raiz cuadrada de la suma de los [componentes del vector](#COMPONENTES%20DE%20UN%20VECTOR) elevados al cudarado; es decir, el teorema de Pitágoras:
+
+$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
+
+En el caso de un **vector** de dos dimensiones tendremos que elevar al cuadrado los compoentes $x$ e $y$ para luego sumarlos y obtener su raiz cuadrada:
+
+$$\lVert \vec{v} \rVert=\sqrt{v^2_x+v^2_y}$$
+
+En donde $x=3$ e $y=4$:
+
+$$
+\sqrt{3^2+4^2}\\
+=\sqrt{9+16}\\
+=\sqrt{25}\\
+=5
+$$
+
+Por lo que la **magnitud** del **vector** $\vec{v}=(3, 4)$ es $\lVert \vec{v} \rVert=5$.
+
+![#center](assets/pitagoras.md)
+
+^img-pitagoras
+
+```python
+v = Vector2(3, 4)
+print(v.mag())
+# SALIDA:
+# 5.0
+```
+
+---
+
+Si queremos implementar en código el cálculo de la **magnitud** podemos hacerlo de la siguiente forma (*lo he puesto en [Python](../../computer_science/programming/language/python/py.md) para que sea facil de enteder, pero este mismo concepto se puede aplicar en otros lenguajes de programación*):
+
+```python
+import math
+
+def magnitude(vector) -> float:
+    summation = 0
+    for scalar in vector:
+        summation += scalar * scalar
+    return math.sqrt(summation)
+
+vector = [3, 4]
+print(magnitude(vector))
+# SALIDA:
+# 5.0
+```
+
+---
+
+A la hora de trabajar sobre **vectores** con más de dos dimensiones la formula completa es la siguiente:
+
+$$
+\lVert \vec{v} \rVert =
+\sqrt{v^2_1+(\sqrt{v^2_2+(\sqrt{v^2_3+...})^2})^2}
+$$
+
+Consiste en ir aplicando el [teorema de pitágoras](#^img-pitagoras) sobre cada par de [componente del vector](#COMPONENTES%20DE%20UN%20VECTOR) de forma recursiva; si te fijas este tiene un patrón que se repite:
+
+$$(\sqrt{...})^2$$
+
+Resulta que este patrón se puede obviar ya que $n=(\sqrt{n})^2$; por lo que simplificando la fórmula quitando esa parte obtenemos lo siguiente:
+
+$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
+
+Esta es la fórmula que realmente se usa; me parece importante saber cual es la formula completa ya que nos puede dar una idea más profunda de como funciona.
 
 ## DIRECCIÓN DE UN VECTOR
 
@@ -658,94 +739,6 @@ class Vector2:
 ## OPERACIONES CON VECTORES
 
 ### MAGNITUD DE UN VECTOR
-
-La **magnitud** o **módulo** de un **vector** es la longitud de la flecha que representa dicho **vector**.
-
-La representación de este valor se escribe poniendo una flecha sobre el **vector** y dos barras verticales a cada lado de este:
-
-$$\lVert \vec{v} \rVert$$
-
-Aunque bajo ciertos contextos también hay otras dos formas de representarlo: 1) poniendo una única barra vertical a cada lado del vector, 2) sin poner barras verticales ni la flecha sobre el vector (*siendo esta la menos usada*).
-
-$$\lVert \vec{v} \rVert=|\vec{v}|=v$$
-
----
-
-Para calcualr la **magnitud** de un **vector** tendremos que hallar la raiz cuadrada de la suma de los [componentes del vector](#COMPONENTES%20DE%20UN%20VECTOR) elevados al cudarado:
-
-$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
-
-En el caso de un **vector** de dos dimensiones tendremos elevar al cuadrado los compoentes $x$ e $y$ para luego sumarlos y obtener su raiz cuadrada:
-
-$$\lVert \vec{v} \rVert=\sqrt{v^2_x+v^2_y}$$
-
-En donde $x=3$ e $y=4$:
-
-$$\sqrt{3^2+4^2}$$
-
-$$=\sqrt{9+16}$$
-
-$$=\sqrt{25}$$
-
-$$=5$$
-
-Por lo que la **magnitud** del **vector** $\vec{v}=(3, 4)$ es $\lVert \vec{v} \rVert=5$.
-
-![#center](assets/pitagoras.md)
-
-^img-pitagoras
-
----
-
-Si queremos implementar en código el cálculo de la **magnitud** podemos hacerlo de la siguiente forma (*lo he puesto en [Python](../../computer_science/programming/language/python/py.md) para que sea facil de enteder, pero este mismo concepto se puede aplicar en otros lenguajes de programación*):
-
-```python
-import math
-
-def magnitude(vector) -> float:
-    summation = 0
-    for scalar in vector:
-        summation += scalar * scalar
-    return math.sqrt(summation)
-
-vector = [3, 4]
-print(magnitude(vector))
-# SALIDA:
-# 5.0
-```
-
-También podemos escribirlo de la siguiente forma:
-
-```python
-import math
-
-def magnitude(vector) -> float:
-    return math.sqrt(sum(map(lambda scalar: scalar*scalar, vector)))
-
-vector = [3, 4]
-print(magnitude(vector))
-# SALIDA:
-# 5.0
-```
-
----
-
-A la hora de trabajar sobre **vectores** con más de dos dimensiones la formula completa es la siguiente:
-
-$$
-\lVert \vec{v} \rVert =
-\sqrt{v^2_1+(\sqrt{v^2_2+(\sqrt{v^2_3+...})^2})^2}
-$$
-
-Consiste en ir aplicando el [teorema de pitágoras](#^img-pitagoras) sobre cada par de [componente del vector](#COMPONENTES%20DE%20UN%20VECTOR) de forma recursiva; si te fijas este tiene un patrón que se repite:
-
-$$(\sqrt{...})^2$$
-
-Resulta que este patrón se puede obviar ya que $n=(\sqrt{n})^2$; por lo que simplificando la fórmula quitando esa parte obtenemos lo siguiente:
-
-$$\lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}$$
-
-Esta es la fórmula que realmente se usa; me parece importante saber cual es la formula completa ya que nos puede dar una idea más profunda de como funciona.
 
 ### SENO, COSENO Y TANGENTE DE UN VECTOR
 
