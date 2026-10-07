@@ -240,13 +240,19 @@ $$
 
 ### COMPONENTES MEDIANTE NÚMEROS
 
-Otra forma de identificar los componentes es mediante números, este funciona bien cuando trabajamos con vectores con más de tres dimensiones; aunque también se puede usar con vectores tanto de dos como tres dimensiones.
+Otra forma de identificar los componentes es mediante números, este funciona bien cuando trabajamos con vectores con más de tres dimensiones; aunque también se puede usar con vectores tanto de dos como tres dimensiones; en donde el $1$ equivale a $x$, el $2$ equivale a $y$, el $3$ equivale a $z$ y el resto de números identifican más disensiones del vector aunque no tengan una letra asignada; de forma que podríamos hacer un vector de 4 dimesiones (*o más*):
+
+$$\vec{v} = (v_1, v_2, v_3, v_4)$$
+
+Cuando trabajamos con varios vectores podemos identificar cada uno de los vectores de la misma forma que hemos visto en los apartados anteriores, y aquí es donde podemos ver como la primera forma trae probemas, ya que es dificil de identificar donde empieza y termina el identificador de vector y el identificador del componente, sore todo en el momento en el que uno de ellos llega a los dos dígitos:
 
 $$
 \vec{v}_1 = (v_{11}, v_{12}, v_{13})\\
 \vec{v}_2 = (v_{21}, v_{22}, v_{23})\\
 ...
 $$
+
+Es por esto, que en estos casos es mejor usar una de las dos siguientes formas para marcar una separación:
 
 $$
 \vec{v}_1 = (v_{1,1}, v_{1,2}, v_{1,3})\\
