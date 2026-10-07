@@ -309,6 +309,10 @@ Al trabajar con vectores se suele revisar si alguno de estos es nulo ya que hay 
 
 ## VETOR UNITARIO
 
+## PRODUCTO ESCALAR
+
+## ÁNGULO ENTRE DOS VECTORES
+
 %%
 
 ---
