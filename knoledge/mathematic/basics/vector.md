@@ -268,11 +268,14 @@ $$
 
 ## VECTORES NULOS
 
-Un **vector nulo** es aquel cullos [**componentes**](#COMPONENTES%20DE%20UN%20VECTOR) están establecidos a cero, es decir, cuya [**magnitud**](#MAGNITUD%20DE%20UN%20VECTOR) sea cero (*su longitud es cero*).
+Un **vector nulo** es aquel cullos [**componentes**](#COMPONENTES%20DE%20UN%20VECTOR) están establecidos a cero, es decir, cuya [**magnitud**](#MAGNITUD%20DE%20UN%20VECTOR) sea cero (*su longitud es cero*):
 
-$$\vec{vec\_nulo} = (0, 0)$$
+$$
+\vec{vec\_nulo} = (0, 0)\\
+\lVert \vec{vec\_nulo} \rVert = 0
+$$
 
-$$\lVert \vec{vec\_nulo} \rVert = 0$$
+Al trabajar con vectores se suele revisar si alguno de estos es nulo ya que hay ciertas operaciones (*como veremos más adelante*) que no se puede efectuar sobre vectores nulos; al igual que, por ejemplo, no se puede hacer una disivión entre $0$.
 
 ## OPERACIONES BÁSICAS CON VECTORES
 
