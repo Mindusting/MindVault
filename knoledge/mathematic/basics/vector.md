@@ -4,7 +4,7 @@ author: Mindusting
 corrected: false
 creationDate: 2026-06-30 10:34:40
 headerFile: false
-modificationDate: 2026-09-30 01:49:17
+modificationDate: 2026-10-07 03:07:29
 rating: 
 tags: [Math, Vector]
 ---
@@ -166,9 +166,99 @@ $$
 
 ### VECTORES DE DOS DIMENSIONES
 
+Los vectores de dos dimensiones son aquellos que contienen dos [**escalares**](scalar.md); al primero de ellos se le llama $x$, es de color rojo y representa el eje horizontal; al segundo de ellos se le llama $y$, es de color verde y representa el eje vertical.
+
+Teniendo el siguiente vector:
+
+$$\vec{v} = (3, 4)$$
+
+Podemos decir que $x$ es igual a $3$ e $y$ es igual a 4, pero para poder indicar dentro de una fórmula mate mática que queremos referenciar a uno de estos se hace escribiendo el vector sin la flecha de arriba seguido de el nombre del componente, escrto en pequeño a su izquierda, siendo en este caso:
+
+$$\vec{v} = (v_x, v_y)$$
+
+---
+
+Si estuviesemos trabajando sobre varios vectores y quisieramos indicar a cual de ellos nos estamos refiriendo, podemos hacerlo escribiendo un número pequeño abajo a la derecha del vector:
+
+$$
+\vec{v}_1 = (v_{1x}, v_{1y})\\
+\vec{v}_2 = (v_{2x}, v_{2y})\\
+...
+$$
+
+Esta forma de definir el vector y luego su componente puede llegar a ser un poco confusa sobre todo, como veremos más adelante, cuando estemos referenciando [los componentes mediante números](#COMPONENTES%20MEDIANTE%20NÚMEROS); por lo que una forma que bajo ciertos contextos puede ser más explícita es separando el número del vector y el identificador del componente con una coma:
+
+$$
+\vec{v}_1 = (v_{1,x}, v_{1,y})\\
+\vec{v}_2 = (v_{2,x}, v_{2,y})\\
+...
+$$
+
+Aunque en este caso en concreto puede llegar a hacer que sea más confuso.
+
+Otra forma de hacerlo ahún más explícito es encapsulando el vector entre paréntesis para luego indicar el identificador:
+
+$$
+\vec{v}_1 = ((v_1)_x, (v_1)_y)\\
+\vec{v}_2 = ((v_2)_x, (v_2)_y)\\
+...
+$$
+
 ### VECTORES DE TRES DIMENSIONES
 
-### VECTORES DE MÚLTIPLES DIMENSIONES
+Los vectores de tres dimensiones son aquellos que contienen tres [**escalares**](scalar.md); los dos primeros funcionan igual que con los [vectores de dos dimensiones](#VECTORES%20DE%20DOS%20DIMENSIONES); el tercer componente se le llama $z$, es de color azul y representa el eje de la profundidad.
+
+Teniendo el siguinte vector:
+
+$$\vec{v} = (3, 4, 5)$$
+
+Podemos decir que $x$ es igual a $3$, $y$ es igual a 4 y $z$ es igual a $5$; la identificación de estos tres componentes se comporta de la misma forma que con los [vectores de dos dimensiones](#VECTORES%20DE%20DOS%20DIMENSIONES):
+
+$$\vec{v} = (v_x, v_y, v_z)$$
+
+---
+
+Y si estamos trabajando sobre varios vectores de tres dimensiones, al igual que con los de dos, podemos escribirlo de las siguientes formas:
+
+$$
+\vec{v}_1 = (v_{1x}, v_{1y}, v_{1z})\\
+\vec{v}_2 = (v_{2x}, v_{2y}, v_{2z})\\
+...
+$$
+
+$$
+\vec{v}_1 = (v_{1,x}, v_{1,y}, v_{1,z})\\
+\vec{v}_2 = (v_{2,x}, v_{2,y}, v_{2,z})\\
+...
+$$
+
+$$
+\vec{v}_1 = ((v_1)_x, (v_1)_y, (v_1)_z)\\
+\vec{v}_2 = ((v_2)_x, (v_2)_y, (v_2)_z)\\
+...
+$$
+
+### COMPONENTES MEDIANTE NÚMEROS
+
+Otra forma de identificar los componentes es mediante números, este funciona bien cuando trabajamos con vectores con más de tres dimensiones; aunque también se puede usar con vectores tanto de dos como tres dimensiones.
+
+$$
+\vec{v}_1 = (v_{11}, v_{12}, v_{13})\\
+\vec{v}_2 = (v_{21}, v_{22}, v_{23})\\
+...
+$$
+
+$$
+\vec{v}_1 = (v_{1,1}, v_{1,2}, v_{1,3})\\
+\vec{v}_2 = (v_{2,1}, v_{2,2}, v_{2,3})\\
+...
+$$
+
+$$
+\vec{v}_1 = ((v_1)_1, (v_1)_2, (v_1)_3)\\
+\vec{v}_2 = ((v_2)_1, (v_2)_2, (v_2)_3)\\
+...
+$$
 
 ## VECTORES NULOS
 
@@ -207,9 +297,13 @@ $$\lVert \vec{vec\_nulo} \rVert = 0$$
 %%
 
 ---
+
 ---
+
 ---
+
 ---
+
 ---
 
 ## OPERACIONES CON VECTORES
@@ -426,14 +520,18 @@ def dot_product(v1, v2) -> float:
 
 %%
 
-
 %%
 
 ---
+
 ---
+
 ---
+
 ---
+
 ---
+
 %%
 
 $$
