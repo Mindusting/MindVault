@@ -2,7 +2,9 @@
 aliases: [Cálculo del DNI, Documento Nacional de Identidad]
 author: Mindusting
 corrected: true
+creationDate: 2026-09-05 12:39:48
 headerFile: false
+modificationDate: 2026-10-10 05:35:49
 rating: 1
 tags: [DNI]
 ---
