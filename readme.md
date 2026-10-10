@@ -1,12 +1,13 @@
 ---
-aliases:
-  - LEEME 🔍
-  - README 🔍
+aliases: [LEEME 🔍, README 🔍]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-05 12:39:48
 headerFile: false
 logo: imgs/mindusting_logo.png
+modificationDate: 2026-10-10 05:33:49
 rating: 0.75
+tags: []
 ---
 
 <h1 style="text-align:center;color:#e9b;">MINDUSTING</h1>
@@ -24,11 +25,11 @@ Bienvenidos a la galería de notas de **Mindusting**, aquí podrás encontrar lo
 > 
 > Se irá añadiendo en las notas en las que hayan participado los colaboradores un nuevo metadato llamado `collaborators`, este contendrá una lista de los apodos de aquellos que hayan contribuido a dicha nota siempre y cuando hayan dado su permiso para ello; pudiendo formar parte de los **colaboradores anónimos** si así se desea.
 
-
 > [!faq]- FAQ
+> 
 > > [!faq]- ¿Por qué compartes estos apuntes?:
 > > Unos compañeros de clase vieron mis apuntes mientras los escribía en clase y les gustó, me preguntaros a ver si se los podía pasar, me gustaba la sensación de saber que otras personas estaban interesadas en leer lo que yo escribía, por lo que empecé a pasar los en forma de `pdf`, pero esto rápidamente me empezó a parecer tedioso, se lo comenté a un amigo y me sugirió guardar los apuntes en un google drive y así solo tenía que pasar un link y este serviría para siempre, así lo hice y fue un éxito, se propagó por toda la clase, incluso a veces venían compañeros de clase y me contaban que a algún amigo suyo le vino bien mis apuntes, desde entonces voy publicando periódicamente las nuevas versiones de estos.
->
+> 
 > > [!faq]- ¿Por qué llevas más de un año sin actualizar los apuntes?:
 > > Este último año he estado algo ocupado, entre el trabajo y que estaba haciendo los apuntes en [Obsidian](https://obsidian.md/), debido a que no sabía bien como usarlo, he tenido que estructurar todo el contenido de mi bóveda de notas y aún así, no lo tengo ni ordenado, ni corregido, ni completo, pero creo que ya va siendo hora de retomar el hábito de ir publicando nuevas versiones, solo espero que no tengáis mucho en cuenta el desastre de orden que hay por el momento (*voy a ir ordenando con cada versión aún más*), las faltas de ortografía (*soy disléxico, hago lo que puedo :P*) y por supuesto que os sea de utilidad.
 >
