@@ -1,22 +1,24 @@
 ---
-aliases:
-  - Black box
+aliases: [Caja negra, Black box]
 author: Mindusting
 corrected: false
-tags:
-  - SoftwareDesign
-title: Caja negra
+creationDate: 2026-09-05 12:39:51
+headerFile: false
+modificationDate: 2026-10-10 05:32:02
+rating: 
+tags: [SoftwareDesign]
 ---
 
 # CAJA NEGRA
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 > > - [ ] Explicar que es la caja negra y cual es su objetivo.
 > > - [ ] Documentar las clases de equivalencia.
 > > - [ ] Documentar los casos de prueba.
 
-El concepto de caja negra representa cuando tenemos una función (*algoritmo, máquina, ...*) de la cual no tenemos ni idea (*o hacemos como que no tenemos*) del funcionamiento interno de esa función (*algoritmo, máquina, ...*), únicamente podemos ofrecerle una serie de valores como argumentos y recibir su resultado, 
+El concepto de caja negra representa cuando tenemos una función (*algoritmo, máquina,...*) de la cual no tenemos ni idea (*o hacemos como que no tenemos*) del funcionamiento interno de esa función (*algoritmo, máquina,...*), únicamente podemos ofrecerle una serie de valores como argumentos y recibir su resultado, 
 
 ## CLASES DE EQUIVALESCIA
 
@@ -25,9 +27,9 @@ El concepto de caja negra representa cuando tenemos una función (*algoritmo, m�
 | Condición de Entrada  | C.E.   | Nom. del arg.                     | `name`, `price`                |
 | Clase de Equivalencia | C.Eq.  | Tipo de dato que requiere el arg. | valor, lógica, rango, conjunto |
 | Clases válidas        | C.V.   | Valor válido del arg.             | "Adelio"                       |
-| Código (Válido)       | Cod.   | Código                            | V1, V2, ...                    |
+| Código (Válido)       | Cod.   | Código                            | V1, V2,...                    |
 | Clases no válidas     | C.N.V. | Valor no válido del arg.          | ""                             |
-| Código (No válido)    | Cod.   | Código                            | NV1, NV2, ...                  |
+| Código (No válido)    | Cod.   | Código                            | NV1, NV2,...                  |
 
 ## CASOS DE PRUEBA
 
