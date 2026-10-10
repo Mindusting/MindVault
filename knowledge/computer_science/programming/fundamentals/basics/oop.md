@@ -13,12 +13,21 @@ tags: [Programming/Concept]
 > 
 > > [!todo] #TODO
 > > 
-> > - [ ] Explicar las clases.
+> > - [ ] Definir la OOP y explicar qué objetivo tiene.
+> >     - [ ] Explicar que busca la encapsulación de los datos y el acceso a los métodos para entre otras cosas, prevenir los errores de uso.
+> > - [ ] Explicar que son las clases.
+> >     - [ ] Explicar que son las propiedades (*datos que definenirán las entidades*).
+> >     - [ ] Explicar que son los métodos (*comportamiento; funciones exclusivas de la clase*).
+> > - [ ] Explicar las instancias de las clases (*objetos*).
+> > - [ ] Explciar los métodos.
+> >     - [ ] Explciar los métodos recibe la instancia del objeto.
+> >     - [ ] Explicar que los métodos estáticos no requieren de una estnacia de objeto.
+> > - [ ] Explicar los modificadores de acceso.
+> >     - [ ] Explicar que se usa para definir desde donde se puede acceder a las propiedades y los métodos.
+> >     - [ ] Explicar que esta modificación de acceso a efectos prácticos a nivel de binario no existen, sino que son unas reglas que nos autoimponemos con el lenguaje para evitar errores de uso.
 > > - [ ] Explicar la herencia.
-> > - [ ] Explicar la modificadores de acceso.
-> > - [ ] Explicar los objetos.
-> > - [ ] Explicar las entidades.
-> > - [ ] Explicar el polimorfismo.
+> >     - [ ] Explicar que el código se hereda.
+> >     - [ ] Explicar el polimorfismo.
 
 > [!internal-link]- REFERENCIAS INTERNAS
 > 
