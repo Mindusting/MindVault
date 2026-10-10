@@ -2,8 +2,10 @@
 aliases: [Diagrama de clases]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-05 12:39:51
 cssclasses: [center-mermaid]
 headerFile: false
+modificationDate: 2026-10-10 05:31:21
 rating: 0.75
 tags: [SoftwareDesign]
 ---
