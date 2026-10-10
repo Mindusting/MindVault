@@ -15,6 +15,9 @@ tags: [CPP, Programming]
 > 
 > > [!todo] #TODO
 
+> [!internal-link]- ENLACES INTERNOS
+> - [OOP en la programación](../../../fundamentals/basics/oop.md)
+
 ## MODIFICADORES DE ACCESO
 
 | MODIFICADOR | CLASE | SUBCLASES | TODO |
