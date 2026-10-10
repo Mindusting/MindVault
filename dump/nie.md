@@ -1,8 +1,10 @@
 ---
-aliases: [Cálculo del NIE, Número de Identidad Extrangero]
+aliases: [NIE, Cálculo del NIE, Número de Identidad Extrangero]
 author: Mindusting
 corrected: true
+creationDate: 2026-09-05 12:39:48
 headerFile: false
+modificationDate: 2026-10-10 05:41:06
 rating: 1
 tags: [NIE]
 ---
@@ -21,10 +23,13 @@ Un **NIE** se muy parecido al [**DNI**](dni.md) con la diferencia que en este, e
 
 Para calcular el la letra de verificación del **NIE** se usa la misma fórmula que con el [**DNI**](dni.md), por eso te dejo aquí el código de este último:
 
-![](dni.md#^dni-funcs)
+![Código para calcular el DNI](dni.md#^dni-funcs)
 
 ```python
 def nie_prefix(nie: str) -> int:
+    assert nie is not None
+    assert isinstance(nie, str)
+
     # Se obtiene el número que representa la primera letra.
     try:
         return "XYZ".index(nie[0])
@@ -33,6 +38,9 @@ def nie_prefix(nie: str) -> int:
 
 
 def valid_nie(nie: str) -> bool:
+    assert nie is not None
+    assert isinstance(nie, str)
+
     # Debe tener una longitud de 9 caracteres.
     if len(nie) != 9:
         return False

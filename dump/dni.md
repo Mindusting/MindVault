@@ -1,5 +1,5 @@
 ---
-aliases: [Cálculo del DNI, Documento Nacional de Identidad]
+aliases: [DNI Cálculo del DNI, Documento Nacional de Identidad]
 author: Mindusting
 corrected: true
 creationDate: 2026-09-05 12:39:48
@@ -26,13 +26,19 @@ TRWAGMYFPDXBNJZSQVHLCKE
 
 A continuación tenemos un pequeño código demostrando como se puede calcular tanto la letra de un **DNI** cómo comprobar si está bien escrito.
 
-```py
+```python
 def dni_letter(num: int) -> str:
+    assert num is not None
+    assert isinstance(num, int)
+
     # Calcula la letra en base al número.
     return "TRWAGMYFPDXBNJZSQVHLCKE"[num % 23]
 
 
 def valid_dni(dni: str) -> bool:
+    assert dni is not None
+    assert isinstance(dni, str)
+
     # Debe tener una longitud de 9 caracteres.
     if len(dni) != 9:
         return False
