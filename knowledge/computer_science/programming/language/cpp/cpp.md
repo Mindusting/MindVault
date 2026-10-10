@@ -2,15 +2,17 @@
 aliases: [C++]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-05 12:40:07
 headerFile: true
-logo: imgs/cpp_logo.png
+logo: assets/cpp_logo.png
+modificationDate: 2026-10-10 05:15:33
 rating: 
 tags: [CPP, Programming]
 ---
 
 <h1 style="text-align:center;color:#58f;">C++</h1>
 
-![#logo](../../../../../imgs/cpp_logo.png)
+![#logo](assets/cpp_logo.png)
 
 ---
 
@@ -32,3 +34,7 @@ int main(void) {
 ```bash
 c++ -o main main.cpp && ./main
 ```
+
+## ÍNDICE
+
+- [OOP](basic/oop.md)
