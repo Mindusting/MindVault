@@ -478,6 +478,8 @@ $$
 ## VECTOR 2D EN PYTHON
 
 ```python
+import math
+
 class Vector2:
     def __init__(self, x=0, y=0):
         assert isinstance(x, (float, int, self.__class__))
@@ -722,6 +724,20 @@ class Vector2:
     def __setitem__(self, key, value):
         assert isinstance(key, int)
         self.__scalars[key] = value
+
+    def is_null(self) -> bool:
+        return self.x == 0 and self.y == 0
+
+    def dir(self) -> float:
+        assert not self.is_null()
+
+        if self.x == 0:
+            return math.pi * (0.5 if self.y > 0 else 1.5)
+
+        if self.x > 0:
+            return math.atan(self.y / self.x) % (math.pi * 2)
+
+        return (math.atan(self.y / self.x) + math.pi) % (math.pi * 2)
 ```
 
 %%
