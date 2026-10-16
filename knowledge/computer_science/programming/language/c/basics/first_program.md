@@ -1,14 +1,19 @@
 ---
+aliases: [Estructura inicial en C]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-05 12:40:15
+headerFile: false
 headerfile: false
-tags:
-  - Programming
-  - C
-title: Estructura inicial en C
+modificationDate: 2026-10-16 11:29:29
+rating: 
+tags: [C, Programming]
 ---
 
 # ESTRUCTURA INICIAL
+
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> > [!todo] #TODO
 
 > [!help]- REFERENCIAS WEB
 > - [W3 Schools](https://www.w3schools.com/c/index.php) #WWW/W3Schools
