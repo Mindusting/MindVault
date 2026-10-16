@@ -16,7 +16,7 @@ tags:
 > > - [ ] Corregir faltas de ortografía.
 
 > [!faq]- FAQ
-> - [¿Qué es un comentario en programación?](../../../../fundamentals/basics/comment.md)
+> - [¿Qué es un comentario en programación?](../../../fundamentals/basics/comment.md)
 
 ## COMENTARIOS DE UNA LÍNEA
 

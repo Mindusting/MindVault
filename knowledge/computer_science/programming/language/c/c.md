@@ -1,5 +1,5 @@
 ---
-aliases: [Lenguaje de programación C 🦖]
+aliases: [Lenguaje de programación C 🦖, C programming language]
 author: Mindusting
 corrected: false
 creationDate: 2026-09-05 12:40:07
@@ -41,16 +41,16 @@ El lenguaje de programación **C** fue creado en 1972 por *Dennis Ritchie*; este
 
 ## ÍNDICE
 
-- [ARCHIVOS DE C 📄](tools/c_file.md)
-- [COMENTARIOS 💬](essentials/basics/comments.md)
-- [ESTRUCTURA BÁSICA](essentials/basics/basic_structure.md)
-- [VARIABLES 💾](essentials/basics/variable.md)
+%% - [ARCHIVOS DE C 📄](tools/c_file.md) %%
+- [COMENTARIOS 💬](basics/comments.md)
+- [ESTRUCTURA BÁSICA](basics/basic_structure.md)
+- [VARIABLES 💾](basics/variable.md)
 - [ARRAYS](essentials/memory/arrays.md)
 - [PUNTEROS 👈](essentials/memory/pointers.md)
-- [FUNCIONES](essentials/basics/functions.md)
-- [ESTRUCTURAS 📦](essentials/basics/struct.md)
-- [UNIÓN](essentials/basics/union.md)
-- [MANEJO DE ARCHIVOS 📝](essentials/basics/file_management.md)
+- [FUNCIONES](basics/functions.md)
+- [ESTRUCTURAS 📦](basics/struct.md)
+- [UNIÓN](basics/union.md)
+- [MANEJO DE ARCHIVOS 📝](basics/file_management.md)
 - [HEADER FILES](essentials/proyect_structure/header_files.md)
 - [INLINE](essentials/advanced/inline.md)
 
