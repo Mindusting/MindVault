@@ -41,9 +41,9 @@ El lenguaje de programación **C** fue creado en 1972 por *Dennis Ritchie*; este
 
 ## ÍNDICE
 
-%% - [ARCHIVOS DE C 📄](tools/c_file.md) %%
-- [COMENTARIOS 💬](basics/comments.md)
+%% - [ARCHIVOS DE C 📄](basics/c_files.md) %%
 - [PRIMER PROGRAMA](basics/first_program.md)
+- [COMENTARIOS 💬](basics/comments.md)
 - [VARIABLES 💾](basics/variable.md)
 - [ARRAYS](essentials/memory/arrays.md)
 - [PUNTEROS 👈](essentials/memory/pointers.md)

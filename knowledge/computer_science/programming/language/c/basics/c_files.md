@@ -1,12 +1,13 @@
 ---
-aliases:
-  - Archivos de C
+aliases: [Archivos de C]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-05 12:40:13
+headerFile: false
 headerfile: false
-tags:
-  - Programming
-  - C
+modificationDate: 2026-10-16 11:43:33
+rating: 
+tags: [C, Programming]
 ---
 
 # ARCHIVOS DE C
