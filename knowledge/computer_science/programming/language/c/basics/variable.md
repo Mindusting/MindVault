@@ -2,8 +2,10 @@
 aliases: [Variables en C]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-05 12:40:15
 cssclasses: [center-table]
 headerFile: false
+modificationDate: 2026-10-18 10:11:59
 rating: 
 tags: [C, Programming]
 ---
@@ -13,67 +15,96 @@ tags: [C, Programming]
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
+> > - [ ] Añadir un enlace al apartado de booleanos en la especificación del valor `_Bool`.
 
 > [!external-link]- REFERENCIAS WEB
 > YouTube:
 > - [Bro Code](https://youtu.be/aIQk1O08zpg) #WWW/YT/BroCode
 
-> [!faq]- FAQ
-> - [¿Qué son las variables en programación?](../../../fundamentals/temp-dump/pc_variable.md)
+> [!internal-link]- REFERENCIAS INTERNAS
+> - [Variables en programación.](../../../fundamentals/temp-dump/pc_variable.md)
 
-**C** es un lenguaje de tipado fuerte, esto quiere decir que cuando declaramos una **variable**, debemos indicar el tipo de valor que va a almacenar y este no se podrá cambiar en el transcurso del programa, los tipos son los siguientes:
+C es un lenguaje de programación con tipado estático, esto quiere decir que una vez hemos declarado el tipo de dato que va a guardar una variable, no puede cambiar durante el transcurso de la ejecución; para declarar una variable en este lenguaje tendremos que seguir la siguiente sintaxis:
+
+> [!syntax] SINTAXIS
+> ***\{sign\} \[dataType\] \[varName\]***;
+
+El nombre de la variable debe de estar conformado por letras [ASCII](../../../data_format/ascii.md), barra baja (`_`) y números siempre y cuando no sean el primer caracter.
+
+Los tipos de datos de números enteros pueden llevar por delante el signo; para indicar que el tipo debe ser con signo pondremos `signed` y para indicar que no debe tener signo `unsigned`.
+
+Ahora, el tipo de dato es más complicado, ya que C nos ofrece unos tipos estandar, pero también podemos crear nuestros propios tipos (*esto último lo veremos más adelante y en otros documentos*); los tipos de datos estandar son los siguientes:
+
+- `_Bool`:
+    Este permite guardar un `0` o un `1`, ya que es para guardar valore booleanos.
+    El signo no es aplicable en este tipo de dato.
+    Tiene un tamaño de 1 byte.
+
+- `char`:
+    Este permite guardar números enteros.
+    No tiene un signo asignado (*depende de la máquina*).
+    Tiene un tamaño de 1 o más bytes.
+
+- `short` o `short int`:
+    Este permite guardar números enteros.
+    Este tipo por defecto tiene signo.
+    Tiene un tamaño de 2 o más bytes.
+
+- `int`:
+    Este permite guardar números enteros.
+    Este tipo por defecto tiene signo.
+    Tiene un tamaño de 2 o más bytes.
+
+- `long` o `long int`:
+    Este permite guardar números enteros.
+    Este tipo por defecto tiene signo.
+    Tiene un tamaño de 4 o más bytes.
+
+- `long long` o `long long int`:
+    Este permite guardar números enteros.
+    Este tipo por defecto tiene signo.
+    Tiene un tamaño de 8 o más bytes.
+
+- `float`:
+    Este permite guardar números de coma flotante.
+    Siempre tiene signo.
+    Tiene un tamaño de 4 bytes.
+
+- `double`:
+    Este permite guardar números de coma flotante.
+    Siempre tiene signo.
+    Tiene un tamaño de 8 bytes.
+
+- `long double`:
+    Este permite guardar números de coma flotante.
+    Siempre tiene signo.
+    Tiene un tamaño de 8 bytes o más.
+
+Los tipos de número entero tienen que cumplir la siguiente regla:
 
 %%
-
-| NAME          | TYPE    | SIZE IN BYTES |
-|:------------- |:------- |:------------- |
-| `char`        | Integer | 1             |
-| `short`       | Integer | 2             |
-| `int`         | Integer | 2 or 4        |
-| `long`        | Integer | 4 or 8        |
-| `long long`   | Integer | 8             |
-| `float`       | Decimal | 4             |
-| `double`      | Decimal | 8             |
-| `long double` | Decimal | 16            |
-
+char <= short <= int <= long <= long long
 %%
 
-%%
-SINTAXIS
+$$
+char \leq short \leq int \leq long \leq long long
+$$
 
-```c
-[variable_type] [variable_name];
-[variable_type] [variable_name] = [value];
-```
+## TAMAÑO DE LOS TIPOS BÁSICOS
 
-%%
-
-> [!abstract] SINTAXIS
-> <span class="italic key-word-color">[variable_type]</span><span class="italic variable-color">[variable_name]</span>;
-> <span class="italic key-word-color">[variable_type]</span><span class="italic variable-color">[variable_name]</span> = <span class="italic grey">[value]</span>;
+Para poder comprobar el tamaño concreto en tu máquina puedes compilar el siguiente programa en ella y luego ejecutarlo:
 
 ```c
 #include <stdio.h>
+#include <limits.h>
 
 int main(void) {
 
-    int amountOfBits = 0;
-    unsigned char byte = 0;
-    unsigned char tempByte;
-
-    while (1) {
-        tempByte = byte;
-        byte <<= 1;
-        byte += 1;
-
-        if (byte == tempByte) break;
-
-        amountOfBits++;
-    }
-
-    printf("SIZES ON THIS MACHINE\n");
+    printf("SIZES ON THIS MATHINE\n");
     printf("---------------------\n");
-    printf("byte:        %2d bits\n", amountOfBits);
+    printf("byte:        %2d bits\n", CHAR_BIT);
+    printf("---------------------\n");
+    printf("_Bool:       %2zu bytes\n", sizeof(_Bool));
     printf("---------------------\n");
     printf("char:        %2zu bytes\n", sizeof(char));
     printf("short:       %2zu bytes\n", sizeof(short));
@@ -92,10 +123,16 @@ int main(void) {
 }
 ```
 
+---
+
+En mi máquina el resultado es el siguiente:
+
 ```txt
-SIZES ON THIS MACHINE
+SIZES ON THIS MATHINE
 ---------------------
 byte:         8 bits
+---------------------
+_Bool:        1 bytes
 ---------------------
 char:         1 bytes
 short:        2 bytes
