@@ -16,7 +16,7 @@ tags: [Git]
 > > [!todo] #TODO
 > > - [ ] Revisar que me he podido dejar.
 
-> [!internal-link] ENLACES INTERNOS
+> [!internal-link] REFERENCIAS INTERNAS
 > Antes de ver como usar el comando `tag`, recomiendo que veas como funcionan las [etiquetas en **Git**](../theory/tags.md).
 
 Las etiquetas permiten marcar **commits** en Git, generalmente usado para marcar versiones del programa (*`1.0`, `2.0`, etc*)

@@ -1,11 +1,13 @@
 ---
+aliases: [GNU/Linux 🐧]
 author: Mindusting
 corrected: false
+creationDate: 2026-09-05 12:39:49
 headerFile: true
 logo: ../../../imgs/linux_logo.png
-tags:
-  - OS/Linux
-title: Linux 🐧
+modificationDate: 2026-10-18 09:56:17
+rating: 
+tags: [OS/Linux]
 ---
 
 <h1 align="center">LINUX</h1>
@@ -16,7 +18,8 @@ title: Linux 🐧
 
 # LINUX
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
+> 
 > > [!todo] #TODO
 
 > [!help]- REFERENCIAS WEB

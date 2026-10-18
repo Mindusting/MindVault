@@ -18,8 +18,8 @@ tags: [JavaScript, Programming, Web]
 > [!external-link]- REFERENCIAS WEB
 > - [W3 Schools](https://www.w3schools.com/js/js_variables.asp) #WWW/W3Schools
 
-> [!internal-link]- FAQ
-> - [¿Qué son las variables en programación?](../../fundamentals/temp-dump/pc_variable.md)
+> [!internal-link]- REFERENCIAS INTERNAS
+> - [Variables en programación.](../../fundamentals/temp-dump/pc_variable.md)
 
 ## DECLARAR VARIABLES
 

@@ -15,7 +15,7 @@ tags: [CPP, Programming]
 > 
 > > [!todo] #TODO
 
-> [!internal-link]- ENLACES INTERNOS
+> [!internal-link]- REFERENCIAS INTERNAS
 > - [OOP en la programación](../../../fundamentals/basics/oop.md)
 
 ## MODIFICADORES DE ACCESO
