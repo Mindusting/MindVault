@@ -1,22 +1,22 @@
 ---
 aliases:
   - Comentarios en C
+  - Comments in C
 author: Mindusting
-corrected: false
+corrected: true
+creationDate: 2026-09-05 12:40:15
+headerFile: false
+modificationDate: 2026-10-18 10:00:39
+rating:
 tags:
-  - Programming
   - C
-  - Comment
+  - Programming
 ---
 
 # COMENTARIOS EN C
 
-> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
-> > [!todo] #TODO
-> > - [ ] Corregir faltas de ortografía.
-
-> [!faq]- FAQ
-> - [¿Qué es un comentario en programación?](../../../fundamentals/basics/comment.md)
+> [!internal-link]- REFERENCIAS INTERNOS
+> - [Comentarios en programación.](../../../fundamentals/basics/comment.md)
 
 ## COMENTARIOS DE UNA LÍNEA
 
@@ -34,13 +34,13 @@ Para crear un comentario multilínea tendremos que poner una barra y un asterisc
 /*
 Esto es un
 comentario
-multilína.
+multilínea.
 */
 ```
 
 # COMENTARIOS TEMPORALES
 
-Los comentarios temporales se pueden usar para *desactivar* código deforma temporal, permitiendo activar y desactivar código para hacer pruebas:
+Los comentarios temporales se pueden usar para *desactivar* código de forma temporal, permitiendo activar y desactivar código para hacer pruebas:
 
 ```c
 /* <-- La diferencia está aquí.
