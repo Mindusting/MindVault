@@ -546,13 +546,22 @@ class Vector2:
     def mag(self) -> float:
         return math.sqrt((self.x * self.x) + (self.y * self.y))
 
+    def mag_squared(self) -> float:
+        return (self.x * self.x) + (self.y * self.y)
+
     def cos(self) -> float:
+        assert not self.is_null()
+
         return self.x / self.mag()
 
     def sin(self) -> float:
+        assert not self.is_null()
+
         return self.y / self.mag()
 
     def tan(self) -> float:
+        assert self.x != 0
+
         return self.y / self.x
 
     def __matmul__(self, other):
@@ -573,7 +582,7 @@ class Vector2:
         new_vec.y += other.y
         return new_vec
 
-    def __radd__(self, other):
+    def __iadd__(self, other):
         assert isinstance(other, (float, int, self.__class__))
 
         if isinstance(other, (float, int)):
@@ -599,7 +608,7 @@ class Vector2:
         new_vec.y -= other.y
         return new_vec
 
-    def __rsub__(self, other):
+    def __isub__(self, other):
         assert isinstance(other, (float, int, self.__class__))
 
         if isinstance(other, (float, int)):
@@ -625,7 +634,7 @@ class Vector2:
         new_vec.y *= other.y
         return new_vec
 
-    def __rmul__(self, other):
+    def __imul__(self, other):
         assert isinstance(other, (float, int, self.__class__))
 
         if isinstance(other, (float, int)):
@@ -651,7 +660,7 @@ class Vector2:
         new_vec.y /= other.y
         return new_vec
 
-    def __rtruediv__(self, other):
+    def __itruediv__(self, other):
         assert isinstance(other, (float, int, self.__class__))
 
         if isinstance(other, (float, int)):
@@ -677,7 +686,7 @@ class Vector2:
         new_vec.y %= other.y
         return new_vec
 
-    def __rmod__(self, other):
+    def __imod__(self, other):
         assert isinstance(other, (float, int, self.__class__))
 
         if isinstance(other, (float, int)):
@@ -689,11 +698,13 @@ class Vector2:
         self.y %= other.y
         return self
 
-    def __abs__(self):
-        new_vec = self.clone()
-        new_vec.x = abs(new_vec.x)
-        new_vec.y = abs(new_vec.y)
-        return new_vec
+    def __abs__(self) -> float:
+        return self.mag()
+
+    def abs_components(self):
+        self.x = abs(self.x)
+        self.y = abs(self.y)
+        return self
 
     def __neg__(self):
         new_vec = self.clone()
@@ -701,10 +712,15 @@ class Vector2:
         new_vec.y = -new_vec.y
         return new_vec
 
+    """
+    # El método hash no se debe implementar ya que el objeto es mutable.
     def __hash__(self):
         return hash(self.__scalars)
+    #"""
 
     def norm(self):
+        assert not self.is_null()
+
         mag = self.mag()
         self.x /= mag
         self.y /= mag
@@ -715,7 +731,10 @@ class Vector2:
 
     def angle_to(self, other):
         assert isinstance(other, self.__class__)
-        return self.dot(other) / (self.mag() * other.mag())
+        assert not self.is_null()
+        assert not other.is_null()
+
+        return (self @ other) / (self.mag() * other.mag())
 
     def __getitem__(self, key):
         assert isinstance(key, int)
@@ -723,6 +742,8 @@ class Vector2:
 
     def __setitem__(self, key, value):
         assert isinstance(key, int)
+        assert isinstance(value, (int, float))
+
         self.__scalars[key] = value
 
     def is_null(self) -> bool:
@@ -738,6 +759,11 @@ class Vector2:
             return math.atan(self.y / self.x) % (math.pi * 2)
 
         return (math.atan(self.y / self.x) + math.pi) % (math.pi * 2)
+
+    def distance_to(self, other):
+        assert isinstance(other, self.__class__)
+
+        return (self - other).mag()
 ```
 
 %%
