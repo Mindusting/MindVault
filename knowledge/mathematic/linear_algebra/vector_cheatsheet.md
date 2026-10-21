@@ -9,14 +9,14 @@ rating:
 tags: [CheatSheet, Math]
 ---
 
-# [VECTORES EN MATEMÁTICAS](vector.md#VECTORES%20EN%20MATEMÁTICAS)
+# [VECTORES EN MATEMÁTICAS](../linear_algebra/vector.md#VECTORES%20EN%20MATEMÁTICAS)
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
 
 > [!note] NOTA
-> Esta es una chuleta del archivo [*vector*](vector.md).
+> Esta es una chuleta del archivo [*vector*](../linear_algebra/vector.md).
 
 Un **vector** es un conjunto de [escalares](scalar.md) (*tendiendo este dos o más [escalares](scalar.md)*); sirve para repesentar una posición, velocidad o fuerza, entre otros; este suele representarse de tres formas distintas, el cual escojas usar depederá fuertemente de en el ámbito en el que te muevas:
 
@@ -26,7 +26,7 @@ Un **vector** es un conjunto de [escalares](scalar.md) (*tendiendo este dos o m�
 
 En cualquier caso las tres formas de representar los **vectores** son eso mismo, una forma de representarlos, por lo que podemos una forma u otra en base a nuestra combeniencia.
 
-## [COMPONENTES DE UN VECTOR](vector.md#COMPONENTES%20DE%20UN%20VECTOR)
+## [COMPONENTES DE UN VECTOR](../linear_algebra/vector.md#COMPONENTES%20DE%20UN%20VECTOR)
 
 Los **componentes** de un vector son los [**escalares**](scalar.md) que lo componen.
 
@@ -40,13 +40,13 @@ $$
 \vec{v} = (v_1, v_2, v_3, ...)
 $$
 
-## [VECTORES NULOS](vector.md#VECTORES%20NULOS)
+## [VECTORES NULOS](../linear_algebra/vector.md#VECTORES%20NULOS)
 
 Un **vector nulo** es aquél que tiene $0$ en todos sus [componentes](#COMPONENTES%20DE%20UN%20VECTOR).
 
-## [OPERACIONES CON VECTORES](vector.md#OPERACIONES%20CON%20VECTORES)
+## [OPERACIONES CON VECTORES](../linear_algebra/vector.md#OPERACIONES%20CON%20VECTORES)
 
-### [MAGNITUD DE UN VECTOR](vector.md#MAGNITUD%20DE%20UN%20VECTOR)
+### [MAGNITUD DE UN VECTOR](../linear_algebra/vector.md#MAGNITUD%20DE%20UN%20VECTOR)
 
 La **magnitud** o **módulo** de un **vector** es la longitud de la flecha que representa dicho **vector**; este se calcula y representa de la siguiente forma:
 
@@ -54,7 +54,7 @@ $$
 \lVert \vec{v} \rVert=\sqrt{v^2_1+v^2_2+v^2_3+...}
 $$
 
-### [SENO, COSENO Y TANGENTE DE UN VECTOR](vector.md#SENO%20COSENO%20Y%20TANGENTE%20DE%20UN%20VECTOR)
+### [SENO, COSENO Y TANGENTE DE UN VECTOR](../linear_algebra/vector.md#SENO%20COSENO%20Y%20TANGENTE%20DE%20UN%20VECTOR)
 
 $$
 \theta
@@ -65,10 +65,10 @@ $$
 \sin(\vec{v}) = \frac{v_y}{\lVert \vec{v} \rVert}
 $$
 
-#### [COSENO DE UN VECTOR](vector.md#COSENO%20DE%20UN%20VECTOR)
+#### [COSENO DE UN VECTOR](../linear_algebra/vector.md#COSENO%20DE%20UN%20VECTOR)
 
-#### [SENO DE UN VECTOR](vector.md#SENO%20DE%20UN%20VECTOR)
+#### [SENO DE UN VECTOR](../linear_algebra/vector.md#SENO%20DE%20UN%20VECTOR)
 
-#### [TANGENTE DE UN VECTOR](vector.md#TANGENTE%20DE%20UN%20VECTOR)
+#### [TANGENTE DE UN VECTOR](../linear_algebra/vector.md#TANGENTE%20DE%20UN%20VECTOR)
 
-### [PRODUCTO ESCALAR](vector.md#PRODUCTO%20ESCALAR)
+### [PRODUCTO ESCALAR](../linear_algebra/vector.md#PRODUCTO%20ESCALAR)
