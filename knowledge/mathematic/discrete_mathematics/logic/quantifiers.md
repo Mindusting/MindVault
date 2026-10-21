@@ -1,23 +1,19 @@
 ---
-aliases: [Predicados y cuantificadores en matemáticas]
+aliases: [Cuantificadores en matemáticas]
 author: Mindusting
 corrected: false
-creationDate: 2026-10-21 07:07:04
+creationDate: 2026-10-21 11:11:42
 headerFile: false
-modificationDate: 2026-10-21 07:08:15
+modificationDate: 2026-10-21 11:13:12
 rating: 
 tags: [Math]
 ---
 
-# PREDICADOS Y CUANTIFICADORES
+# CUANTIFICADORES
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
-
-## PREDICADOS
-
-## CUANTIFICADORES
 
 - **Para todos ($\forall$):**
 - **Almeno uno ($\exists$):**

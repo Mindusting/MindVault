@@ -1,15 +1,15 @@
 ---
-aliases: [Proposiciones en matemáticas]
+aliases: [Predicados en matemáticas]
 author: Mindusting
 corrected: false
-creationDate: 2026-10-21 06:50:39
+creationDate: 2026-10-21 07:07:04
 headerFile: false
-modificationDate: 2026-10-21 06:55:47
+modificationDate: 2026-10-21 07:08:15
 rating: 
 tags: [Math]
 ---
 
-# PROPOSICIONES
+# PREDICADOS
 
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
