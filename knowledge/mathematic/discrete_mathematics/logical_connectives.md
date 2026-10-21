@@ -14,3 +14,9 @@ tags: [Math]
 > [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > 
 > > [!todo] #TODO
+
+- **Negación "no" ($\neg$):**
+- **Conjunción "y" ($\land$):**
+- **Disyunción "o" ($\lor$):**
+- **Condicional "si ... entonces ..." ($\to$):**
+- **Bicondicional "sí y solo sí" ($\leftrightarrow$):**
