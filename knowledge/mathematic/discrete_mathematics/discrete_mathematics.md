@@ -18,3 +18,7 @@ tags: [Math]
 ## TEMAS
 
 - [Proposiciones](propositions.md)
+- [Predicados y cuantificadores](predicates_and_quantifiers.md)
+- [Conectores lógicos](logical_connectives.md)
+- [Tablas de la verdad](truth_tables.md)
+- [Reglas de inferencia](inference_rules.md)

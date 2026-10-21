@@ -17,10 +17,6 @@ tags: [Math]
 
 ## TEMAS
 
-- Álgebra: #TODO
-- Álgebra lineal: #TODO
-    - [Escalares](linear_algebra/scalar.md)
-    - [Vectores](linear_algebra/vector.md)
-    - Matrices #TODO
+- Álgebra #TODO
+- [Álgebra lineal](linear_algebra/linear_algebra.md)
 - [Matemáticas discretas](discrete_mathematics/discrete_mathematics.md)
-    - [Proposiciones](discrete_mathematics/propositions.md)
