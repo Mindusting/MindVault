@@ -11,57 +11,73 @@ tags: [Math]
 
 # PROPOSICIONES
 
-> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
-> 
-> > [!todo] #TODO
 
 > [!seealso]- MIRA TAMBIÉN
 > - [Predicados](predicates.md)
 > - [Cuantificadores](quantifiers.md)
 > - [Conectores lógicos](logical_connectives.md)
-> - [Tablas de la verdad](truth_tables.md)
+> - [Tablas de verdad](truth_tables.md)
 > - [Reglas de inferencia](inference_rules.md)
 
-Una **proposición** es un ==enunciado declarativo== al que se le puede asignar un ==valor de verdad==; es decir, **verdadero** o **falso**; pero ==no ambos de forma simultánea==.
+Una **proposición** es un ==enunciado declarativo== el cual tiene un ==valor de verdad==, es decir, **verdadero** o **falso**, pero ==no ambos de forma simultánea==.
 
 Una **proposición** ==no necesita ser **verdadera**== para considerarse una **proposición**, únicamente debe tener un valor de verdad definido.
 
 > [!success] QUÉ SÍ SON PROPOSICIONES
 > - $5 > 3$:
->     Sí es una proposición ya que es una aformación y sabemos sin duda que su valor es verdadero.
+>     Sí es una proposición ya que es una afirmación y sabemos sin duda que su valor es verdadero.
 > - $5 < 3$:
->     Sí es una proposición ya que es una aformación y sabemos sin duda que su valor es falso.
+>     Sí es una proposición ya que es una afirmación y sabemos sin duda que su valor es falso.
+> - $3 + 2 = 5$:
+>     Sí es una proposición ya que es una afirmación y sabemos sin duda que su valor es verdadero.
 > - Existen infinitos números primos:
 >     Sí es una proposición ya que esta tiene un valor de verdad, siendo esta **verdadera**.
 
-> [!failure] QUÉ SÍ SON PROPOSICIONES
+> [!failure] QUÉ NO SON PROPOSICIONES
 > - $x > 3$:
->     No es una proposición ya que el valor $x$ no está definido, por lo que no podemos determinar su valor de verdad.
+>     No es una proposición ya que el valor $x$ no está definido, por lo que no podemos determinar su valor de verdad; si $x$ sí estuviese definido, sí sería una proposición.
 > - ¿Cuánto es $5 + 3$?:
 >     No es una proposición ya que es una pregunta.
 > - Calcula $5 + 3$:
 >     No es una proposición ya que es una orden.
 
 > [!note] NOTA (para programadores)
-> Si bienes de la rama de la programación, una proposición podría ser una comparación de dos valores fijos:
+> Si vienes de la rama de la programación, una proposición podría ser una comparación de dos valores:
 > 
-> - `5 == 3` es falsa.
-> - `5 != 3` es verdadera.
-> - `5 < 3` es falsa.
-> - `5 > 3` es verdadera.
+> ```python
+> x = 3
+> y = 2
 > 
-> Todas estas operaciones de comparación con valores definidos (*es decir, que no son variables*) son las que en el ámbito de las matemáticas se les llama **proposiciones**.
+> x == y # es falsa.
+> y != 4 # es verdadera.
+> 5 < x  # es falsa.
+> 5 > 4  # es verdadera.
+> ```
+> 
+> Estas operaciones booleanas son equivalentes a las proposiciones en matemáticas ya que ambas dan como resultado un valor de verdadero o falso; pero no son lo mismo ya que en programación es una expresión que da como resultado un valor booleano, mientras que en matemáticas una proposición es una afirmación.
 
-## PROPOSICIONES COMO LETRAS
+> [!note] PRINCIPIO DE BIVALENCIA
+> En la lógica clásica, toda proposición tiene exactamente uno de los dos valores de verdad posibles:
+> 
+> - **Verdadero** (*V*)
+> - **Falso** (*F*)
+>
+> ==Una proposición no puede ser verdadera y falsa simultáneamente, ni carecer de valor de verdad==.
+>
+> Existen otros sistemas lógicos que no siguen necesariamente estas mismas reglas.
 
-Las proposiciones pueden estar representadas mediante letras, esto permite su reutilización, estas letras sueles ser en mayúsculas o en minúsculas: $p, q, r...$; como por ejemplo:
+## REPRESENTACIÓN DE PROPOSICIONES
+
+Las proposiciones pueden estar representadas mediante letas a las que se les llama **variables proposicionales**, estas suelen ser letras en minúsculas como: $p, q, r...$; aunque también pueden estar en mayúsculas.
 
 $$
-p: 5 > 3\\
-q: 4 < 10
+\begin{aligned}
+p &: 5 > 3\\
+q &: 4 < 10
+\end{aligned}
 $$
 
-De forma que ahora $p$ tiene el valor **verdadero**, mientras que $q$ tiene el valor **falso**.
+En este caso, ambas proposiciones son verdaderas.
 
 > [!note] NOTA (para programadores)
 > En programación, esto sería el equivalente a usar variables para guardar los valores booleanos:
@@ -71,34 +87,45 @@ De forma que ahora $p$ tiene el valor **verdadero**, mientras que $q$ tiene el v
 > q = 4 < 10
 > ```
 > 
-> De forma que allá donde usemos las poroposiciones representadas como una letra tendremos acceso a su valor.
+> En matemáticas la letra representa una proposición, mientras que en los lenguajes de programación se almacena el resultado de una operación, por lo que son cosas distintas, pero a efectos prácitos, esta sería su equivalencia.
+
+## PROPOSICIONES ATÓMICAS
+
+Una **proposición atómica** es una proposición que no está formada por otras [proposiciones unidas mediante conectores lógicos](#PROPOSICIONES%20COMPUESTAS); las proposiciones atómicas son las más simples de la lógica proposicional; por ejemplo:
+
+- $5 > 3$: Verdadero.
+- $2 + 2 = 5$: Falso.
+- La Tierra es un planeta: Verdadero.
+
+Estas proposiciones pueden utilizarse individualmente o combinarse con otras mediante [conectores lógicos](logical_connectives.md) para construir proposiciones compuestas.
 
 ## PROPOSICIONES COMPUESTAS
 
-Para poder crear proposiciones compuestas, tendremos que hacer uso de las [**conexiones lógicas**](logical_connectives.md), permitiendo así concatenar múltiples proposiciones.
+Una proposición compuesta es una proposición formada mediante el uso de uno o varios [**conectores lógicos**](logical_connectives.md) sobre una o más proposiciones; dependiendo del [**conector lógico**](logical_connectives.md) que utilicemos, pueden intervenir una o varias proposiciones.
 
-
-$$5 > 3 \land 4 < 10$$
+$$(5 > 3) \land (4 < 10)$$
 
 Esta expresión se lee de la siguiente forma: $5$ es mayor que $3$ y $4$ es menor que $10$; concatenando así las dos proposiciones con el operador "y".
 
-También podemos usar las proposiciones representadas en forma de letas:
+También podemos usar las proposiciones representadas en forma de letras:
 
 $$
-p: 5 > 3\\
-q: 4 < 10\\
+\begin{aligned}
+p&: 5 > 3\\
+q&: 4 < 10\\
 \\
-p \land q
+&p \land q
+\end{aligned}
 $$
 
 > [!note] NOTA (para programadores)
-> Las proposicones compuestas es como cuando usamos operadores booleanos entre comparaciones:
+> Las proposicines compuestas es como cuando usamos operadores booleanos entre comparaciones:
 > 
 > ```python
 > 5 > 3 and 4 < 10
 > ```
 > 
-> En este caso podemos ver que se usa el operador `and`, este indica que se debe cumplir la proposición de la izquierda (`5 > 3`) y la de la derecha (`4 < 10`) para que la proposición compuesta se cumpla.
+> En este caso podemos ver que se usa el operador `and`, este indica que se debe cumplir la proposición de la izquierda (`5 > 3`) y la de la derecha (`4 < 10`) para que la proposición compuesta se cumpla; siendo el resultado en este caso: verdadero.
 > 
 > Y siguiendo con el ejemplo de antes, también se podría expresar de la siguiente forma:
 > 
@@ -108,3 +135,44 @@ $$
 > 
 > p and q
 > ```
+
+---
+
+También se considera una proposición compuesta una proposición sola con un [**conector lógico**](logical_connectives.md) de **negación**:
+
+$$\neg(10 = 10)$$
+
+De forma que el resultado sea falso.
+
+Pudiendo ser también representado de la siguiente forma:
+
+$$
+p: 10 = 10\\
+\\
+\neg p
+$$
+
+> [!note] NOTA (para programadores)
+> Este último ejemplo también se puede representar en forma de código:
+> 
+> ```python
+> not(10 == 10)
+> ```
+> 
+> O de la siguiente forma:
+> 
+> ```python
+> p = 10 == 10
+> 
+> not(p)
+> ```
+
+## CLASIFICACIÓN SEGÚN EL VALOR DE VERDAD
+
+Las [proposiciones compuestas](#PROPOSICIONES%20COMPUESTAS) pueden clasificarse en tres categorías según los valores de verdad que pueden tomar:
+
+- **Tautología:** siempre es verdadera.
+- **Contradicción:** siempre es falsa.
+- **Contingencia:** puede ser verdadera o falsa dependiendo de los valores de las proposiciones que la componen.
+
+Este tema se trata más en detalle en el apartado [Tablas de verdad](truth_tables.md).
