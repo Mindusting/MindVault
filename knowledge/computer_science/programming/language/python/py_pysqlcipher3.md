@@ -2,15 +2,12 @@
 aliases: [SQLite encriptado en Python]
 author: Mindusting
 corrected: true
+creationDate: 2026-09-05 12:40:09
+headerFile: false
 logo: imgs/file_encripted.png
-tags:
-  - Programming
-  - Python
-  - Module
-  - DataBase
-  - SQLite3
-  - Cybersecurity
+modificationDate: 2026-10-22 03:57:36
 rating: 1
+tags: [Cybersecurity, DataBase, Module, Programming, Python, SQLite3]
 ---
 
 # MÓDULO PYSQLCIPHER3 EN PYTHON
