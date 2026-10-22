@@ -1,11 +1,13 @@
 ---
+aliases: [Contar tanques]
 author: Mindusting
 corrected: true
+creationDate: 2026-09-05 12:39:48
 description: En este archivo se documenta cómo estimar el número total de elementos numerados de forma secuencial obteniendo solo unos pocos de sus identificadores.
-tags:
-  - Math
-title: Contar tanques
+headerFile: false
+modificationDate: 2026-10-22 03:54:11
 rating: 1
+tags: [Math]
 ---
 
 # CONTAR TANQUES
