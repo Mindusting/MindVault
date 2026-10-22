@@ -1,18 +1,14 @@
 ---
-aliases:
-  - Código en Markdown
-  - Code in Markdown
-  - Mermaid en Markdown
-  - Mermaid in Markdown
+aliases: [Código en Markdown, Code in Markdown, Mermaid en Markdown, Mermaid in Markdown]
 author: Mindusting
 corrected: true
+creationDate: 2026-09-05 12:39:51
 cssclasses:
   - center-mermaid
 headerFile: false
+modificationDate: 2026-10-22 03:55:16
 rating: 1
-tags:
-  - Markdown
-  - Mermaid
+tags: [Markdown, Mermaid]
 ---
 
 # CÓDIGO EN MARKDOWN
