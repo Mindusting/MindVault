@@ -4,13 +4,12 @@ author: Mindusting
 corrected: false
 creationDate: 2026-10-21 06:50:39
 headerFile: false
-modificationDate: 2026-10-21 06:55:47
+modificationDate: 2026-10-22 02:58:33
 rating: 
 tags: [Math]
 ---
 
 # PROPOSICIONES
-
 
 > [!seealso]- MIRA TAMBIÉN
 > - [Predicados](predicates.md)
@@ -25,21 +24,21 @@ Una **proposición** ==no necesita ser **verdadera**== para considerarse una **p
 
 > [!success] QUÉ SÍ SON PROPOSICIONES
 > - $5 > 3$:
->     Sí es una proposición ya que es una afirmación y sabemos sin duda que su valor es verdadero.
+> Sí es una proposición ya que es una afirmación y sabemos sin duda que su valor es verdadero.
 > - $5 < 3$:
->     Sí es una proposición ya que es una afirmación y sabemos sin duda que su valor es falso.
+> Sí es una proposición ya que es una afirmación y sabemos sin duda que su valor es falso.
 > - $3 + 2 = 5$:
->     Sí es una proposición ya que es una afirmación y sabemos sin duda que su valor es verdadero.
+> Sí es una proposición ya que es una afirmación y sabemos sin duda que su valor es verdadero.
 > - Existen infinitos números primos:
->     Sí es una proposición ya que esta tiene un valor de verdad, siendo esta **verdadera**.
+> Sí es una proposición ya que esta tiene un valor de verdad, siendo esta **verdadera**.
 
 > [!failure] QUÉ NO SON PROPOSICIONES
 > - $x > 3$:
->     No es una proposición ya que el valor $x$ no está definido, por lo que no podemos determinar su valor de verdad; si $x$ sí estuviese definido, sí sería una proposición.
+> No es una proposición ya que el valor $x$ no está definido, por lo que no podemos determinar su valor de verdad; si $x$ sí estuviese definido, sí sería una proposición.
 > - ¿Cuánto es $5 + 3$?:
->     No es una proposición ya que es una pregunta.
+> No es una proposición ya que es una pregunta.
 > - Calcula $5 + 3$:
->     No es una proposición ya que es una orden.
+> No es una proposición ya que es una orden.
 
 > [!note] NOTA (para programadores)
 > Si vienes de la rama de la programación, una proposición podría ser una comparación de dos valores:
@@ -61,9 +60,9 @@ Una **proposición** ==no necesita ser **verdadera**== para considerarse una **p
 > 
 > - **Verdadero** (*V*)
 > - **Falso** (*F*)
->
+> 
 > ==Una proposición no puede ser verdadera y falsa simultáneamente, ni carecer de valor de verdad==.
->
+> 
 > Existen otros sistemas lógicos que no siguen necesariamente estas mismas reglas.
 
 ## REPRESENTACIÓN DE PROPOSICIONES
