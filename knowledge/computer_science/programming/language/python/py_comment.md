@@ -1,22 +1,21 @@
 ---
+aliases: [Comentarios en Python]
 author: Mindusting
 corrected: true
-tags:
-  - Programming
-  - Python
-  - Comment
-title: Comentarios en Python
+creationDate: 2026-09-05 12:40:09
+headerFile: false
+modificationDate: 2026-10-22 04:06:55
 rating: 1
+tags: [Comment, Programming, Python]
 ---
-
 
 # COMENTARIOS EN PYTHON
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [W3 Schools](https://www.w3schools.com/python/python_comments.asp) #WWW/W3Schools
 
-> [!faq]- FAQ
-> - [¿Qué es un comentario en programación?](../../fundamentals/basics/comment.md)
+> [!internal-link]- REFERENCIAS INTERNAS
+> - [Comentarios en programación.](../../fundamentals/basics/comment.md)
 
 Los comentarios sirven para dar una **descripción** de lo que hace una **parte del código** o dar **indicaciones**. Esto nos puede servir para en un futuro, cuando ya no nos acordemos de qué hace dicha parte del código, y así **no tener que interpretarlo**, sino que podemos ver la descripción que hayamos dejado, también **puede ayudar a otras personas** que estén trabajando con nosotros a entender como funciona lo que estamos haciendo.
 
@@ -26,16 +25,8 @@ Debido a que el texto que esté marcado como comentario no se ejecuta, nos puede
 
 Para escribir un comentario de una sola línea, tenemos que escribir **un numeral** (`#`) seguido del comentario, esto es debido a que a partir de la dicha **almohadilla** hasta el final de línea será un comentario.
 
-%%
-SINTAXIS
-
-```python
-# [comment]
-```
-%%
-
-> [!abstract] SINTAXIS
-> <span class="comment-color">#<span class="italic">[comment]</span></span>
+> [!syntax] SINTAXIS
+> \#***\[comment\]***
 
 Esto es un ejemplo de un comentario:
 
@@ -47,16 +38,8 @@ Esto es un ejemplo de un comentario:
 
 Para escribir un comentario multilínea se puede usar las **seis comillas** (`""""""`), todo lo que se escriba entre estas comillas da igual cuantas líneas haya entre ellas, todo será considerado un comentario.
 
-%%
-SINTAXIS
-
-```python
-"""[comment]"""
-```
-%%
-
-> [!abstract] SINTAXIS
-> <span class="comment-color">"""<span class="italic">[comment]</span>"""</span>
+> [!syntax] SINTAXIS
+> """***\[comment\]***"""
 
 Este es un ejemplo de como hacer un comentario multilínea:
 
@@ -68,25 +51,17 @@ múltiples líneas.
 """
 ```
 
-> [!info]
-> Yo no suelo usar las triples comillas para escribir comentarios, ya que las suelo usar para [comentar código](<## COMENTAR CÓDIGO>).
+> [!info] INFO
+> Yo no suelo usar las triples comillas para escribir comentarios, ya que las suelo usar para [comentar código](#COMENTAR%20CÓDIGO).
 
 ## COMENTAR CÓDIGO
 
-A la hora de comentar código lo que suelo hacer es meterlo entre seis comillas como se explica en el apartado de [comentarios multilínea ](<## COMENTARIOS MULTILÍNEA>), pero antes de las tres últimas comillas pongo un **numeral** (`#`), esto permite que el código que se encuentre dentro de las comillas esté comentado, pero si quiero des comentarlo, simplemente tengo que añadir un nuevo **numeral** (`#`) en frente de las tres primeras comillas, de esta forma, tanto las comillas de apertura y cierre de comentario se comentan con el **numeral** (`#`) y todo el contenido que se encuentre entre las comillas dejará de ser un comentario.
+A la hora de comentar código lo que suelo hacer es meterlo entre seis comillas como se explica en el apartado de [comentarios multilínea](#COMENTARIOS%20MULTILÍNEA), pero antes de las tres últimas comillas pongo un **numeral** (`#`), esto permite que el código que se encuentre dentro de las comillas esté comentado, pero si quiero des comentarlo, simplemente tengo que añadir un nuevo **numeral** (`#`) en frente de las tres primeras comillas, de esta forma, tanto las comillas de apertura y cierre de comentario se comentan con el **numeral** (`#`) y todo el contenido que se encuentre entre las comillas dejará de ser un comentario.
 
-%%
-SINTAXIS
-
-```python
-#"""
-[code]
-#"""
-```
-%%
-
->[!abstract] SINTAXIS
-> <span class="comment-color">#"""</span><br><span class="italic grey">[code]</span><br><span class="comment-color">#"""</span>
+> [!syntax] SINTAXIS
+> ***\{#\}***"""
+> ***\[code\]***
+> #"""
 
 Aquí tienes un ejemplo de código comentado.
 
@@ -102,4 +77,4 @@ print("Este es mi segundo print")
 #"""
 ```
 
-Lo que se ve en este ejemplo no tiene demasiado sentido ya que al ser una línea se podría hacer lo mismo usando el **numeral** (`#`) en frente del [print](py_print.md), pero sí nos serviría para comentar un gran bloque de código, ya que si no, las opciones que tenemos es, o ir comentando todas las líneas con  **numerales** (`#`) lo cual es un horror de hacer, o comentarlo con las seis comillas, pero en este último caso tendremos que quitarlas tanto de arriba como de debajo del bloque de código y esta forma de hacerlo nos permite poder comentar o descomentar todo un bloque de código con solo un carácter.
+Lo que se ve en este ejemplo no tiene demasiado sentido ya que al ser una línea se podría hacer lo mismo usando el **numeral** (`#`) en frente del [print](py_print.md), pero sí nos serviría para comentar un gran bloque de código, ya que si no, las opciones que tenemos es, o ir comentando todas las líneas con **numerales** (`#`) lo cual es un horror de hacer, o comentarlo con las seis comillas, pero en este último caso tendremos que quitarlas tanto de arriba como de debajo del bloque de código y esta forma de hacerlo nos permite poder comentar o descomentar todo un bloque de código con solo un carácter.
