@@ -90,7 +90,7 @@ $$\vec{v} = (3, 4)$$
 
 En **física** un vector se suele representar como **una flecha** que apunta a un punto en el espacio; normalmente situando su origen en el origen del plano cartesiano, pero este puede estar en cualquier punto.
 
-![#center](assets/vector_fisico.md)
+![#center](assets/vector_fisico.excalidraw.md)
 
 ### PROGRAMACIÓN
 
@@ -395,7 +395,7 @@ $$
 
 Por lo que la **magnitud** del **vector** $\vec{v}=(3, 4)$ es $\lVert \vec{v} \rVert=5$.
 
-![#center](assets/pitagoras.md)
+![#center](assets/pitagoras.excalidraw.md)
 
 ^img-pitagoras
 
@@ -812,7 +812,7 @@ Al haber normalizado las `puntuaciones`, estas quedan en un número entre el `0.
 
 El **coseno** como el **seno** son los componentes $x$ e $y$ de un **vector** normalizados en un rango [$[-1, 1] \subset \mathbb{R}$](../temp/math_range_notation.md), para calcular estos dos valores primero tendremos que entender en qué consiste la normalización de un conjunto de números:
 
-![#center](assets/cos_sin_30.md)
+![#center](assets/cos_sin_30.excalidraw.md)
 
 > [!important] IMPORTANTE
 > Es importante saber que a la hora de calcular tanto el [**seno**](#SENO%20DE%20UN%20VECTOR), [**coseno**](#COSENO%20DE%20UN%20VECTOR) y [**tangente**](#TANGENTE%20DE%20UN%20VECTOR); no se puede usar un [**vector nulo**](#VECTORES%20NULOS), ya que como el cálculo de estos requieren de una división, implica que tendríamos que hacer una división entre 0.
