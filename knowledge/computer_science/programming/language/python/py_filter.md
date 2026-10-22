@@ -2,8 +2,10 @@
 aliases: [Filtro en Python]
 author: Mindusting
 corrected: true
+creationDate: 2026-09-05 12:40:09
 description: En este apartado se documenta cómo filtrar datos en Python haciendo uso de la función filter.
 headerFile: false
+modificationDate: 2026-10-22 03:57:00
 rating: 1
 tags: [Programming, Python]
 ---
