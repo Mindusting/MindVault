@@ -67,7 +67,7 @@ Una **proposición** ==no necesita ser **verdadera**== para considerarse una **p
 
 ## REPRESENTACIÓN DE PROPOSICIONES
 
-Las proposiciones pueden estar representadas mediante letas a las que se les llama **variables proposicionales**, estas suelen ser letras en minúsculas como: $p, q, r...$; aunque también pueden estar en mayúsculas.
+Las proposiciones pueden estar representadas mediante letras a las que se les llama **variables proposicionales**, estas suelen ser letras en minúsculas como: $p, q, r...$; aunque también pueden estar en mayúsculas.
 
 $$
 \begin{aligned}
@@ -86,7 +86,7 @@ En este caso, ambas proposiciones son verdaderas.
 > q = 4 < 10
 > ```
 > 
-> En matemáticas la letra representa una proposición, mientras que en los lenguajes de programación se almacena el resultado de una operación, por lo que son cosas distintas, pero a efectos prácitos, esta sería su equivalencia.
+> En matemáticas la letra representa una proposición, mientras que en los lenguajes de programación se almacena el resultado de una operación, por lo que son cosas distintas, pero a efectos prácticos, esta sería su equivalencia.
 
 ## PROPOSICIONES ATÓMICAS
 
@@ -104,7 +104,7 @@ Una proposición compuesta es una proposición formada mediante el uso de uno o 
 
 $$(5 > 3) \land (4 < 10)$$
 
-Esta expresión se lee de la siguiente forma: $5$ es mayor que $3$ y $4$ es menor que $10$; concatenando así las dos proposiciones con el operador "y".
+Esta expresión se lee de la siguiente forma: $5$ es mayor que $3$ y $4$ es menor que $10$; juntando así las dos proposiciones con el operador "y".
 
 También podemos usar las proposiciones representadas en forma de letras:
 
@@ -118,13 +118,13 @@ q&: 4 < 10\\
 $$
 
 > [!note] NOTA (para programadores)
-> Las proposicines compuestas es como cuando usamos operadores booleanos entre comparaciones:
+> Las proposiciones compuestas es como cuando usamos operadores booleanos entre comparaciones:
 > 
 > ```python
 > 5 > 3 and 4 < 10
 > ```
 > 
-> En este caso podemos ver que se usa el operador `and`, este indica que se debe cumplir la proposición de la izquierda (`5 > 3`) y la de la derecha (`4 < 10`) para que la proposición compuesta se cumpla; siendo el resultado en este caso: verdadero.
+> En este caso podemos ver que se usa el operador `and`, éste indica que se debe cumplir la proposición de la izquierda (`5 > 3`) y la de la derecha (`4 < 10`) para que la proposición compuesta se cumpla; siendo el resultado en este caso: verdadero.
 > 
 > Y siguiendo con el ejemplo de antes, también se podría expresar de la siguiente forma:
 > 
