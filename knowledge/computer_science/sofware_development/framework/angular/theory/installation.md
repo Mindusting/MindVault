@@ -2,14 +2,16 @@
 aliases: [Instalación de Angular]
 author: Mindusting
 corrected: true
+creationDate: 2026-10-07 07:31:18
 headerFile: false
+modificationDate: 2026-10-22 03:53:30
 rating: 1
 tags: [Angular, Programming, Web]
 ---
 
 # INSTALACIÓN DE ANGULAR
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [Angular](https://angular.dev/installation) #WWW/Angular
 
 Para poder realizar la instalación haremos uso del [gestor de paquetes `npm`](../../../../../../temp/nodejs/nodejs_npm.md) de [**NodeJS**](../../../../../../temp/nodejs/nodejs.md) (*por lo que si no lo tienes te recomiendo ver esa documentación*) ejecutando el siguiente comando:
