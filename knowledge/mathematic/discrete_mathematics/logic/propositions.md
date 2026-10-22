@@ -1,11 +1,11 @@
 ---
 aliases: [Proposiciones en matemáticas]
 author: Mindusting
-corrected: false
+corrected: true
 creationDate: 2026-10-21 06:50:39
 headerFile: false
-modificationDate: 2026-10-22 02:58:33
-rating: 
+modificationDate: 2026-10-22 04:08:45
+rating: 1
 tags: [Math]
 ---
 
