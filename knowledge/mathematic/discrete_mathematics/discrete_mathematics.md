@@ -17,9 +17,14 @@ tags: [Math]
 
 ## TEMAS
 
-- [Proposiciones](logic/propositions.md)
-- [Predicados](logic/predicates.md)
-- [Cuantificadores](logic/quantifiers.md)
-- [Conectores lógicos](logic/logical_connectives.md)
-- [Tablas de la verdad](logic/truth_tables.md)
-- [Reglas de inferencia](logic/inference_rules.md)
+- Lógica:
+    - [Proposiciones](logic/propositions.md)
+    - [Predicados](logic/predicates.md)
+    - [Cuantificadores](logic/quantifiers.md)
+    - [Conectores lógicos](logic/logical_connectives.md)
+    - [Tablas de la verdad](logic/truth_tables.md)
+    - [Reglas de inferencia](logic/inference_rules.md)
+- [Métodos de demostración](proof_methods.md)
+- [Teoría de conjuntos](set_theory.md)
+- [Inducción](induction.md)
+- [Recursión](recursion.md)
