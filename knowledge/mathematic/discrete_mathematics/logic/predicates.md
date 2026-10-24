@@ -26,7 +26,7 @@ Un predicado es una expresión matemática que representa una propiedad o relaci
 
 Cuando se asignan valores concretos a todas sus variables libres, el predicado da lugar a una [proposición](propositions.md), que puede ser verdadera o falsa.
 
-Imaginemos que tenemos una [proposición](propositions.md) que indica si un número es mayor a $0$, pero no queremos que se especifique un número en concreto, sino que queremos que este se pueda especificar más adelante, para ello, podremos expresarlo mediante un predicado de la siguiente forma:
+Imaginemos que queremos representar la propiedad de si un número es mayor que $0$, pero sin especificar inicialmente de qué número se trata; para ello, podemos definir un predicado que reciba ese número ($x$) como argumento:
 
 $$P(x): x > 0$$
 
@@ -47,7 +47,9 @@ $$3 > 0$$
 > def P(x: int) -> bool:
 >     return x > 0
 > 
-> P(3)
+> print(P(3))
+> # SALIDA:
+> # True
 > ```
 > 
 > Dando `True` como resultado de la operación `P(3)`.
@@ -57,7 +59,9 @@ $$3 > 0$$
 > ```python
 > P = lambda x: x > 0
 > 
-> P(3)
+> print(P(3))
+> # SALIDA:
+> # True
 > ```
 
 La principal diferencia entre un predicado abierto y una [proposición](propositions.md) es que ==el valor de verdad del predicado depende de sus **variables libres**==, mientras que una proposición tiene un valor de verdad definido.
@@ -133,10 +137,15 @@ Sin embargo, esto no implica que todos los valores del dominio satisfagan la con
 >         raise ValueError("x debe ser un número natural")
 >     return (x * x) == 4
 > 
-> P(2) # Su valor es True.
-> P(3) # Su valor es False.
+> print(P(2))
+> # SALIDA:
+> # True
 > 
-> P(-2) # Lanza una excepción de ValueError.
+> print(P(3))
+> # SALIDA:
+> # False
+> 
+> print(P(-2)) # Lanza una excepción de ValueError.
 > ```
 > 
 > Por lo que al añadir la comprobación, estamos especificando que en este caso $x$ debe pertenecer a los número naturales (*inclullendo el $0$*); y no es que de como resultado el valor `False` si $x$ es negativo, sino que da un error, ya que no pertenece al [conjunto](../set_theory.md) de los número naturales ($\mathbb{N}$).
