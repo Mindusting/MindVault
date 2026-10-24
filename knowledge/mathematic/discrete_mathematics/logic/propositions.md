@@ -84,6 +84,12 @@ En este caso, ambas proposiciones son verdaderas.
 > ```python
 > p = 5 > 3
 > q = 4 < 10
+> 
+> print(p)
+> print(q)
+> # SALIDA:
+> # True
+> # True
 > ```
 > 
 > En matemáticas la letra representa una proposición, mientras que en los lenguajes de programación se almacena el resultado de una operación, por lo que son cosas distintas, pero a efectos prácticos, esta sería su equivalencia.
@@ -121,7 +127,9 @@ $$
 > Las proposiciones compuestas es como cuando usamos operadores booleanos entre comparaciones:
 > 
 > ```python
-> 5 > 3 and 4 < 10
+> print(5 > 3 and 4 < 10)
+> # SALIDA:
+> # True
 > ```
 > 
 > En este caso podemos ver que se usa el operador `and`, éste indica que se debe cumplir la proposición de la izquierda (`5 > 3`) y la de la derecha (`4 < 10`) para que la proposición compuesta se cumpla; siendo el resultado en este caso: verdadero.
@@ -132,7 +140,9 @@ $$
 > p = 5 > 3
 > q = 4 < 10
 > 
-> p and q
+> print(p and q)
+> # SALIDA:
+> # True
 > ```
 
 ---
@@ -155,7 +165,9 @@ $$
 > Este último ejemplo también se puede representar en forma de código:
 > 
 > ```python
-> not(10 == 10)
+> print(not(10 == 10))
+> # SALIDA:
+> # False
 > ```
 > 
 > O de la siguiente forma:
@@ -163,7 +175,9 @@ $$
 > ```python
 > p = 10 == 10
 > 
-> not(p)
+> print(not(p))
+> # SALIDA:
+> # False
 > ```
 
 ## CLASIFICACIÓN SEGÚN EL VALOR DE VERDAD
