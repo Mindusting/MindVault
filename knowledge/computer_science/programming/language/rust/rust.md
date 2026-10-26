@@ -1,4 +1,4 @@
-[oop](essentials/oop.md)---
+---
 aliases:
   - Rust 🦀
 author: Mindusting
