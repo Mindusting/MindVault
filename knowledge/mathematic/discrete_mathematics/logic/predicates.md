@@ -4,7 +4,7 @@ author: Mindusting
 corrected: false
 creationDate: 2026-10-21 07:07:04
 headerFile: false
-modificationDate: 2026-10-22 07:24:23
+modificationDate: 2026-10-27 03:32:29
 rating: 
 tags: [Math]
 ---
@@ -125,7 +125,7 @@ Sin embargo, esto no implica que todos los valores del dominio satisfagan la con
 
 > [!important] IMPORTANTE
 > El dominio del discurso no indica qué valor tiene una variable, sino **qué valores puede tomar**.
->
+> 
 > Por ejemplo, si el dominio es $\mathbb{N}$, no podemos utilizar $P(-2)$ como una instancia válida del predicado, porque $-2 \notin \mathbb{N}$.
 
 > [!note] NOTA (para programadores)
@@ -168,3 +168,28 @@ P(gato)&: Verdadero\\
 P(pez)&: Falso
 \end{aligned}
 $$
+
+## VARIABLES LIBRES Y LIGADAS
+
+- **Variable libre:** son aquellas variable que no está ligada por un cuantificador.
+- **Variable ligada:** son aquellas variable que está bajo el alcance de un [cuantificador](quantifiers.md) ($\forall$, $\exists$).
+
+Una expresión puede contener variables libres y ligadas simultáneamente.
+
+> [!example] EJEMPLO: Varible libre
+> En el siguiente predicado la variable $x$ es libre:
+> 
+> $$P(x): x > 3$$
+
+> [!example] EJEMPLO: Variable ligada
+> En la siguiente [proposición](propositions.md) la variable $x$ está ligada por $\forall$:
+> 
+> $$\forall x \in \mathbb{N}, \quad x > 3$$
+> 
+> En este caso la expresión es una [proposición](propositions.md) falsa; ya que no todos lo números naturales son mayores a $3$.
+
+> [!example] EJEMPLO: Variable libre y ligada
+> - $x$ está ligada.
+> - $y$ está libre.
+> 
+> $$\exists x \in \mathbb{N}, \quad x > y$$
