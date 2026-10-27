@@ -171,8 +171,10 @@ $$
 
 ## VARIABLES LIBRES Y LIGADAS
 
-- **Variable libre:** son aquellas variable que no está ligada por un cuantificador.
+- **Variable libre:** son aquellas variable que no está ligada por un [cuantificador](quantifiers.md).
+^free-var-def
 - **Variable ligada:** son aquellas variable que está bajo el alcance de un [cuantificador](quantifiers.md) ($\forall$, $\exists$).
+^bound-var-def
 
 Una expresión puede contener variables libres y ligadas simultáneamente.
 
