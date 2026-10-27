@@ -16,4 +16,4 @@ tags: [Math]
 > > [!todo] #TODO
 
 - **Para todos ($\forall$):**
-- **Almeno uno ($\exists$):**
+- **Existe ($\exists$):**
