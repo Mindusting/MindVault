@@ -160,7 +160,7 @@ tags: [Programming, Python]
 - [DATETIME](module/standar/datetime/datetime.md)
 - [EXCEL 🍫](module/third_party/openpyxl/openpyxl.md)
 - [HASHLIB](module/standar/hashlib/hashlib.md)
-- [HILOS 🧵](threading/py_threading.md)
+- [HILOS 🧵](module/standar/threading/threading.md)
 - [JSON 🗃](module/standar/json/json.md)
 - [MANIM](py_manim.md)
 - [MATH 🧮](module/standar/math/math.md)
