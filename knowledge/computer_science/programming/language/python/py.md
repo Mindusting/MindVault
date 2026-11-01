@@ -173,7 +173,7 @@ tags: [Programming, Python]
 - [PASSWORD 🔑](module/standar/getpass/getpass.md)
 - [PATHFINDING](py_pathfinding.md)
 - [PILLOW](py_pillow.md)
-- [PORTA PAPELES 📋](py_clipboard.md)
+- [PORTA PAPELES 📋](module/third_party/clipboard/clipboard.md)
 - [PSUTIL](module/third_party/psutil/psutil.md)
 - [PYAUTOGUI 🖱️](py_pyautogui.md)
 - [PYGAME 🕹️](module/third_party/pygame/pygame.md)
