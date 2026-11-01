@@ -169,7 +169,7 @@ tags: [Programming, Python]
 - [OPENSIMPLEX](py_opensimplex.md)
 - [OS](module/standar/os/os.md)
     - [PATH](module/standar/os/path/path.md)
-- [PANDAS 📈](py_pandas.md)
+- [PANDAS 📈](module/third_party/pandas/pandas.md)
 - [PASSWORD 🔑](module/standar/getpass/getpass.md)
 - [PATHFINDING](py_pathfinding.md)
 - [PILLOW](py_pillow.md)

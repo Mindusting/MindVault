@@ -277,7 +277,7 @@ wb.save("main.xlsx")
 wb.close()
 ```
 
-También se puede recibir una matriz hecha de [tuplas](../basic/data_types/tuple.md) con los [objetos](../py_class.md) de celda en cada elemento, para obtener los valores de cada celda he usado la [clase map](../basic/builtins/map.md), he guardado los datos en una matriz de [numpy](../module/third_party/numpy/numpy.md) y he impreso los datos con [Pandas](../py_pandas.md).
+También se puede recibir una matriz hecha de [tuplas](../basic/data_types/tuple.md) con los [objetos](../py_class.md) de celda en cada elemento, para obtener los valores de cada celda he usado la [clase map](../basic/builtins/map.md), he guardado los datos en una matriz de [numpy](../module/third_party/numpy/numpy.md) y he impreso los datos con [Pandas](../module/third_party/pandas/pandas.md).
 
 ```python
 from openpyxl import Workbook
