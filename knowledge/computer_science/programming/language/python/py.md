@@ -166,7 +166,7 @@ tags: [Programming, Python]
 - [MATH 🧮](module/standar/math/math.md)
 - [MATHPLOTLIB](py_matplotlib.md)
 - [NUMPY 🧮](module/third_party/numpy/numpy.md)
-- [OPENSIMPLEX](py_opensimplex.md)
+- [OPENSIMPLEX](module/third_party/opensimplex/opensimplex.md)
 - [OS](module/standar/os/os.md)
     - [PATH](module/standar/os/path/path.md)
 - [PANDAS 📈](module/third_party/pandas/pandas.md)
