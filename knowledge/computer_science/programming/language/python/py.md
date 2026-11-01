@@ -157,7 +157,7 @@ tags: [Programming, Python]
 
 - [COLORAMA](colorama/py_colorama.md)
 - [CSV](csv/py_csv.md)
-- [DATETIME](datetime/py_datetime.md)
+- [DATETIME](module/standar/datetime/datetime.md)
 - [EXCEL 🍫](openpyxl/py_openpyxl.md)
 - [HASHLIB](module/standar/hashlib/hashlib.md)
 - [HILOS 🧵](threading/py_threading.md)
