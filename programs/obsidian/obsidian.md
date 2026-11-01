@@ -18,12 +18,9 @@ title: Obsidian
 
 # OBSIDIAN
 
-> [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
+> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
 
 ## ÍNDICE
-
-> [!example]- AUTO INDEXADO
-> ![](../../bases/obsidian_index.base)
 
 - [Bases](obsidian_bases.md)
