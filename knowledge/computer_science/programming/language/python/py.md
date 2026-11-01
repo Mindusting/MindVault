@@ -165,7 +165,7 @@ tags: [Programming, Python]
 - [MANIM](py_manim.md)
 - [MATH 🧮](module/standar/math/math.md)
 - [MATHPLOTLIB](py_matplotlib.md)
-- [NUMPY 🧮](module/third_party/numpy/py_np.md)
+- [NUMPY 🧮](module/third_party/numpy/numpy.md)
 - [OPENSIMPLEX](py_opensimplex.md)
 - [OS](module/standar/os/os.md)
     - [PATH](module/standar/os/path/path.md)
