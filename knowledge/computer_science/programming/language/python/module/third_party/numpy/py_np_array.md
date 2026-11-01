@@ -11,7 +11,7 @@ title: Función Array en NumPy
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
 
-La [función](../py_func.md) `array` permite transformar una [lista](../basic/data_types/list.md) o [tupla](../basic/data_types/tuple.md) en un [**array**](../../../fundamentals/temp-dump/data_structures/pc_ds_array.md):
+La [función](../../../py_func.md) `array` permite transformar una [lista](../../../basic/data_types/list.md) o [tupla](../../../basic/data_types/tuple.md) en un [**array**](../../../../../fundamentals/temp-dump/data_structures/pc_ds_array.md):
 
 ```python
 my_list:  list  = [3, 2, 5]
