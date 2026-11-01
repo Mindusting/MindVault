@@ -175,7 +175,7 @@ tags: [Programming, Python]
 - [PILLOW](py_pillow.md)
 - [PORTA PAPELES 📋](module/third_party/clipboard/clipboard.md)
 - [PSUTIL](module/third_party/psutil/psutil.md)
-- [PYAUTOGUI 🖱️](py_pyautogui.md)
+- [PYAUTOGUI 🖱️](module/third_party/pyautogui/pyautogui.md)
 - [PYGAME 🕹️](module/third_party/pygame/pygame.md)
     - [MIXER](module/third_party/pygame/mixer/mixer.md)
 - [QR 🔗](module/third_party/qrcode/qrcode.md)
