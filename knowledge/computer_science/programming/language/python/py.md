@@ -56,7 +56,7 @@ tags: [Programming, Python]
 > - [TpointTech](https://www.tpointtech.com/python-tutorial) #WWW/TpointTeach
 > - [Linuxize](https://linuxize.com/tags/python) #WWW/Linuxize
 
-> [!seealso] Ver también
+> [!seealso]- Ver también
 > - [Comando `make`:](../../../../../temp/os/linux/command/make.md)
 >     Sirve para poder trabajar sobre proyectos de programación más facilmente.
 > - [Git:](../../../dev_tools/git/git.md)
@@ -121,7 +121,6 @@ tags: [Programming, Python]
 
 ## ÍNDICE
 
-- [PRÓLOGO 🧭](py_prologue.md)
 - [ARCHIVOS DE PYTHON 📄](py_files.md)
 - [COMENTARIOS 💬](py_comment.md)
 - [OUTPUT POR CONSOLA 🖥️](py_print.md)
