@@ -181,7 +181,7 @@ tags: [Programming, Python]
 - [QR 🔗](py_qr.md)
 - [RANDOM 🎲](module/standar/random/random.md)
 - [RE](module/standar/re/re.md)
-- [SOCKET](socket/py_socket.md)
+- [SOCKET](module/standar/socket/py_socket.md)
 - [SQLCIPHER3 🛢](py_pysqlcipher3.md)
 - [SQLITE3 🛢](module/standar/sqlite3/sqlite3.md)
 - [STRUCT](module/standar/struct/struct.md)
