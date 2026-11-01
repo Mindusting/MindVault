@@ -178,7 +178,7 @@ tags: [Programming, Python]
 - [PYAUTOGUI 🖱️](py_pyautogui.md)
 - [PYGAME 🕹️](module/third_party/pygame/pygame.md)
     - [MIXER](module/third_party/pygame/mixer/mixer.md)
-- [QR 🔗](py_qr.md)
+- [QR 🔗](module/third_party/qrcode/qrcode.md)
 - [RANDOM 🎲](module/standar/random/random.md)
 - [RE](module/standar/re/re.md)
 - [SOCKET](module/standar/socket/py_socket.md)
