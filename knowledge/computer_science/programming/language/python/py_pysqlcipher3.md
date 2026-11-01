@@ -47,7 +47,7 @@ from pysqlcipher3 import dbapi2 as sqlite
 
 ## USO DEL MÓDULO
 
-Este módulo se usa igual que el de [SQLite3](module/standar/sqlite3/py_sqlite3.md) con la diferencia que en este se debe indicar la contraseña que se debe usar para poder interactuar con la base de datos, para ello se usa la instrucción [`PRAGMA key`](../../../data_base/relational/system/sqlite/sqlite3_pragma.md).
+Este módulo se usa igual que el de [SQLite3](module/standar/sqlite3/sqlite3.md) con la diferencia que en este se debe indicar la contraseña que se debe usar para poder interactuar con la base de datos, para ello se usa la instrucción [`PRAGMA key`](../../../data_base/relational/system/sqlite/sqlite3_pragma.md).
 
 ```python
 from pysqlcipher3 import dbapi2 as sqlite

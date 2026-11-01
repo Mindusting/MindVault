@@ -112,7 +112,7 @@ Un **IF-Ternario** se lo mismo que un `if`, `else` con la diferencia de que este
 > print(f"Eres {'mayor' if age >= 18 else 'menor'} de edad.")
 > ```
 > 
-> En este caso, simplemente decide entre un [string](module/standar/sqlite3/py_sqlite3.md) y otro dependiendo de la condición.
+> En este caso, simplemente decide entre un [string](module/standar/sqlite3/sqlite3.md) y otro dependiendo de la condición.
 
 > [!example] Ejemplo del uso
 > Yo suelo usarlo para limpiar el terminal a través de una [función](py_func.md) y el [módulo](py_module.md) [`os`](module/standar/os/os.md):

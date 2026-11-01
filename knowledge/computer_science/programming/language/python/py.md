@@ -183,7 +183,7 @@ tags: [Programming, Python]
 - [RE](module/standar/re/re.md)
 - [SOCKET](socket/py_socket.md)
 - [SQLCIPHER3 🛢](py_pysqlcipher3.md)
-- [SQLITE3 🛢](module/standar/sqlite3/py_sqlite3.md)
+- [SQLITE3 🛢](module/standar/sqlite3/sqlite3.md)
 - [STRUCT](module/standar/struct/struct.md)
 - [SHUTIL](module/standar/shutil/shutil.md)
 - [SYS](module/standar/sys/sys.md)

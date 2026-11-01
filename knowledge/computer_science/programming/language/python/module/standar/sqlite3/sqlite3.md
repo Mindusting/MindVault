@@ -44,7 +44,7 @@ import sqlite3
 
 ## CONEXIÓN A BASE DE DATOS
 
-Para empezar a trabajar sobre una [base de datos](../../../../../../data_base/relational/theory/db.md) primero tendremos que crearla o conectarnos a una existente; para ello tendremos que hacer uso de la [función](../../../py_func.md) `connect`; esta recibe un argumento de tipo [`str`](../../../basic/data_types/str.md) indicando la runa de en donde se encuentra la [base de datos](../../../../../../data_base/relational/theory/db.md); devolviéndonos como resultado un objeto de tipo [`Connection`](py_sqlite3_connection.md).
+Para empezar a trabajar sobre una [base de datos](../../../../../../data_base/relational/theory/db.md) primero tendremos que crearla o conectarnos a una existente; para ello tendremos que hacer uso de la [función](../../../py_func.md) `connect`; esta recibe un argumento de tipo [`str`](../../../basic/data_types/str.md) indicando la runa de en donde se encuentra la [base de datos](../../../../../../data_base/relational/theory/db.md); devolviéndonos como resultado un objeto de tipo [`Connection`](sqlite3_connection.md).
 
 > [!abstract] SINTAXIS
 > ***\[cx\_name\]*** = sqlite3.connect(***\[path\]***)
@@ -61,7 +61,7 @@ cx.close()
 ```
 
 > [!info] INFO
-> El objeto [`Connection`](py_sqlite3_connection.md) es el encargado de conectarse a la [base de datos](../../../../../../data_base/relational/theory/db.md) para realizar los cambios en esta, entre otra serie de cosas.
+> El objeto [`Connection`](sqlite3_connection.md) es el encargado de conectarse a la [base de datos](../../../../../../data_base/relational/theory/db.md) para realizar los cambios en esta, entre otra serie de cosas.
 
 > [!tip] TIP
 > Si el nombre que se indica en la [función](../../../py_func.md) `connect` es `:memory:` la [base de datos](../../../../../../data_base/relational/theory/db.md) se guarda en la memoria RAM, por lo que esta se borrará en el momento en el que se cierre la conexión, el objetivo de esto es poder usa la de forma temporal y sin dejar rastro en el disco duro.

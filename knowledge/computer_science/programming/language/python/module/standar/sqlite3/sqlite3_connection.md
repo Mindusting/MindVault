@@ -21,7 +21,7 @@ Esta **conexión** es la que nos permitirá ejecutar código de [SQLite3](../../
 
 ## CREACIÓN DE CURSOR
 
-Para crear [cursores](py_sqlite3_cursor.md) a partir de una conexión se usa el [método](../../../class/py_methods.md) `cursor`; este nos devolverá un [objeto](../../../py_class.md) de tipo [`Cursor`](py_sqlite3_cursor.md) el cual no contiene ninguna instrucción [SQLite3](../../../../../../data_base/relational/system/sqlite/sqlite3.md).
+Para crear [cursores](sqlite3_cursor.md) a partir de una conexión se usa el [método](../../../class/py_methods.md) `cursor`; este nos devolverá un [objeto](../../../py_class.md) de tipo [`Cursor`](sqlite3_cursor.md) el cual no contiene ninguna instrucción [SQLite3](../../../../../../data_base/relational/system/sqlite/sqlite3.md).
 
 > [!abstract] SINTAXIS
 > ***\[cr\]*** = ***\[cx\]***.cursor()
@@ -45,7 +45,7 @@ cx.close()
 
 ## EJECUCIÓN DE SQL
 
-Para ejecutar SQL podemos usar los [métodos](../../../class/py_methods.md) [`execute`](py_sqlite3_cursor.md#EJECUTA%20UNO), [`executemany`](py_sqlite3_cursor.md#EJECUTA%20VARIOS) y [`executescript`](py_sqlite3_cursor.md#EJECUTA%20SCRIPT) las cuales funcionan prácticamente igual (*por no decir igual*) a las que tienen los [cursores](py_sqlite3_cursor.md).
+Para ejecutar SQL podemos usar los [métodos](../../../class/py_methods.md) [`execute`](sqlite3_cursor.md#EJECUTA%20UNO), [`executemany`](sqlite3_cursor.md#EJECUTA%20VARIOS) y [`executescript`](sqlite3_cursor.md#EJECUTA%20SCRIPT) las cuales funcionan prácticamente igual (*por no decir igual*) a las que tienen los [cursores](sqlite3_cursor.md).
 
 > [!abstract] SINTAXIS
 > ***\[cr\]*** = ***\[func\]***(***\[args\]***)
@@ -67,7 +67,7 @@ VALUES
     ('Adelia', 22);
 ```
 
-Aquí en Python podemos ver como obtenemos un [cursor](py_sqlite3_cursor.md) de el [método](../../../class/py_methods.md) `execute` y luego imprimimos cada una de las [tuplas](../../../basic/data_types/tuple.md) que obtenemos como resultado:
+Aquí en Python podemos ver como obtenemos un [cursor](sqlite3_cursor.md) de el [método](../../../class/py_methods.md) `execute` y luego imprimimos cada una de las [tuplas](../../../basic/data_types/tuple.md) que obtenemos como resultado:
 
 ```python
 import sqlite3
