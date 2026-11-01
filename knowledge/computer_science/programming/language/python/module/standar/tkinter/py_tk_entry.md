@@ -15,7 +15,7 @@ title: Entradas en Tkinter
 > > [!todo] #TODO
 > > - [ ] Explicar el `state=tk.DISABLED`.
 
-La [clase](../../../py_class.md) `Entry` permite crear un campo en donde el usuario podrá escribir.
+La [clase](../../../dump/py_class.md) `Entry` permite crear un campo en donde el usuario podrá escribir.
 
 ## ENTRADA BÁSICA
 
@@ -39,7 +39,7 @@ class Window(tk.Tk):
         self.entry.grid(row=0, column=0)
 ```
 
-Para poder interactuar con la inforación usaremos principalmente tres [métodos](../../../class/py_methods.md):
+Para poder interactuar con la inforación usaremos principalmente tres [métodos](../../../dump/class/py_methods.md):
 
 - `get()`
 - `remove(0, tk.END)`
@@ -47,7 +47,7 @@ Para poder interactuar con la inforación usaremos principalmente tres [métodos
 
 ### OBTENER TEXTO
 
-Para obtener el texto que contiene la *entrada* se usa el [método](../../../class/py_methods.md) `get`; este no recive ningún parámetro y nos debolverá en contenido en forma de [texto](../../../basic/data_types/str.md).
+Para obtener el texto que contiene la *entrada* se usa el [método](../../../dump/class/py_methods.md) `get`; este no recive ningún parámetro y nos debolverá en contenido en forma de [texto](../../../basic/data_types/str.md).
 
 > [!abstract] SINTAXIS
 > ***\[entry\]***.get()

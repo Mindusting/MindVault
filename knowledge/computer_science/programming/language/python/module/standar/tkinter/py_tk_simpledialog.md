@@ -10,9 +10,9 @@ title: Diálogos simples en TKinter
 
 # DIÁLOGOS SIMPLES EN TKINTER
 
-El [módulo](../../../py_module.md) [`tkinter`](py_tk.md) contiene el [submódulo](../../../py_module.md) `simpledialog`, este se usa para poder pedirle un [entero](../../../basic/data_types/int.md), [real](../../../basic/data_types/float.md) o [texto](../../../basic/data_types/str.md) al usuario, este [módulo](../../../py_module.md) contiene tres [funciones](../../../py_func.md) ([`askinteger`](#ASK%20INTEGER), [`askfloat`](#ASK%20FLOAT) y [`askstring`](#ASK%20STRING)).
+El [módulo](../../../dump/py_module.md) [`tkinter`](py_tk.md) contiene el [submódulo](../../../dump/py_module.md) `simpledialog`, este se usa para poder pedirle un [entero](../../../basic/data_types/int.md), [real](../../../basic/data_types/float.md) o [texto](../../../basic/data_types/str.md) al usuario, este [módulo](../../../dump/py_module.md) contiene tres [funciones](../../../dump/py_func.md) ([`askinteger`](#ASK%20INTEGER), [`askfloat`](#ASK%20FLOAT) y [`askstring`](#ASK%20STRING)).
 
-Para importar este [submódulo](../../../py_module.md) se hace de la siguiente forma:
+Para importar este [submódulo](../../../dump/py_module.md) se hace de la siguiente forma:
 
 ```py
 from tkinter import simpledialog
@@ -23,7 +23,7 @@ from tkinter import simpledialog
 
 ## ASK INTEGER
 
-La [función](../../../py_func.md) `askinteger` permite preguntarle al usuario mediante una ventana popup un [entero](../../../basic/data_types/int.md), esta requiere de dos argumentos y tiene otros tres opcionales:
+La [función](../../../dump/py_func.md) `askinteger` permite preguntarle al usuario mediante una ventana popup un [entero](../../../basic/data_types/int.md), esta requiere de dos argumentos y tiene otros tres opcionales:
 
 > [!abstract] SINTAXIS
 > askinteger(***\[title\], \[prompt\], \{\[initialvalue\], \[minvalue\], \[maxvalue\]\}***)
@@ -55,7 +55,7 @@ else:
 
 ## ASK FLOAT
 
-La [función](../../../py_func.md) `askfloat` permite preguntarle al usuario mediante una ventana popup un [real](../../../basic/data_types/float.md), esta requiere de dos argumentos y tiene otros tres opcionales:
+La [función](../../../dump/py_func.md) `askfloat` permite preguntarle al usuario mediante una ventana popup un [real](../../../basic/data_types/float.md), esta requiere de dos argumentos y tiene otros tres opcionales:
 
 > [!abstract] SINTAXIS
 > askfloat(***\[title\], \[prompt\], \{\[initialvalue\], \[minvalue\], \[maxvalue\]\}***)
@@ -87,7 +87,7 @@ else:
 
 ## ASK STRING
 
-La [función](../../../py_func.md) `askstring` permite preguntarle al usuario mediante una ventana popup un [texto](../../../basic/data_types/str.md), esta requiere de dos argumentos y tiene otros dos opcionales:
+La [función](../../../dump/py_func.md) `askstring` permite preguntarle al usuario mediante una ventana popup un [texto](../../../basic/data_types/str.md), esta requiere de dos argumentos y tiene otros dos opcionales:
 
 > [!abstract] SINTAXIS
 > askfloat(***\[title\], \[prompt\], \{\[initialvalue\], \[show\]\}***)

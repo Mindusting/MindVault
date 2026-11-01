@@ -256,7 +256,7 @@ Para poder [leer y escribir archivos](basic/builtins/open.md) de [json](../../..
 
 Para poder escribir en un archivo de [json](../../../../../data_format/json.md), primero deberemos [abrir o crear un archivo](basic/builtins/open.md), para luego poder trabajar sobre él como un archivo [json](../../../../../data_format/json.md).
 
-Para poder guardar datos en un archivo [json](../../../../../data_format/json.md) tendremos que hacer uso de la [función](py_func.md) `dump` (vertedero).
+Para poder guardar datos en un archivo [json](../../../../../data_format/json.md) tendremos que hacer uso de la [función](../../../dump/py_func.md) `dump` (vertedero).
 
 ```python
 data: dict = {
@@ -346,7 +346,7 @@ with open("data.json", "w") as file:
 
 ## LEER ARCHIVOS JSON
 
-Para poder leer el contenido de un archivo [json](../../../../../data_format/json.md), se usa la [función](py_func.md) `load` (cargar), esta función devuelve en forma de [dictionario](basic/data_types/dict.md) o [lista](basic/data_types/list.md) (Esto depende del contenido del archivo [json](../../../../../data_format/json.md)) el contenido del archivo.
+Para poder leer el contenido de un archivo [json](../../../../../data_format/json.md), se usa la [función](../../../dump/py_func.md) `load` (cargar), esta función devuelve en forma de [dictionario](basic/data_types/dict.md) o [lista](basic/data_types/list.md) (Esto depende del contenido del archivo [json](../../../../../data_format/json.md)) el contenido del archivo.
 
 ```python
 with open("data.json", "r") as file:
@@ -363,7 +363,7 @@ Los métodos que se muestran en los próximos apartados son para transformar con
 
 ## DE STRING A JSON
 
-Para transformar contenido [json](../../../../../data_format/json.md) en [`str`](basic/data_types/str.md) se usa la [función](py_func.md) `dumps`:
+Para transformar contenido [json](../../../../../data_format/json.md) en [`str`](basic/data_types/str.md) se usa la [función](../../../dump/py_func.md) `dumps`:
 
 ```python
 with open("data.json", "r") as file:
@@ -385,7 +385,7 @@ str_json: str = json.dumps(data, indent=2)
 
 ## DE JSON A STRING
 
-Para transformar contenido [`str`](basic/data_types/str.md) o [`bytes`](basic/data_types/bytes.md) en contenido [json](../../../../../data_format/json.md) se usa la [función](py_func.md) `loads`:
+Para transformar contenido [`str`](basic/data_types/str.md) o [`bytes`](basic/data_types/bytes.md) en contenido [json](../../../../../data_format/json.md) se usa la [función](../../../dump/py_func.md) `loads`:
 
 ```python
 str_data: str = '{"name": "Mindusting", "age": 18}'

@@ -55,7 +55,7 @@ cx.close()
 
 ---
 
-Si queremos crear una **Tupla** a partir de otro iterable, podemos hacerlo mediante la [clase](py_class.md) `tuple`; esta recibe un único argumento, siendo este el iterable a original.
+Si queremos crear una **Tupla** a partir de otro iterable, podemos hacerlo mediante la [clase](../../dump/py_class.md) `tuple`; esta recibe un único argumento, siendo este el iterable a original.
 
 > [!abstract] SINTAXIS
 > tuple(***\[iterable\]***)
@@ -138,7 +138,7 @@ except IndexError:
 
 ## MÉTODOS
 
-Las **Tuplas** contienen varios [métodos](class/py_methods.md) que permiten trabajar sobre ellas de una forma más sencilla.
+Las **Tuplas** contienen varios [métodos](../../dump/class/py_methods.md) que permiten trabajar sobre ellas de una forma más sencilla.
 
 ### MÉTODO COUNT
 

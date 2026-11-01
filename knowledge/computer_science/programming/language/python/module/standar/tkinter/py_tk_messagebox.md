@@ -15,15 +15,15 @@ tags: [Module, Programming, Python, TKinter]
 > YouTube:
 > - [Bro Code](https://youtu.be/SGTtoHO6loo) #WWW/YT/BroCode
 
-El [módulo](../../../py_module.md) [`tkinter`](py_tk.md) contiene el [submódulo](../../../py_module.md) `messagebox`, este se usa para poder mostrar los característicos mensajes de *popup* en pantalla, de los cuales tenemos dos tipos, los que sencillamente muestran información y los que reciben información por parte del usuario.
+El [módulo](../../../dump/py_module.md) [`tkinter`](py_tk.md) contiene el [submódulo](../../../dump/py_module.md) `messagebox`, este se usa para poder mostrar los característicos mensajes de *popup* en pantalla, de los cuales tenemos dos tipos, los que sencillamente muestran información y los que reciben información por parte del usuario.
 
-Para importar este [módulo](../../../py_module.md) lo podremos hacer de la siguiente forma:
+Para importar este [módulo](../../../dump/py_module.md) lo podremos hacer de la siguiente forma:
 
 ```python
 from tkinter import messagebox
 ```
 
-Este [módulo](../../../py_module.md) contiene múltiples [funciones](../../../py_func.md) para mostrar los diferentes tipos de mensajes, pero todos tienen una característica en común y es que reciben los mismos argumentos:
+Este [módulo](../../../dump/py_module.md) contiene múltiples [funciones](../../../dump/py_func.md) para mostrar los diferentes tipos de mensajes, pero todos tienen una característica en común y es que reciben los mismos argumentos:
 
 - `title`: con este argumento indicaremos el título que queremos que tenga el mensaje *popup*.
 - `message`: con este argumento indicaremos el mensaje del *popup*.

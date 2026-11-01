@@ -39,9 +39,9 @@ Por ejemplo podríamos importar el [módulo math](https://docs.python.org/3/libr
 import math
 ```
 
-Este módulo contiene [variables](basic/variable.md) y [funciones](py_func.md), en esta documentación se van a ver unas cuantas, pero no todas, si quieres ver más a fondo que ofrece este módulo puedes visitar la documentación oficial del [módulo math](https://docs.python.org/3/library/math.html) de Python.
+Este módulo contiene [variables](basic/variable.md) y [funciones](dump/py_func.md), en esta documentación se van a ver unas cuantas, pero no todas, si quieres ver más a fondo que ofrece este módulo puedes visitar la documentación oficial del [módulo math](https://docs.python.org/3/library/math.html) de Python.
 
-Para poder usar el contenido de un módulo se debe escribir el nombre de este, seguido de un punto y el nombre de la [variable](basic/variable.md) o [función](py_func.md) que queramos usar.
+Para poder usar el contenido de un módulo se debe escribir el nombre de este, seguido de un punto y el nombre de la [variable](basic/variable.md) o [función](dump/py_func.md) que queramos usar.
 
 ```python
 import math
@@ -61,18 +61,18 @@ El techo de 0.001 es = 1
 """
 ```
 
-En este ejemplo se puede ver como se llama a diferentes [variables](basic/variable.md) y [funciones](py_func.md) del [módulo math](https://docs.python.org/3/library/math.html).
+En este ejemplo se puede ver como se llama a diferentes [variables](basic/variable.md) y [funciones](dump/py_func.md) del [módulo math](https://docs.python.org/3/library/math.html).
 
-Es posible que os preguntéis el por qué estas [variables](basic/variable.md) y [funciones](py_func.md) de Python tienen que importarse a diferencia de la [función print](basic/builtins/print.md) que no necesita ser importada para su uso, esto es debido que la esta última es de uso común, es por así decirlo una parte esencial de Python, y también es por qué sí se cargará en memoria todos los módulos al iniciar un proyecto, este tardaría mucho en empezar a ejecutarse a parte del consumo de memoria que ello implica, es por esto que las [variables](basic/variable.md) y [funciones](py_func.md) no tan esenciales de Python en de ser importadas de forma manual, indicado qué es lo que queremos importar.
+Es posible que os preguntéis el por qué estas [variables](basic/variable.md) y [funciones](dump/py_func.md) de Python tienen que importarse a diferencia de la [función print](basic/builtins/print.md) que no necesita ser importada para su uso, esto es debido que la esta última es de uso común, es por así decirlo una parte esencial de Python, y también es por qué sí se cargará en memoria todos los módulos al iniciar un proyecto, este tardaría mucho en empezar a ejecutarse a parte del consumo de memoria que ello implica, es por esto que las [variables](basic/variable.md) y [funciones](dump/py_func.md) no tan esenciales de Python en de ser importadas de forma manual, indicado qué es lo que queremos importar.
 
 # OTROS RELACIONADOS
 
-- [IMPORTAR ELEMENTO DE MÓDULO \*️⃣](modules/Modules_Import_Elements.md)
-- [RENOMBRAR MÓDULOS 🔤](modules/modules_rename.md)
-- [CREAR MÓDULO 💽](modules/Modules_Create.md)
-- [PAQUETES 📦](modules/Modules_Packages.md)
+- [IMPORTAR ELEMENTO DE MÓDULO \*️⃣](dump/modules/Modules_Import_Elements.md)
+- [RENOMBRAR MÓDULOS 🔤](dump/modules/modules_rename.md)
+- [CREAR MÓDULO 💽](dump/modules/Modules_Create.md)
+- [PAQUETES 📦](dump/modules/Modules_Packages.md)
 
 ---
 
 >[!tip]
->Es posible [ver el código fuente de un módulo](modules/py_get_module_source.md), esto te puede interesar si quieres saber como funciona internamente.
+>Es posible [ver el código fuente de un módulo](dump/modules/py_get_module_source.md), esto te puede interesar si quieres saber como funciona internamente.

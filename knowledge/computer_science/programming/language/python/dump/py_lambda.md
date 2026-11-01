@@ -15,15 +15,15 @@ title: Funciones lambda en Python
 > > - [ ] Revisar y rehacer toda la documentación, añadir más ejemplos, poner casos de uso etc.
 
 > [!faq]- FAQ
-> - [¿Qué es un if ternario?](py_conditionals.md#IF-TERNARIO)
+> - [¿Qué es un if ternario?](dump/py_conditionals.md#IF-TERNARIO)
 
-Las [funciones](py_func.md) `lambda` tienen el mismo objetivo que una [función](py_func.md) normal, con la diferencia que esta se declara en una única línea, y su objetivo es realizar operaciones simples.
+Las [funciones](dump/py_func.md) `lambda` tienen el mismo objetivo que una [función](dump/py_func.md) normal, con la diferencia que esta se declara en una única línea, y su objetivo es realizar operaciones simples.
 
 > [!abstract] SINTAXIS
 > ***\[func_name]*** = lambda ***\[args]***: ***\[func_code]***
 
 > [!note] Nota
-> Una [función](py_func.md) `lambda` puede no tener *argumentos*.
+> Una [función](dump/py_func.md) `lambda` puede no tener *argumentos*.
 
 ```python
 import os

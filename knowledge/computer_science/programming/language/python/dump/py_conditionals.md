@@ -19,7 +19,7 @@ rating: 0.5
 > - [W3 Schools](https://www.w3schools.com/python/python_conditions.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué son los condicionales en programación?](../../fundamentals/temp-dump/pc_conditional.md)
+> - [¿Qué son los condicionales en programación?](../../../fundamentals/temp-dump/pc_conditional.md)
 
 Para crear una condición en Python se usa la palabra clave `if` seguido de la condición que se debe cumplir para ejecutar el código que indiquemos:
 
@@ -115,7 +115,7 @@ Un **IF-Ternario** se lo mismo que un `if`, `else` con la diferencia de que este
 > En este caso, simplemente decide entre un [string](module/standar/sqlite3/sqlite3.md) y otro dependiendo de la condición.
 
 > [!example] Ejemplo del uso
-> Yo suelo usarlo para limpiar el terminal a través de una [función](py_func.md) y el [módulo](py_module.md) [`os`](module/standar/os/os.md):
+> Yo suelo usarlo para limpiar el terminal a través de una [función](dump/py_func.md) y el [módulo](dump/py_module.md) [`os`](module/standar/os/os.md):
 > ```python
 > def clear() -> None:
 >     os.system("cls" if "nt" == os.name else "clear")

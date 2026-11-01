@@ -15,7 +15,7 @@ rating: 0.75
 
 Para poder obtener contraseñas por parte del usuario de una forma más segura podemos usar el módulo `getpass`, este permitirá que el usuario escriba la contraseña por el terminal sin que se muestre lo que esté escribiendo.
 
-Así es como se importa el [módulo](py_module.md) `getpass`:
+Así es como se importa el [módulo](../../../dump/py_module.md) `getpass`:
 
 ```python
 import getpass

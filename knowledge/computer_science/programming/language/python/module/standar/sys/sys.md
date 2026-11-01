@@ -17,7 +17,7 @@ title: Módulo SYS en Python
 > [!help]- REFERENCIAS WEB
 > - [Python](https://docs.python.org/3.11/library/sys.html) #WWW/Python
 
-Para poder hacer uso de los argumentos introducidos al ejecutar el comando [`python`](py_files.md) o [`python3`](py_files.md) se usa el [módulo](py_module.md) `sys`.
+Para poder hacer uso de los argumentos introducidos al ejecutar el comando [`python`](../../../dump/py_files.md) o [`python3`](../../../dump/py_files.md) se usa el [módulo](../../../dump/py_module.md) `sys`.
 
 ```python
 import sys

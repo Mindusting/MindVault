@@ -132,7 +132,7 @@ Se a usado los valores obtenidos para crear un mapa de valores en forma de matri
 > [!info] INFO
 > El *ruido simplex* es una versión mejorada del *ruido de Perlin*, ya que en este último, en ocasiones se podían encontrar patrones en el ruido, por tanto, son bastante parecidos pero **no iguales**.
 
-Para poder calcular el ruido simple tendremos que importar el [módulo](py_module.md) `opensimplex`:
+Para poder calcular el ruido simple tendremos que importar el [módulo](../../../dump/py_module.md) `opensimplex`:
 
 ```python
 import opensimplex as ops
@@ -142,7 +142,7 @@ import opensimplex as ops
 
 ### OBTENER SEMILLA
 
-La [función](py_func.md) `get_seed` devuelve un valor de tipo [`int`](basic/data_types/int.md) indicando la semilla (*seed*) del *simplex noise*, la semilla es el número que se utiliza para generar el ruido.
+La [función](../../../dump/py_func.md) `get_seed` devuelve un valor de tipo [`int`](basic/data_types/int.md) indicando la semilla (*seed*) del *simplex noise*, la semilla es el número que se utiliza para generar el ruido.
 
 ```python
 import opensimplex as ops
@@ -154,7 +154,7 @@ print(ops.get_seed())
 
 ### SEMILLA ALEATORIA
 
-La [función](py_func.md) `random_seed` establece como semilla (*seed*) del *simplex noise* como un número de tipo [`int`](basic/data_types/int.md) """aleatorio""", y lo pongo entre comillas ya que si vemos el código de esta [función](py_func.md) podemos ver que el número lo saca de la [función](py_func.md) [`time_ns`](module/standar/time/time.md) del [módulo](py_module.md) [`time`](module/standar/time/time.md).
+La [función](../../../dump/py_func.md) `random_seed` establece como semilla (*seed*) del *simplex noise* como un número de tipo [`int`](basic/data_types/int.md) """aleatorio""", y lo pongo entre comillas ya que si vemos el código de esta [función](../../../dump/py_func.md) podemos ver que el número lo saca de la [función](../../../dump/py_func.md) [`time_ns`](module/standar/time/time.md) del [módulo](../../../dump/py_module.md) [`time`](module/standar/time/time.md).
 
 ```python
 import opensimplex as ops
@@ -164,11 +164,11 @@ ops.random_seed()
 print(ops.get_seed())
 ```
 
-En este ejemplo se hace uso de la [función](py_func.md) [`get_seed`](#OBTENER%20SEMILLA) para poder ver que la semilla sí a cambiado.
+En este ejemplo se hace uso de la [función](../../../dump/py_func.md) [`get_seed`](#OBTENER%20SEMILLA) para poder ver que la semilla sí a cambiado.
 
 ### ESTABLECER SEMILLA
 
-La [función](py_func.md) `seed` requiere de un argumento de tipo [`int`](basic/data_types/int.md), este será la semilla (*seed*) que se usará para hacer el *simplex noise*.
+La [función](../../../dump/py_func.md) `seed` requiere de un argumento de tipo [`int`](basic/data_types/int.md), este será la semilla (*seed*) que se usará para hacer el *simplex noise*.
 
 ```python
 import opensimplex as ops
@@ -180,11 +180,11 @@ print(ops.get_seed())
 # 64
 ```
 
-En este ejemplo se hace uso de la [función](py_func.md) [`get_seed`](#OBTENER%20SEMILLA) para poder ver que la semilla sí a cambiado.
+En este ejemplo se hace uso de la [función](../../../dump/py_func.md) [`get_seed`](#OBTENER%20SEMILLA) para poder ver que la semilla sí a cambiado.
 
 ### RUIDO 2D
 
-La [función](py_func.md) `noise2` requiere de dos argumentos, estos pueden ser tanto de tipo [`int`](basic/data_types/int.md) como [`float`](basic/data_types/float.md) e indican las coordenadas del del valor que queremos del *simplex noise*.
+La [función](../../../dump/py_func.md) `noise2` requiere de dos argumentos, estos pueden ser tanto de tipo [`int`](basic/data_types/int.md) como [`float`](basic/data_types/float.md) e indican las coordenadas del del valor que queremos del *simplex noise*.
 
 ```python
 import opensimplex as ops

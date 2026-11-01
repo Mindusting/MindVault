@@ -20,7 +20,7 @@ title: Colorama en Python
 > - [Tech With Tim](https://youtu.be/u51Zjlnui4Y) #WWW/YT/TechWithTim
 
 > [!faq]- FAQ
-> - [¿Qué es el control del terminal?](../../../../../../temp/os/tc/tc.md)
+> - [¿Qué es el control del terminal?](../../../../../../../temp/os/tc/tc.md)
 
 ## OBJETO FORE
 

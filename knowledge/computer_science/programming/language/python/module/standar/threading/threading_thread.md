@@ -18,14 +18,14 @@ title: Hilos en Python
 > [!faq]- FAQ
 > - [¿Qué son los hilos en programación?](../../../../../fundamentals/temp-dump/pc_thread.md)
 
-Para crear un **hilo** con la [clase](../../../py_class.md) `Thread` tendremos que darle algunos **argumentos**, de los cuales, el primero listado es el obligatorio:
+Para crear un **hilo** con la [clase](../../../dump/py_class.md) `Thread` tendremos que darle algunos **argumentos**, de los cuales, el primero listado es el obligatorio:
 
 > [!abstract] SINTAXIS
 > Thread(target=**\[target\]**)
 
-- `target`: referencia a la [función](../../../py_func.md) que ejecutará el hilo una vez se haya iniciado.
-- `args`: es una [tupla](../../../basic/data_types/tuple.md) con los argumentos posicionales que se le debe pasar a la [función](../../../py_func.md) indicada en `target`.
-- `kwargs`: es un [diccionario](../../../basic/data_types/dict.md) con los argumentos por nombre que se le debe pasar a la [función](../../../py_func.md) indicada en `target`.
+- `target`: referencia a la [función](../../../dump/py_func.md) que ejecutará el hilo una vez se haya iniciado.
+- `args`: es una [tupla](../../../basic/data_types/tuple.md) con los argumentos posicionales que se le debe pasar a la [función](../../../dump/py_func.md) indicada en `target`.
+- `kwargs`: es un [diccionario](../../../basic/data_types/dict.md) con los argumentos por nombre que se le debe pasar a la [función](../../../dump/py_func.md) indicada en `target`.
 - `name`: es un [string](../../../basic/data_types/str.md) usado para identificar el **hilo**.
 - `daemon`: es un [booleano](../../../basic/data_types/bool.md) indicando si el de tipo *demonio*.
 
@@ -81,7 +81,7 @@ print("Fín de todos los hilos.")
 
 ### MÉTODOS DE THREAD
 
-Los objetos de tipo `Thread` tienen varios [métodos](../../../py_func.md), veremos los más importantes:
+Los objetos de tipo `Thread` tienen varios [métodos](../../../dump/py_func.md), veremos los más importantes:
 
 - `start`: hace que comience el proceso de ejecución del hilo.
 - `is_alive`: devuelve un valor [booleano](../../../basic/data_types/bool.md) indicando si sigue vivo (*Si está vivo es que no ha terminado*).

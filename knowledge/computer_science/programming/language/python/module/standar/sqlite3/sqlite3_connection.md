@@ -15,13 +15,13 @@ title: Clase Connection en SQLite3 en Python
 > [!important] IMPORTANTE
 > A lo largo de esta documentación me referiré a la conexión como `cx` en el código.
 
-La clase **`Connection`** en *SQLite3* permite establecer una conexión a una [base de datos](../../../../../../data_base/relational/theory/db.md) para poder operar con ella; al igual que con los [archivos](../../../basic/builtins/open.md), estos se deben cerrar al terminar su uso (*con la [función](../../../py_func.md) `close`*).
+La clase **`Connection`** en *SQLite3* permite establecer una conexión a una [base de datos](../../../../../../data_base/relational/theory/db.md) para poder operar con ella; al igual que con los [archivos](../../../basic/builtins/open.md), estos se deben cerrar al terminar su uso (*con la [función](../../../dump/py_func.md) `close`*).
 
 Esta **conexión** es la que nos permitirá ejecutar código de [SQLite3](../../../../../../data_base/relational/system/sqlite/sqlite3.md) contra la [base de datos](../../../../../../data_base/relational/theory/db.md).
 
 ## CREACIÓN DE CURSOR
 
-Para crear [cursores](sqlite3_cursor.md) a partir de una conexión se usa el [método](../../../class/py_methods.md) `cursor`; este nos devolverá un [objeto](../../../py_class.md) de tipo [`Cursor`](sqlite3_cursor.md) el cual no contiene ninguna instrucción [SQLite3](../../../../../../data_base/relational/system/sqlite/sqlite3.md).
+Para crear [cursores](sqlite3_cursor.md) a partir de una conexión se usa el [método](../../../dump/class/py_methods.md) `cursor`; este nos devolverá un [objeto](../../../dump/py_class.md) de tipo [`Cursor`](sqlite3_cursor.md) el cual no contiene ninguna instrucción [SQLite3](../../../../../../data_base/relational/system/sqlite/sqlite3.md).
 
 > [!abstract] SINTAXIS
 > ***\[cr\]*** = ***\[cx\]***.cursor()
@@ -45,7 +45,7 @@ cx.close()
 
 ## EJECUCIÓN DE SQL
 
-Para ejecutar SQL podemos usar los [métodos](../../../class/py_methods.md) [`execute`](sqlite3_cursor.md#EJECUTA%20UNO), [`executemany`](sqlite3_cursor.md#EJECUTA%20VARIOS) y [`executescript`](sqlite3_cursor.md#EJECUTA%20SCRIPT) las cuales funcionan prácticamente igual (*por no decir igual*) a las que tienen los [cursores](sqlite3_cursor.md).
+Para ejecutar SQL podemos usar los [métodos](../../../dump/class/py_methods.md) [`execute`](sqlite3_cursor.md#EJECUTA%20UNO), [`executemany`](sqlite3_cursor.md#EJECUTA%20VARIOS) y [`executescript`](sqlite3_cursor.md#EJECUTA%20SCRIPT) las cuales funcionan prácticamente igual (*por no decir igual*) a las que tienen los [cursores](sqlite3_cursor.md).
 
 > [!abstract] SINTAXIS
 > ***\[cr\]*** = ***\[func\]***(***\[args\]***)
@@ -67,7 +67,7 @@ VALUES
     ('Adelia', 22);
 ```
 
-Aquí en Python podemos ver como obtenemos un [cursor](sqlite3_cursor.md) de el [método](../../../class/py_methods.md) `execute` y luego imprimimos cada una de las [tuplas](../../../basic/data_types/tuple.md) que obtenemos como resultado:
+Aquí en Python podemos ver como obtenemos un [cursor](sqlite3_cursor.md) de el [método](../../../dump/class/py_methods.md) `execute` y luego imprimimos cada una de las [tuplas](../../../basic/data_types/tuple.md) que obtenemos como resultado:
 
 ```python
 import sqlite3
@@ -89,13 +89,13 @@ cx.close()
 
 ## COMMITS Y ROLLBACKS
 
-Cuando ejecutamos código de [SQLite3](../../../../../../data_base/relational/system/sqlite/sqlite3.md) de tipo [`CRUD`](../../../../../../data_base/relational/query_language/sql_crud.md) no se aplican los cambios sobre la [base de datos](../../../../../../data_base/relational/theory/db.md) de forma automática, sino que los cambios se realizan en forma de transacción en la **memoria RAM** por lo que para bien aplicar o cancelar la transacción tendremos que indicarlo mediante alguno de los [métodos](../../../class/py_methods.md) [`commit`](#COMMIT) (*para confirmar*) o [`rollback`](#ROLLBACK) (*para cancelar*).
+Cuando ejecutamos código de [SQLite3](../../../../../../data_base/relational/system/sqlite/sqlite3.md) de tipo [`CRUD`](../../../../../../data_base/relational/query_language/sql_crud.md) no se aplican los cambios sobre la [base de datos](../../../../../../data_base/relational/theory/db.md) de forma automática, sino que los cambios se realizan en forma de transacción en la **memoria RAM** por lo que para bien aplicar o cancelar la transacción tendremos que indicarlo mediante alguno de los [métodos](../../../dump/class/py_methods.md) [`commit`](#COMMIT) (*para confirmar*) o [`rollback`](#ROLLBACK) (*para cancelar*).
 
 Ten en cuenta que si se cierra la conexión sin haber realizado un `commit` la transacción no se efectuará.
 
 ### COMMIT
 
-El [método](../../../class/py_methods.md) `commit` sirve para aplicar todas las transacciones que se realizado hasta el momento desde el inicio de la última transacción; hay que tener en cuenta que al crear una conexión se ejecuta el inicio de una transacción de forma automática.
+El [método](../../../dump/class/py_methods.md) `commit` sirve para aplicar todas las transacciones que se realizado hasta el momento desde el inicio de la última transacción; hay que tener en cuenta que al crear una conexión se ejecuta el inicio de una transacción de forma automática.
 
 ```python
 import sqlite3
@@ -119,7 +119,7 @@ cx.close()
 
 ### ROLLBACK
 
-Para cancelar la transacción que quede pendiente en la conexión se usa el [método](../../../class/py_methods.md) `rollback`, no recibe ningún argumento simplemente cancela la transacción pendiente, si no hay ninguna transacción pendiente este [método](../../../class/py_methods.md) no hace nada.
+Para cancelar la transacción que quede pendiente en la conexión se usa el [método](../../../dump/class/py_methods.md) `rollback`, no recibe ningún argumento simplemente cancela la transacción pendiente, si no hay ninguna transacción pendiente este [método](../../../dump/class/py_methods.md) no hace nada.
 
 ```python
 import sqlite3
@@ -173,7 +173,7 @@ cx.close()
 
 ## CREAR UN BACKUP
 
-Si queremos hacer un una copia de seguridad (*backup*) de nuestra [base de datos](../../../../../../data_base/relational/theory/db.md), podremos hacer uso del [método](../../../class/py_methods.md) `backup`, este recibe otra conexión como argumento y guarda en ella la información actual de la conexión original.
+Si queremos hacer un una copia de seguridad (*backup*) de nuestra [base de datos](../../../../../../data_base/relational/theory/db.md), podremos hacer uso del [método](../../../dump/class/py_methods.md) `backup`, este recibe otra conexión como argumento y guarda en ella la información actual de la conexión original.
 
 > [!abstract] SINTAXIS
 > ***\[cx\]***.backup(***\[backup_cx\]***)
@@ -196,7 +196,7 @@ cx.close()
 
 ## TIPO DE SALIDA
 
-Cuando estamos trabajando con [bases de datos](../../../../../../data_base/relational/theory/db.md) lo normal es que usemos texto, pero hay aveces que tendremos que manejar imágenes, vídeos, audios que tengamos guardados en la [base de datos](../../../../../../data_base/relational/theory/db.md) dentro de una columna de tipo [`BLOB`](../../../../../../data_base/relational/system/sqlite/sqlite3_datatypes.md), si intentamos acceder a la información ahí guardada, es bastante probable que nos de una excepción, ya que hay ciertos [`bytes`](../../../basic/data_types/bytes.md) que no se pueden transformar a texto de forma correcta, para solucionar esto podemos cambiar en la forma en la que nos devuelve la información de la [base de datos](../../../../../../data_base/relational/theory/db.md) con el atributo `text_factory`, este por defecto tiene la [clase](../../../py_class.md) [`str`](../../../basic/data_types/str.md) y podemos sustituirlo por la [clase](../../../py_class.md) [`bytes`](../../../basic/data_types/bytes.md) y viceversa.
+Cuando estamos trabajando con [bases de datos](../../../../../../data_base/relational/theory/db.md) lo normal es que usemos texto, pero hay aveces que tendremos que manejar imágenes, vídeos, audios que tengamos guardados en la [base de datos](../../../../../../data_base/relational/theory/db.md) dentro de una columna de tipo [`BLOB`](../../../../../../data_base/relational/system/sqlite/sqlite3_datatypes.md), si intentamos acceder a la información ahí guardada, es bastante probable que nos de una excepción, ya que hay ciertos [`bytes`](../../../basic/data_types/bytes.md) que no se pueden transformar a texto de forma correcta, para solucionar esto podemos cambiar en la forma en la que nos devuelve la información de la [base de datos](../../../../../../data_base/relational/theory/db.md) con el atributo `text_factory`, este por defecto tiene la [clase](../../../dump/py_class.md) [`str`](../../../basic/data_types/str.md) y podemos sustituirlo por la [clase](../../../dump/py_class.md) [`bytes`](../../../basic/data_types/bytes.md) y viceversa.
 
 Una vez cambiado, cada vez que hagamos una consulta a la [base de datos](../../../../../../data_base/relational/theory/db.md), en cuyo resultado contenga un [`TEXT`](../../../../../../data_base/relational/system/sqlite/sqlite3_datatypes.md) o un [`BLOB`](../../../../../../data_base/relational/system/sqlite/sqlite3_datatypes.md), nos lo devolverá en forma de [`bytes`](../../../basic/data_types/bytes.md).
 
@@ -214,7 +214,7 @@ cx.close()
 
 ## ESQUEMA DE LA DB
 
-Para obtener toda la estructura y datos de la [base de datos](../../../../../../data_base/relational/theory/db.md) en forma de texto se usa el [método](../../../class/py_methods.md) `iterdump`; este nos devolverá un generador con todo el contenido el cual podremos transformar en una [**lista**](../../../basic/data_types/list.md) o [**tupla**](../../../basic/data_types/tuple.md) si así lo queremos.
+Para obtener toda la estructura y datos de la [base de datos](../../../../../../data_base/relational/theory/db.md) en forma de texto se usa el [método](../../../dump/class/py_methods.md) `iterdump`; este nos devolverá un generador con todo el contenido el cual podremos transformar en una [**lista**](../../../basic/data_types/list.md) o [**tupla**](../../../basic/data_types/tuple.md) si así lo queremos.
 
 A continuación veremos un ejemplo de como guardar todo el contenido en un archivo de texto a modo de esquema:
 
@@ -270,7 +270,7 @@ cx.close()
 
 ## CREAR FUNCIONES
 
-Para crear una función dentro de una conexión se usa el [método](../../../class/py_methods.md) `create_function`, este recibe tres argumentos, siendo primero el nombre que tendrá la susodicha función, luego el número de argumentos que recibirá y por último una referencia a una función de Python, esta última puede ser una que ya contiene Python o una que hayamos creado nosotros.
+Para crear una función dentro de una conexión se usa el [método](../../../dump/class/py_methods.md) `create_function`, este recibe tres argumentos, siendo primero el nombre que tendrá la susodicha función, luego el número de argumentos que recibirá y por último una referencia a una función de Python, esta última puede ser una que ya contiene Python o una que hayamos creado nosotros.
 
 > [!abstract] SINTAXIS
 > create_function(***\[name\]***, ***\[num\_args\]***, ***\[func\]***)

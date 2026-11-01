@@ -82,7 +82,7 @@ def sremove(path: str | bytes, layers: int = 1) -> None:
 
 El manejo de archivos externos, nos permitirá guardar información de forma permanente, estos archivos se quedarán guardados en el disco duro una vez el programa se termine de ejecutar, permitiendo poder acceder en el futuro a esa información guardada.
 
-Para ello usaremos la [función](py_func.md) `open` (*Abrir en Ingles*), esta [función](py_func.md), en las últimas versiones de Python ya viene incluida de forma automática, en el caso en el que no tengamos acceso a ella, podremos importarla desde el [módulo](py_module.md) `io`.
+Para ello usaremos la [función](../../dump/py_func.md) `open` (*Abrir en Ingles*), esta [función](../../dump/py_func.md), en las últimas versiones de Python ya viene incluida de forma automática, en el caso en el que no tengamos acceso a ella, podremos importarla desde el [módulo](../../dump/py_module.md) `io`.
 
 %%
 SINTAXIS
@@ -95,7 +95,7 @@ open([file_name], [mode])
 > [!abstract] SINTAXIS
 > <span class="function-color">open</span>(<span class="italic grey">[file_name]</span>, <span class="italic grey">[mode]</span>)
 
-Esta [función](py_func.md) nos devuelve un [objeto](py_class.md) de tipo `TextIOWrapper`, del [módulo](py_module.md) `io`, para qué nos entendamos, es un [objeto](py_class.md) de tipo "*archivo*", este [objeto](py_class.md) no guarda el contendido del archivo, si no que es una referencia a este, de forma que cuando nosotros queramos obtener su contenido u modificar lo, podremos hacerlo a trabes de este sin necesidad de cargar todo el archivo en memoria, ya que podría ocupar mucho espacio, veamos un ejemplo de esto:
+Esta [función](../../dump/py_func.md) nos devuelve un [objeto](../../dump/py_class.md) de tipo `TextIOWrapper`, del [módulo](../../dump/py_module.md) `io`, para qué nos entendamos, es un [objeto](../../dump/py_class.md) de tipo "*archivo*", este [objeto](../../dump/py_class.md) no guarda el contendido del archivo, si no que es una referencia a este, de forma que cuando nosotros queramos obtener su contenido u modificar lo, podremos hacerlo a trabes de este sin necesidad de cargar todo el archivo en memoria, ya que podría ocupar mucho espacio, veamos un ejemplo de esto:
 
 ```python
 # Creamos la conexión con el archivo.

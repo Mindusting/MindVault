@@ -39,7 +39,7 @@ title: Clase ZipFile en el módulo ZipFile en Python
 > [!help]- REFERENCIAS WEB
 > - [Python](https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile) #WWW/Python
 
-La [clase](../../../py_class.md) `ZipFile` se comporta de una forma similar a la [función](../../../py_func.md) [`open`](../../../basic/builtins/open.md), con la diferencia principal que esta está pensada para trabajar sobre archivo `.zip` en vez de archivos de texto.
+La [clase](../../../dump/py_class.md) `ZipFile` se comporta de una forma similar a la [función](../../../dump/py_func.md) [`open`](../../../basic/builtins/open.md), con la diferencia principal que esta está pensada para trabajar sobre archivo `.zip` en vez de archivos de texto.
 
 ## CONEXIÓN A ARCHIVO ZIP
 
@@ -118,7 +118,7 @@ zipf.close()
 
 ## ESCRIBIR ARCHIVO
 
-Para añadir un nuevo archivo al archivo `.zip` se usa el [método](../../../class/py_methods.md) `write`, esta tiene un argumento obligatorio en donde indicaremos la ruta del archivo que queremos agregar al `.zip` y otro opcional en donde indicaremos la ruta en donde queremos guardar el archivo dentro del `.zip`.
+Para añadir un nuevo archivo al archivo `.zip` se usa el [método](../../../dump/class/py_methods.md) `write`, esta tiene un argumento obligatorio en donde indicaremos la ruta del archivo que queremos agregar al `.zip` y otro opcional en donde indicaremos la ruta en donde queremos guardar el archivo dentro del `.zip`.
 
 > [!abstract] SINTAXIS
 > ***\[zipf\]***.write(***\[path\]\{***, ***\[new_path\]\}***)
@@ -138,7 +138,7 @@ zipf.close()
 
 ## LEER ARCHIVOS
 
-Para obtener el contendido de uno de los archivos contenidos dentro del archivo `.zip`, se usa el [método](../../../class/py_methods.md) `read`, este recibe la ruta y nombre del archivo que queramos consultar y devuelve el conjunto de [bytes](../../../basic/data_types/bytes.md) del contenido del archivo.
+Para obtener el contendido de uno de los archivos contenidos dentro del archivo `.zip`, se usa el [método](../../../dump/class/py_methods.md) `read`, este recibe la ruta y nombre del archivo que queramos consultar y devuelve el conjunto de [bytes](../../../basic/data_types/bytes.md) del contenido del archivo.
 
 > [!abstract] SINTAXIS
 > ***\[zipf\]***.read(***\[path\]***)
@@ -157,7 +157,7 @@ zipf.close()
 
 ## INPRIMIR DIRECTORIO
 
-Si queremos ver el contendido del archivo `.zip` de forma rápida y sencilla, podemos usar el [método](../../../class/py_methods.md) `printdir`.
+Si queremos ver el contendido del archivo `.zip` de forma rápida y sencilla, podemos usar el [método](../../../dump/class/py_methods.md) `printdir`.
 
 ```python
 from zipfile import ZipFile
@@ -172,7 +172,7 @@ zipf.close()
 
 ## LISTA DE INFORMACIÓN
 
-Para obtener información de los archivo con la que podremos operar se usa el [método](../../../class/py_methods.md) `infolist`, este devuelve una [lista](../../../basic/data_types/list.md) de [objetos](../../../py_class.md) [`ZipInfo`](zipfile_zipinfo.md).
+Para obtener información de los archivo con la que podremos operar se usa el [método](../../../dump/class/py_methods.md) `infolist`, este devuelve una [lista](../../../basic/data_types/list.md) de [objetos](../../../dump/py_class.md) [`ZipInfo`](zipfile_zipinfo.md).
 
 ```python
 from zipfile import ZipFile
@@ -188,4 +188,4 @@ zipf.close()
 ```
 
 > [!info] INFO
-> Este [método](../../../class/py_methods.md) devuelve el contenido de la [variable](../../../basic/variable.md) `filelist`.
+> Este [método](../../../dump/class/py_methods.md) devuelve el contenido de la [variable](../../../basic/variable.md) `filelist`.

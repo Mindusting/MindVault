@@ -11,7 +11,7 @@ title: BreakPoint en Python
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
 
-Para poder corregir `bugs` de nuestro programa podemos usar la [función](py_func.md) ...
+Para poder corregir `bugs` de nuestro programa podemos usar la [función](../dump/py_func.md) ...
 
 %%
 ABCDEFGHIJKLMNÑOPQRSTUVWXYZ

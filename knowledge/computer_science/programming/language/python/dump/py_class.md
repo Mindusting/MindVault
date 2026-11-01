@@ -20,7 +20,7 @@ title: Clases y Ojetos en Python
 > - [Clear Code](https://youtu.be/_vr5faCXFo8) #WWW/YT/ClearCode
 
 > [!faq]- FAQ
-> - [¿Qué son las clases y objetos en programación?](../../fundamentals/basics/oop.md)
+> - [¿Qué son las clases y objetos en programación?](../../../fundamentals/basics/oop.md)
 
 Para crear una clase en Python se usa la palabra clave `class` siguiendo del nombre de la clase y dos puntos, a partir de ahí, todo el código que pongamos dentro de su ámbito formará parte de la clase.
 
@@ -55,7 +55,7 @@ print(Numeros.AUREO)
 # 1.618033988749895
 ```
 
-Ahora, estos atributos no pueden ser modificados (*En este caso no interesa ya que son constantes, pero si se podrían modificar, no obstante, más adelante veremos como evitar que se puedan modificar*) ya que forman parte de la clase, si queremos poder modificar los valores tendremos que **instanciar** la clase para crear un **objeto**, esto lo veremos con el ejemplo de un [vector](../../../../mathematic/temp/math_vector.md):
+Ahora, estos atributos no pueden ser modificados (*En este caso no interesa ya que son constantes, pero si se podrían modificar, no obstante, más adelante veremos como evitar que se puedan modificar*) ya que forman parte de la clase, si queremos poder modificar los valores tendremos que **instanciar** la clase para crear un **objeto**, esto lo veremos con el ejemplo de un [vector](../../../../../mathematic/temp/math_vector.md):
 
 ```python
 # Declaración de la clase
@@ -87,7 +87,7 @@ En este ejemplo podemos ver como se declara la clase y se instancia, para ello s
 > ```python
 > v = Vector()
 > ```
-> Sería el equivalente en [Java](../java/java.md) a:
+> Sería el equivalente en [Java](../../java/java.md) a:
 > ```java
 > Vector v = new Vector();
 > ```

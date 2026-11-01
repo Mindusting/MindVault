@@ -37,7 +37,7 @@ rating: 0.5
 > [!faq]- FAQ
 > - [¿Qué es una lista en programación?](../../../../fundamentals/temp-dump/data_structures/pc_ds_list.md)
 
-Para declarar una **lista** en Python se puede hacer de dos forma, de forma *literal* o a través de la [clase](py_class.md) `list`.
+Para declarar una **lista** en Python se puede hacer de dos forma, de forma *literal* o a través de la [clase](../../dump/py_class.md) `list`.
 
 ## DECLARACIÓN LITERAL
 
@@ -59,7 +59,7 @@ list3: list = []
 list4: list = list()
 ```
 
-La [clase](py_class.md) `list` únicamente puede recibir un argumento, este no es necesario y debe ser un *iterable*, en el caso en el que no se especifique ningún valor para el argumento, devolverá una **lista** bacía, en el caso de crear un *iterable* ([`tuple`](tuple.md), [`set`](set.md), [`dict`](dict.md)) creará una **lista** a partir del *iterable* indicado.
+La [clase](../../dump/py_class.md) `list` únicamente puede recibir un argumento, este no es necesario y debe ser un *iterable*, en el caso en el que no se especifique ningún valor para el argumento, devolverá una **lista** bacía, en el caso de crear un *iterable* ([`tuple`](tuple.md), [`set`](set.md), [`dict`](dict.md)) creará una **lista** a partir del *iterable* indicado.
 
 Las **listas** 
 
@@ -73,7 +73,7 @@ l2: list = [i for i in range(3)]
 
 ### AÑADIR ELEMENTO
 
-Añadir elementos a una **lista** consiste en introducir el nuevo elemento **al final** de la **lista**, para ello se usa el [método](class/py_methods.md) `append`, este recive un único argumento con el **valor** que queramos introducir.
+Añadir elementos a una **lista** consiste en introducir el nuevo elemento **al final** de la **lista**, para ello se usa el [método](../../dump/class/py_methods.md) `append`, este recive un único argumento con el **valor** que queramos introducir.
 
 > [!abstract] SINTAXIS
 > ***\[listName\]***.append(***\[value\]***)
@@ -136,7 +136,7 @@ print(users)
 
 ### ELIMINAR ELEMENTO POR ÍNDICE
 
-Para eliminar un elemento por índice se usa el [método](class/py_methods.md) `pop`, este tiene un único argumento opcional, el cual por defecto tiene el valor de `-1`, con este se indica el índice del elemento a sacar de la lista, pudiendo dar un índice tanto positivo como negativo, siendo el `-1` el último valor de la lista, a su vez, cuando este devuelve el valor que se extrae de la lista.
+Para eliminar un elemento por índice se usa el [método](../../dump/class/py_methods.md) `pop`, este tiene un único argumento opcional, el cual por defecto tiene el valor de `-1`, con este se indica el índice del elemento a sacar de la lista, pudiendo dar un índice tanto positivo como negativo, siendo el `-1` el último valor de la lista, a su vez, cuando este devuelve el valor que se extrae de la lista.
 
 > [!abstract] SINTAXIS
 > ***\[listName\]***.pop(***\{index\}***)
@@ -153,11 +153,11 @@ print(my_list)
 # [2]
 ```
 
-Como se puede ver en el ejemplo cuando usamos el [método](class/py_methods.md) `pop` sin arguentos extraemos el último valor, en este caso el `5`; cuando usamos el `pop` con un argument (*en este caso el `0`*) obtenemos el elemento del índice indicado (*en este caso el `3`*); finalmente se imprime la lista para poder ver que efectivamente se han extraido los elementos de la lista.
+Como se puede ver en el ejemplo cuando usamos el [método](../../dump/class/py_methods.md) `pop` sin arguentos extraemos el último valor, en este caso el `5`; cuando usamos el `pop` con un argument (*en este caso el `0`*) obtenemos el elemento del índice indicado (*en este caso el `3`*); finalmente se imprime la lista para poder ver que efectivamente se han extraido los elementos de la lista.
 
 ### INSERTAR ELEMENTO
 
-Para insertar un elemento en un índice en concreto se usa el [método](class/py_methods.md) `insert`, este recive dos parámetros, siendo el primero el índice de la posición en donde queremos introducir el elemento y el segundo el valor del elemento a introducir.
+Para insertar un elemento en un índice en concreto se usa el [método](../../dump/class/py_methods.md) `insert`, este recive dos parámetros, siendo el primero el índice de la posición en donde queremos introducir el elemento y el segundo el valor del elemento a introducir.
 
 > [!abstract] SINTAXIS
 > ***\[listName\]***.insert(***\[index\]***, ***\[value\]***)

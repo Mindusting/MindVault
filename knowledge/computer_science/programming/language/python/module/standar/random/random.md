@@ -21,7 +21,7 @@ title: Random en Python
 > - [Python](https://docs.python.org/es/3/library/random.html) #WWW/Python
 > - [W3 Schools](https://www.w3schools.com/python/module_random.asp) #WWW/W3Schools
 
-El [módulo](py_module.md) **random** contiene varias [funciones](py_func.md), pero en esta documentación solo veremos la [clase](py_class.md) `Random`, y sus utilidades, pero para ello primero deberemos importarla:
+El [módulo](../../../dump/py_module.md) **random** contiene varias [funciones](../../../dump/py_func.md), pero en esta documentación solo veremos la [clase](../../../dump/py_class.md) `Random`, y sus utilidades, pero para ello primero deberemos importarla:
 
 ```python
 from random import Random

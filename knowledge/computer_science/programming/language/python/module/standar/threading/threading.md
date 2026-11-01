@@ -22,7 +22,7 @@ title: Threading en Python
 > - [Dave's Space](https://youtu.be/AZnGRKFUU0c) #WWW/YT/DavesSpace
 
 
-Para poder usar el [módulo](../../../py_module.md) `threading` tendremos que importarlo:
+Para poder usar el [módulo](../../../dump/py_module.md) `threading` tendremos que importarlo:
 
 ```python
 import threading

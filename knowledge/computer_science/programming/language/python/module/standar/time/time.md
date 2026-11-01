@@ -13,7 +13,7 @@ title: Módulo TIME en Python
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
 
-Para importar el [módulo](py_module.md) `time` lo haremos de la siguiente forma:
+Para importar el [módulo](../../../dump/py_module.md) `time` lo haremos de la siguiente forma:
 
 ```python
 import time

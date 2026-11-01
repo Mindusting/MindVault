@@ -46,7 +46,7 @@ title: Módulo OpenPyXL en Python
 > - [Tech With Tim](https://youtu.be/7YS6YDQKFh0) #WWW/YT/TechWithTim
 > - [Bek Brace](https://youtu.be/hFDrWvDOYFA) #WWW/YT/BekBrace
 
-Para poder trabajar sobre archivos de *EXCEL* se utiliza el [módulo](../../../py_module.md) `openpyxl`, este contiene las herramientas que necesitamos para manipular los archivos de este tipo; pero primero tendremos que importarlo:
+Para poder trabajar sobre archivos de *EXCEL* se utiliza el [módulo](../../../dump/py_module.md) `openpyxl`, este contiene las herramientas que necesitamos para manipular los archivos de este tipo; pero primero tendremos que importarlo:
 
 ```python
 import openpyxl
@@ -54,7 +54,7 @@ import openpyxl
 
 ## CREAR UN ARCHIVO
 
-Para crear un nuevo archivo de *EXCEL* se usa la [clase](../../../py_class.md) `Workbook` (*del inglés "libro de trabajo"*); este recibe un parámetro
+Para crear un nuevo archivo de *EXCEL* se usa la [clase](../../../dump/py_class.md) `Workbook` (*del inglés "libro de trabajo"*); este recibe un parámetro
 
 ---
 ---
@@ -64,7 +64,7 @@ Para crear un nuevo archivo de *EXCEL* se usa la [clase](../../../py_class.md) `
 
 [openpyxl_sheets](openpyxl_sheets.md)
 
-Para poder trabajar sobre un *EXCEL* primero deberemos importar el [módulo](../../../py_module.md) `openpyxl`, primer tenemos que importarlo.
+Para poder trabajar sobre un *EXCEL* primero deberemos importar el [módulo](../../../dump/py_module.md) `openpyxl`, primer tenemos que importarlo.
 
 ```python
 import openpyxl
@@ -74,7 +74,7 @@ import openpyxl
 
 ### WORKBOOK
 
-Para poder trabajar sobre un *EXCEL* primero tendremos que crearlo, para ello usaremos la [clase](../../../py_class.md) `WorkBook`:
+Para poder trabajar sobre un *EXCEL* primero tendremos que crearlo, para ello usaremos la [clase](../../../dump/py_class.md) `WorkBook`:
 
 ```python
 import openpyxl as xl
@@ -84,7 +84,7 @@ wb = xl.Workbook()
 
 ### SHEETS
 
-Para trabajar sobre las páginas de *EXCEL* tenemos que crear un [objeto](../../../py_class.md) `Worksheet`, sobre este es sobre el que se va a trabajar:
+Para trabajar sobre las páginas de *EXCEL* tenemos que crear un [objeto](../../../dump/py_class.md) `Worksheet`, sobre este es sobre el que se va a trabajar:
 
 ```python
 from openpyxl import (
@@ -133,7 +133,7 @@ Como se puede ver en el ejemplo, después de cambiarle el nombre a la página, s
 
 #### CREAR PÁGINAS
 
-Para crear nuevas páginas en nuestro archivo de *EXCEL* se usa el [método](../../../class/py_methods.md) `create_sheet`, este [método](../../../class/py_methods.md) requiere de un argumento y puede tener dos, el primero (obligatorio) es el nombre de la nueva página, el segundo es el índice de la página, si no indicamos ninguno, será el valor más alto posible, esto es debido a que las páginas se guardan en forma de [lista](../../../basic/data_types/list.md).
+Para crear nuevas páginas en nuestro archivo de *EXCEL* se usa el [método](../../../dump/class/py_methods.md) `create_sheet`, este [método](../../../dump/class/py_methods.md) requiere de un argumento y puede tener dos, el primero (obligatorio) es el nombre de la nueva página, el segundo es el índice de la página, si no indicamos ninguno, será el valor más alto posible, esto es debido a que las páginas se guardan en forma de [lista](../../../basic/data_types/list.md).
 
 ```python
 from openpyxl import (
@@ -180,7 +180,7 @@ wb.close()
 
 #### ORDENAR PÁGINAS
 
-Para cambiar el orden de las páginas se usa el [método](../../../class/py_methods.md) `move_sheet`, este recibe dos argumentos, el nombre y el índice de donde lo queremos mover.
+Para cambiar el orden de las páginas se usa el [método](../../../dump/class/py_methods.md) `move_sheet`, este recibe dos argumentos, el nombre y el índice de donde lo queremos mover.
 
 ```python
 from openpyxl import (
@@ -231,7 +231,7 @@ wb.close()
 
 ### SAVE
 
-Para guardar un [objeto](../../../py_class.md) `Workbook` se usa el [método](../../../class/py_methods.md) `save`, este recibe un argumento obligatorio, en este se indica el nombre con el que queremos guardar el archivo.
+Para guardar un [objeto](../../../dump/py_class.md) `Workbook` se usa el [método](../../../dump/class/py_methods.md) `save`, este recibe un argumento obligatorio, en este se indica el nombre con el que queremos guardar el archivo.
 
 ```python
 from openpyxl import Workbook
@@ -263,7 +263,7 @@ Una vez hayas guardado un archivo *EXCEL* quizás te interese [cerrarlo](#CLOSE)
 
 ### LOAD WORKBOOK
 
-Para abrir un archivo *EXCEL* que ya esté creado se hace uso de la [función](../../../py_func.md) `load_workbook`
+Para abrir un archivo *EXCEL* que ya esté creado se hace uso de la [función](../../../dump/py_func.md) `load_workbook`
 
 ```python
 from openpyxl import (
@@ -274,11 +274,11 @@ from openpyxl import (
 wb: Workbook = load_workbook("main.xlsx")
 ```
 
-Esta [función](../../../py_func.md) requiere de un argumento obligatorio, este es el nombre del archivo (Y su ruta si hiciera falta).
+Esta [función](../../../dump/py_func.md) requiere de un argumento obligatorio, este es el nombre del archivo (Y su ruta si hiciera falta).
 
 ## LETRA DE COLUMNA
 
-Para convertir el número de la columna en la letra que corresponde se puede usar el la [función](../../../py_func.md) `get_column_letter`, esta recibe un valor de tipo [int](../../../basic/data_types/int.md) como argumento:
+Para convertir el número de la columna en la letra que corresponde se puede usar el la [función](../../../dump/py_func.md) `get_column_letter`, esta recibe un valor de tipo [int](../../../basic/data_types/int.md) como argumento:
 
 ```python
 from openpyxl import utils

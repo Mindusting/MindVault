@@ -18,7 +18,7 @@ title: Input por consola en Python
 > [!help]- REFERENCIAS WEB
 > - [Python](https://docs.python.org/3/library/functions.html#input) #WWW/Python
 
-Para obtener información por parte del usuario a través del terminal se usa la [función](py_func.md) `input`, esta recibe un solo argumento (`prompt`), en este indicaremos lo que le aparecerá al usuario en el terminal justo antes de escribir la respuesta, en el momento en el que el usuario pulse la tecla `ENTER` todo lo que haya escrito se devolverá en forma de [`string`](basic/data_types/str.md) a través de esta [función](py_func.md).
+Para obtener información por parte del usuario a través del terminal se usa la [función](../../dump/py_func.md) `input`, esta recibe un solo argumento (`prompt`), en este indicaremos lo que le aparecerá al usuario en el terminal justo antes de escribir la respuesta, en el momento en el que el usuario pulse la tecla `ENTER` todo lo que haya escrito se devolverá en forma de [`string`](basic/data_types/str.md) a través de esta [función](../../dump/py_func.md).
 
 %%
 SINTAXIS

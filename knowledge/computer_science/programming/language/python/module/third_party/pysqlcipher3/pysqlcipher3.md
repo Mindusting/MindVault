@@ -39,7 +39,7 @@ pip install pysqlcipher3
 
 ## IMPORTAR MÓDULO
 
-Para hacer uso de este [módulo](py_module.md) hay que importarlo, se suele hacer de la siguiente manera para simplificar el uso:
+Para hacer uso de este [módulo](../../../dump/py_module.md) hay que importarlo, se suele hacer de la siguiente manera para simplificar el uso:
 
 ```python
 from pysqlcipher3 import dbapi2 as sqlite

@@ -23,7 +23,7 @@ Cabe resaltar que dependiendo del contexto se el da un nombre distinto, estos pu
 
 - Función: Es un procedimiento el cual devuelve a la llamada de la función un valor.
 
-- Método: Puede ser un procedimiento o una función, su característica distintiva es que forma parte de una [clase](py_class.md).
+- Método: Puede ser un procedimiento o una función, su característica distintiva es que forma parte de una [clase](dump/py_class.md).
 
 En cualquier caso, se suele usar “Función” o “Método”, al proceso de “encapsular” código.
 

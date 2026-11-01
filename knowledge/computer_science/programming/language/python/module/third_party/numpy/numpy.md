@@ -21,7 +21,7 @@ La librería **Numpy**
 
 ## IMPORTACIÓN DE NUMPY
 
-Para poder trabajar con el [módulo](../../../py_module.md) `numpy` primero tendremos que importarlo, generalmente se le cambia el nombre a `np` por abreviar:
+Para poder trabajar con el [módulo](../../../dump/py_module.md) `numpy` primero tendremos que importarlo, generalmente se le cambia el nombre a `np` por abreviar:
 
 ```python
 import numpy as np

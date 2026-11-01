@@ -17,7 +17,7 @@ title: Map en Python
 > [!help]- REFERENCIAS WEB
 > - [Python](https://docs.python.org/3/library/functions.html#map) #WWW/Python
 
-La [clase](py_class.md) `map` para aplicar una [función](py_func.md) a todos los *elementos* de un *iterable*, guardando el resultado en un **objeto** de tipo `map`, pudiendo convertir este último en un nuevo *iterable*.
+La [clase](../../dump/py_class.md) `map` para aplicar una [función](../../dump/py_func.md) a todos los *elementos* de un *iterable*, guardando el resultado en un **objeto** de tipo `map`, pudiendo convertir este último en un nuevo *iterable*.
 
 > [!abstract] SINTAXIS
 > map(***\[function]***, ***\[iterator]***)
@@ -25,7 +25,7 @@ La [clase](py_class.md) `map` para aplicar una [función](py_func.md) a todos lo
 ---
 
 > [!example] Ejemplos
-> En estos ejemplos se hace uso de las [funciones lambda](py_lambda.md).
+> En estos ejemplos se hace uso de las [funciones lambda](../../dump/py_lambda.md).
 
 ```python
 # Eleva al cubo.

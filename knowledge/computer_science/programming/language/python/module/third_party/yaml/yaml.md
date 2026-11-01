@@ -39,7 +39,7 @@ pip install PyYAML
 
 ## DE YAML A PYTHON
 
-Para transformar un [`str`](basic/data_types/str.md) con información en formato `YAML` en un [diccionario](basic/data_types/dict.md) y/o [lista](basic/data_types/list.md), tendremos que hacer uso de la [función](py_func.md) `safe_load.
+Para transformar un [`str`](basic/data_types/str.md) con información en formato `YAML` en un [diccionario](basic/data_types/dict.md) y/o [lista](basic/data_types/list.md), tendremos que hacer uso de la [función](../../../dump/py_func.md) `safe_load.
 
 ```python
 import yaml
@@ -85,7 +85,7 @@ print(data)
 
 ## DE PYTHON A YAML
 
-Para transformar un [diccionario](basic/data_types/dict.md) y/o [lista](basic/data_types/list.md) en un [`str`](basic/data_types/str.md) con información en formato `YAML`, tendremos que hacer uso de la [función](py_func.md) `dump.
+Para transformar un [diccionario](basic/data_types/dict.md) y/o [lista](basic/data_types/list.md) en un [`str`](basic/data_types/str.md) con información en formato `YAML`, tendremos que hacer uso de la [función](../../../dump/py_func.md) `dump.
 
 ```python
 import yaml

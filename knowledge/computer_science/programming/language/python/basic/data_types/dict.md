@@ -27,7 +27,7 @@ Los **diccionarios** son similares a las [listas](basic/data_types/list.md) con 
 > [!info] INFO
 > - Cabe resaltar que las `key` no se pueden repetir ya que es lo que se utiliza para referenciar los valores guardados, si intentamos guardar otro valor con la misma `key` simplemente se sobrescribirá.
 > <br>
-> - Otro apunte es que se puede usar cualquier cosa tanto como `key` como `value`, esto pueden ser [`int`](basic/data_types/int.md), [`float`](basic/data_types/float.md), [`string`](basic/data_types/str.md), [`objetos`](py_class.md)... cualquier cosa.
+> - Otro apunte es que se puede usar cualquier cosa tanto como `key` como `value`, esto pueden ser [`int`](basic/data_types/int.md), [`float`](basic/data_types/float.md), [`string`](basic/data_types/str.md), [`objetos`](../../dump/py_class.md)... cualquier cosa.
 
 Para crear un **diccionario** vacío podemos hacerlo de las siguientes formas:
 
