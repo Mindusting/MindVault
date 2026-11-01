@@ -34,7 +34,7 @@ print(type(y))
 # <class 'int'>
 ```
 
-Esto implica que si queremos pasar una **Tupla** con un único elemento como argumento como podría ocurrir en la inserción a una [base de datos](../../../../../data_base/relational/theory/db.md) con [SQLite3](sqlite3/py_sqlite3.md), tendremos que hacerlo de la siguiente forma (*Este caso es un poco complicado si eres nuevo, por lo que si ese es tu caso, mejor ve al [siguiente apartado](#ACCESO%20A%20ELEMENTOS)*):
+Esto implica que si queremos pasar una **Tupla** con un único elemento como argumento como podría ocurrir en la inserción a una [base de datos](../../../../../data_base/relational/theory/db.md) con [SQLite3](../../module/standar/sqlite3/py_sqlite3.md), tendremos que hacerlo de la siguiente forma (*Este caso es un poco complicado si eres nuevo, por lo que si ese es tu caso, mejor ve al [siguiente apartado](#ACCESO%20A%20ELEMENTOS)*):
 
 ```py
 import sqlite3

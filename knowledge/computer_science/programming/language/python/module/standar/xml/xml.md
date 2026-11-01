@@ -18,9 +18,9 @@ title: Módulos de Python
 > - [Python](https://docs.python.org/3.13/library/xml.html) #WWW/Python
 
 > [!faq]- FAQ
-> - [¿Qué son y como funcionan los archivos XML?](../../../../markup_language/xml/xml.md)
+> - [¿Qué son y como funcionan los archivos XML?](../../../../../../markup_language/xml/xml.md)
 
-Para poder trabajar sobre [archivos **XML**](../../../../markup_language/xml/xml.md) con **Python** tendremos que hacer uso del [módulo](../py_module.md) `xml`, de este usaremos el [submódulo](../py_module.md) `xml.etree.ElementTree`, el cual abreviaremos como `ET` por el resto de la documentación.
+Para poder trabajar sobre [archivos **XML**](../../../../../../markup_language/xml/xml.md) con **Python** tendremos que hacer uso del [módulo](../../../py_module.md) `xml`, de este usaremos el [submódulo](../../../py_module.md) `xml.etree.ElementTree`, el cual abreviaremos como `ET` por el resto de la documentación.
 
 > [!info] INFO
 > Este módulo está incluido en Python3 por lo que no hace falta instalarlo.
