@@ -39,7 +39,7 @@ title: Clase ZipFile en el módulo ZipFile en Python
 > [!help]- REFERENCIAS WEB
 > - [Python](https://docs.python.org/3/library/zipfile.html#zipfile.ZipFile) #WWW/Python
 
-La [clase](../py_class.md) `ZipFile` se comporta de una forma similar a la [función](../py_func.md) [`open`](../basic/builtins/open.md), con la diferencia principal que esta está pensada para trabajar sobre archivo `.zip` en vez de archivos de texto.
+La [clase](../../../py_class.md) `ZipFile` se comporta de una forma similar a la [función](../../../py_func.md) [`open`](../../../basic/builtins/open.md), con la diferencia principal que esta está pensada para trabajar sobre archivo `.zip` en vez de archivos de texto.
 
 ## CONEXIÓN A ARCHIVO ZIP
 
@@ -59,9 +59,9 @@ Dependiendo del modo de trabajo que elijamos para el archivo `.zip`, podremos ha
 ^table-acciess-modifiers
 
 - `w`: Permite crear archivos `.zip` nuevos, si se indica un archivo ya existente se sobrescribirá los datos que introduzcamos.
-- `r`: Permite leer archivos `.zip`, si el archivo indicado no existe, lanza una [excepción](../basic/exception.md) de tipo `FileNotFoundError`.
+- `r`: Permite leer archivos `.zip`, si el archivo indicado no existe, lanza una [excepción](../../../basic/exception.md) de tipo `FileNotFoundError`.
 - `a`: Permite crear archivos `.zip` nuevos, si se indica un archivo ya existente se añadirá los cambios que indiquemos.
-- `x`: Permite crear archivos `.zip` nuevos, si se indica un archivo ya existente se lanzará una [excepción](../basic/exception.md) de tipo `FileExistsError`.
+- `x`: Permite crear archivos `.zip` nuevos, si se indica un archivo ya existente se lanzará una [excepción](../../../basic/exception.md) de tipo `FileExistsError`.
 
 ### MÉTODO DE COMPRESIÓN
 
@@ -85,7 +85,7 @@ A la hora de abrir un archivo `.zip` este utiliza el método por defecto que es 
 
 ### NIVEL DE COMPRESIÓN
 
-El nivel de compresión se aplica sobre el [método de compresión](#MÉTODO%20DE%20COMPRESIÓN) e indica la dureza de este último, a menor dureza menor compresión y por tanto menos tiempo de calculo, y a mayor dureza mayor compresión y por tanto más tiempo de calculo, el rango de valores es de [`[0, 9]`](../../../../../mathematic/temp/math_range_notation.md), siendo el nivel `0` sin compresión, `1` el nivel más bajo de compresión y `9` el nivel más grade de compresión.
+El nivel de compresión se aplica sobre el [método de compresión](#MÉTODO%20DE%20COMPRESIÓN) e indica la dureza de este último, a menor dureza menor compresión y por tanto menos tiempo de calculo, y a mayor dureza mayor compresión y por tanto más tiempo de calculo, el rango de valores es de [`[0, 9]`](../../../../../../../mathematic/temp/math_range_notation.md), siendo el nivel `0` sin compresión, `1` el nivel más bajo de compresión y `9` el nivel más grade de compresión.
 
 Este argumento tiene como valor por defecto `-1`, el cual es interpretado como un punto medio entre nivel de compresión y tiempo de calculo, dando como resultado el nivel `6`.
 
@@ -98,7 +98,7 @@ Este argumento tiene como valor por defecto `-1`, el cual es interpretado como u
 
 ## COMENTARIO DEL ARCHIVO
 
-Para pode establecer o leer el comentario del archivo usaremos la [variable](../basic/variable.md) `comment`, este almacena el comentario en forma de [`bytes`](../basic/data_types/bytes.md).
+Para pode establecer o leer el comentario del archivo usaremos la [variable](../../../basic/variable.md) `comment`, este almacena el comentario en forma de [`bytes`](../../../basic/data_types/bytes.md).
 
 Este comentario es simplemente para poder darle una descripción al archivo, para poder ejemplo indicar de forma general el contendido del archivo, pudiendo así hacernos una idea de que es lo que contiene sin tener que revisar el resto del contenido comprimido.
 
@@ -118,7 +118,7 @@ zipf.close()
 
 ## ESCRIBIR ARCHIVO
 
-Para añadir un nuevo archivo al archivo `.zip` se usa el [método](../class/py_methods.md) `write`, esta tiene un argumento obligatorio en donde indicaremos la ruta del archivo que queremos agregar al `.zip` y otro opcional en donde indicaremos la ruta en donde queremos guardar el archivo dentro del `.zip`.
+Para añadir un nuevo archivo al archivo `.zip` se usa el [método](../../../class/py_methods.md) `write`, esta tiene un argumento obligatorio en donde indicaremos la ruta del archivo que queremos agregar al `.zip` y otro opcional en donde indicaremos la ruta en donde queremos guardar el archivo dentro del `.zip`.
 
 > [!abstract] SINTAXIS
 > ***\[zipf\]***.write(***\[path\]\{***, ***\[new_path\]\}***)
@@ -138,7 +138,7 @@ zipf.close()
 
 ## LEER ARCHIVOS
 
-Para obtener el contendido de uno de los archivos contenidos dentro del archivo `.zip`, se usa el [método](../class/py_methods.md) `read`, este recibe la ruta y nombre del archivo que queramos consultar y devuelve el conjunto de [bytes](../basic/data_types/bytes.md) del contenido del archivo.
+Para obtener el contendido de uno de los archivos contenidos dentro del archivo `.zip`, se usa el [método](../../../class/py_methods.md) `read`, este recibe la ruta y nombre del archivo que queramos consultar y devuelve el conjunto de [bytes](../../../basic/data_types/bytes.md) del contenido del archivo.
 
 > [!abstract] SINTAXIS
 > ***\[zipf\]***.read(***\[path\]***)
@@ -157,7 +157,7 @@ zipf.close()
 
 ## INPRIMIR DIRECTORIO
 
-Si queremos ver el contendido del archivo `.zip` de forma rápida y sencilla, podemos usar el [método](../class/py_methods.md) `printdir`.
+Si queremos ver el contendido del archivo `.zip` de forma rápida y sencilla, podemos usar el [método](../../../class/py_methods.md) `printdir`.
 
 ```python
 from zipfile import ZipFile
@@ -172,7 +172,7 @@ zipf.close()
 
 ## LISTA DE INFORMACIÓN
 
-Para obtener información de los archivo con la que podremos operar se usa el [método](../class/py_methods.md) `infolist`, este devuelve una [lista](../basic/data_types/list.md) de [objetos](../py_class.md) [`ZipInfo`](py_zipfile_zipinfo.md).
+Para obtener información de los archivo con la que podremos operar se usa el [método](../../../class/py_methods.md) `infolist`, este devuelve una [lista](../../../basic/data_types/list.md) de [objetos](../../../py_class.md) [`ZipInfo`](zipfile_zipinfo.md).
 
 ```python
 from zipfile import ZipFile
@@ -188,4 +188,4 @@ zipf.close()
 ```
 
 > [!info] INFO
-> Este [método](../class/py_methods.md) devuelve el contenido de la [variable](../basic/variable.md) `filelist`.
+> Este [método](../../../class/py_methods.md) devuelve el contenido de la [variable](../../../basic/variable.md) `filelist`.

@@ -22,7 +22,7 @@ title: Módulo ZipFile en Python
 > - [Real Python](https://realpython.com/python-zipfile) #WWW/RealPython
 > - [note.nkmk.me](https://note.nkmk.me/en/python-zipfile) #WWW/NoteNkmkMe
 
-El objetivo de este [módulo](../py_module.md) es poder trabajar sobre archivo `.zip` con Python, como puede ser crear archivos nuevo, leer ya existentes, modificarlos e incluso obtener información de cada archivo interno comprimido.
+El objetivo de este [módulo](../../../py_module.md) es poder trabajar sobre archivo `.zip` con Python, como puede ser crear archivos nuevo, leer ya existentes, modificarlos e incluso obtener información de cada archivo interno comprimido.
 
 > [!info] INFO
 > Este módulo está incluido en Python3 por lo que no hace falta instalarlo.
@@ -31,12 +31,12 @@ El objetivo de este [módulo](../py_module.md) es poder trabajar sobre archivo `
 
 Si quieres seguir una documentación más lineal, te recomiendo lo siguiente:
 
-1. [CLASE `ZipFile`](py_zipfile_zipfile.md)
-2. [CLASE `ZipInfo`](py_zipfile_zipinfo.md)
+1. [CLASE `ZipFile`](zipfile_zipfile.md)
+2. [CLASE `ZipInfo`](zipfile_zipinfo.md)
 
 ## ARCHIVOS VÁLIDOS
 
-Para comprobar si un archivo es válido como `.zip`, y eso no es si tiene la extensión correcta, sino al contenido del archivo es interpretable como un archivo `.zip`, podemos usar la [función](../py_func.md) `is_zipfile`, este requiere de un argumento indicando la ruta del archivo, esta devolverá un valor [booleano](../basic/data_types/bool.md) indicando si es válido o no.
+Para comprobar si un archivo es válido como `.zip`, y eso no es si tiene la extensión correcta, sino al contenido del archivo es interpretable como un archivo `.zip`, podemos usar la [función](../../../py_func.md) `is_zipfile`, este requiere de un argumento indicando la ruta del archivo, esta devolverá un valor [booleano](../../../basic/data_types/bool.md) indicando si es válido o no.
 
 > [!abstract] SINTAXIS
 > id\_zipfile(***\[path\]***)
@@ -49,5 +49,5 @@ print(zipfile.is_zipfile("./data.zip"))
 ```
 
 > [!note] NOTA
-> Esta [función](../py_func.md) devolverá `False` si la **ruta** indicada no existe.
+> Esta [función](../../../py_func.md) devolverá `False` si la **ruta** indicada no existe.
 

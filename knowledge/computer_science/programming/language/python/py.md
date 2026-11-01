@@ -190,4 +190,4 @@ tags: [Programming, Python]
 - [TIME ⌛](module/standar/time/time.md)
 - [XML](module/standar/xml/xml.md)
 - [YAML](module/third_party/yaml/yaml.md)
-- [ZIPFILE 🗄️](zipfile/py_zipfile.md)
+- [ZIPFILE 🗄️](module/standar/zipfile/zipfile.md)
