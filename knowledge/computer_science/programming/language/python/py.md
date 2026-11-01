@@ -121,7 +121,6 @@ tags: [Programming, Python]
 
 ## ÍNDICE
 
-- [AGRADECIMIENTOS 🎉](py_thanks_to.md)
 - [PRÓLOGO 🧭](py_prologue.md)
 - [ARCHIVOS DE PYTHON 📄](py_files.md)
 - [COMENTARIOS 💬](py_comment.md)
