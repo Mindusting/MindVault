@@ -129,7 +129,7 @@ Si quieres más información o documentación más antigua hecha en google docum
     - [YAML](knowledge/computer_science/programming/data_format/yaml.md)
     - [Expresiones regulares](knowledge/computer_science/text_processing/regex/regex.md)
     - [Algoritmos para ordenar datos](knowledge/computer_science/programming/fundamentals/temp-dump/pc_sorting_algorithm.md)
-    - [Brainfuck](knowledge/computer_science/programming/language/brainfuck.md)
+    - [Brainfuck](knowledge/computer_science/programming/language/brainfuck/brainfuck.md)
     - [Godot](temp/godot/godot.md)
 
 > [!example]- TEMÁRIO AUTOMÁTICO
