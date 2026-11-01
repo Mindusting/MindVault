@@ -18,4 +18,4 @@ En Python existen varias formas de hacer *GUI* (Graphical User Interface), por l
 > [!note]-
 > En primera instancia se documentará el cuso de `Tkinter`, más adelante se irán documentando otras formas de crear GUIs.
 
-- [TKinter](tkinter/py_tk.md)
+- [TKinter](module/standar/tkinter/py_tk.md)

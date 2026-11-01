@@ -32,21 +32,21 @@ title: Módulo TKinter en Python
 > - [Clear Code](https://youtu.be/mop6g-c5HEY) #WWW/YT/ClearCode
 
 > [!warning] ATENCIÓN:
-> Para entender bien la documentación de **TKinter** es muy recomendable entender la [OOP de Python](../py_class.md) ya que se utiliza mucho y se trabaja con **herencia**.
+> Para entender bien la documentación de **TKinter** es muy recomendable entender la [OOP de Python](../../../py_class.md) ya que se utiliza mucho y se trabaja con **herencia**.
 
-El [módulo](../py_module.md) **TKinter** ofrece la posibilidad de crear entornos gráficos (*GUI*) para mejorar la interacción con el usuario que use nuestro programa.
+El [módulo](../../../py_module.md) **TKinter** ofrece la posibilidad de crear entornos gráficos (*GUI*) para mejorar la interacción con el usuario que use nuestro programa.
 
-Cabe resaltar que **TKinter** ha sufrido cambios con el paso del tiempo, entre ellos está la adición del nuevo [submódulos](../py_module.md) [`ttk`](ttk/py_ttk.md) que contiene una versión más avanzada de los elementos de **TKinter**, lo mejor es empezar aprendiendo a usar el antiguo **TKinter** y luego aprender lo nuevo, ya que este último es algo más complejo.
+Cabe resaltar que **TKinter** ha sufrido cambios con el paso del tiempo, entre ellos está la adición del nuevo [submódulos](../../../py_module.md) [`ttk`](ttk/py_ttk.md) que contiene una versión más avanzada de los elementos de **TKinter**, lo mejor es empezar aprendiendo a usar el antiguo **TKinter** y luego aprender lo nuevo, ya que este último es algo más complejo.
 
 ---
 
-Para poder hacer uso de **TKinter**, primero deberemos importar el [módulo](../py_module.md) de la siguiente forma, a este se le suele dar el alias de `tk`:
+Para poder hacer uso de **TKinter**, primero deberemos importar el [módulo](../../../py_module.md) de la siguiente forma, a este se le suele dar el alias de `tk`:
 
 ```python
 import tkinter as tk
 ```
 
-Una vez hayamos importado **TKinter**, podremos crear una ventana con la [clase](../py_class.md) [`Tk`](py_tk_tk.md).
+Una vez hayamos importado **TKinter**, podremos crear una ventana con la [clase](../../../py_class.md) [`Tk`](py_tk_tk.md).
 
 ## CLASES
 

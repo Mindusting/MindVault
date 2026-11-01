@@ -58,7 +58,7 @@ class Window(tk.Tk):
 main()
 ```
 
-En caso de querer tanto modificar como acceder al texto que contiene el `Label` se puede hacer al igual que con un [**diccionario**](../basic/data_types/dict.md), como veremos en el próximo ejemplo haciendo uso de un [botón](py_tk_button.md).
+En caso de querer tanto modificar como acceder al texto que contiene el `Label` se puede hacer al igual que con un [**diccionario**](../../../basic/data_types/dict.md), como veremos en el próximo ejemplo haciendo uso de un [botón](py_tk_button.md).
 
 ```python
 import tkinter as tk
