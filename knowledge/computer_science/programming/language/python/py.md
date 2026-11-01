@@ -170,7 +170,7 @@ tags: [Programming, Python]
 - [OS](module/standar/os/os.md)
     - [PATH](module/standar/os/path/path.md)
 - [PANDAS 📈](py_pandas.md)
-- [PASSWORD 🔑](py_getpass.md)
+- [PASSWORD 🔑](module/standar/getpass/getpass.md)
 - [PATHFINDING](py_pathfinding.md)
 - [PILLOW](py_pillow.md)
 - [PORTA PAPELES 📋](py_clipboard.md)
