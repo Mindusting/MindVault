@@ -156,7 +156,7 @@ tags: [Programming, Python]
 ## MÓDULOS
 
 - [COLORAMA](colorama/py_colorama.md)
-- [CSV](csv/py_csv.md)
+- [CSV](module/standar/csv/csv.md)
 - [DATETIME](module/standar/datetime/datetime.md)
 - [EXCEL 🍫](module/third_party/openpyxl/openpyxl.md)
 - [HASHLIB](module/standar/hashlib/hashlib.md)
