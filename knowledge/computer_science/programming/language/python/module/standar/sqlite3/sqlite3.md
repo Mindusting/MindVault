@@ -30,7 +30,7 @@ title: SQLite3 en Python
 > Para poder hacer uso de este [módulo](../../../py_module.md) se requieren conocimientos mínimos de funcionamiento de bases de datos, si no sabes de [bases de datos](../../../../../../data_base/relational/theory/db.md) puedes consultar la [documentación correspondiente](../../../../../../data_base/relational/theory/db.md), si sí sabes, pero no conoces [sqlite3](../../../../../../data_base/relational/system/sqlite/sqlite3.md), también tienes [documentación](../../../../../../data_base/relational/system/sqlite/sqlite3.md) sobre ello.
 
 > [!important] IMPORTANTE
-> Si quieres trabajar sobre [base de datos](../../../../../../data_base/relational/theory/db.md) encriptadas con *SQLCipher* debes usar [módulo](../../../py_module.md) [`pysqlcipher3`](../../../py_pysqlcipher3.md)
+> Si quieres trabajar sobre [base de datos](../../../../../../data_base/relational/theory/db.md) encriptadas con *SQLCipher* debes usar [módulo](../../../py_module.md) [`pysqlcipher3`](../../third_party/pysqlcipher3/pysqlcipher3.md)
 
 El [módulo](../../../py_module.md) de [**SQLite 3**](../../../../../../data_base/relational/system/sqlite/sqlite3.md) permite conectarnos a [bases de datos](../../../../../../data_base/relational/theory/db.md) de este mismo tipo; pudiendo tanto leer como escribir.
 
