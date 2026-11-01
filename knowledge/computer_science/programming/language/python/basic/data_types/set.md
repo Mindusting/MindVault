@@ -16,9 +16,9 @@ rating: 0.75
 > - [W3 Schools (set methods)](https://www.w3schools.com/python/python_sets_methods.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué es un set o B-Tree en programación?](../../fundamentals/temp-dump/data_structures/pc_ds_btree.md)
+> - [¿Qué es un set o B-Tree en programación?](../../../../fundamentals/temp-dump/data_structures/pc_ds_btree.md)
 
-Para declarar un [**set**](../../fundamentals/temp-dump/data_structures/pc_ds_btree.md) en Python se puede hacer de las siguientes formas:
+Para declarar un [**set**](../../../../fundamentals/temp-dump/data_structures/pc_ds_btree.md) en Python se puede hacer de las siguientes formas:
 
 ```python
 set1 = {}
@@ -28,7 +28,7 @@ set3: set = {}
 set4: set = set()
 ```
 
-Con la [clase](py_class.md) `set` se puede transformar por ejemplo una [lista](py_list.md) en un `set`:
+Con la [clase](py_class.md) `set` se puede transformar por ejemplo una [lista](basic/data_types/list.md) en un `set`:
 
 ```python
 my_list: list = ["a", "a", "b", "c"]
@@ -86,11 +86,11 @@ print(my_set)
 ```
 
 > [!note]
-> En este caso se añade los elementos de un set al otro, pero, también hay que tener en cuenta que también funciona con una [lista](py_list.md), una [tupla](py_tuple.md) o con un [string](py_str.md) (En este caso lo que haría sería guardar en el set todos los caracteres que tenga).
+> En este caso se añade los elementos de un set al otro, pero, también hay que tener en cuenta que también funciona con una [lista](basic/data_types/list.md), una [tupla](basic/data_types/tuple.md) o con un [string](basic/data_types/str.md) (En este caso lo que haría sería guardar en el set todos los caracteres que tenga).
 
 ### REMOVE
 
-Si queremos que borrar un elemento del set y queremos que al intentar borrarlo, en caso de que no exista ese elemento [lanzaría una excepción](py_exceptions.md#LANZAMIENTO), se hace con el [método](class/py_methods.md) `remove`:
+Si queremos que borrar un elemento del set y queremos que al intentar borrarlo, en caso de que no exista ese elemento [lanzaría una excepción](../exception.md#LANZAMIENTO), se hace con el [método](class/py_methods.md) `remove`:
 
 ```python
 my_set: set = {"Manzana", "Naranja", "Plátano"}
@@ -103,7 +103,7 @@ print(my_set)
 
 ### DISCARD
 
-Para borrar un elemento del set sin que [lance una excepción](py_exceptions.md#LANZAMIENTO) en el caso de que este elemento no exista, se usa el [método](class/py_methods.md) `discard`:
+Para borrar un elemento del set sin que [lance una excepción](../exception.md#LANZAMIENTO) en el caso de que este elemento no exista, se usa el [método](class/py_methods.md) `discard`:
 
 ```python
 my_set: set = {"Manzana", "Naranja", "Plátano"}
@@ -159,7 +159,7 @@ print(set_1.union(set_2))
 ```
 
 > [!note]
-> Al igual que con el [método](class/py_methods.md) [`update`](#UPDATE), es posible sustituir el `set_2` por una [lista](py_list.md), una [tupla](py_tuple.md) o un [string](py_str.md).
+> Al igual que con el [método](class/py_methods.md) [`update`](#UPDATE), es posible sustituir el `set_2` por una [lista](basic/data_types/list.md), una [tupla](basic/data_types/tuple.md) o un [string](basic/data_types/str.md).
 
 ---
 
@@ -207,7 +207,7 @@ print(set_1.intersection(set_2))
 ```
 
 > [!note]
-> Al igual que con el [método](class/py_methods.md) [`union`](#UNION), es posible sustituir el `set_2` por una [lista](py_list.md), una [tupla](py_tuple.md) o un [string](py_str.md).
+> Al igual que con el [método](class/py_methods.md) [`union`](#UNION), es posible sustituir el `set_2` por una [lista](basic/data_types/list.md), una [tupla](basic/data_types/tuple.md) o un [string](basic/data_types/str.md).
 
 ---
 
@@ -270,7 +270,7 @@ print(set_1.difference(set_2))
 ```
 
 > [!note]
-> Al igual que con el [método](class/py_methods.md) [`union`](#UNION), es posible sustituir el `set_2` por una [lista](py_list.md), una [tupla](py_tuple.md) o un [string](py_str.md).
+> Al igual que con el [método](class/py_methods.md) [`union`](#UNION), es posible sustituir el `set_2` por una [lista](basic/data_types/list.md), una [tupla](basic/data_types/tuple.md) o un [string](basic/data_types/str.md).
 
 ---
 
@@ -333,7 +333,7 @@ print(set_1.symmetric_difference(set_2))
 ```
 
 > [!note]
-> Al igual que con el [método](class/py_methods.md) [`union`](#UNION), es posible sustituir el `set_2` por una [lista](py_list.md), una [tupla](py_tuple.md) o un [string](py_str.md).
+> Al igual que con el [método](class/py_methods.md) [`union`](#UNION), es posible sustituir el `set_2` por una [lista](basic/data_types/list.md), una [tupla](basic/data_types/tuple.md) o un [string](basic/data_types/str.md).
 
 ---
 
@@ -382,7 +382,7 @@ print(set_1)
 
 ## BUCLES
 
-Se puede usar el set en un [bucle for](py_loop.md#FOR) al estilo de [for-each](py_loop.md#FOR-EACH):
+Se puede usar el set en un [bucle for](basic/loop.md#FOR) al estilo de [for-each](basic/loop.md#FOR-EACH):
 
 ```python
 my_set: set = {"Manzana", "Naranja", "Plátano"}
@@ -413,7 +413,7 @@ print("Plátano" in my_set)
 # True
 ```
 
-Como se puede ver este nos devolverá un valor [booleano](py_bool.md) indicando si existe o no dentro del set.
+Como se puede ver este nos devolverá un valor [booleano](basic/data_types/bool.md) indicando si existe o no dentro del set.
 
 ## VARIABLE INMUTABLE
 
@@ -428,7 +428,7 @@ print(my_frozenset)
 # frozenset({'Plátano', 'Naranja', 'Manzana'})
 ```
 
-Este tipo de set funcionará igual que un set normal, con la diferencia que si intentamos modificarlo ocurrirá un error, ya que está pensado para que no sea modificado, se podría decir que es la versión [`contant`](../../fundamentals/temp-dump/pc_constant.md) del set.
+Este tipo de set funcionará igual que un set normal, con la diferencia que si intentamos modificarlo ocurrirá un error, ya que está pensado para que no sea modificado, se podría decir que es la versión [`contant`](../../../../fundamentals/temp-dump/pc_constant.md) del set.
 
 %%
 ## MÉTODOS

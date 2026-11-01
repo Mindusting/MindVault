@@ -14,7 +14,7 @@ title: Slices en Python
 > [!help]- REFERENCIAS WEB
 > - [W3 Schools](https://www.w3schools.com/python/ref_func_slice.asp) #WWW/W3Schools
 
-Los `slice` permiten obtener una porción de un [string](py_str.md) o como veremos más adelante, también funcionan con las [colecciones](#COLECCIONES), pero eso ya lo veremos más adelante.
+Los `slice` permiten obtener una porción de un [string](basic/data_types/str.md) o como veremos más adelante, también funcionan con las [colecciones](#COLECCIONES), pero eso ya lo veremos más adelante.
 
 La clase `slice` permite crear objetos de este los cuales indicara una secuencia basandose en tres reglas:
 

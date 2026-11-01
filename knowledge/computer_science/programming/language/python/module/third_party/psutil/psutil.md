@@ -56,7 +56,7 @@ title: Módulo psutil en Python
 
 - `boot_time`
 
-Devuelve medido en segundos la fecha en la que se encendió en ordenador respecto al [*epoch*](../../fundamentals/temp-dump/pc_epoch.md).
+Devuelve medido en segundos la fecha en la que se encendió en ordenador respecto al [*epoch*](../../../../../fundamentals/temp-dump/pc_epoch.md).
 
 ## CPU
 
@@ -68,7 +68,7 @@ Devuelve medido en segundos la fecha en la que se encendió en ordenador respect
 
 ### NÚMERO DE NÚCLEOS
 
-Para obtener el número de procesadores de la máquina se usa la [función](py_func.md) `cpu_count`, esta función tiene el argumento `logical`, este por defecto está establecido a `True`, en el podremos indicar con un valor [booleano](py_bool.md) si queremos que sean los lógicos o no.
+Para obtener el número de procesadores de la máquina se usa la [función](py_func.md) `cpu_count`, esta función tiene el argumento `logical`, este por defecto está establecido a `True`, en el podremos indicar con un valor [booleano](basic/data_types/bool.md) si queremos que sean los lógicos o no.
 
 > [!abstract] SINTAXIS
 > cpu_count(***\[logical\]***)

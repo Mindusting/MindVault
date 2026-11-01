@@ -35,7 +35,7 @@ rating: 0.5
 > - [W3 Schools](https://www.w3schools.com/python/python_lists.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué es una lista en programación?](../../fundamentals/temp-dump/data_structures/pc_ds_list.md)
+> - [¿Qué es una lista en programación?](../../../../fundamentals/temp-dump/data_structures/pc_ds_list.md)
 
 Para declarar una **lista** en Python se puede hacer de dos forma, de forma *literal* o a través de la [clase](py_class.md) `list`.
 
@@ -59,7 +59,7 @@ list3: list = []
 list4: list = list()
 ```
 
-La [clase](py_class.md) `list` únicamente puede recibir un argumento, este no es necesario y debe ser un *iterable*, en el caso en el que no se especifique ningún valor para el argumento, devolverá una **lista** bacía, en el caso de crear un *iterable* ([`tuple`](py_tuple.md), [`set`](py_set.md), [`dict`](py_dict.md)) creará una **lista** a partir del *iterable* indicado.
+La [clase](py_class.md) `list` únicamente puede recibir un argumento, este no es necesario y debe ser un *iterable*, en el caso en el que no se especifique ningún valor para el argumento, devolverá una **lista** bacía, en el caso de crear un *iterable* ([`tuple`](tuple.md), [`set`](set.md), [`dict`](dict.md)) creará una **lista** a partir del *iterable* indicado.
 
 Las **listas** 
 
@@ -111,7 +111,7 @@ Yo personalmente no lo he llegado a ver ninga en uso y tampoco tengo pensado usa
 
 ### EXTENDER LA LISTA
 
-El proceso de extensión de una **lista** consiste en añadir mútiples elementos al final de esta, haciendo uso de otro *iterable* com puede ser otra **lista** o [**tupla**](py_tuple.md).
+El proceso de extensión de una **lista** consiste en añadir mútiples elementos al final de esta, haciendo uso de otro *iterable* com puede ser otra **lista** o [**tupla**](tuple.md).
 
 > [!abstract] SINTAXIS
 > ***\[listName\]***.extend(***\[iterable\]***)

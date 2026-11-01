@@ -36,8 +36,8 @@ Este [módulo](../py_module.md) contiene múltiples [funciones](../py_func.md) p
 
 ## RECIBIR INFORMACIÓN
 
-- `askokcancel`: ofrece dos botones (`Ok` y `Cancel`), este *popup* devolverá un valor [booleano](../py_bool.md) (*`True` con `Ok` y `False` con `Cancel`*), si se cierra la ventana, devuelve `False`.
-- `askquestion`: ofrece dos botones (`Yes` y `No`), este *popup* devolverá un [string](../py_str.md) (*`yes` con `Yes` y `no` con `No`*), si se cierra la ventana, devuelve `no`.
-- `askretrycancel`: ofrece dos botones (`Retry` y `Cancel`), este *popup* devolverá un valor [booleano](../py_bool.md) (*`True` con `Retry` y `False` con `Cancel`*), si se cierra la ventana, devuelve `False`.
-- `askyesno`: ofrece dos botones (`Yes` y `No`), este *popup* devolverá un valor [booleano](../py_bool.md) (*`True` con `Yes` y `False` con `No`*), si se cierra la ventana, devuelve `False`.
-- `askyesnocancel`: ofrece tres botones (`Yes`, `No` y `Cancel`), este *popup* devolverá un valor [booleano](../py_bool.md) (*`True` con `Yes` y `False` con `No`*) o `None` si se pulsa `Cancel`, si se cierra la ventana, devuelve `None`. 
+- `askokcancel`: ofrece dos botones (`Ok` y `Cancel`), este *popup* devolverá un valor [booleano](../basic/data_types/bool.md) (*`True` con `Ok` y `False` con `Cancel`*), si se cierra la ventana, devuelve `False`.
+- `askquestion`: ofrece dos botones (`Yes` y `No`), este *popup* devolverá un [string](../basic/data_types/str.md) (*`yes` con `Yes` y `no` con `No`*), si se cierra la ventana, devuelve `no`.
+- `askretrycancel`: ofrece dos botones (`Retry` y `Cancel`), este *popup* devolverá un valor [booleano](../basic/data_types/bool.md) (*`True` con `Retry` y `False` con `Cancel`*), si se cierra la ventana, devuelve `False`.
+- `askyesno`: ofrece dos botones (`Yes` y `No`), este *popup* devolverá un valor [booleano](../basic/data_types/bool.md) (*`True` con `Yes` y `False` con `No`*), si se cierra la ventana, devuelve `False`.
+- `askyesnocancel`: ofrece tres botones (`Yes`, `No` y `Cancel`), este *popup* devolverá un valor [booleano](../basic/data_types/bool.md) (*`True` con `Yes` y `False` con `No`*) o `None` si se pulsa `Cancel`, si se cierra la ventana, devuelve `None`. 

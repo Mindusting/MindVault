@@ -66,9 +66,9 @@ def mi_proce2(name):
 mi_proce2("Mindusting")
 ```
 
-Como se puede ver en el ejemplo primero se declara el procedimiento haciendo uso de la palabra clave `def`, justo debajo de él, dentro de su sangría, indicamos que queremos que se ejecute al llamar al procedimiento, en este caso es simplemente un [`print`](py_print.md).
+Como se puede ver en el ejemplo primero se declara el procedimiento haciendo uso de la palabra clave `def`, justo debajo de él, dentro de su sangría, indicamos que queremos que se ejecute al llamar al procedimiento, en este caso es simplemente un [`print`](basic/builtins/print.md).
 
-Los argumentos no son necesarios, pero el usarlos nos puede dar la libertad de hacer cosas más interesantes, en el ejemplo, el primer argumentos es una [variable](py_variable.md) con el nombre `name`, por lo que este procedimiento requiere que le pasemos el valor del argumento en la llamada, como se puede ver en el propio ejemplo, siendo este el valor `Mindusting`.
+Los argumentos no son necesarios, pero el usarlos nos puede dar la libertad de hacer cosas más interesantes, en el ejemplo, el primer argumentos es una [variable](basic/variable.md) con el nombre `name`, por lo que este procedimiento requiere que le pasemos el valor del argumento en la llamada, como se puede ver en el propio ejemplo, siendo este el valor `Mindusting`.
 
 ---
 
@@ -112,7 +112,7 @@ print(cal_dis(3, 4))
 
 [\*Args and \*\*Kwargs in Python](https://youtu.be/4jBJhCaNrWU)
 
-Si quisiéramos que se pudiera poner en la llamada todos los valores que queramos, como argumento se puede poner un (\*\[nom. argumento\]), provocando que convierta todos los valores introducidos en la llamada en una [tupla](py_tuple.md), en cualquier caso, también se puede poner un solo argumento y en la llamada indicar múltiples valores en forma de [collection](py_data_structure.md).
+Si quisiéramos que se pudiera poner en la llamada todos los valores que queramos, como argumento se puede poner un (\*\[nom. argumento\]), provocando que convierta todos los valores introducidos en la llamada en una [tupla](basic/data_types/tuple.md), en cualquier caso, también se puede poner un solo argumento y en la llamada indicar múltiples valores en forma de *collection*.
 
 **Ej. 1:**
 ```python
@@ -137,7 +137,7 @@ def mi_proce(x):
 mi_proce(["Mindusting", 32, 3.141592, False])
 ```
 
-También existe la posibilidad de hacerlo de forma que en vez de una [tupla](py_tuple.md) como es el caso del primer ejemplo anterior en el que se hacía uso del asterisco (`*`), se cree un [diccionario](py_dict.md), para ello simplemente se debe escribir dos asteriscos (`*`).
+También existe la posibilidad de hacerlo de forma que en vez de una [tupla](basic/data_types/tuple.md) como es el caso del primer ejemplo anterior en el que se hacía uso del asterisco (`*`), se cree un [diccionario](basic/data_types/dict.md), para ello simplemente se debe escribir dos asteriscos (`*`).
 
 ```python
 # Mi método
@@ -167,7 +167,7 @@ def perimetro(radio):
 print( perimetro(5) )
 ```
 
-Como se puede ver en este ejemplo, se mete la llamada al método dentro del [método print](py_print.md) ya que tras calcular el perímetro, devuelve el resultado al mismo punto donde se hizo la llamada al método.
+Como se puede ver en este ejemplo, se mete la llamada al método dentro del [método print](basic/builtins/print.md) ya que tras calcular el perímetro, devuelve el resultado al mismo punto donde se hizo la llamada al método.
 
 ## GENERADORES 🔩
 

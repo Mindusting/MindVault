@@ -16,11 +16,11 @@ title: Swith en Python
 > [!help]- REFERENCIAS WEB
 > - [El libro de Python](https://ellibrodepython.com/switch-python) #WWW/ElLibroDePython
 
-En Python no existe como tal el *switch*, pero gracias a los [diccionarios](py_dict.md) y/o las [listas](py_list.md) podemos recrear la estructura *switch*:
+En Python no existe como tal el *switch*, pero gracias a los [diccionarios](basic/data_types/dict.md) y/o las [listas](basic/data_types/list.md) podemos recrear la estructura *switch*:
 
 ## SWITCH CON DICCIONARIO
 
-A la hora de crear un *switch* lo más seguro es que terminemos usando esta opción de usar el [diccionario](py_dict.md) ya que es más versátil, las claves del serán las opciones del *switch* mientras que en los valores guardaremos las referencias a las funciones que queremos que se ejecute cuando coincida en la condición del *switch*:
+A la hora de crear un *switch* lo más seguro es que terminemos usando esta opción de usar el [diccionario](basic/data_types/dict.md) ya que es más versátil, las claves del serán las opciones del *switch* mientras que en los valores guardaremos las referencias a las funciones que queremos que se ejecute cuando coincida en la condición del *switch*:
 
 El tiempo de complejidad para encontrar el caso de búsqueda es `O(log n)`.
 
@@ -55,7 +55,7 @@ main()
 
 ## SWITCH CON LISTA
 
-Para crear un *switch*, tenemos una forma alternativa y es a través de de una [lista](py_list.md) (*se puede sustituir la [lista](py_list.md) con una [tupla](py_tuple.md)*), en este caso los valores a buscar solo podrán ser [números enteros](py_int.md) consecutivos.
+Para crear un *switch*, tenemos una forma alternativa y es a través de de una [lista](basic/data_types/list.md) (*se puede sustituir la [lista](basic/data_types/list.md) con una [tupla](basic/data_types/tuple.md)*), en este caso los valores a buscar solo podrán ser [números enteros](basic/data_types/int.md) consecutivos.
 
 El tiempo de complejidad para encontrar el caso de búsqueda es `O(1)`.
 

@@ -25,13 +25,13 @@ rating: 0.75
 > - [GitHub](https://msg.pyyaml.org/load) #WWW/GitHub
 
 > [!faq]- FAQ
-> - [¿Qué es el formato YAML?](../../data_format/yaml.md)
+> - [¿Qué es el formato YAML?](../../../../../data_format/yaml.md)
 
 Para poder manejar tanto texto como archivos de formato `YAML`, haremos uso del módulo `yaml`.
 
 ## INSTALACIÓN
 
-En caso de que no tengamos este módulo instalado, tendremos que usar el [instalador de paquetes de Python](py_pip.md) de la siguiente forma:
+En caso de que no tengamos este módulo instalado, tendremos que usar el [instalador de paquetes de Python](basic/pip.md) de la siguiente forma:
 
 ```bash
 pip install PyYAML
@@ -39,7 +39,7 @@ pip install PyYAML
 
 ## DE YAML A PYTHON
 
-Para transformar un [`str`](py_str.md) con información en formato `YAML` en un [diccionario](py_dict.md) y/o [lista](py_list.md), tendremos que hacer uso de la [función](py_func.md) `safe_load.
+Para transformar un [`str`](basic/data_types/str.md) con información en formato `YAML` en un [diccionario](basic/data_types/dict.md) y/o [lista](basic/data_types/list.md), tendremos que hacer uso de la [función](py_func.md) `safe_load.
 
 ```python
 import yaml
@@ -61,7 +61,7 @@ print(data)
 
 ---
 
-En el siguiente ejemplo veremos como hacer lo mismo que en el anterior con la diferencia que en este no usamos un [`str`](py_str.md) sino un archivo.
+En el siguiente ejemplo veremos como hacer lo mismo que en el anterior con la diferencia que en este no usamos un [`str`](basic/data_types/str.md) sino un archivo.
 
 ***data.yml***:
 ```yaml
@@ -85,7 +85,7 @@ print(data)
 
 ## DE PYTHON A YAML
 
-Para transformar un [diccionario](py_dict.md) y/o [lista](py_list.md) en un [`str`](py_str.md) con información en formato `YAML`, tendremos que hacer uso de la [función](py_func.md) `dump.
+Para transformar un [diccionario](basic/data_types/dict.md) y/o [lista](basic/data_types/list.md) en un [`str`](basic/data_types/str.md) con información en formato `YAML`, tendremos que hacer uso de la [función](py_func.md) `dump.
 
 ```python
 import yaml
@@ -112,7 +112,7 @@ print(text)
 
 ---
 
-En el siguiente ejemplo veremos como hacer lo mismo que en el anterior con la diferencia que en este no usamos un [`str`](py_str.md) sino un archivo.
+En el siguiente ejemplo veremos como hacer lo mismo que en el anterior con la diferencia que en este no usamos un [`str`](basic/data_types/str.md) sino un archivo.
 
 ```python
 import yaml

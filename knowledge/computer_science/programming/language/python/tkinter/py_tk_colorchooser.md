@@ -37,7 +37,7 @@ c.show()
 
 ## FUNCIÓN ASKCOLOR
 
-Esta [función](../py_func.md) sirve para pedirle un color al usuario, devolviendo el resultado en forma de [tupla](../py_tuple.md), esta tendrá dos elementos, el primero será otra [tupla](../py_tuple.md) con tres valores numéricos, estos son los valores de *RGB* respectivamente, el segundo elemento será un [string](../py_str.md) con el formato hexadecimal de *RGB* (`#000000`).
+Esta [función](../py_func.md) sirve para pedirle un color al usuario, devolviendo el resultado en forma de [tupla](../basic/data_types/tuple.md), esta tendrá dos elementos, el primero será otra [tupla](../basic/data_types/tuple.md) con tres valores numéricos, estos son los valores de *RGB* respectivamente, el segundo elemento será un [string](../basic/data_types/str.md) con el formato hexadecimal de *RGB* (`#000000`).
 
 ```python
 from tkinter import colorchooser
@@ -51,7 +51,7 @@ print(data)
 
 ### COLOR POR DEFECTO EN ASKCOLOR
 
-Para establecer un color por defecto en el selector de colores, se puede hacer pasando como primer argumenta de la [función](../py_func.md) una [tupla](../py_tuple.md) con los tres valores *RGB* o un [string](../py_str.md) con el formato hexadecimal (`#000000`).
+Para establecer un color por defecto en el selector de colores, se puede hacer pasando como primer argumenta de la [función](../py_func.md) una [tupla](../basic/data_types/tuple.md) con los tres valores *RGB* o un [string](../basic/data_types/str.md) con el formato hexadecimal (`#000000`).
 
 ```python
 from tkinter import colorchooser
@@ -65,7 +65,7 @@ colorchooser.askcolor("#ff0000")
 
 ### TÍTULO EN ASKCOLOR
 
-Para establecer el título del selector de color se puede hacer a través de la opción `title`, este recibirá un [string](../py_str.md):
+Para establecer el título del selector de color se puede hacer a través de la opción `title`, este recibirá un [string](../basic/data_types/str.md):
 
 ```python
 from tkinter import colorchooser

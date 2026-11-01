@@ -26,7 +26,7 @@ Este módulo es muy simple, ya que solo tiene dos métodos:
 
 ## COPIAR AL PORTAPAPELES
 
-En el portapapeles se puede guardar un solo valor y debe ser de tipo [string](py_str.md).
+En el portapapeles se puede guardar un solo valor y debe ser de tipo [string](basic/data_types/str.md).
 
 Para poder copiar texto al portapapeles se puede hacer de la siguiente forma:
 
@@ -41,7 +41,7 @@ clipboard.copy("Este texto está en el portapapeles.")
 
 ## PEGAR DESDE EL PORTAPAPELES
 
-Al pegar el contenido del portapapeles este siempre será de tipo [string](py_str.md).
+Al pegar el contenido del portapapeles este siempre será de tipo [string](basic/data_types/str.md).
 
 Para poder obtener el texto guardado en el portapapeles se hace de la siguiente forma:
 

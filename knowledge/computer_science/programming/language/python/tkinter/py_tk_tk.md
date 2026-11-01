@@ -134,7 +134,7 @@ if "__main__" == __name__:
 
 ## GEOMETRÍA DE LA VENTANA
 
-Para cambiar el **tamaño** y/o **posición** de la ventana se usa el [método](../class/py_methods.md) `geometry`, esta recibe un argumento de tipo [`str`](../py_str.md) con las **medidas** y/o **posición** en píxeles de la ventana.
+Para cambiar el **tamaño** y/o **posición** de la ventana se usa el [método](../class/py_methods.md) `geometry`, esta recibe un argumento de tipo [`str`](../basic/data_types/str.md) con las **medidas** y/o **posición** en píxeles de la ventana.
 
 Para indicar el tamaño de la ventana se hace siguiendo la siguiente sintaxis; en donde se indica el número de píxelex de ancho y alto separados por una `x`:
 
@@ -181,7 +181,7 @@ if "__main__" == __name__:
 
 ## REDIMENSIONABILIDAD
 
-La redimensionabilidad de una venta indica si esta puede cambiar de tamaño tanto en el eje `X` como en el `Y`; por ello para indicar que ejes queremos permitir que cambien de tamaño o no, lo haremos con el [método](../class/py_methods.md) `resizable`; este recibe dos argumentos de tipo [bool](../py_bool.md), indicando primero el eje `X` y luego el `Y`.
+La redimensionabilidad de una venta indica si esta puede cambiar de tamaño tanto en el eje `X` como en el `Y`; por ello para indicar que ejes queremos permitir que cambien de tamaño o no, lo haremos con el [método](../class/py_methods.md) `resizable`; este recibe dos argumentos de tipo [bool](../basic/data_types/bool.md), indicando primero el eje `X` y luego el `Y`.
 
 ```python
 import tkinter as tk
@@ -209,7 +209,7 @@ if "__main__" == __name__:
 
 ## TÍTULO DE LA VENTAN
 
-Para indicar el título que queremos que tenga nuestra ventana tendremos que usar el [método](../class/py_methods.md) `title`; este recibe un argumento de tipo [`str`](../py_str.md) con el título en cuestión.
+Para indicar el título que queremos que tenga nuestra ventana tendremos que usar el [método](../class/py_methods.md) `title`; este recibe un argumento de tipo [`str`](../basic/data_types/str.md) con el título en cuestión.
 
 ```python
 import tkinter as tk
@@ -237,7 +237,7 @@ if "__main__" == __name__:
 
 Dependiendo de si queremos establecer una imagen como icono o un archivo de tipo `.ico`, tendremos que usar un [método](../class/py_methods.md) distinto.
 
-Para los archivo `.ico` se usa el [método](../class/py_methods.md) `iconbitmap`; este recibe un argumento de tipo [`str`](../py_str.md) con la ruta de en donde se encuentra el archivo.
+Para los archivo `.ico` se usa el [método](../class/py_methods.md) `iconbitmap`; este recibe un argumento de tipo [`str`](../basic/data_types/str.md) con la ruta de en donde se encuentra el archivo.
 
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
 > #TODO
@@ -264,5 +264,5 @@ root.mainloop()
 > En vez de pasarle cada argumento mediante los argumentos connombre, se le puede pasar de forma directa un diccionario con la fonfiguración.
 
 Lista de atributos del [método](../class/py_methods.md) `config`:
-- `background`: Recibe un [`str`](../py_str.md) con el código hexadecimal con una almohadilla (***\#***) por delante, del color con el que se va a rellenar el fondo de la ventana.
+- `background`: Recibe un [`str`](../basic/data_types/str.md) con el código hexadecimal con una almohadilla (***\#***) por delante, del color con el que se va a rellenar el fondo de la ventana.
 - `menu`: Recibe un objeto de tipo [`menu`](py_tk_menu.md).

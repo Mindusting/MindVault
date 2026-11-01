@@ -22,12 +22,12 @@ title: Bucles en Python
 > > - [ ] Rehacer la documentación de bucle infinito.
 
 > [!faq]- FAQ
-> - [¿Qué son lo bucles en programación?](../../fundamentals/temp-dump/pc_loop.md)
->     - [¿Qué es un bucle WHILE en programación?](../../fundamentals/temp-dump/pc_loop.md)
+> - [¿Qué son lo bucles en programación?](../../../fundamentals/temp-dump/pc_loop.md)
+>     - [¿Qué es un bucle WHILE en programación?](../../../fundamentals/temp-dump/pc_loop.md)
 
 ## WHILE
 
-Para crear un bucle `while` simplemente usamos la palabra `while` seguida de la [**operación lógica**](py_operators.md#LÓGICOS), tras terminar la [**operación lógica**](py_operators.md#LÓGICOS) ponemos dos puntos (`:`), a partir de este punto, todo lo que pongamos dentro de la [**sangría**](py_indentation.md) se repetirá mientras la [**operación lógica**](py_operators.md#LÓGICOS) se cumpla.
+Para crear un bucle `while` simplemente usamos la palabra `while` seguida de la [**operación lógica**](operator.md#LÓGICOS), tras terminar la [**operación lógica**](operator.md#LÓGICOS) ponemos dos puntos (`:`), a partir de este punto, todo lo que pongamos dentro de la **sangría** se repetirá mientras la [**operación lógica**](operator.md#LÓGICOS) se cumpla.
 
 %%
 SINTAXIS
@@ -76,7 +76,7 @@ print(f"Tu nombre es: {answer}.")
 
 ## BUCLE INFINITO
 
-Para hacer un bucle que se esté repitiendo de forma indefinida tendremos que hacer un bucle [`while`](#WHILE) con la condición valiendo siempre [`True`](py_bool.md):
+Para hacer un bucle que se esté repitiendo de forma indefinida tendremos que hacer un bucle [`while`](#WHILE) con la condición valiendo siempre [`True`](basic/data_types/bool.md):
 
 ```python
 while True:

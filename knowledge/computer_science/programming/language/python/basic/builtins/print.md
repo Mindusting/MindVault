@@ -38,7 +38,7 @@ print("Hola mundo!!!")
 
 
 
-En este ejemplo lo que vemos es la declaración de unas [variables](py_variable.md) (*Se verán en un próximo apartado*) para acto seguido ser usadas para completar el mensaje, siendo separados los diferentes valores por comas:
+En este ejemplo lo que vemos es la declaración de unas [variables](../variable.md) (*Se verán en un próximo apartado*) para acto seguido ser usadas para completar el mensaje, siendo separados los diferentes valores por comas:
 
 ```python
 name = "Mindusting"
@@ -51,7 +51,7 @@ Otra cosa que podemos ver en este anterior ejemplo es el **argumento** `end`, es
 
 # SEPARACIÓN
 
-El atributo `sep` (*abreviación de `separación` en inglés*) indica la separación que tendrán los elementos que hayamos indicado en el argumento `values`, por defecto el valor es `' '` (*un espacio*), pero podemos cambiarlo al [`string`](py_str.md) que queramos:
+El atributo `sep` (*abreviación de `separación` en inglés*) indica la separación que tendrán los elementos que hayamos indicado en el argumento `values`, por defecto el valor es `' '` (*un espacio*), pero podemos cambiarlo al [`string`](../data_types/str.md) que queramos:
 
 ```python
 words: tuple[str] = ('Hola', 'mundo!!!')
@@ -64,11 +64,11 @@ print(*words, sep='-')
 ```
 
 > [!info] INFO
-> En este ejemplo se hace uso de las [tuplas](py_tuple.md) y su desempaquetamiento.
+> En este ejemplo se hace uso de las [tuplas](../data_types/tuple.md) y su desempaquetamiento.
 
 # FIN
 
-El atributo `end` (*`fin` el final de la impresión de los  que hayamos indicado en el argumento `values`, por defecto el valor es `'\n'` (*un salto de línea*), pero podemos cambiarlo al [`string`](py_str.md) que queramos:
+El atributo `end` (*`fin` el final de la impresión de los  que hayamos indicado en el argumento `values`, por defecto el valor es `'\n'` (*un salto de línea*), pero podemos cambiarlo al [`string`](../data_types/str.md) que queramos:
 
 ```python
 print('Hola mundo!!!', end='')

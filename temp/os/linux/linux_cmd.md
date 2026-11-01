@@ -53,7 +53,7 @@ title: BASH en Linux
 
 ## ALMACENAMIENTO
 
-- [ZIP](zip.md)
+- [ZIP](command/zip.md)
 - [UNZIP](command/unzip.md)
 
 ## OTROS

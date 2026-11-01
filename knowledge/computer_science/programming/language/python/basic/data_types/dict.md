@@ -20,14 +20,14 @@ title: Diccionarios en Python
 > - [W3 Schools (dict methods)](https://www.w3schools.com/python/python_ref_dictionary.asp) #WWW/W3Schools
 
 > [!faq]- FAQ
-> - [¿Qué es un diccionario en programación?](../../fundamentals/temp-dump/pc_dictionary.md)
+> - [¿Qué es un diccionario en programación?](../../../../fundamentals/temp-dump/pc_dictionary.md)
 
-Los **diccionarios** son similares a las [listas](py_list.md) con la diferencias que estos en vez de tener un *índice* asociado a cada *valor*, tiene una *valor* llamado `key` asociado a cada `value` y cada par de estos se llama `item`.
+Los **diccionarios** son similares a las [listas](basic/data_types/list.md) con la diferencias que estos en vez de tener un *índice* asociado a cada *valor*, tiene una *valor* llamado `key` asociado a cada `value` y cada par de estos se llama `item`.
 
 > [!info] INFO
 > - Cabe resaltar que las `key` no se pueden repetir ya que es lo que se utiliza para referenciar los valores guardados, si intentamos guardar otro valor con la misma `key` simplemente se sobrescribirá.
 > <br>
-> - Otro apunte es que se puede usar cualquier cosa tanto como `key` como `value`, esto pueden ser [`int`](py_int.md), [`float`](py_float.md), [`string`](py_str.md), [`objetos`](py_class.md)... cualquier cosa.
+> - Otro apunte es que se puede usar cualquier cosa tanto como `key` como `value`, esto pueden ser [`int`](basic/data_types/int.md), [`float`](basic/data_types/float.md), [`string`](basic/data_types/str.md), [`objetos`](py_class.md)... cualquier cosa.
 
 Para crear un **diccionario** vacío podemos hacerlo de las siguientes formas:
 
@@ -43,7 +43,7 @@ dict1 = {"pi": 3.1415926535}
 dict2: dict = {"pi": 3.1415926535}
 ```
 
-Se utilizan las *llaves* al igual que con los [`set`](py_set.md), con la diferencia que en este caso la `key` (*siendo en este caso `pi`*) y el `value` (*siendo en este caso `3.1415926535`*) separados por **dos puntos** (`:`).
+Se utilizan las *llaves* al igual que con los [`set`](set.md), con la diferencia que en este caso la `key` (*siendo en este caso `pi`*) y el `value` (*siendo en este caso `3.1415926535`*) separados por **dos puntos** (`:`).
 
 ## AGREGAR INFORMACIÓN
 

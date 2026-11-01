@@ -26,18 +26,18 @@ title: Variables en Python
 > - [Sreekanth](https://youtu.be/Bz3ir-vKqkk) #WWW/YT/Sreekanth
 
 > [!faq]- FAQ
-> - [¿Qué son las variables en programación?](../../fundamentals/temp-dump/pc_variable.md)
+> - [¿Qué son las variables en programación?](../../../fundamentals/temp-dump/pc_variable.md)
 
 Aquí podrás encontrar documentación sobre múltiples tipos de datos, pero hay cuatro que son los más usado, y por tanto lo que deberías saber usar (*El resto está bien que los sepas usar, pero no son tan usados*):
 
-- [Números enteros.](py_int.md)
-- [Números decimales.](py_float.md)
-- [Cadenas de texto.](py_str.md)
-- [Valores booleanos.](py_bool.md)
+- [Números enteros.](basic/data_types/int.md)
+- [Números decimales.](basic/data_types/float.md)
+- [Cadenas de texto.](basic/data_types/str.md)
+- [Valores booleanos.](basic/data_types/bool.md)
 
 ---
 
-- [Números complejos](py_complex.md)
+- [Números complejos](basic/data_types/complex.md)
 
 ## BINARY
 
@@ -71,7 +71,7 @@ print(num_hex[2:])
 # ff
 ```
 
-Como se puede ver en el ejemplo de arriba, el número es pasado por la función `hex`, el resultado de este (*Siendo un [string](#STRING)*) es guardado en una variable, y luego se imprime dos veces, en el primero se imprime el resultado por completo y en el segundo se usa un [slice](py_slice.md) para quitar los dos primeros caracteres qué indican que es un valor hexadecimal.
+Como se puede ver en el ejemplo de arriba, el número es pasado por la función `hex`, el resultado de este (*Siendo un [string](#STRING)*) es guardado en una variable, y luego se imprime dos veces, en el primero se imprime el resultado por completo y en el segundo se usa un [slice](basic/builtins/slice.md) para quitar los dos primeros caracteres qué indican que es un valor hexadecimal.
 
 Si quisiéramos hacer el proceso contrario para obtener un número entero de un valor hexadecimal tendremos que usar la clase [int](#INT).
 

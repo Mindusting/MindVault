@@ -20,7 +20,7 @@ title: Módolo OS en Python
 
 ## SUMBÓDULOS
 
-- [PATH](path/py_os_path.md)
+- [PATH](path/path.md)
 
 ## ARCHIVOS Y DIRECTORIOS
 
@@ -41,7 +41,7 @@ Devuelve una lista de strings con los nombres de los elementos de un directorio
 ---
 ---
 
-Para obtener el ancho y alto de caracteres en el terminal, podemos usar la [función](../py_func.md) `get_terminal_size`.
+Para obtener el ancho y alto de caracteres en el terminal, podemos usar la [función](../../../py_func.md) `get_terminal_size`.
 
 ---
 
@@ -51,7 +51,7 @@ La función `walk` crea una estructura de árbol respecto a un directorio.
 
 ### CONTAR CPUS
 
-La [función](../py_func.md) `cpu_count` del [módulo](../py_module.md) [`OS`](py_os.md) devuelve el un [`integer`](../py_int.md) indicando el número de procesadores lógicos que tienen la máquina en la que se está ejecutando el programa.
+La [función](../../../py_func.md) `cpu_count` del [módulo](../../../py_module.md) [`OS`](os.md) devuelve el un [`integer`](../../../basic/data_types/int.md) indicando el número de procesadores lógicos que tienen la máquina en la que se está ejecutando el programa.
 
 ```python
 import os
@@ -61,7 +61,7 @@ print(f"CPUs: {os.cpu_count()}")
 
 ### CWD
 
-La [función](../py_func.md) `getcwd` del [módulo](../py_module.md) [`OS`](py_os.md) devuelve el un [`string`](../py_str.md) con la ruta desde la que se a ejecutado el primer archivo.
+La [función](../../../py_func.md) `getcwd` del [módulo](../../../py_module.md) [`OS`](os.md) devuelve el un [`string`](../../../basic/data_types/str.md) con la ruta desde la que se a ejecutado el primer archivo.
 
 Imaginemos que tenemos la siguiente estructura de nuestro proyecto:
 
@@ -118,21 +118,21 @@ Lo mismo se aplicaría para [ubuntu](../../os/linux/ubuntu/ubuntu.md), con la de
 
 ---
 
-Existe otra [función](../py_func.md) similar que devuelve el mismo resultado en [bytes](../py_bytes.md), esta es [`getcwdb`](#CWDB).
+Existe otra [función](../../../py_func.md) similar que devuelve el mismo resultado en [bytes](../../../basic/data_types/bytes.md), esta es [`getcwdb`](#CWDB).
 
 ### CWDB
 
-La [función](../py_func.md) `getcwdb` del [módulo](../py_module.md) [`OS`](py_os.md) devuelve el un [`bytes`](../py_bytes.md) con la ruta desde la que se a ejecutado el primer archivo.
+La [función](../../../py_func.md) `getcwdb` del [módulo](../../../py_module.md) [`OS`](os.md) devuelve el un [`bytes`](../../../basic/data_types/bytes.md) con la ruta desde la que se a ejecutado el primer archivo.
 
-La [función](../py_func.md) `getcwdb` funciona de la misma forma que la [función](../py_func.md) [`getcwd`](#CWD), con la diferencia que esta en vez de devolver un valor de tipo [`string`](../py_str.md) devuelve una secuencia de [`bytes`](../py_bytes.md) con la misma información.
+La [función](../../../py_func.md) `getcwdb` funciona de la misma forma que la [función](../../../py_func.md) [`getcwd`](#CWD), con la diferencia que esta en vez de devolver un valor de tipo [`string`](../../../basic/data_types/str.md) devuelve una secuencia de [`bytes`](../../../basic/data_types/bytes.md) con la misma información.
 
-En el caso de las contra barras (`\`) salen por duplicado en el caso de esta [función](../py_func.md).
+En el caso de las contra barras (`\`) salen por duplicado en el caso de esta [función](../../../py_func.md).
 
 ### SYSTEM
 
-La [función](../py_func.md) `system` del [módulo](../py_module.md) [`OS`](py_os.md) recibe un argumento de tipo [`string`](../py_str.md), este [`string`](../py_str.md) lo ejecutará como un comando del sistema:
+La [función](../../../py_func.md) `system` del [módulo](../../../py_module.md) [`OS`](os.md) recibe un argumento de tipo [`string`](../../../basic/data_types/str.md), este [`string`](../../../basic/data_types/str.md) lo ejecutará como un comando del sistema:
 
-- [CMD](../../../../../../temp/os/windows/windows_commands.md)
+- [CMD](../../../../../../../../temp/os/windows/windows_commands.md)
 - [TERMINAL](../../os/linux/ubuntu/ubuntu_commands.md)
 
 ```python
@@ -145,7 +145,7 @@ clear()
 print("Esta es la segudna impresión.")
 ```
 
-En este ejemplo también se hace uso de la [variable](../py_variable.md) [`name`](#NAME).
+En este ejemplo también se hace uso de la [variable](../../../basic/variable.md) [`name`](#NAME).
 
 ## VARIABLES
 

@@ -23,7 +23,7 @@ import getpass
 
 ## CONTRASEÑA
 
-Para poder obtener una contraseña se hace uso del método `getpass`, este puede ejecutarse sin argumento, o se le puede indicar un [string](py_str.md) para que sea este mensaje el que se imprima a la hora de obtener la contraseña.
+Para poder obtener una contraseña se hace uso del método `getpass`, este puede ejecutarse sin argumento, o se le puede indicar un [string](basic/data_types/str.md) para que sea este mensaje el que se imprima a la hora de obtener la contraseña.
 
 ```python
 import getpass

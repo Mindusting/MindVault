@@ -25,7 +25,7 @@ import sys
 print(sys.argv)
 ```
 
-En el ejemplo que se encuentra encima, se muestra como se importa el módulo `sys` y luego se imprime la [lista](py_list.md) `argv`, siendo el elemento `0` el nombre del archivo que hemos ejecutado.
+En el ejemplo que se encuentra encima, se muestra como se importa el módulo `sys` y luego se imprime la [lista](basic/data_types/list.md) `argv`, siendo el elemento `0` el nombre del archivo que hemos ejecutado.
 
 Un ejemplo simple del uso que se le puede dar sería la suma entre dos números:
 
@@ -38,7 +38,7 @@ y: int = int(sys.argv[2])
 print(x + y)
 ```
 
-Si ejecutamos este script de python con el comando `python3 main.py 3 2`, el valor de `x` será `3` y el de `y` será `2`, luego, se guardan estos valores en unas [variables](py_variable.md) transformándolos en tipo `int`, esto es debido que que estos argumentos siempre son de tipo `str`.
+Si ejecutamos este script de python con el comando `python3 main.py 3 2`, el valor de `x` será `3` y el de `y` será `2`, luego, se guardan estos valores en unas [variables](basic/variable.md) transformándolos en tipo `int`, esto es debido que que estos argumentos siempre son de tipo `str`.
 
 > [!info] INFO
 > El módulo `sys` provee muchas más cosas, estas tienen su propia explicación en su respectiva documentación.

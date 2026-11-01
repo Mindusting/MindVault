@@ -19,7 +19,7 @@ rating: 0.8
 > [!help]- REFERENCIAS WEB
 > - [W3 Schools](https://www.w3schools.com/python/python_tuples.asp) #WWW/W3Schools
 
-Una **Tupla** es una estructura de datos [inmutable](py_inmutable.md), esto lo que quiere decir es que una vez es declarada esta no se puede modificar.
+Una **Tupla** es una estructura de datos inmutable, esto lo que quiere decir es que una vez es declarada esta no se puede modificar.
 
 Para declarar una **Tupla** se debe ==separar una secuencia de valores con *comas*== (`,`); ==los paréntesis no son necesarios==, esto es algo con lo que se confunde mucha gente, los paréntesis (`()`) no son los que indican la creación de la **Tupla**, sino las *comas* (`,`):
 
@@ -34,7 +34,7 @@ print(type(y))
 # <class 'int'>
 ```
 
-Esto implica que si queremos pasar una **Tupla** con un único elemento como argumento como podría ocurrir en la inserción a una [base de datos](../../../data_base/relational/theory/db.md) con [SQLite3](sqlite3/py_sqlite3.md), tendremos que hacerlo de la siguiente forma (*Este caso es un poco complicado si eres nuevo, por lo que si ese es tu caso, mejor ve al [siguiente apartado](#ACCESO%20A%20ELEMENTOS)*):
+Esto implica que si queremos pasar una **Tupla** con un único elemento como argumento como podría ocurrir en la inserción a una [base de datos](../../../../../data_base/relational/theory/db.md) con [SQLite3](sqlite3/py_sqlite3.md), tendremos que hacerlo de la siguiente forma (*Este caso es un poco complicado si eres nuevo, por lo que si ese es tu caso, mejor ve al [siguiente apartado](#ACCESO%20A%20ELEMENTOS)*):
 
 ```py
 import sqlite3
@@ -77,10 +77,10 @@ print(type(t))
 
 ## ACCESO A ELEMENTOS
 
-Si tenemos una **Tupla** y queremos obtener uno de sus elementos podemos hacerlo mediante su índice, esto es un [`int`](py_int.md) que identifica de forma única a cada elemento de la **Tupla**, empezando por el cero y subiendo consecutivamente hasta poder identificar todos los elementos; también existe la posibilidad de indicar un número negativo, pudiendo así ir contando desde el fin hacia el inicio de la **Tupla**:
+Si tenemos una **Tupla** y queremos obtener uno de sus elementos podemos hacerlo mediante su índice, esto es un [`int`](int.md) que identifica de forma única a cada elemento de la **Tupla**, empezando por el cero y subiendo consecutivamente hasta poder identificar todos los elementos; también existe la posibilidad de indicar un número negativo, pudiendo así ir contando desde el fin hacia el inicio de la **Tupla**:
 
 > [!note] NOTA
-> Si quieres saber cómo funciona el índice en las **Tuplas** te recomiendo que leas la documentación a cerca de los [Arrays en programación](../../fundamentals/temp-dump/data_structures/pc_ds_array.md), concretamente el apartado [básico](../../fundamentals/temp-dump/data_structures/pc_ds_array.md#BÁSICO); aunque un **Array** no es lo mismo que una **Tupla** el cómo funciona el índice es muy parecido por no decir igual.
+> Si quieres saber cómo funciona el índice en las **Tuplas** te recomiendo que leas la documentación a cerca de los [Arrays en programación](../../../../fundamentals/temp-dump/data_structures/pc_ds_array.md), concretamente el apartado [básico](../../../../fundamentals/temp-dump/data_structures/pc_ds_array.md#BÁSICO); aunque un **Array** no es lo mismo que una **Tupla** el cómo funciona el índice es muy parecido por no decir igual.
 
 > [!abstract] SINTAXIS
 > ***\[tupleName\]***\[***\[index\]***\]
@@ -107,7 +107,7 @@ print(t[-3])
 
 ---
 
-Cabe resaltar que el índice no es necesario especificarlo a pelo en el código, sino que con que le ofrezcamos una [`int`](py_int.md) funcionará perfectamente.
+Cabe resaltar que el índice no es necesario especificarlo a pelo en el código, sino que con que le ofrezcamos una [`int`](int.md) funcionará perfectamente.
 
 ```py
 t = (3, 2, 5)
@@ -119,7 +119,7 @@ print(t[index])
 
 ---
 
-Es posible que te estés preguntando qué pasaría si introduces un índice que no está dentro del rango de posibilidades de la **Tupla**; lo que ocurre es que se lanza una [excepción](py_exceptions.md) de tipo `IndexError`, indicado así que nos hemos salido de los límites; ésta, por supuesto se puede atrapar con un [control de excepciones](py_exceptions.md#CONTROL%20DE%20EXCEPCIONES).
+Es posible que te estés preguntando qué pasaría si introduces un índice que no está dentro del rango de posibilidades de la **Tupla**; lo que ocurre es que se lanza una [excepción](../exception.md) de tipo `IndexError`, indicado así que nos hemos salido de los límites; ésta, por supuesto se puede atrapar con un [control de excepciones](../exception.md#CONTROL%20DE%20EXCEPCIONES).
 
 ```py
 try:
@@ -142,7 +142,7 @@ Las **Tuplas** contienen varios [métodos](class/py_methods.md) que permiten tra
 
 ### MÉTODO COUNT
 
-El método `count` recibe un único argumento con el valor; este se buscará a lo largo de toda la **tupla** y devolverá el número de veces que lo haya encontrado en forma de [`int`](py_int.md).
+El método `count` recibe un único argumento con el valor; este se buscará a lo largo de toda la **tupla** y devolverá el número de veces que lo haya encontrado en forma de [`int`](int.md).
 
 > [!abstract] SINTAXIS
 > count(***\[value\]***) -> int
@@ -161,9 +161,9 @@ print(f"En la tupla hay {n} veces el valor {v}.")
 
 ### MÉTODO INDEX
 
-El método `index` sirve para obtener el índice de un elemento que estemos buscando dentro de la **Tupla**; puede recibir hasta tres argumentos de los cuales el primero es obligatorio; el primer argumento indica cual es el valor del cual queremos obtener el índice, el segundo es un [`int`](py_int.md) que indica desde qué índice queremos empezar a buscar (*siendo el valor por defecto `0`*), el tercer argumento es un [`int`](py_int.md) que indica hasta donde queremos buscar (*siendo el valor por defecto `2^63-1`*).
+El método `index` sirve para obtener el índice de un elemento que estemos buscando dentro de la **Tupla**; puede recibir hasta tres argumentos de los cuales el primero es obligatorio; el primer argumento indica cual es el valor del cual queremos obtener el índice, el segundo es un [`int`](int.md) que indica desde qué índice queremos empezar a buscar (*siendo el valor por defecto `0`*), el tercer argumento es un [`int`](int.md) que indica hasta donde queremos buscar (*siendo el valor por defecto `2^63-1`*).
 
-Si dentro del rango de índices indicado no se encuentra ninguna ocurrencia del valor a buscar, se lanzará una [excepción](py_exceptions.md) de tipo `ValueError`.
+Si dentro del rango de índices indicado no se encuentra ninguna ocurrencia del valor a buscar, se lanzará una [excepción](../exception.md) de tipo `ValueError`.
 
 > [!abstract] SINTAXIS
 > index(***\[value\]***, ***\[start\]***, ***\[end\]***)
@@ -190,7 +190,7 @@ except ValueError:
 ## MÉTODOS PROPIOS
 
 > [!seealso] VE TAMBIÉN
-> - [Contador de valores](py_dict.md#CONTADOR%20DE%20VALORES)
+> - [Contador de valores](dict.md#CONTADOR%20DE%20VALORES)
 
 ### ÍNDICES DE VALORES
 

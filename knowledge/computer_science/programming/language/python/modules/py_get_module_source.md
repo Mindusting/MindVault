@@ -20,7 +20,7 @@ with open("info_random.py", "w") as FILE:
     FILE.write(src)
 ```
 
-El ver el código fuente de un [módulo](../py_module.md) permite por ejemplo, ver como funciona internamente la generación de números aleatorios, he copiado el mínimo código necesario para generar [números decimales](../py_float.md) aleatorios y lo he metido en una [función](../py_func.md):
+El ver el código fuente de un [módulo](../py_module.md) permite por ejemplo, ver como funciona internamente la generación de números aleatorios, he copiado el mínimo código necesario para generar [números decimales](../basic/data_types/float.md) aleatorios y lo he metido en una [función](../py_func.md):
 
 ```python
 import os

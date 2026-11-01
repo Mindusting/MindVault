@@ -12,7 +12,6 @@ title: Clases y Ojetos en Python
 
 > [!fail]- ESTE APARTADO ESTÁ INCOMPLETO
 > > [!todo] #TODO
-> > - [ ] Documentar que son las [**entidades**](py_entity.md) (*Plain Old Python Object*).
 
 > [!help]- REFERENCIAS WEB
 > YouTube:
@@ -81,7 +80,7 @@ print(v.y)
 # 4.0
 ```
 
-En este ejemplo podemos ver como se declara la clase y se instancia, para ello se le llama a la clase seguida de dos paréntesis, el resultado de esto es un objeto de la clase `Vector` y lo guardamos en la [variable](py_variable.md) `v`, después de esto, como se puede ver se llama a las **propiedades** de este objeto y se le asignan sus nuevos valores, finalmente comprobamos la aplicación de los cambios a las **propiedades** imprimiendo el resultado de sus consultas.
+En este ejemplo podemos ver como se declara la clase y se instancia, para ello se le llama a la clase seguida de dos paréntesis, el resultado de esto es un objeto de la clase `Vector` y lo guardamos en la [variable](basic/variable.md) `v`, después de esto, como se puede ver se llama a las **propiedades** de este objeto y se le asignan sus nuevos valores, finalmente comprobamos la aplicación de los cambios a las **propiedades** imprimiendo el resultado de sus consultas.
 
 > [!info]- EQUIVALENCIA EN OTRO LENGUAJE
 > Si bienes de otro lenguaje, para qué sepas, la línea:
@@ -110,7 +109,7 @@ Una vez has aprendido lo básico sobre las clases y objetos, puedes empezar con 
 > print(isinstance(3.14, float))
 > ```
 >
-> Como se puede ver en este ejemplo, el primer argumento debe ser el objeto, mientras que el segundo debe ser la clase con la que queremos compararlo, también existe la posibilidad de pasar como segundo argumento una [tupla](py_tuple.md) con las clases con las que queremos hacer la comparación:
+> Como se puede ver en este ejemplo, el primer argumento debe ser el objeto, mientras que el segundo debe ser la clase con la que queremos compararlo, también existe la posibilidad de pasar como segundo argumento una [tupla](basic/data_types/tuple.md) con las clases con las que queremos hacer la comparación:
 >
 > ```python
 > print(isinstance(3.14, (int, str, bool)))

@@ -142,7 +142,7 @@ import opensimplex as ops
 
 ### OBTENER SEMILLA
 
-La [función](py_func.md) `get_seed` devuelve un valor de tipo [`int`](py_int.md) indicando la semilla (*seed*) del *simplex noise*, la semilla es el número que se utiliza para generar el ruido.
+La [función](py_func.md) `get_seed` devuelve un valor de tipo [`int`](basic/data_types/int.md) indicando la semilla (*seed*) del *simplex noise*, la semilla es el número que se utiliza para generar el ruido.
 
 ```python
 import opensimplex as ops
@@ -154,7 +154,7 @@ print(ops.get_seed())
 
 ### SEMILLA ALEATORIA
 
-La [función](py_func.md) `random_seed` establece como semilla (*seed*) del *simplex noise* como un número de tipo [`int`](py_int.md) """aleatorio""", y lo pongo entre comillas ya que si vemos el código de esta [función](py_func.md) podemos ver que el número lo saca de la [función](py_func.md) [`time_ns`](py_time.md) del [módulo](py_module.md) [`time`](py_time.md).
+La [función](py_func.md) `random_seed` establece como semilla (*seed*) del *simplex noise* como un número de tipo [`int`](basic/data_types/int.md) """aleatorio""", y lo pongo entre comillas ya que si vemos el código de esta [función](py_func.md) podemos ver que el número lo saca de la [función](py_func.md) [`time_ns`](module/standar/time/time.md) del [módulo](py_module.md) [`time`](module/standar/time/time.md).
 
 ```python
 import opensimplex as ops
@@ -168,7 +168,7 @@ En este ejemplo se hace uso de la [función](py_func.md) [`get_seed`](#OBTENER%2
 
 ### ESTABLECER SEMILLA
 
-La [función](py_func.md) `seed` requiere de un argumento de tipo [`int`](py_int.md), este será la semilla (*seed*) que se usará para hacer el *simplex noise*.
+La [función](py_func.md) `seed` requiere de un argumento de tipo [`int`](basic/data_types/int.md), este será la semilla (*seed*) que se usará para hacer el *simplex noise*.
 
 ```python
 import opensimplex as ops
@@ -184,7 +184,7 @@ En este ejemplo se hace uso de la [función](py_func.md) [`get_seed`](#OBTENER%2
 
 ### RUIDO 2D
 
-La [función](py_func.md) `noise2` requiere de dos argumentos, estos pueden ser tanto de tipo [`int`](py_int.md) como [`float`](py_float.md) e indican las coordenadas del del valor que queremos del *simplex noise*.
+La [función](py_func.md) `noise2` requiere de dos argumentos, estos pueden ser tanto de tipo [`int`](basic/data_types/int.md) como [`float`](basic/data_types/float.md) e indican las coordenadas del del valor que queremos del *simplex noise*.
 
 ```python
 import opensimplex as ops

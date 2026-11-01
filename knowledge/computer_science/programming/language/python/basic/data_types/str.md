@@ -333,7 +333,7 @@ print(f"{salario * pagas = :,} €")
 # salario * pagas = 12,000.0 €
 ```
 
-Como se puede ver en el ejemplo, si escribimos el nombre de una **variable**, seguido de un *igual* (`=`) o una operación [aritmética](py_operators.md#ARITMÉTICOS).
+Como se puede ver en el ejemplo, si escribimos el nombre de una **variable**, seguido de un *igual* (`=`) o una operación [aritmética](../operator.md#ARITMÉTICOS).
 
 ```python
 x = True
@@ -356,7 +356,7 @@ print(f"{(x != y) = }")
 # (x != y) = True
 ```
 
-Como se puede ver en este ejemplo, también se puede hacer con operadores [relacionales](py_operators.md#RELACIONAL) y [lógicos](py_operators.md#LÓGICOS).
+Como se puede ver en este ejemplo, también se puede hacer con operadores [relacionales](../operator.md#RELACIONAL) y [lógicos](../operator.md#LÓGICOS).
 
 ## R-STRING
 
@@ -370,7 +370,7 @@ print(r"\tHola mundo!!!")
 # \tHola mundo!!!
 ```
 
-Como se puede ver en el ejemplo, en el [`print`](py_print.md) que hemos usado el [`str`](#STRING) normal al haber indicado la tabulación con el `\t` se ha impreso en el resultado la tabulación como corresponde, sin embargo, en el caso del [`print`](py_print.md) con el `R-String` se ha impreso tal cual los caracteres de **contrabarra** y **te** (`\t`).
+Como se puede ver en el ejemplo, en el [`print`](basic/builtins/print.md) que hemos usado el [`str`](#STRING) normal al haber indicado la tabulación con el `\t` se ha impreso en el resultado la tabulación como corresponde, sin embargo, en el caso del [`print`](basic/builtins/print.md) con el `R-String` se ha impreso tal cual los caracteres de **contrabarra** y **te** (`\t`).
 
 Para este punto ya te habrás dado cuenta gracias al ejemplo, y es que para indicar que queremos que un [`str`](#STRING) se interprete de forma cruda, simplemente tendremos que poner una `r` por delante de las comillas que conformen el [`str`](#STRING).
 

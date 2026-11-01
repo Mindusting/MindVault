@@ -133,7 +133,7 @@ Como se puede ver en el ejemplo, después de cambiarle el nombre a la página, s
 
 #### CREAR PÁGINAS
 
-Para crear nuevas páginas en nuestro archivo de *EXCEL* se usa el [método](../class/py_methods.md) `create_sheet`, este [método](../class/py_methods.md) requiere de un argumento y puede tener dos, el primero (obligatorio) es el nombre de la nueva página, el segundo es el índice de la página, si no indicamos ninguno, será el valor más alto posible, esto es debido a que las páginas se guardan en forma de [lista](../py_list.md).
+Para crear nuevas páginas en nuestro archivo de *EXCEL* se usa el [método](../class/py_methods.md) `create_sheet`, este [método](../class/py_methods.md) requiere de un argumento y puede tener dos, el primero (obligatorio) es el nombre de la nueva página, el segundo es el índice de la página, si no indicamos ninguno, será el valor más alto posible, esto es debido a que las páginas se guardan en forma de [lista](../basic/data_types/list.md).
 
 ```python
 from openpyxl import (
@@ -158,7 +158,7 @@ wb.close()
 
 #### LISTAR PÁGINAS
 
-Para poder ver los nombre de las páginas que tiene nuestro archivos, podemos usar la propiedad `sheetnames`, esta nos devolverá una [lista](../py_list.md) con los nombres y en su respectivo orden:
+Para poder ver los nombre de las páginas que tiene nuestro archivos, podemos usar la propiedad `sheetnames`, esta nos devolverá una [lista](../basic/data_types/list.md) con los nombres y en su respectivo orden:
 
 ```python
 from openpyxl import (
@@ -278,7 +278,7 @@ Esta [función](../py_func.md) requiere de un argumento obligatorio, este es el 
 
 ## LETRA DE COLUMNA
 
-Para convertir el número de la columna en la letra que corresponde se puede usar el la [función](../py_func.md) `get_column_letter`, esta recibe un valor de tipo [int](../py_int.md) como argumento:
+Para convertir el número de la columna en la letra que corresponde se puede usar el la [función](../py_func.md) `get_column_letter`, esta recibe un valor de tipo [int](../basic/data_types/int.md) como argumento:
 
 ```python
 from openpyxl import utils

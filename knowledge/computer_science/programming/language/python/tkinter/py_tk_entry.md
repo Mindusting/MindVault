@@ -47,7 +47,7 @@ Para poder interactuar con la inforación usaremos principalmente tres [métodos
 
 ### OBTENER TEXTO
 
-Para obtener el texto que contiene la *entrada* se usa el [método](../class/py_methods.md) `get`; este no recive ningún parámetro y nos debolverá en contenido en forma de [texto](../py_str.md).
+Para obtener el texto que contiene la *entrada* se usa el [método](../class/py_methods.md) `get`; este no recive ningún parámetro y nos debolverá en contenido en forma de [texto](../basic/data_types/str.md).
 
 > [!abstract] SINTAXIS
 > ***\[entry\]***.get()

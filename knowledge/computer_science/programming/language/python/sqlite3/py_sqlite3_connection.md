@@ -15,7 +15,7 @@ title: Clase Connection en SQLite3 en Python
 > [!important] IMPORTANTE
 > A lo largo de esta documentación me referiré a la conexión como `cx` en el código.
 
-La clase **`Connection`** en *SQLite3* permite establecer una conexión a una [base de datos](../../../../data_base/relational/theory/db.md) para poder operar con ella; al igual que con los [archivos](../py_open.md), estos se deben cerrar al terminar su uso (*con la [función](../py_func.md) `close`*).
+La clase **`Connection`** en *SQLite3* permite establecer una conexión a una [base de datos](../../../../data_base/relational/theory/db.md) para poder operar con ella; al igual que con los [archivos](../basic/builtins/open.md), estos se deben cerrar al terminar su uso (*con la [función](../py_func.md) `close`*).
 
 Esta **conexión** es la que nos permitirá ejecutar código de [SQLite3](../../../../data_base/relational/system/sqlite/sqlite3.md) contra la [base de datos](../../../../data_base/relational/theory/db.md).
 
@@ -67,7 +67,7 @@ VALUES
     ('Adelia', 22);
 ```
 
-Aquí en Python podemos ver como obtenemos un [cursor](py_sqlite3_cursor.md) de el [método](../class/py_methods.md) `execute` y luego imprimimos cada una de las [tuplas](../py_tuple.md) que obtenemos como resultado:
+Aquí en Python podemos ver como obtenemos un [cursor](py_sqlite3_cursor.md) de el [método](../class/py_methods.md) `execute` y luego imprimimos cada una de las [tuplas](../basic/data_types/tuple.md) que obtenemos como resultado:
 
 ```python
 import sqlite3
@@ -196,9 +196,9 @@ cx.close()
 
 ## TIPO DE SALIDA
 
-Cuando estamos trabajando con [bases de datos](../../../../data_base/relational/theory/db.md) lo normal es que usemos texto, pero hay aveces que tendremos que manejar imágenes, vídeos, audios que tengamos guardados en la [base de datos](../../../../data_base/relational/theory/db.md) dentro de una columna de tipo [`BLOB`](../../../../data_base/relational/system/sqlite/sqlite3_datatypes.md), si intentamos acceder a la información ahí guardada, es bastante probable que nos de una excepción, ya que hay ciertos [`bytes`](../py_bytes.md) que no se pueden transformar a texto de forma correcta, para solucionar esto podemos cambiar en la forma en la que nos devuelve la información de la [base de datos](../../../../data_base/relational/theory/db.md) con el atributo `text_factory`, este por defecto tiene la [clase](../py_class.md) [`str`](../py_str.md) y podemos sustituirlo por la [clase](../py_class.md) [`bytes`](../py_bytes.md) y viceversa.
+Cuando estamos trabajando con [bases de datos](../../../../data_base/relational/theory/db.md) lo normal es que usemos texto, pero hay aveces que tendremos que manejar imágenes, vídeos, audios que tengamos guardados en la [base de datos](../../../../data_base/relational/theory/db.md) dentro de una columna de tipo [`BLOB`](../../../../data_base/relational/system/sqlite/sqlite3_datatypes.md), si intentamos acceder a la información ahí guardada, es bastante probable que nos de una excepción, ya que hay ciertos [`bytes`](../basic/data_types/bytes.md) que no se pueden transformar a texto de forma correcta, para solucionar esto podemos cambiar en la forma en la que nos devuelve la información de la [base de datos](../../../../data_base/relational/theory/db.md) con el atributo `text_factory`, este por defecto tiene la [clase](../py_class.md) [`str`](../basic/data_types/str.md) y podemos sustituirlo por la [clase](../py_class.md) [`bytes`](../basic/data_types/bytes.md) y viceversa.
 
-Una vez cambiado, cada vez que hagamos una consulta a la [base de datos](../../../../data_base/relational/theory/db.md), en cuyo resultado contenga un [`TEXT`](../../../../data_base/relational/system/sqlite/sqlite3_datatypes.md) o un [`BLOB`](../../../../data_base/relational/system/sqlite/sqlite3_datatypes.md), nos lo devolverá en forma de [`bytes`](../py_bytes.md).
+Una vez cambiado, cada vez que hagamos una consulta a la [base de datos](../../../../data_base/relational/theory/db.md), en cuyo resultado contenga un [`TEXT`](../../../../data_base/relational/system/sqlite/sqlite3_datatypes.md) o un [`BLOB`](../../../../data_base/relational/system/sqlite/sqlite3_datatypes.md), nos lo devolverá en forma de [`bytes`](../basic/data_types/bytes.md).
 
 ```python
 import sqlite3
@@ -214,7 +214,7 @@ cx.close()
 
 ## ESQUEMA DE LA DB
 
-Para obtener toda la estructura y datos de la [base de datos](../../../../data_base/relational/theory/db.md) en forma de texto se usa el [método](../class/py_methods.md) `iterdump`; este nos devolverá un generador con todo el contenido el cual podremos transformar en una [**lista**](../py_list.md) o [**tupla**](../py_tuple.md) si así lo queremos.
+Para obtener toda la estructura y datos de la [base de datos](../../../../data_base/relational/theory/db.md) en forma de texto se usa el [método](../class/py_methods.md) `iterdump`; este nos devolverá un generador con todo el contenido el cual podremos transformar en una [**lista**](../basic/data_types/list.md) o [**tupla**](../basic/data_types/tuple.md) si así lo queremos.
 
 A continuación veremos un ejemplo de como guardar todo el contenido en un archivo de texto a modo de esquema:
 

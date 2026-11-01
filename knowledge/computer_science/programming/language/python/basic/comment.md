@@ -15,7 +15,7 @@ tags: [Comment, Programming, Python]
 > - [W3 Schools](https://www.w3schools.com/python/python_comments.asp) #WWW/W3Schools
 
 > [!internal-link]- REFERENCIAS INTERNAS
-> - [Comentarios en programación.](../../fundamentals/basics/comment.md)
+> - [Comentarios en programación.](../../../fundamentals/basics/comment.md)
 
 Los comentarios sirven para dar una **descripción** de lo que hace una **parte del código** o dar **indicaciones**. Esto nos puede servir para en un futuro, cuando ya no nos acordemos de qué hace dicha parte del código, y así **no tener que interpretarlo**, sino que podemos ver la descripción que hayamos dejado, también **puede ayudar a otras personas** que estén trabajando con nosotros a entender como funciona lo que estamos haciendo.
 
@@ -77,4 +77,4 @@ print("Este es mi segundo print")
 #"""
 ```
 
-Lo que se ve en este ejemplo no tiene demasiado sentido ya que al ser una línea se podría hacer lo mismo usando el **numeral** (`#`) en frente del [print](py_print.md), pero sí nos serviría para comentar un gran bloque de código, ya que si no, las opciones que tenemos es, o ir comentando todas las líneas con **numerales** (`#`) lo cual es un horror de hacer, o comentarlo con las seis comillas, pero en este último caso tendremos que quitarlas tanto de arriba como de debajo del bloque de código y esta forma de hacerlo nos permite poder comentar o descomentar todo un bloque de código con solo un carácter.
+Lo que se ve en este ejemplo no tiene demasiado sentido ya que al ser una línea se podría hacer lo mismo usando el **numeral** (`#`) en frente del [print](basic/builtins/print.md), pero sí nos serviría para comentar un gran bloque de código, ya que si no, las opciones que tenemos es, o ir comentando todas las líneas con **numerales** (`#`) lo cual es un horror de hacer, o comentarlo con las seis comillas, pero en este último caso tendremos que quitarlas tanto de arriba como de debajo del bloque de código y esta forma de hacerlo nos permite poder comentar o descomentar todo un bloque de código con solo un carácter.

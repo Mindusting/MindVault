@@ -44,7 +44,7 @@ import sqlite3
 
 ## CONEXIÓN A BASE DE DATOS
 
-Para empezar a trabajar sobre una [base de datos](../../../../data_base/relational/theory/db.md) primero tendremos que crearla o conectarnos a una existente; para ello tendremos que hacer uso de la [función](../py_func.md) `connect`; esta recibe un argumento de tipo [`str`](../py_str.md) indicando la runa de en donde se encuentra la [base de datos](../../../../data_base/relational/theory/db.md); devolviéndonos como resultado un objeto de tipo [`Connection`](py_sqlite3_connection.md).
+Para empezar a trabajar sobre una [base de datos](../../../../data_base/relational/theory/db.md) primero tendremos que crearla o conectarnos a una existente; para ello tendremos que hacer uso de la [función](../py_func.md) `connect`; esta recibe un argumento de tipo [`str`](../basic/data_types/str.md) indicando la runa de en donde se encuentra la [base de datos](../../../../data_base/relational/theory/db.md); devolviéndonos como resultado un objeto de tipo [`Connection`](py_sqlite3_connection.md).
 
 > [!abstract] SINTAXIS
 > ***\[cx\_name\]*** = sqlite3.connect(***\[path\]***)

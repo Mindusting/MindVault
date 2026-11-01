@@ -36,7 +36,7 @@ Si quieres seguir una documentación más lineal, te recomiendo lo siguiente:
 
 ## ARCHIVOS VÁLIDOS
 
-Para comprobar si un archivo es válido como `.zip`, y eso no es si tiene la extensión correcta, sino al contenido del archivo es interpretable como un archivo `.zip`, podemos usar la [función](../py_func.md) `is_zipfile`, este requiere de un argumento indicando la ruta del archivo, esta devolverá un valor [booleano](../py_bool.md) indicando si es válido o no.
+Para comprobar si un archivo es válido como `.zip`, y eso no es si tiene la extensión correcta, sino al contenido del archivo es interpretable como un archivo `.zip`, podemos usar la [función](../py_func.md) `is_zipfile`, este requiere de un argumento indicando la ruta del archivo, esta devolverá un valor [booleano](../basic/data_types/bool.md) indicando si es válido o no.
 
 > [!abstract] SINTAXIS
 > id\_zipfile(***\[path\]***)

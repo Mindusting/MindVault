@@ -24,10 +24,10 @@ Para crear un **hilo** con la [clase](../py_class.md) `Thread` tendremos que dar
 > Thread(target=**\[target\]**)
 
 - `target`: referencia a la [función](../py_func.md) que ejecutará el hilo una vez se haya iniciado.
-- `args`: es una [tupla](../py_tuple.md) con los argumentos posicionales que se le debe pasar a la [función](../py_func.md) indicada en `target`.
-- `kwargs`: es un [diccionario](../py_dict.md) con los argumentos por nombre que se le debe pasar a la [función](../py_func.md) indicada en `target`.
-- `name`: es un [string](../py_str.md) usado para identificar el **hilo**.
-- `daemon`: es un [booleano](../py_bool.md) indicando si el de tipo *demonio*.
+- `args`: es una [tupla](../basic/data_types/tuple.md) con los argumentos posicionales que se le debe pasar a la [función](../py_func.md) indicada en `target`.
+- `kwargs`: es un [diccionario](../basic/data_types/dict.md) con los argumentos por nombre que se le debe pasar a la [función](../py_func.md) indicada en `target`.
+- `name`: es un [string](../basic/data_types/str.md) usado para identificar el **hilo**.
+- `daemon`: es un [booleano](../basic/data_types/bool.md) indicando si el de tipo *demonio*.
 
 ## DEMONIOS
 
@@ -84,5 +84,5 @@ print("Fín de todos los hilos.")
 Los objetos de tipo `Thread` tienen varios [métodos](../py_func.md), veremos los más importantes:
 
 - `start`: hace que comience el proceso de ejecución del hilo.
-- `is_alive`: devuelve un valor [booleano](../py_bool.md) indicando si sigue vivo (*Si está vivo es que no ha terminado*).
+- `is_alive`: devuelve un valor [booleano](../basic/data_types/bool.md) indicando si sigue vivo (*Si está vivo es que no ha terminado*).
 - `join`: la ejecución del programa se detiene hasta que el hilo termine de ejecutarse.

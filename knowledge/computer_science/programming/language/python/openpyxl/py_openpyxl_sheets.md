@@ -63,7 +63,7 @@ Como se puede ver en el ejemplo, después de cambiarle el nombre a la página, s
 
 ## CREAR PÁGINAS
 
-Para crear nuevas páginas en nuestro archivo de *EXCEL* se usa el [método](../class/py_methods.md) `create_sheet`, este [método](../class/py_methods.md) requiere de un argumento y puede tener dos, el primero (obligatorio) es el nombre de la nueva página, el segundo es el índice de la página, si no indicamos ninguno, será el valor más alto posible, esto es debido a que las páginas se guardan en forma de [lista](../py_list.md).
+Para crear nuevas páginas en nuestro archivo de *EXCEL* se usa el [método](../class/py_methods.md) `create_sheet`, este [método](../class/py_methods.md) requiere de un argumento y puede tener dos, el primero (obligatorio) es el nombre de la nueva página, el segundo es el índice de la página, si no indicamos ninguno, será el valor más alto posible, esto es debido a que las páginas se guardan en forma de [lista](../basic/data_types/list.md).
 
 ```python
 from openpyxl import (
@@ -88,7 +88,7 @@ wb.close()
 
 ## LISTAR PÁGINAS
 
-Para poder ver los nombre de las páginas que tiene nuestro archivos, podemos usar la propiedad `sheetnames`, esta nos devolverá una [lista](../py_list.md) con los nombres y en su respectivo orden:
+Para poder ver los nombre de las páginas que tiene nuestro archivos, podemos usar la propiedad `sheetnames`, esta nos devolverá una [lista](../basic/data_types/list.md) con los nombres y en su respectivo orden:
 
 ```python
 from openpyxl import (
@@ -277,7 +277,7 @@ wb.save("main.xlsx")
 wb.close()
 ```
 
-También se puede recibir una matriz hecha de [tuplas](../py_tuple.md) con los [objetos](../py_class.md) de celda en cada elemento, para obtener los valores de cada celda he usado la [clase map](../py_map.md), he guardado los datos en una matriz de [numpy](../numpy/py_np.md) y he impreso los datos con [Pandas](../py_pandas.md).
+También se puede recibir una matriz hecha de [tuplas](../basic/data_types/tuple.md) con los [objetos](../py_class.md) de celda en cada elemento, para obtener los valores de cada celda he usado la [clase map](../basic/builtins/map.md), he guardado los datos en una matriz de [numpy](../numpy/py_np.md) y he impreso los datos con [Pandas](../py_pandas.md).
 
 ```python
 from openpyxl import Workbook

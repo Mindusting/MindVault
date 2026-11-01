@@ -23,7 +23,7 @@ rating: 0.5
 
 Para crear una condición en Python se usa la palabra clave `if` seguido de la condición que se debe cumplir para ejecutar el código que indiquemos:
 
-Para que el código de una condición se ejecute este tiene que recibir un valor `True` como condición, este le puede otorgar mediante una [variable](py_variable.md) [booleana](py_bool.md) o un [operador relacional](py_operators.md#RELACIONAL)
+Para que el código de una condición se ejecute este tiene que recibir un valor `True` como condición, este le puede otorgar mediante una [variable](basic/variable.md) [booleana](basic/data_types/bool.md) o un [operador relacional](basic/operator.md#RELACIONAL)
 
 > [!abstract] SINTAXIS
 > <span class="flow-word-color">if</span> <span class="italic grey">[condition]</span>:<br><span class="transparency">····</span><span class="italic grey">[code_if_true]</span>
@@ -73,11 +73,11 @@ else:
 
 ### CONDICIÓN
 
-Una condición puede ser creada mediante los [operadores](py_operators.md), principalmente los [operador relacional](py_operators.md#RELACIONAL) y [operador lógicos](py_operators.md#LÓGICOS).
+Una condición puede ser creada mediante los [operadores](basic/operator.md), principalmente los [operador relacional](basic/operator.md#RELACIONAL) y [operador lógicos](basic/operator.md#LÓGICOS).
 
-![](py_operators.md#^relational-operators-table)
+![](basic/operator.md#^relational-operators-table)
 
-![](py_operators.md#^logical-operators-table)
+![](basic/operator.md#^logical-operators-table)
 
 > [!example] Ejemplo
 > ```python
@@ -115,7 +115,7 @@ Un **IF-Ternario** se lo mismo que un `if`, `else` con la diferencia de que este
 > En este caso, simplemente decide entre un [string](sqlite3/py_sqlite3.md) y otro dependiendo de la condición.
 
 > [!example] Ejemplo del uso
-> Yo suelo usarlo para limpiar el terminal a través de una [función](py_func.md) y el [módulo](py_module.md) [`os`](os/py_os.md):
+> Yo suelo usarlo para limpiar el terminal a través de una [función](py_func.md) y el [módulo](py_module.md) [`os`](module/standar/os/os.md):
 > ```python
 > def clear() -> None:
 >     os.system("cls" if "nt" == os.name else "clear")
