@@ -22,21 +22,21 @@ title: SQLite3 en Python
 > - [El libro de Python](https://ellibrodepython.com/bases-datos-sqlite-python) #WWW/ElLibroDePython
 
 > [!faq]- FAQ
-> - [¿Que es un BD (*Base de Datos*)?](../../../../data_base/relational/theory/db.md)
-> - [¿Qué es SQLite3?](../../../../data_base/relational/system/sqlite/sqlite3.md)
+> - [¿Que es un BD (*Base de Datos*)?](../../../../../../data_base/relational/theory/db.md)
+> - [¿Qué es SQLite3?](../../../../../../data_base/relational/system/sqlite/sqlite3.md)
 > - [¿Qué son los tipos de datos en SQLite?](../../sql/sqlite3/sqlite3_data_types.md).
 
 > [!warning] ATENCIÓN
-> Para poder hacer uso de este [módulo](../py_module.md) se requieren conocimientos mínimos de funcionamiento de bases de datos, si no sabes de [bases de datos](../../../../data_base/relational/theory/db.md) puedes consultar la [documentación correspondiente](../../../../data_base/relational/theory/db.md), si sí sabes, pero no conoces [sqlite3](../../../../data_base/relational/system/sqlite/sqlite3.md), también tienes [documentación](../../../../data_base/relational/system/sqlite/sqlite3.md) sobre ello.
+> Para poder hacer uso de este [módulo](../../../py_module.md) se requieren conocimientos mínimos de funcionamiento de bases de datos, si no sabes de [bases de datos](../../../../../../data_base/relational/theory/db.md) puedes consultar la [documentación correspondiente](../../../../../../data_base/relational/theory/db.md), si sí sabes, pero no conoces [sqlite3](../../../../../../data_base/relational/system/sqlite/sqlite3.md), también tienes [documentación](../../../../../../data_base/relational/system/sqlite/sqlite3.md) sobre ello.
 
 > [!important] IMPORTANTE
-> Si quieres trabajar sobre [base de datos](../../../../data_base/relational/theory/db.md) encriptadas con *SQLCipher* debes usar [módulo](../py_module.md) [`pysqlcipher3`](../py_pysqlcipher3.md)
+> Si quieres trabajar sobre [base de datos](../../../../../../data_base/relational/theory/db.md) encriptadas con *SQLCipher* debes usar [módulo](../../../py_module.md) [`pysqlcipher3`](../../../py_pysqlcipher3.md)
 
-El [módulo](../py_module.md) de [**SQLite 3**](../../../../data_base/relational/system/sqlite/sqlite3.md) permite conectarnos a [bases de datos](../../../../data_base/relational/theory/db.md) de este mismo tipo; pudiendo tanto leer como escribir.
+El [módulo](../../../py_module.md) de [**SQLite 3**](../../../../../../data_base/relational/system/sqlite/sqlite3.md) permite conectarnos a [bases de datos](../../../../../../data_base/relational/theory/db.md) de este mismo tipo; pudiendo tanto leer como escribir.
 
 ## IMPORTACIÓN DEL MÓDULO
 
-Para poder usar [**SQLite 3**](../../../../data_base/relational/system/sqlite/sqlite3.md) en **Python**, primero deberemos [importar el módulo](../py_module.md) de la siguiente forma (*Este módulo está incluido en Python3 por lo que no hace falta instalarlo*):
+Para poder usar [**SQLite 3**](../../../../../../data_base/relational/system/sqlite/sqlite3.md) en **Python**, primero deberemos [importar el módulo](../../../py_module.md) de la siguiente forma (*Este módulo está incluido en Python3 por lo que no hace falta instalarlo*):
 
 ```python
 import sqlite3
@@ -44,7 +44,7 @@ import sqlite3
 
 ## CONEXIÓN A BASE DE DATOS
 
-Para empezar a trabajar sobre una [base de datos](../../../../data_base/relational/theory/db.md) primero tendremos que crearla o conectarnos a una existente; para ello tendremos que hacer uso de la [función](../py_func.md) `connect`; esta recibe un argumento de tipo [`str`](../basic/data_types/str.md) indicando la runa de en donde se encuentra la [base de datos](../../../../data_base/relational/theory/db.md); devolviéndonos como resultado un objeto de tipo [`Connection`](py_sqlite3_connection.md).
+Para empezar a trabajar sobre una [base de datos](../../../../../../data_base/relational/theory/db.md) primero tendremos que crearla o conectarnos a una existente; para ello tendremos que hacer uso de la [función](../../../py_func.md) `connect`; esta recibe un argumento de tipo [`str`](../../../basic/data_types/str.md) indicando la runa de en donde se encuentra la [base de datos](../../../../../../data_base/relational/theory/db.md); devolviéndonos como resultado un objeto de tipo [`Connection`](py_sqlite3_connection.md).
 
 > [!abstract] SINTAXIS
 > ***\[cx\_name\]*** = sqlite3.connect(***\[path\]***)
@@ -61,10 +61,10 @@ cx.close()
 ```
 
 > [!info] INFO
-> El objeto [`Connection`](py_sqlite3_connection.md) es el encargado de conectarse a la [base de datos](../../../../data_base/relational/theory/db.md) para realizar los cambios en esta, entre otra serie de cosas.
+> El objeto [`Connection`](py_sqlite3_connection.md) es el encargado de conectarse a la [base de datos](../../../../../../data_base/relational/theory/db.md) para realizar los cambios en esta, entre otra serie de cosas.
 
 > [!tip] TIP
-> Si el nombre que se indica en la [función](../py_func.md) `connect` es `:memory:` la [base de datos](../../../../data_base/relational/theory/db.md) se guarda en la memoria RAM, por lo que esta se borrará en el momento en el que se cierre la conexión, el objetivo de esto es poder usa la de forma temporal y sin dejar rastro en el disco duro.
+> Si el nombre que se indica en la [función](../../../py_func.md) `connect` es `:memory:` la [base de datos](../../../../../../data_base/relational/theory/db.md) se guarda en la memoria RAM, por lo que esta se borrará en el momento en el que se cierre la conexión, el objetivo de esto es poder usa la de forma temporal y sin dejar rastro en el disco duro.
 
 ## COMBERSIÓN DE DATOS
 

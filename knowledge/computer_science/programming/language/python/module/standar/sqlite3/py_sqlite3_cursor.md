@@ -27,7 +27,7 @@ title: Clase Cursor en SQLite3 en Python
 
 ## EJECUCIÓN DE SQL
 
-Para ejecutar sentencias [SQL](../../../../data_base/relational/query_language/sql.md) con el **cursor**, podremos hacer uso de tres [métodos](../class/py_methods.md):
+Para ejecutar sentencias [SQL](../../../../../../data_base/relational/query_language/sql.md) con el **cursor**, podremos hacer uso de tres [métodos](../../../class/py_methods.md):
 
 - [`execute`](#EXECUTE): ejecuta una sentencia una vez.
 - [`executemany`](#EXECUTEMANY): ejecuta una sentencia múltiples veces.
@@ -35,7 +35,7 @@ Para ejecutar sentencias [SQL](../../../../data_base/relational/query_language/s
 
 ### EXECUTE
 
-El [métodos](../class/py_methods.md) `execute` permite ejecutar una sentencia de [SQL](../../../../data_base/relational/query_language/sql.md) recibiendo la como primer argumento, el segundo es opcional y debe ser una [**tupla**](../basic/data_types/tuple.md) o una [**lista**](../basic/data_types/list.md) con los valores que sustituirán las interrogaciones que contenga la sentencia [SQL](../../../../data_base/relational/query_language/sql.md)
+El [métodos](../../../class/py_methods.md) `execute` permite ejecutar una sentencia de [SQL](../../../../../../data_base/relational/query_language/sql.md) recibiendo la como primer argumento, el segundo es opcional y debe ser una [**tupla**](../../../basic/data_types/tuple.md) o una [**lista**](../../../basic/data_types/list.md) con los valores que sustituirán las interrogaciones que contenga la sentencia [SQL](../../../../../../data_base/relational/query_language/sql.md)
 
 > [!abstract] SINTAXIS
 > execute(***\[sql\]\{***, ***\[parameters\]\}***)
@@ -68,7 +68,7 @@ cx.close()
 
 ---
 
-También tenemos la posibilidad de pasar un segundo parámetro que debe recibir un **iterable** como puede ser una [**lista**](../basic/data_types/list.md) o [**tupla**](../basic/data_types/tuple.md), conteniendo este los **parámetros** que queramos insertar en la sentencia [SQL](../../../../data_base/relational/system/sqlite/sqlite3.md).
+También tenemos la posibilidad de pasar un segundo parámetro que debe recibir un **iterable** como puede ser una [**lista**](../../../basic/data_types/list.md) o [**tupla**](../../../basic/data_types/tuple.md), conteniendo este los **parámetros** que queramos insertar en la sentencia [SQL](../../../../../../data_base/relational/system/sqlite/sqlite3.md).
 
 ```python
 import sqlite3
@@ -99,7 +99,7 @@ cx.close()
 
 ### EXECUTESCRIPT
 
-Para ejecutar un script de [**SQLite3**](../../../../data_base/relational/system/sqlite/sqlite3.md) con varias sentencias se usa el [método](../class/py_methods.md) `executescript`; este recibe un único argumento de tipo [string](../basic/data_types/str.md) con el script en cuestión.
+Para ejecutar un script de [**SQLite3**](../../../../../../data_base/relational/system/sqlite/sqlite3.md) con varias sentencias se usa el [método](../../../class/py_methods.md) `executescript`; este recibe un único argumento de tipo [string](../../../basic/data_types/str.md) con el script en cuestión.
 
 > [!abstract] SINTAXIS
 > executescript(***\[sql\]***)
