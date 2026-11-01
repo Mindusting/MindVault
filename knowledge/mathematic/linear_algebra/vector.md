@@ -70,7 +70,7 @@ tags: [Math, Vector]
 
 > [!note] NOTA
 > 1. Si quieres una versión resumida/chuleta de estos apuntes, tienes el archivo [*vector_cheatsheet*](vector_cheatsheet.md).
-> 2. En algunos de los ejemplo de código de este documento se usa la clase `Vector2`, esta no es una clase propia de [**Python**](../../computer_science/programming/language/python/py.md), sino que la he escrito a mano, si quieres ver su código fuente para enterder como funciona, la tienes en el apartado [Vector 2D en  Python](#VECTOR%202D%20EN%20PYTHON); no es necesario entender el código para estos apuntes, ya que estos están más orientados a el manejo de vectores en general, pero por si te interesa, ahí lo tienes.
+> 2. En algunos de los ejemplo de código de este documento se usa la clase `Vector2`, esta no es una clase propia de [**Python**](../../computer_science/programming/language/python/python.md), sino que la he escrito a mano, si quieres ver su código fuente para enterder como funciona, la tienes en el apartado [Vector 2D en  Python](#VECTOR%202D%20EN%20PYTHON); no es necesario entender el código para estos apuntes, ya que estos están más orientados a el manejo de vectores en general, pero por si te interesa, ahí lo tienes.
 
 ## DEFINICIÓN
 
@@ -408,7 +408,7 @@ print(v.mag())
 
 ---
 
-Si queremos implementar en código el cálculo de la **magnitud** podemos hacerlo de la siguiente forma (*lo he puesto en [Python](../../computer_science/programming/language/python/py.md) para que sea facil de enteder, pero este mismo concepto se puede aplicar en otros lenguajes de programación*):
+Si queremos implementar en código el cálculo de la **magnitud** podemos hacerlo de la siguiente forma (*lo he puesto en [Python](../../computer_science/programming/language/python/python.md) para que sea facil de enteder, pero este mismo concepto se puede aplicar en otros lenguajes de programación*):
 
 ```python
 import math

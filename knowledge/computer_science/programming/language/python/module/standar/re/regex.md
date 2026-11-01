@@ -20,4 +20,4 @@ tags: [Programming, Python, RegEx]
 > [!faq]- FAQ
 > - [¿Qué son las expresiones regulares?](../../../../../../text_processing/regex/regex.md)
 
-Este apartado va a definir como escribir [expresiones regulares](../../../../../../text_processing/regex/regex.md) en [Python](../../../py.md) con el [módulo RE](re.md).
+Este apartado va a definir como escribir [expresiones regulares](../../../../../../text_processing/regex/regex.md) en [Python](../../../python.md) con el [módulo RE](re.md).

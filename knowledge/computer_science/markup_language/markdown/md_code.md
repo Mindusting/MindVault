@@ -109,7 +109,7 @@ Para definir un bloque de **código** se hace usando tres o más **comillas inve
 > ***\[code\]***
 > \`\`\`
 
-Por ejemplo podemos mostrar un código de [**Python**](../../programming/language/python/py.md):
+Por ejemplo podemos mostrar un código de [**Python**](../../programming/language/python/python.md):
 
 ```python
 print("Hola mundo!")

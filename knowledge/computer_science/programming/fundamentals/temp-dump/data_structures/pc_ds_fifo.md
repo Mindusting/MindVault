@@ -18,7 +18,7 @@ El término **FIFO** viene del inglés (*First In, First Out*), que significa, e
 
 ![#center](../drawing/fifo.excalidraw.md)
 
-Este tipo de estructuras las podemos encontrar por ejemplo en [Python](../../../language/python/py.md):
+Este tipo de estructuras las podemos encontrar por ejemplo en [Python](../../../language/python/python.md):
 
 ```python
 numbers: list = list()

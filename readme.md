@@ -64,7 +64,7 @@ Si quieres más información o documentación más antigua hecha en google docum
     - [Git](knowledge/computer_science/dev_tools/git/git.md)
     - [Binario](temp/bin/bin.md)
     - [Assembly](knowledge/computer_science/programming/language/asm/asm.md)
-    - [Python 🐍](knowledge/computer_science/programming/language/python/py.md)
+    - [Python 🐍](knowledge/computer_science/programming/language/python/python.md)
     - [C 🦖](knowledge/computer_science/programming/language/c/c.md)
     - [C++](knowledge/computer_science/programming/language/cpp/cpp.md)
     - [C#](knowledge/computer_science/programming/language/cs/cs.md)

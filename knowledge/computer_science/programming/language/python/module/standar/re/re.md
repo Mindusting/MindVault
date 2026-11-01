@@ -39,7 +39,7 @@ tags: [Module, Programming, Python, ReGex]
 > - [FRIKIdelTO](https://youtu.be/7QUmK6cW_Rg) #WWW/YT/FRIKIdelTO
 > - [NeuralNine](https://youtu.be/wnuBwl2ekmo) #WWW/YT/NeuralNine
 
-El [módulo](../../../basic/module.md) **re** en [Python](../../../py.md) es un estándar, ofrece herramientas para poder trabajar con [expresiones regulares](regex.md); esto lo hace mediante una serie de [funciones](../../../basic/function.md) y [clases](../../../basic/oop.md) que veremos en esta documentación.
+El [módulo](../../../basic/module.md) **re** en [Python](../../../python.md) es un estándar, ofrece herramientas para poder trabajar con [expresiones regulares](regex.md); esto lo hace mediante una serie de [funciones](../../../basic/function.md) y [clases](../../../basic/oop.md) que veremos en esta documentación.
 
 | FUNCIÓN                             | USO                                       | RESULTADO           |
 |:----------------------------------- |:----------------------------------------- |:------------------- |
