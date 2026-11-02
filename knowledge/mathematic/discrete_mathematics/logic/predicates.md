@@ -11,10 +11,6 @@ tags: [Math]
 
 # PREDICADOS
 
-> [!unfinished-file]- ESTE APARTADO ESTÁ INCOMPLETO
-> 
-> > [!todo] #TODO
-
 > [!seealso]- MIRA TAMBIÉN
 > - [Proposiciones](propositions.md)
 > - [Cuantificadores](quantifiers.md)
