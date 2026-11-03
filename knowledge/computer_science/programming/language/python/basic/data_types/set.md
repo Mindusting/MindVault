@@ -1,17 +1,17 @@
 ---
+aliases: [Los conjuntos en Python]
 author: Mindusting
 corrected: true
-tags:
-  - Programming
-  - Python
-  - DataStructure
-title: Los conjuntos en Python
+creationDate: 2026-09-05 12:40:09
+headerFile: false
+modificationDate: 2026-11-03 04:06:59
 rating: 0.75
+tags: [DataStructure, Programming, Python]
 ---
 
 # CONJUNTOS EN PYTHON
 
-> [!help]- REFERENCIAS WEB
+> [!external-link]- REFERENCIAS WEB
 > - [W3 Schools (set)](https://www.w3schools.com/python/python_sets.asp) #WWW/W3Schools
 > - [W3 Schools (set methods)](https://www.w3schools.com/python/python_sets_methods.asp) #WWW/W3Schools
 
@@ -431,6 +431,7 @@ print(my_frozenset)
 Este tipo de set funcionará igual que un set normal, con la diferencia que si intentamos modificarlo ocurrirá un error, ya que está pensado para que no sea modificado, se podría decir que es la versión [`contant`](../../../../fundamentals/temp-dump/pc_constant.md) del set.
 
 %%
+
 ## MÉTODOS
 
 add
