@@ -111,7 +111,7 @@ Si quieres más información o documentación más antigua hecha en google docum
 - COMUNICACIÓN
     - [Codigo Morse internacional](dump/morse_code.md)
 - FÍSICA
-    - [Temperatura](knowledge/phisic/temperature.md)
+    - [Temperatura](knowledge/physics/temperature.md)
 - PROGRAMAS
     - [Obsidian](programs/obsidian/obsidian.md)
 - OTROS
