@@ -33,6 +33,14 @@ Existen dos tipos de carga:
 
 Las cargas del mismo signo se repelen y las de signo contrario se atraen.
 
+%%
+
+  Atracción   |   Repulsión
+(+) -> <- (-) | <- (+) (+) ->
+              | <- (-) (-) ->
+
+%%
+
 ![#center|300](assets/attraction_and_repulsion.excalidraw.md)
 
 ### PARTÍCULAS SUBATÓMICAS
@@ -44,6 +52,18 @@ Las **partículas subatómicas** son aquellas que forman los **átomos**, hay tr
 | Protón    | $+e$  |
 | Electrón  | $-e$  |
 | Neutrón   |  $0$  |
+
+%%
+
+     ......(-)
+   ..         ..
+  .     (+)     .
+  .   (0) (0)   .
+  .     (+)     .
+   ..         ..
+     (-)......
+
+%%
 
 ![#center|300](assets/atom.excalidraw.md)
 
@@ -60,6 +80,31 @@ Dependiendo del valance de la cantidade protones y electrones dentro de un cuerp
 - **Negativo:** exceso de electrones.
 
 En los procesos habituales de electrización, son los electrones los que se transfieren entre cuerpos.
+
+%%
+
+Objeto neutro
++--------------------+
+| (-)         (-)(+) |
+|   (+)   (+)        |
+|          (-)       |
++--------------------+
+
+Objeto positivo
++--------------------+
+| (-)         (-)(+) |
+|   (+)   (+)        |
+|                    |
++--------------------+
+
+Objeto negativo
++--------------------+
+| (-)         (-)(+) |
+|   (+)              |
+|          (-)       |
++--------------------+
+
+%%
 
 ![#center|300](assets/electrical_status.excalidraw.md)
 
@@ -131,6 +176,20 @@ La **carga eléctrica total de un sistema aislado permanece constante**; la carg
 > $$Q_{\text{total}} = +4e -4e = 0$$
 > 
 > La carga total se conserva.
+
+%%
+
+Antes del contacto   Después del contacto
+   100e-    50e-         75e-    75e-
+   ( ) ---> ( )          ( ) ---> ( )
+                             25e-
+---------------------------------------->
+Antes del contacto   Después del contacto
+   100e+    50e+         75e+    75e+
+   ( ) <--- ( )          ( ) <--- ( )
+                             25e-
+
+%%
 
 ![#center|400](assets/electron_transfer.excalidraw.md)
 
