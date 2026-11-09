@@ -1,14 +1,12 @@
 ---
-aliases:
-  - Principio de superposición
+aliases: [Principio de superposición]
 author: Mindusting
 corrected: true
 creationDate: 2026-11-09 03:14:27
 headerFile: false
-modificationDate: 2026-11-09 11:24:33
+modificationDate: 2026-11-10 12:25:04
 rating:
-tags:
-  - Electricity
+tags: [Electricity]
 ---
 
 # PRINCIPIO DE SUPERPOSICIÓN
