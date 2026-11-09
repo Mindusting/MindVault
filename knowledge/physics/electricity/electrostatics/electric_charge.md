@@ -35,9 +35,11 @@ Las cargas del mismo signo se repelen y las de signo contrario se atraen.
 
 %%
 
+```text
   Atracción   |   Repulsión
 (+) -> <- (-) | <- (+) (+) ->
               | <- (-) (-) ->
+```
 
 %%
 
@@ -55,6 +57,7 @@ Las **partículas subatómicas** son aquellas que forman los **átomos**, hay tr
 
 %%
 
+```text
      ......(-)
    ..         ..
   .     (+)     .
@@ -62,6 +65,7 @@ Las **partículas subatómicas** son aquellas que forman los **átomos**, hay tr
   .     (+)     .
    ..         ..
      (-)......
+```
 
 %%
 
@@ -83,6 +87,7 @@ En los procesos habituales de electrización, son los electrones los que se tran
 
 %%
 
+```text
 Objeto neutro
 +--------------------+
 | (-)         (-)(+) |
@@ -103,6 +108,7 @@ Objeto negativo
 |   (+)              |
 |          (-)       |
 +--------------------+
+```
 
 %%
 
@@ -179,6 +185,7 @@ La **carga eléctrica total de un sistema aislado permanece constante**; la carg
 
 %%
 
+```text
 Antes del contacto   Después del contacto
    100e-    50e-         75e-    75e-
    ( ) ---> ( )          ( ) ---> ( )
@@ -188,6 +195,7 @@ Antes del contacto   Después del contacto
    100e+    50e+         75e+    75e+
    ( ) <--- ( )          ( ) <--- ( )
                              25e-
+```
 
 %%
 
