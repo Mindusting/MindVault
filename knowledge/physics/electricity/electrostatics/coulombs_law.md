@@ -1,5 +1,5 @@
 ---
-aliases: []
+aliases: [Ley de Coulomb]
 author: Mindusting
 corrected: false
 creationDate: 2026-11-05 09:33:07
