@@ -105,7 +105,7 @@ $\neg (p \land q) \iff \neg p \lor \neg q$
 
 ## RESUMEN
 
-| Regla                     |      Premisas       | Conclusión |
+| REGLA                     |      PREMISAS       | CONCLUSIÓN |
 |:------------------------- |:-------------------:|:----------:|
 | **Modus ponens**          |    $p\to q$, $p$    |    $q$     |
 | **Modus tollens**         | $p\to q$, $\neg q$  |  $\neg p$  |

@@ -175,7 +175,7 @@ Los cuantificadores permiten ligar variables dentro de una expresión.
 
 ## RESUMEN
 
-| Símbolo       | Significado         | Condición para ser verdadero |
+| SÍMBOLO       | SIGNIFICADO         | CONDICIÓN PARA SER VERDADERO |
 |:------------- |:------------------- |:---------------------------- |
 | $\forall$     | Para todo           | Todos cumplen                |
 | $\exists$     | Existe al menos uno | Al menos uno cumple          |

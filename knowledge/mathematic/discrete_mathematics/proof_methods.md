@@ -132,7 +132,7 @@ Consiste en dividir el problema en **todos los casos posibles** y demostrar la a
 
 ## RESUMEN
 
-| Método                   | Idea principal                                         |
+| MÉTODO                   | IDEA PRINCIPAL                                         |
 |:------------------------ |:------------------------------------------------------ |
 | **Directa**              | Partir de $p$ y demostrar $q$.                         |
 | **Contraposición**       | Demostrar $\neg q \to \neg p$.                         |
