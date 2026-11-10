@@ -19,4 +19,8 @@ tags: [Math]
 
 - [Escalares](scalar.md)
 - [Vectores](vector.md)
-- Matrices #TODO
+- [Matrices](matrix.md)
+    - [Operaciones con matrices](matrix_operations.md)
+    - [Determinantes](matrix_determinants.md)
+    - [Matrices inversas](matrix_inverse.md)
+- [Matrices booleanas](../discrete_mathematics/boolean_matrices.md)

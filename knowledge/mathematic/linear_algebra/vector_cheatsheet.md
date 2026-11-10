@@ -18,7 +18,7 @@ tags: [CheatSheet, Math]
 > [!note] NOTA
 > Esta es una chuleta del archivo [*vector*](../linear_algebra/vector.md).
 
-Un **vector** es un conjunto de [escalares](scalar.md) (*tendiendo este dos o más [escalares](scalar.md)*); sirve para repesentar una posición, velocidad o fuerza, entre otros; este suele representarse de tres formas distintas, el cual escojas usar depederá fuertemente de en el ámbito en el que te muevas:
+En $\mathbb{R}^n$, un **vector** puede representarse como una lista ordenada de $n$ [escalares](scalar.md), incluso cuando $n=1$; sirve para representar una posición, velocidad o fuerza, entre otros; este suele representarse de tres formas distintas, el cual escojas usar depederá fuertemente de en el ámbito en el que te muevas:
 
 1. **Matemáticos**: una letra con con una flecha encima ($\vec{v}$).
 2. **Físicos**: una flecha en un plano cartesiano.
@@ -56,13 +56,14 @@ $$
 
 ### [SENO, COSENO Y TANGENTE DE UN VECTOR](../linear_algebra/vector.md#SENO%20COSENO%20Y%20TANGENTE%20DE%20UN%20VECTOR)
 
+Para un vector no nulo de dos dimensiones, si $\theta$ es su ángulo respecto al eje $x$ positivo:
+
 $$
-\theta
-\cos(\vec{v}) = \frac{v_x}{\lVert \vec{v} \rVert}
+\cos(\theta) = \frac{v_x}{\lVert \vec{v} \rVert}
 $$
 
 $$
-\sin(\vec{v}) = \frac{v_y}{\lVert \vec{v} \rVert}
+\sin(\theta) = \frac{v_y}{\lVert \vec{v} \rVert}
 $$
 
 #### [COSENO DE UN VECTOR](../linear_algebra/vector.md#COSENO%20DE%20UN%20VECTOR)

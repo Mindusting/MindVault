@@ -9,6 +9,9 @@ tags: [Math]
 
 # LOS NÚMEROS
 
+> [!note] CONVENCIÓN SOBRE LOS NATURALES
+> Según el libro, $\mathbb{N}$ puede empezar en $0$ o en $1$. En nuestros apuntes actuales de matemáticas discretas se usa $\mathbb{N}=\{0,1,2,\ldots\}$; la notación $\mathbb{N}^+=\{1,2,3,\ldots\}$ permite evitar ambigüedades.
+
 ![#center](../assets/number_groups.excalidraw.md)
 
 ## NÚMEROS NATURALES

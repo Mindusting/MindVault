@@ -28,3 +28,9 @@ tags: [Math]
 - [Teoría de conjuntos](set_theory.md)
 - [Inducción](induction.md)
 - [Recursión](recursion.md)
+
+## MATRICES Y RELACIONES
+
+- [Matrices booleanas](boolean_matrices.md)
+- [Relaciones binarias y cierres](binary_relations.md)
+- [Matrices numéricas](../linear_algebra/matrix.md)
