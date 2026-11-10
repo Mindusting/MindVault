@@ -16,7 +16,7 @@ tags: [Math]
 > - [Predicados](predicates.md)
 > - [Conectores lógicos](logical_connectives.md)
 > - [Tablas de verdad](truth_tables.md)
-> - [Métodos de demostración](proof_methods.md)
+> - [Métodos de demostración](../proof_methods.md)
 
 Una **regla de inferencia** es un patrón de razonamiento que permite obtener una **conclusión** a partir de una o varias **premisas**.
 
@@ -101,7 +101,7 @@ $\neg (p \land q) \iff \neg p \lor \neg q$
 ## RELACIÓN CON LOS MÉTODOS DE DEMOSTRACIÓN
 
 - Las **reglas de inferencia** justifican los pasos de un razonamiento.
-- Los [**métodos de demostración**](proof_methods.md) organizan esos pasos para probar una afirmación.
+- Los [**métodos de demostración**](../proof_methods.md) organizan esos pasos para probar una afirmación.
 
 ## RESUMEN
 

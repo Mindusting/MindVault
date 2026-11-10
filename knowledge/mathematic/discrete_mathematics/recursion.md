@@ -13,7 +13,7 @@ tags: [Math]
 
 > [!seealso]- MIRA TAMBIÉN
 > - [Inducción matemática](induction.md)
-> - [Proposiciones](propositions.md)
+> - [Proposiciones](logic/propositions.md)
 > - [Métodos de demostración](proof_methods.md)
 
 La **recursión** es una técnica que permite definir una **función, sucesión o estructura** utilizando versiones más pequeñas de sí misma.
@@ -50,7 +50,7 @@ El **factorial** de un número natural $n$ se representa como $n!$ y puede defin
 > [!syntax] SINTAXIS
 > 
 > $$
-> n != \begin{cases}
+> n! = \begin{cases}
 > 1, &n = 0\\
 > n(n - 1)!,&n \geq 1
 > \end{cases}
@@ -88,6 +88,18 @@ Una **sucesión recursiva** define sus términos usando uno o varios términos a
 > - **Regla recursiva:** sumar los dos términos anteriores.
 > - **Primeros términos:** $0, 1, 1, 2, 3, 5, 8, \ldots$
 
+## CONJUNTOS DEFINIDOS RECURSIVAMENTE
+
+Un **conjunto recursivo** puede describirse mediante **elementos iniciales** y **reglas para generar otros elementos**.
+
+> [!example] EJEMPLO: NATURALES PARES
+> Definimos el conjunto $E$:
+> - **Caso base:** $0\in E$.
+> - **Regla recursiva:** si $n\in E$, entonces $n+2\in E$.
+> - **No se incluyen otros elementos** distintos de los obtenidos con estas reglas.
+>
+> $$E=\{0,2,4,6,\ldots\}$$
+
 ## ESTRUCTURAS RECURSIVAS
 
 También podemos definir **estructuras**, como listas, de manera recursiva.
@@ -107,6 +119,15 @@ $$
 $$
 
 Aquí $+$ representa la concatenación de listas.
+
+## ÁRBOLES DEFINIDOS RECURSIVAMENTE
+
+Un **árbol con raíz** también puede construirse recursivamente:
+
+- **Caso base:** un único vértice $r$ forma un árbol con raíz.
+- **Regla recursiva:** dados varios árboles con raíz **separados**, creamos una raíz nueva $r$ y la conectamos con la raíz de cada árbol.
+
+Así obtenemos árboles cada vez mayores a partir de árboles más pequeños.
 
 ## RECURSIÓN EN PROGRAMACIÓN
 
@@ -129,6 +150,20 @@ Aquí $+$ representa la concatenación de listas.
 > - `n == 0`: caso base.
 > - `factorial(n - 1)`: llamada recursiva.
 > - Cada llamada se acerca al caso base.
+
+## INDUCCIÓN ESTRUCTURAL
+
+La **inducción estructural** demuestra propiedades sobre objetos **definidos recursivamente**, como listas, árboles y fórmulas lógicas.
+
+- **Caso base:** demostrar la propiedad para los objetos iniciales.
+- **Paso inductivo:** suponer que se cumple para los objetos más pequeños usados en una construcción y demostrar que también se cumple para el objeto construido.
+
+> [!example] EJEMPLO
+> **Propiedad:** toda fórmula lógica bien construida tiene el mismo número de paréntesis de apertura y cierre.
+>
+> - **Caso base:** una variable [proposicional](logic/propositions.md) $p$ no tiene paréntesis.
+> - **Paso inductivo:** si $p$ y $q$ tienen paréntesis equilibrados, también los tienen $(\neg p)$ y $(p \land q)$, ya que cada construcción añade un par completo.
+> - **Conclusión:** se cumple para cualquier fórmula generada mediante esas reglas (y las análogas para los demás conectores).
 
 ## RELACIÓN CON LA INDUCCIÓN
 

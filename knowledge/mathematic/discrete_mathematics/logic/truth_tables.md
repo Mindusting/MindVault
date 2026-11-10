@@ -15,7 +15,7 @@ tags: [Math]
 > - [Proposiciones](propositions.md)
 > - [Conectores lógicos](logical_connectives.md)
 > - [Reglas de inferencia](inference_rules.md)
-> - [Métodos de demostración](proof_methods.md)
+> - [Métodos de demostración](../proof_methods.md)
 
 Una **tabla de verdad** muestra el valor de verdad de una [proposición compuesta](propositions.md) para **todas las combinaciones posibles** de los valores de verdad de sus proposiciones atómicas.
 
