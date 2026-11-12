@@ -220,7 +220,7 @@ Propiedades (siempre que las dimensiones sean compatibles):
 > # SALIDA:
 > # [[4 7]
 > #  [2 3]]
-
+> 
 > print(A * B) # elemento a elemento
 > # SALIDA:
 > # [[0 2]
