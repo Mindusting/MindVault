@@ -20,6 +20,7 @@ tags: [Math]
 - [Escalares](scalar.md)
 - [Vectores](vector.md)
 - [Matrices](matrix.md)
+    - [Chuleta de matrices](matrix_cheatsheet.md)
     - [Operaciones con matrices](matrix_operations.md)
     - [Determinantes](matrix_determinants.md)
     - [Matrices inversas](matrix_inverse.md)
