@@ -4,7 +4,7 @@ author: Mindusting
 corrected: false
 creationDate: 2026-10-21 07:09:44
 headerFile: false
-modificationDate: 2026-11-02 12:08:50
+modificationDate: 2026-11-15 05:40:53
 rating:
 tags: [Math]
 ---
@@ -40,6 +40,28 @@ $$2^n$$
 - Con **2 variables**: $4$ filas.
 - Con **3 variables**: $8$ filas.
 
+## CÓMO ENUMERAR LAS FILAS SIN OMITIR NINGUNA
+
+La expresión $2^n$ procede de que cada una de las $n$ variables tiene **dos opciones independientes**, V o F. Si tenemos $3$ variables, las combinaciones son $2 \cdot 2 \cdot 2 = 8$.
+
+Una técnica práctica es alternar valores en bloques cada vez más cortos:
+
+| $p$ | $q$ | $r$ |
+|:---:|:---:|:---:|
+|  V  |  V  |  V  |
+|  V  |  V  |  F  |
+|  V  |  F  |  V  |
+|  V  |  F  |  F  |
+|  F  |  V  |  V  |
+|  F  |  V  |  F  |
+|  F  |  F  |  V  |
+|  F  |  F  |  F  |
+
+La primera columna cambia cada cuatro filas, la segunda cada dos y la tercera en cada fila. El orden elegido no altera el resultado del análisis, siempre que aparezcan **todas las combinaciones una sola vez**.
+
+> [!important] IMPORTANTE
+> Una tabla de verdad con $n$ variables **no** necesita $2^n$ columnas, sino $2^n$ **filas** de asignaciones; el número de columnas depende de las expresiones intermedias que decidamos mostrar.
+
 ## TABLAS DE LOS CONECTORES LÓGICOS
 
 | $p$ | $q$ | $\neg p$ | $p \land q$ | $p \lor q$ | $p \to q$ | $p \leftrightarrow q$ |
@@ -72,19 +94,39 @@ Comprobemos los valores de verdad de la expresión $\neg p \lor q$.
 > - Después aplicamos la disyunción ($\lor$) entre $\neg p$ y $q$.
 > - El resultado es verdadero en tres casos y falso en uno.
 
+## EJEMPLO COMPLETO CON TRES VARIABLES
+
+Estudiemos la fórmula $(p \lor q) \land \neg r$. Calcularemos primero $p \lor q$, después $\neg r$ y, finalmente, la conjunción de ambas.
+
+| $p$ | $q$ | $r$ | $p \lor q$ | $\neg r$ | $(p \lor q)\land\neg r$ |
+|:---:|:---:|:---:|:----------:|:--------:|:-----------------------:|
+|  V  |  V  |  V  |     V      |    F     |            F            |
+|  V  |  V  |  F  |     V      |    V     |            V            |
+|  V  |  F  |  V  |     V      |    F     |            F            |
+|  V  |  F  |  F  |     V      |    V     |            V            |
+|  F  |  V  |  V  |     V      |    F     |            F            |
+|  F  |  V  |  F  |     V      |    V     |            V            |
+|  F  |  F  |  V  |     F      |    F     |            F            |
+|  F  |  F  |  F  |     F      |    V     |            F            |
+
+La fórmula es verdadera exactamente cuando **$r$ es falsa** y **al menos una de $p$ y $q$ es verdadera**. Es una contingencia porque algunas filas terminan en V y otras en F.
+
+> [!note] NOTA
+> Con muchas variables la tabla crece exponencialmente: cuatro variables requieren $16$ filas, cinco requieren $32$ y diez requieren $1024$. Por eso en lógica y programación se emplean también equivalencias, demostraciones y algoritmos para razonar sin construir una tabla inmensa.
+
 ## CLASIFICACIÓN SEGÚN EL VALOR DE VERDAD
 
 - **Tautología:** la columna final siempre contiene **V**.
 
-  $$p \lor \neg p$$
+$$p \lor \neg p$$
 
 - **Contradicción:** la columna final siempre contiene **F**.
 
-  $$p \land \neg p$$
+$$p \land \neg p$$
 
 - **Contingencia:** la columna final contiene tanto **V** como **F**.
 
-  $$p \land q$$
+$$p \land q$$
 
 ## EQUIVALENCIA LÓGICA
 
@@ -108,6 +150,40 @@ Dos expresiones son **lógicamente equivalentes** cuando sus columnas finales ti
 > Las dos últimas columnas coinciden, por lo que son equivalentes:
 > 
 > $$(p \to q) \iff (\neg p \lor q)$$
+
+## VALIDAR ARGUMENTOS CON TABLAS DE VERDAD
+
+Una tabla no solo evalúa expresiones: también permite comprobar si una **inferencia** es válida. Consideremos las premisas $p \to q$ y $p$ y la conclusión $q$.
+
+Formamos la proposición:
+
+$$((p \to q) \land p) \to q$$
+
+Si esta fórmula es una tautología, significa que **en ningún caso** pueden ser verdaderas las dos premisas y falsa la conclusión.
+
+| $p$ | $q$ | $p \to q$ | $(p \to q) \land p$ | $((p \to q) \land p) \to q$ |
+|:---:|:---:|:---------:|:-------------------:|:---------------------------:|
+|  V  |  V  |     V     |          V          |              V              |
+|  V  |  F  |     F     |          F          |              V              |
+|  F  |  V  |     V     |          F          |              V              |
+|  F  |  F  |     V     |          F          |              V              |
+
+Como la última columna es completamente verdadera, hemos verificado el **modus ponens**.
+
+### CÓMO DETECTAR UNA INFERENCIA INVÁLIDA
+
+Para demostrar que una inferencia **no** es válida, basta encontrar una fila donde **todas las premisas sean verdaderas y la conclusión sea falsa**. Por ejemplo, en la falacia "$p \to q$, $q$; por tanto, $p$", basta tomar $p = \text{F}$ y $q = \text{V}$. Ambas premisas son verdaderas, pero $p$ es falsa.
+
+## EJERCICIOS DE COMPROBACIÓN
+
+1. ¿Cuántas filas necesita una tabla con cinco variables proposicionales distintas?
+2. Clasifica $p \land \neg p$.
+3. Comprueba si $\neg(p \lor q)$ y $\neg p \land \neg q$ son equivalentes.
+
+> [!abstract] SOLUCIONES
+> 1. $2^5 = 32$ filas.
+> 2. Contradicción: $p$ y $\neg p$ nunca son verdaderas simultáneamente.
+> 3. Sí. Las dos fórmulas tienen la misma columna final para las cuatro combinaciones de $p$ y $q$; es la ley de De Morgan.
 
 ## RESUMEN
 

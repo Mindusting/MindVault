@@ -1,10 +1,10 @@
 ---
 aliases: [Proposiciones en matemáticas]
 author: Mindusting
-corrected: true
+corrected: false
 creationDate: 2026-10-21 06:50:39
 headerFile: false
-modificationDate: 2026-10-22 04:08:45
+modificationDate: 2026-11-15 05:21:08
 rating: 1
 tags: [Math]
 ---
@@ -65,6 +65,43 @@ Una **proposición** ==no necesita ser **verdadera**== para considerarse una **p
 > 
 > Existen otros sistemas lógicos que no siguen necesariamente estas mismas reglas.
 
+## CÓMO RECONOCER UNA PROPOSICIÓN
+
+Para decidir si una frase es una proposición, no debemos preguntarnos si estamos de acuerdo con ella, sino **si afirma algo que puede ser verdadero o falso**. En lógica clásica se presupone que cada proposición posee un único valor de verdad, aunque las personas no sepamos cuál es.
+
+Por ejemplo, "El número de estrellas de nuestra galaxia es par" es una proposición: afirma un hecho que será verdadero o falso, aunque no conozcamos su valor. En cambio, "¡Qué bonito es este número!" es un juicio subjetivo cuyo significado no está suficientemente fijado para tratarlo directamente como una proposición matemática.
+
+Para clasificar un enunciado conviene seguir estos pasos:
+
+1. **Identificar la modalidad:** ¿es una afirmación, una pregunta, una orden o una exclamación?
+2. **Comprobar si tiene variables libres:** si decimos "$x$ es par", todavía no hemos fijado de qué $x$ hablamos.
+3. **Precisar el contexto:** "Hoy llueve" puede ser una proposición cuando están fijados el lugar, el día y el significado de "llueve".
+4. **Separar verdad y conocimiento:** no saber si una frase es verdadera no significa que carezca de valor de verdad.
+
+> [!example] EJEMPLO RESUELTO
+> Consideremos "Existe un número primo mayor que $100$".
+> 
+> - Es una afirmación, no una pregunta.
+> - La variable que podría usarse para representar el número queda vinculada por "existe".
+> - Tiene valor de verdad: **verdadero**, porque $101$ es primo y $101 > 100$.
+> 
+> La frase "$x$ es primo y $x > 100$", sin indicar $x$, es un **predicado abierto**, no una proposición cerrada.
+
+## VERDAD, FALSABILIDAD Y VALIDEZ
+
+Tres conceptos relacionados no significan lo mismo:
+
+- **Valor de verdad:** describe si una proposición concreta es verdadera o falsa.
+- **Satisfacibilidad:** una fórmula con variables proposicionales es satisfacible si existe alguna asignación de valores que la haga verdadera.
+- **Validez lógica o tautología:** una fórmula es válida si resulta verdadera con **todas** las asignaciones posibles.
+
+Por ejemplo, $p \land q$ es satisfacible: basta con que $p$ y $q$ sean verdaderas. Sin embargo, **no es una tautología**, porque falla cuando cualquiera de ellas es falsa. En cambio, $p \lor \neg p$ es verdadera para cualquier valor de $p$.
+
+Esto explica una distinción importante: la proposición "$2+2=4$" es verdadera, pero hablar de "tautología" resulta más apropiado al estudiar una **forma lógica**, como $p \lor \neg p$, que no depende del contenido de $p$.
+
+> [!note] NOTA
+> En las demostraciones también se habla de **argumentos válidos**. Un argumento es válido cuando no existe un caso en el que todas sus premisas sean verdaderas y su conclusión falsa. "Válido" no significa que las premisas sean verdaderas de hecho.
+
 ## REPRESENTACIÓN DE PROPOSICIONES
 
 Las proposiciones pueden estar representadas mediante letras a las que se les llama **variables proposicionales**, estas suelen ser letras en minúsculas como: $p, q, r...$; aunque también pueden estar en mayúsculas.
@@ -93,6 +130,32 @@ En este caso, ambas proposiciones son verdaderas.
 > ```
 > 
 > En matemáticas la letra representa una proposición, mientras que en los lenguajes de programación se almacena el resultado de una operación, por lo que son cosas distintas, pero a efectos prácticos, esta sería su equivalencia.
+
+## LENGUAJE NATURAL Y FORMALIZACIÓN
+
+La lógica utiliza símbolos porque las frases cotidianas pueden ser ambiguas. Formalizar significa **elegir proposiciones simples y representar cómo se combinan**, sin cambiar su significado.
+
+> [!example] EJEMPLO PASO A PASO
+> Frase: "Si estudio y practico, entonces apruebo".
+> 
+> Definimos:
+> 
+>$$
+>\begin{aligned}
+>p&: \text{Estudio}\\
+>q&: \text{Practico}\\
+>r&: \text{Apruebo}
+>\end{aligned}
+>$$
+> 
+> La parte "estudio y practico" necesita una conjunción: $p \land q$. La expresión "si..., entonces..." introduce un condicional. Por tanto, la formalización completa es:
+> 
+> $$(p \land q) \to r$$
+> 
+> No sería correcto escribir $p \land (q \to r)$: esa fórmula dice algo distinto, porque condiciona solo el efecto de "practicar".
+
+> [!important] IMPORTANTE
+> Las letras $p$, $q$ y $r$ representan **afirmaciones completas**, no números ni valores booleanos almacenados. El valor de verdad es una propiedad de esas afirmaciones. Los paréntesis muestran qué partes de la fórmula se evalúan juntas.
 
 ## PROPOSICIONES ATÓMICAS
 
@@ -156,9 +219,10 @@ De forma que el resultado sea falso.
 Pudiendo ser también representado de la siguiente forma:
 
 $$
-p: 10 = 10\\
-\\
-\neg p
+\begin{aligned}
+p &: 10 = 10\\
+&\neg p
+\end{aligned}
 $$
 
 > [!note] NOTA (para programadores)
@@ -179,6 +243,25 @@ $$
 > # SALIDA:
 > # False
 > ```
+
+## FORMAS LÓGICAS Y ASIGNACIONES
+
+Cuando una fórmula contiene variables proposicionales, como $p \land q$, podemos estudiarla sin decidir qué frases concretas significan $p$ y $q$. Una **asignación de verdad** consiste en dar a cada letra el valor V o F. Para dos letras existen cuatro asignaciones diferentes.
+
+La misma fórmula puede representar "$3 > 1$ y $5 > 2$" (verdadera) o "$3 > 1$ y $5 < 2$" (*falsa*). Su estructura es la misma: $p \land q$. Lo que cambia es la asignación de valores de verdad de las proposiciones que hemos elegido.
+
+Esta separación entre **contenido** y **estructura** permite que una [tabla de verdad](truth_tables.md) sirva para analizar infinitas frases concretas que comparten una misma forma lógica.
+
+## EJERCICIOS DE COMPROBACIÓN
+
+1. Clasifica: "$7$ es un número primo", "¿$7$ es primo?", "$x + 2 = 5$" y "Existe un entero que, al sumarle $2$, da $5$".
+2. Formaliza "No estudio, pero practico" con $p$: "estudio" y $q$: "practico".
+3. Explica por qué $p \lor \neg p$ es una tautología, pero $p \lor q$ no lo es.
+
+> [!abstract] SOLUCIONES
+> 1. Proposición verdadera; pregunta; predicado abierto; proposición verdadera (el entero es $3$).
+> 2. $\neg p \land q$. En lógica, "pero" suele comportarse como "y" para el cálculo de verdad.
+> 3. Si $p$ es verdadera, vale la primera parte; si es falsa, vale $\neg p$. En $p \lor q$ pueden ser falsas ambas.
 
 ## CLASIFICACIÓN SEGÚN EL VALOR DE VERDAD
 

@@ -4,7 +4,7 @@ author: Mindusting
 corrected: false
 creationDate: 2026-11-10 04:31:51
 headerFile: false
-modificationDate: 2026-11-10 06:46:02
+modificationDate: 2026-11-15 05:58:42
 rating: 
 tags: [Math]
 ---
@@ -31,6 +31,24 @@ Sus elementos se interpretan como valores lógicos:
 - **$1$:** verdadero; la relación o condición se cumple.
 
 En estas matrices podemos aplicar operaciones de la [lógica proposicional](logic/logical_connectives.md), no solamente operaciones aritméticas. Es importante **distinguir el producto booleano del producto matricial numérico**.
+
+## DIFERENCIA ENTRE MATRICES NUMÉRICAS Y BOOLEANAS
+
+Una matriz de números puede utilizarse para sumar, multiplicar y representar transformaciones. Una matriz booleana usa la **misma organización en filas y columnas**, pero interpretamos sus entradas como condiciones verdaderas o falsas.
+
+Esta diferencia afecta a las operaciones. Con aritmética usual, $1 + 1 = 2$; con el operador lógico OR, $1 \lor 1 = 1$. De forma similar, con AND tenemos $1 \land 1 = 1$, pero $1 \land 0 = 0$.
+
+> [!example] EJEMPLO
+> En un grafo, si una persona puede llegar a otra por dos caminos alternativos, una matriz de **accesibilidad booleana** solo necesita indicar que la conexión existe. Por eso el resultado es $1$, no $2$. Si quisiéramos **contar** caminos, necesitaríamos otra interpretación y posiblemente un producto numérico.
+
+### CONDICIONES PARA OPERAR
+
+- La unión e intersección se realizan **entrada a entrada** y requieren matrices de las mismas dimensiones.
+- El producto booleano combina filas y columnas; requiere que las **columnas de la primera** coincidan en número con las **filas de la segunda**.
+- Las potencias booleanas se aplican a matrices cuadradas, porque multiplicamos reiteradamente una matriz por sí misma.
+
+> [!important] IMPORTANTE
+> "Matrices del mismo orden" significa aquí que tienen el mismo número de filas y de columnas. Dos matrices pueden ser ambas booleanas y, sin embargo, tener dimensiones incompatibles para una operación.
 
 ## UNIÓN (JOIN)
 
@@ -59,9 +77,9 @@ El resultado vale $1$ cuando **al menos una** de las entradas correspondientes v
 > $$
 > 
 > $$
-> A\lor B = \begin{pmatrix}
-> 1\lor0 & 0\lor1 & 1\lor0\\
-> 0\lor1 & 1\lor1 & 0\lor0
+> A \lor B = \begin{pmatrix}
+> 1 \lor 0 & 0 \lor 1 & 1 \lor 0\\
+> 0 \lor 1 & 1 \lor 1 & 0 \lor 0
 > \end{pmatrix}
 > = \begin{pmatrix}
 > 1 & 1 & 1\\
@@ -123,6 +141,18 @@ La **intersección**, también llamada **meet**, aplica **AND ($\land$)** a los 
 > ```
 > 
 > `astype(int)` se usa aquí **solo para mostrar** los valores como ceros y unos en lugar de `False` y `True`.
+
+## RELACIÓN CON CONJUNTOS Y OPERADORES LÓGICOS
+
+La unión y la intersección de matrices booleanas pueden entenderse como operaciones con conjuntos de posiciones. Si $A$ contiene unos en las posiciones $S_A$ y $B$ en las posiciones $S_B$, entonces $A \lor B$ pone un uno en las posiciones de $S_A \cup S_B$, mientras que $A \land B$ conserva únicamente las de $S_A \cap S_B$.
+
+También existen relaciones algebraicas útiles:
+
+- **Conmutatividad:** $A \lor B = B \lor A$ y $A \land B = B \land A$.
+- **Idempotencia:** $A \lor A = A$ y $A \land A = A$.
+- **Distributividad:** $A \land (B \lor C) = (A \land B) \lor (A \land C)$ para matrices compatibles.
+
+Estas leyes son versiones **posición a posición** de las leyes de los conectores lógicos. No hay que confundirlas con el producto booleano de matrices, que es una operación distinta.
 
 ## PRODUCTO BOOLEANO
 
@@ -213,6 +243,53 @@ Las dimensiones deben cumplir la misma regla que en el producto matricial: para 
 > 
 > Esta técnica resulta sencilla para aprender y para matrices pequeñas. No confundas el `@` numérico intermedio con la **definición** del producto booleano: este último combina AND y OR.
 
+## CÁLCULO DETALLADO DE UN PRODUCTO BOOLEANO
+
+Sean:
+
+$$
+A = \begin{pmatrix}
+1 & 0 & 1\\
+0 & 1 & 1
+\end{pmatrix},
+\qquad B = \begin{pmatrix}
+0 & 1\\
+1 & 0\\
+1 & 1
+\end{pmatrix}
+$$
+
+La primera matriz tiene dimensión $2 \times 3$ y la segunda $3 \times 2$. Como las dimensiones interiores coinciden, el resultado será $2 \times 2$.
+
+Calculamos sus cuatro entradas. En cada una, emparejamos los elementos de una fila de $A$ con una columna de $B$:
+
+$$
+\begin{aligned}
+c_{11} &= (1 \land 0) \lor (0 \land 1) \lor (1 \land 1) = 1\\
+c_{12} &= (1 \land 1) \lor (0 \land 0) \lor (1 \land 1) = 1\\
+c_{21} &= (0 \land 0) \lor (1 \land 1) \lor (1 \land 1) = 1\\
+c_{22} &= (0 \land 1) \lor (1 \land 0) \lor (1 \land 1) = 1
+\end{aligned}
+$$
+
+Por tanto:
+
+$$
+A \odot B = \begin{pmatrix}
+1 & 1\\
+1 & 1
+\end{pmatrix}
+$$
+
+> [!important] IMPORTANTE
+> Cada entrada del resultado representa una **pregunta existencial**: ¿hay al menos un índice $k$ para el cual $a_{ik} = 1$ y $b_{kj} = 1$? Si existe tal índice, el valor es $1$. Si no existe ninguno, es $0$.
+
+Esta interpretación conecta el producto booleano con una expresión de lógica de predicados:
+
+$$
+c_{ij} = 1 \iff \exists k\ (a_{ik} = 1 \land b_{kj} = 1)
+$$
+
 ## POTENCIA BOOLEANA
 
 Si $A$ es una matriz booleana **cuadrada**, podemos multiplicarla booleanamente por sí misma varias veces.
@@ -248,6 +325,77 @@ Si $A$ es una matriz booleana **cuadrada**, podemos multiplicarla booleanamente 
 
 > [!important] IMPORTANTE
 > **La potencia booleana no es la potencia matricial usual.** El producto numérico puede contar cuántas conexiones hay; el booleano se limita a indicar **si existe al menos una**.
+
+## POTENCIAS Y RECORRIDOS DE LONGITUD EXACTA
+
+Consideremos los vértices $1$, $2$ y $3$, con conexiones $1 \to 2$ y $2\to3$. Su matriz booleana de adyacencia es:
+
+$$
+A = \begin{pmatrix}
+0 & 1 & 0\\
+0 & 0 & 1\\
+0 & 0 & 0
+\end{pmatrix}
+$$
+
+- En $A$, la entrada $(1, 2)$ es $1$ porque existe un recorrido de **un paso** desde $1$ hasta $2$.
+- En $A^{\odot 2}$, la entrada $(1, 3)$ vale $1$ porque existe el recorrido $1 \to 2 \to 3$ de **dos pasos**.
+- En $A^{\odot 3}$, todas las entradas valen $0$: en este grafo no existe ningún recorrido de tres pasos.
+
+Una potencia $A^{\odot k}$ indica si existe un recorrido de longitud **exactamente $k$**, no necesariamente el más corto. Si un grafo tiene ciclos, un par de vértices puede estar conectado mediante recorridos de diferentes longitudes.
+
+### CIERRE TRANSITIVO
+
+Para representar que podemos llegar de un vértice a otro mediante **uno o más pasos**, combinamos las potencias booleanas con OR. Si hay $n$ vértices, basta considerar las potencias de $1$ a $n$:
+
+$$
+T = A \lor A^{\odot 2} \lor \cdots \lor A^{\odot n}
+$$
+
+Para incluir también los recorridos de **cero pasos** (cada vértice puede alcanzarse a sí mismo), añadimos la identidad $I_n$:
+
+$$T^* = I_n \lor T$$
+
+La justificación de usar hasta $n$ pasos es que un recorrido suficientemente largo en un grafo finito repite vértices y contiene un ciclo; los ciclos pueden eliminarse para estudiar conexiones entre vértices distintos. Los recorridos cerrados necesarios para detectar ciclos pueden representarse con una longitud de hasta $n$.
+
+## ALGORITMO DE WARSHALL
+
+El algoritmo de Warshall calcula la accesibilidad de un grafo de forma sistemática, sin construir explícitamente todas las potencias. Partimos de su matriz de adyacencia $R$ y permitimos progresivamente vértices intermedios.
+
+> [!syntax] SINTAXIS
+> 
+> $$r_{ij} \gets r_{ij} \lor (r_{ik} \land r_{kj})$$
+> 
+> Para cada vértice intermedio $k$, comprobamos todos los pares $(i, j)$: si podemos ir de $i$ a $k$ y de $k$ a $j$, entonces también podemos ir de $i$ a $j$.
+
+> [!note] NOTA (para programadores)
+> Una implementación sencilla en Python usando listas:
+> 
+> ```python
+> def cierre_transitivo(matriz: list[list[int]]) -> list[list[int]]:
+>     n = len(matriz)
+>     alcance = [fila.copy() for fila in matriz]
+>     for k in range(n):
+>         for i in range(n):
+>             for j in range(n):
+>                 alcance[i][j] = int(
+>                     alcance[i][j] or (alcance[i][k] and alcance[k][j])
+>                 )
+>     return alcance
+> ```
+> 
+> El algoritmo realiza del orden de $n^3$ comprobaciones. Calcula el **cierre transitivo**; si queremos el **reflexivo-transitivo**, debemos poner a $1$ también la diagonal.
+
+## EJERCICIOS DE COMPROBACIÓN
+
+1. Calcula $\begin{pmatrix} 1 & 0\\ 1 & 1 \end{pmatrix} \lor \begin{pmatrix} 0 & 1\\ 1 & 0\end{pmatrix}$.
+2. ¿Qué significa que $(A^{\odot2})_{14} = 1$ para una matriz de adyacencia?
+3. ¿Por qué $A \odot B$ no se calcula multiplicando directamente entradas con la misma posición?
+
+> [!abstract] SOLUCIONES
+> 1. $\begin{pmatrix} 1 & 1\\ 1 & 1\end{pmatrix}$.
+> 2. Existe algún recorrido desde el vértice $1$ hasta el $4$ que utiliza exactamente dos conexiones.
+> 3. Porque cada entrada del resultado combina **una fila de $A$ con una columna de $B$**, mediante AND y OR.
 
 ## RELACIONES Y CAMINOS
 
