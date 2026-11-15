@@ -22,5 +22,6 @@
     "li"
   ],
   "cssTheme": "",
-  "nativeMenus": false
+  "nativeMenus": false,
+  "showRibbon": true
 }
