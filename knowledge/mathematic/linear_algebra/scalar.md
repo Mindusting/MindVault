@@ -247,9 +247,12 @@ Aquí, $\lvert k \rvert$ representa el **valor absoluto del escalar**, mientras 
 > [!note] NOTA
 > Para $k = 1$, el vector no cambia. Para $k = -1$, conserva su longitud, pero se invierte su sentido. Por eso el signo del escalar **sí influye en el resultado de una operación vectorial**, aunque el propio escalar no sea un vector.
 
+> [!warning] NO CONFUNDIR
+> **Multiplicar un vector por un escalar** ($k \vec{v}$) y calcular el **producto escalar de dos vectores** ($\vec{u} \cdot \vec{v}$) son operaciones diferentes. La primera devuelve un vector; la segunda devuelve un escalar.
+
 ### MULTIPLICACIÓN DE MATRICES
 
-Para multiplicar una matriz por un escalar, multiplicamos **cada uno de sus elementos** por él.
+Para [multiplicar una matriz](matrix_operations.md#PRODUCTO%20POR%20UN%20ESCALAR) por un escalar, multiplicamos **cada uno de sus elementos** por él.
 
 > [!example] EJEMPLO
 > Si $k = 3$ y:
@@ -273,11 +276,6 @@ Para multiplicar una matriz por un escalar, multiplicamos **cada uno de sus elem
 > 0 & -3
 > \end{pmatrix}
 > $$
-> 
-> Consulta [operaciones con matrices](matrix_operations.md).
-
-> [!warning] NO CONFUNDIR
-> **Multiplicar un vector por un escalar** ($k \vec{v}$) y calcular el **producto escalar de dos vectores** ($\vec{u} \cdot \vec{v}$) son operaciones diferentes. La primera devuelve un vector; la segunda devuelve un escalar.
 
 ## EJERCICIOS
 
