@@ -2,7 +2,10 @@
 aliases: [Universalidad de NAND, Puertas solo con NAND]
 author: Mindusting
 corrected: false
+creationDate: 2026-11-24 04:29:24
 headerFile: false
+modificationDate: 2026-11-24 06:52:29
+rating: 
 tags: [Binary, DigitalLogic]
 ---
 
@@ -17,27 +20,37 @@ tags: [Binary, DigitalLogic]
 > - NAND es una **puerta universal**: basta para construir todas las funciones booleanas.
 > - Una NOT puede implementarse conectando ambas entradas de una NAND a la misma señal.
 > - También es posible construir multiplexadores, sumadores y una ALU utilizando NAND como bloque lógico de base.
+
 ## DEFINICIÓN
 
 Decir que una puerta es **universal** significa que podemos construir cualquier función booleana combinando suficientes copias. NAND resulta especialmente interesante porque su implementación CMOS básica es sencilla.
 
-Escribiremos $N(A,B)=\overline{A\land B}$ para abreviar.
+Escribiremos $N (A, B) = \overline{A \land B}$ para abreviar.
 
 ## NOT CON UNA NAND
 
-> [!abstract] FÓRMULA
-> $$\overline A=N(A,A)$$
+%%
 
 ```text
-A ──┬──┐
-    └──┤ NAND ├── NOT A
-       └──────┘
+     ┌─╦══════╗
+(A)──┤ ║ NAND ╠──(NOT A)
+     └─╩══════╝
+```
+
+%%
+
+```mermaid
+flowchart LR
+    A([A]) --> nand[NAND]
+    A([A]) --> nand
+    nand --> O([O])
 ```
 
 ## AND CON DOS NAND
 
 > [!abstract] FÓRMULA
-> $$A\land B=N(N(A,B),N(A,B))$$
+> 
+> $$A \land B = N(N(A, B), N(A, B))$$
 
 La primera NAND obtiene $\overline{AB}$; la segunda invierte ese resultado.
 
@@ -46,6 +59,7 @@ La primera NAND obtiene $\overline{AB}$; la segunda invierte ese resultado.
 Aplicando De Morgan:
 
 > [!abstract] FÓRMULA
+> 
 > $$A\lor B=N(N(A,A),N(B,B))$$
 
 Primero se invierten ambas entradas y luego se aplica NAND.
@@ -63,9 +77,13 @@ $$\operatorname{NOR}(A,B)=N(T,T)$$
 Una construcción clásica, sin necesidad de inversores independientes, es:
 
 > [!abstract] CIRCUITO
+> 
 > $$T=N(A,B)$$
+> 
 > $$U=N(A,T)$$
+> 
 > $$V=N(B,T)$$
+> 
 > $$Y=N(U,V)=A\oplus B$$
 
 ```mermaid

@@ -2,7 +2,10 @@
 aliases: []
 author: Mindusting
 corrected: false
+creationDate: 2026-11-24 04:29:24
 headerFile: false
+modificationDate: 2026-11-24 06:23:13
+rating: 
 tags: [Binary, DigitalLogic]
 ---
 
@@ -17,16 +20,17 @@ tags: [Binary, DigitalLogic]
 > - Las operaciones bit a bit trabajan sobre cada posición de una palabra binaria.
 > - XOR detecta diferencias y permite invertir bits seleccionados.
 > - Para interpretar correctamente NOT y los desplazamientos hay que fijar el **ancho** y el tipo de dato.
+
 ## DEFINICIÓN
 
 Una **operación bit a bit** toma uno o varios patrones y aplica una operación lógica a cada posición. Las operaciones usuales son AND (`&`), OR (`|`), XOR (`^`), NOT (`~`) y desplazamientos (`<<`, `>>`).
 
-| A | B | AND | OR | XOR |
-| :-: | :-: | :-: | :-: | :-: |
-| 0 | 0 | 0 | 0 | 0 |
-| 0 | 1 | 0 | 1 | 1 |
-| 1 | 0 | 0 | 1 | 1 |
-| 1 | 1 | 1 | 1 | 0 |
+|  A  |  B  | AND | OR  | XOR |
+|:---:|:---:|:---:|:---:|:---:|
+|  0  |  0  |  0  |  0  |  0  |
+|  0  |  1  |  0  |  1  |  1  |
+|  1  |  0  |  0  |  1  |  1  |
+|  1  |  1  |  1  |  1  |  0  |
 
 ## OPERACIONES BÁSICAS
 
@@ -42,8 +46,8 @@ A XOR B: 0110 0110
 Para NOT, con **8 bits**:
 
 ```text
-A:       0000 0101
-NOT A:   1111 1010
+A:     0000 0101
+NOT A: 1111 1010
 ```
 
 > [!warning] ANCHO DE PALABRA
@@ -59,11 +63,12 @@ Una **máscara** selecciona posiciones de interés.
 > - Desactivar el bit $i$: `value & ~(1 << i)` (sobre un ancho controlado).
 > - Invertir el bit $i$: `value ^ (1 << i)`.
 
-> [!example] EJEMPLO — ACTIVAR EL BIT 2
+> [!example] EJEMPLO—ACTIVAR EL BIT 2
+> 
 > ```text
-> Valor:  1000 0001
-> Máscara:0000 0100
-> OR:     1000 0101
+> Valor:   1000 0001
+> Máscara: 0000 0100
+> OR:      1000 0101
 > ```
 
 ## DESPLAZAMIENTOS
@@ -71,9 +76,9 @@ Una **máscara** selecciona posiciones de interés.
 Un desplazamiento lógico a la izquierda mueve los bits hacia posiciones más altas y añade ceros por la derecha. A la derecha hace lo contrario, añadiendo ceros por la izquierda. Los bits que salen del ancho se pierden.
 
 ```text
-8 bits:  0001 0110  (22)
+8 bits: 0001 0110  (22)
 << 1:   0010 1100  (44)
->> 2:   0000 0101  (5)
+>> 2:   0000 0101  ( 5)
 ```
 
 Sin desbordamiento, desplazar un entero sin signo $k$ posiciones a la izquierda multiplica por $2^k$. Desplazar a la derecha divide por $2^k$ **descartando el resto**.

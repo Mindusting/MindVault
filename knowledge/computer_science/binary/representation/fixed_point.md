@@ -2,7 +2,10 @@
 aliases: [Fixed-point, Q format]
 author: Mindusting
 corrected: false
+creationDate: 2026-11-24 04:29:24
 headerFile: false
+modificationDate: 2026-11-24 06:44:15
+rating: 
 tags: [Binary, DigitalLogic]
 ---
 
@@ -16,13 +19,15 @@ tags: [Binary, DigitalLogic]
 > - La coma fija almacena un entero y aplica un **factor de escala** predeterminado.
 > - Si hay $f$ bits fraccionarios, el valor es el entero almacenado dividido por $2^f$.
 > - Es sencilla y predecible, pero su rango y precisión son constantes.
+
 ## DEFINICIÓN
 
 En una representación de **coma fija** (*fixed-point*), la posición de la coma binaria se decide de antemano y es idéntica para todos los números de ese formato. Los bits almacenados son los de un **entero** (con o sin signo), cuya interpretación incluye un factor de escala.
 
 > [!abstract] FÓRMULA
-> $$x=\frac{I}{2^f}$$
->
+> 
+> $$x = \frac{I}{2^f}$$
+> 
 > - $I$: entero almacenado.
 > - $f$: número de bits fraccionarios.
 
@@ -31,9 +36,9 @@ En una representación de **coma fija** (*fixed-point*), la posición de la coma
 Usaremos el nombre **Q4.4** en este documento para indicar expresamente **8 bits en total, incluidos el signo si existe, y 4 bits fraccionarios**. Algunas fuentes usan otras convenciones de nomenclatura Q: comprueba siempre qué cuenta cada cifra.
 
 ```text
-Representación:  0011 1000
-Separación:      0011.1000
-Valor:           3 + 1/2 = 3,5
+Representación: 0011 1000
+Separación:     0011.1000
+Valor:          3 + 1/2 = 3,5
 ```
 
 Con signo en complemento a dos de 8 bits:
@@ -47,13 +52,14 @@ Con signo en complemento a dos de 8 bits:
 
 Para **Q4.4 con signo** y 8 bits:
 
-- Paso mínimo entre representables: $2^{-4}=0.0625$.
-- Mínimo: $-128/16=-8$.
-- Máximo: $127/16=7.9375$.
+- Paso mínimo entre representables: $2^{-4} = 0.0625$.
+- Mínimo: $-128 / 16 = -8$.
+- Máximo: $127 / 16 = 7.9375$.
 
 > [!abstract] CODIFICACIÓN
-> $$I\approx\operatorname{redondear}(x\cdot2^f)$$
->
+> 
+> $$I \approx \operatorname{redondear}(x \cdot 2^f)$$
+> 
 > Después se comprueba que $I$ cabe en el entero de $n$ bits, y se aplica la regla de redondeo elegida. No existe una sola regla universal para todas las implementaciones de coma fija.
 
 ## OPERACIONES
