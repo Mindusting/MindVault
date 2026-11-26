@@ -84,5 +84,23 @@ SINTAXIS
 
 ## ETIQUETA
 
+- [`a`](tags/a.md)
+- [`b`](tags/b.md)
+- [`br`](tags/br.md)
+- [`del`](tags/del.md)
 - [`div`](tags/div.md)
+- [`h`](tags/h.md)
+- [`hr`](tags/hr.md)
+- [`i`](tags/i.md)
+- [`img`](tags/img.md)
+- [`input`](tags/input.md)
+- [`ins`](tags/ins.md)
+- [`map`](tags/map.md)
+- [`mark`](tags/mark.md)
+- [`p`](tags/p.md)
+- [`s`](tags/s.md)
 - [`span`](tags/span.md)
+- [`strong`](tags/strong.md)
+- [`sub`](tags/sub.md)
+- [`sup`](tags/sup.md)
+- [`u`](tags/u.md)
