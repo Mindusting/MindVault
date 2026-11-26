@@ -63,6 +63,7 @@ Si quieres más información o documentación más antigua hecha en google docum
     - [Fundamentos de la programación](knowledge/computer_science/programming/fundamentals/programming_fundamentals.md)
     - [Git](knowledge/computer_science/dev_tools/git/git.md)
     - [Binario](temp/bin/bin.md)
+    - [BASH SCRIPT](knowledge/computer_science/programming/language/bash/bash.md)
     - [Assembly](knowledge/computer_science/programming/language/asm/asm.md)
     - [Python 🐍](knowledge/computer_science/programming/language/python/python.md)
     - [C 🦖](knowledge/computer_science/programming/language/c/c.md)
@@ -104,8 +105,6 @@ Si quieres más información o documentación más antigua hecha en google docum
     - [CIBER SEGURIDAD](temp/cybersecurity/cybsec.md)
 - SISTEMAS OPERATIVOS
     - [OS](temp/os/os.md)
-    - [BASH](temp/os/linux/script/bash_script.md)
-        - [BASH Script](temp/os/linux/script/bash_script.md)
     - [batch](temp/os/windows/batch/batch.md)
     - [SSH](knowledge/computer_science/dev_tools/ssh/ssh.md)
 - COMUNICACIÓN
