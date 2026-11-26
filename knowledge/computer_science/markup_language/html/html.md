@@ -85,4 +85,4 @@ SINTAXIS
 ## ETIQUETA
 
 - [`div`](tags/div.md)
-- [`span`](html_span.md)
+- [`span`](tags/span.md)
